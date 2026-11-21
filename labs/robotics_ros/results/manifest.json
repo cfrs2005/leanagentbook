@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "synthetic": true,
+  "bag_version": 8,
+  "typestore": "ROS2_HUMBLE",
+  "software": "synthetic-controller-1.2.0",
+  "config": {
+    "motor_threshold_a": 8
+  },
+  "duration_s": 4,
+  "offsets_ns": {
+    "/lidar": 0,
+    "/camera": 70000000,
+    "/imu": 0,
+    "/encoder": 0,
+    "/motor": 0,
+    "/battery": 0
+  },
+  "rates_hz": {
+    "/lidar": 10,
+    "/camera": 10,
+    "/imu": 50,
+    "/encoder": 20,
+    "/motor": 20,
+    "/battery": 2
+  },
+  "missing_imu_sequences": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "anomaly_interval_s": [
+    2,
+    2.4
+  ],
+  "config_sha256": "069593268ef598a02d981ccbc6c1f2bb1d8a21f93c87538486d25df6819d4e1a"
+}

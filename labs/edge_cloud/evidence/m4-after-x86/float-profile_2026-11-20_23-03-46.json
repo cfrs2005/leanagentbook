@@ -1,0 +1,8 @@
+[
+{"cat" : "Session","pid" :43366,"tid" :131799294,"dur" :81,"ts" :0,"ph" : "X","name" :"model_loading_uri","args" : {}},
+{"cat" : "Session","pid" :43366,"tid" :131799294,"dur" :194,"ts" :90,"ph" : "X","name" :"session_initialization","args" : {}},
+{"cat" : "Node","pid" :43366,"tid" :131799294,"dur" :3,"ts" :300,"ph" : "X","name" :"fused /MatMulAddFusion_kernel_time","args" : {"op_name" : "FusedGemm","provider" : "CPUExecutionProvider","node_index" : "7","activation_size" : "64","output_size" : "128","thread_scheduling_stats" : "","parameter_size" : "128","output_type_shape" : [{"float":[1,32]}],"input_type_shape" : [{"float":[1,16]},{"float":[32]}]}},
+{"cat" : "Node","pid" :43366,"tid" :131799294,"dur" :1,"ts" :306,"ph" : "X","name" :"/MatMulAddFusion_token_0_kernel_time","args" : {"op_name" : "Gemm","provider" : "CPUExecutionProvider","node_index" : "6","activation_size" : "128","output_size" : "12","thread_scheduling_stats" : "","parameter_size" : "12","output_type_shape" : [{"float":[1,3]}],"input_type_shape" : [{"float":[1,32]},{"float":[3]}]}},
+{"cat" : "Session","pid" :43366,"tid" :131799294,"dur" :9,"ts" :300,"ph" : "X","name" :"SequentialExecutor::Execute","args" : {}},
+{"cat" : "Session","pid" :43366,"tid" :131799294,"dur" :11,"ts" :299,"ph" : "X","name" :"model_run","args" : {}}
+]

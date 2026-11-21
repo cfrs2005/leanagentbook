@@ -1,0 +1,58 @@
+{
+  "sha256": "600b1ed50f52ba5ae485aad0db29834c4f012c3fe57f75c44585a1dd724bd91d",
+  "bytes": 3103,
+  "accuracy": 0.935546875,
+  "median_us": 3.916,
+  "p95_us": 4.167,
+  "load_ms": 1.963083,
+  "process_peak_rss_bytes": 69386240,
+  "graph_ops": [
+    "Add",
+    "DequantizeLinear",
+    "MatMul",
+    "QuantizeLinear",
+    "Relu"
+  ],
+  "executed_kernels": [
+    [
+      "Add",
+      "CPUExecutionProvider"
+    ],
+    [
+      "DequantizeLinear",
+      "CPUExecutionProvider"
+    ],
+    [
+      "QLinearMatMul",
+      "CPUExecutionProvider"
+    ],
+    [
+      "QuantizeLinear",
+      "CPUExecutionProvider"
+    ]
+  ],
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "requests": 2560,
+  "warmup": 100,
+  "threads": 1,
+  "input": {
+    "features": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        16
+      ]
+    }
+  },
+  "output": {
+    "logits": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3
+      ]
+    }
+  }
+}

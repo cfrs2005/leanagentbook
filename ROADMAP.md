@@ -37,11 +37,11 @@
 | 17 | [Agent Security 与权限治理](chapters/17-security-governance.md) | 首版：固定工具授权审批与 OS 拒绝探针；生产身份与完整沙箱待补 |
 | 18 | [分布式 Agent 系统](chapters/18-distributed-agents.md) | 首版：独立进程 HTTP Worker、租约和故障转移；跨机高可用待补 |
 | 19 | [Time Series AI 与工业异常检测](chapters/19-time-series.md) | 首版：统计、Isolation Forest、XGBoost 实跑；真实设备数据待补 |
-| 20 | Robotics AI 与 ROS 数据体系 | 已规划，未交付正文 |
-| 21 | Edge AI 与边云协同 | 已规划，未交付正文 |
-| 22 | Causal AI 与智能故障诊断 | 已规划，未交付正文 |
+| 20 | [Robotics AI 与 ROS 数据体系](chapters/20-robotics-ros.md) | 首版：真实 ROS2 Bag、同步校正和事件片段；合成代理信号 |
+| 21 | [Edge AI 与边云协同](chapters/21-edge-cloud.md) | 首版：x86/M4 CPU 推理、量化和签名回滚；功耗未测 |
+| 22 | [Causal AI 与智能故障诊断](chapters/22-causal-diagnosis.md) | 首版：合成 SCM、贝叶斯推断、干预和反事实 |
 | 23 | [企业级 AI Agent 平台架构](chapters/23-platform-architecture.md) | 设计稿：逻辑、部署、权限与故障推演；未部署 |
-| 24 | [机器人智能诊断平台综合实战](chapters/24-robot-diagnosis.md) | 首版切片；完整任务待补齐 |
+| 24 | [机器人智能诊断平台综合实战](chapters/24-robot-diagnosis.md) | 端到端原型：缓存、HTTP、恢复、证据与审批；跨章节模型/Bag 集成待补 |
 
 ## 下一批优先顺序
 
@@ -55,7 +55,7 @@
 
 批次是编写顺序，不是承诺的日期。每次交付都要更新本表与发布记录。持续集成负责检查内容，不会无人值守地生成新课。
 
-## 首批验收范围
+## 首批验收范围（历史记录）
 
 - 导读与课程导航可以从 GitHub 直接阅读。
 - 02/03 的脚本模型和 24 的合成数据实验可离线复现。
@@ -71,4 +71,4 @@
 
 ## 检索与记忆交付范围
 
-09 章已真实运行固定版本的 MiniLM 嵌入和 TinyBERT 重排；英文合成数据结果不能推断中文效果。10 章已处理真实 PDF、HTML 和 Markdown，回答仍为摘录式。13 章是规则抽取和字节预算；17 章是内存固定工具网关与有限 OS 拒绝探针。当前共 21 章有首版或设计稿，仍未声明任何章节完成全套生产验收。
+09 章已真实运行固定版本的 MiniLM 嵌入和 TinyBERT 重排；英文合成数据结果不能推断中文效果。10 章已处理真实 PDF、HTML 和 Markdown，回答仍为摘录式。13 章是规则抽取和字节预算；17 章是内存固定工具网关与有限 OS 拒绝探针。当前共 24 章有首版或设计稿，仍未声明任何章节完成全套生产验收。

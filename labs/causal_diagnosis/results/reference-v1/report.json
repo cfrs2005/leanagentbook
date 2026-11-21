@@ -1,0 +1,265 @@
+{
+  "model": "synthetic-motor-v1",
+  "confounding": {
+    "observational": {
+      "0": 0.26,
+      "1": 0.6400000000000001
+    },
+    "interventional": {
+      "0": 0.5,
+      "1": 0.4
+    },
+    "assumptions": "Synthetic known load confounder, positivity, consistency, no other confounders"
+  },
+  "counterfactual": {
+    "noise": {
+      "load": 0.2,
+      "bearing": 0.05,
+      "cooling": 0.8,
+      "current": 0.4,
+      "temperature": 0.4,
+      "vibration": 0.2
+    },
+    "factual": {
+      "load": 1,
+      "bearing": 1,
+      "cooling": 0,
+      "current": 1,
+      "temperature": 1,
+      "vibration": 1
+    },
+    "same_noise_do_load_0": {
+      "load": 0,
+      "bearing": 1,
+      "cooling": 0,
+      "current": 0,
+      "temperature": 0,
+      "vibration": 1
+    },
+    "conditional_hot_probability": 0.46153846153846156
+  },
+  "diagnosis": {
+    "status": "hypotheses_only",
+    "model": "synthetic-motor-v1",
+    "synthetic": true,
+    "records": [
+      {
+        "field": "current",
+        "value": 1,
+        "source": "synthetic-case-1"
+      },
+      {
+        "field": "temperature",
+        "value": 1,
+        "source": "synthetic-case-1"
+      },
+      {
+        "field": "vibration",
+        "value": 1,
+        "source": "synthetic-case-1"
+      }
+    ],
+    "hypotheses": [
+      {
+        "hypothesis": "load",
+        "prior": 0.39999999999999997,
+        "posterior": 0.8698747113716168,
+        "support": [
+          {
+            "field": "current",
+            "value": 1,
+            "single_evidence_delta": 0.44000000000000045
+          },
+          {
+            "field": "temperature",
+            "value": 1,
+            "single_evidence_delta": 0.3169811320754717
+          },
+          {
+            "field": "vibration",
+            "value": 1,
+            "single_evidence_delta": 0.13793103448275873
+          }
+        ],
+        "against": [],
+        "neutral": [],
+        "missing": [
+          "bearing",
+          "cooling",
+          "load"
+        ],
+        "uncertainty_bits": 0.5577816894755718,
+        "category": "observation"
+      },
+      {
+        "hypothesis": "bearing",
+        "prior": 0.12,
+        "posterior": 0.6761213810441173,
+        "support": [
+          {
+            "field": "current",
+            "value": 1,
+            "single_evidence_delta": 0.08800000000000005
+          },
+          {
+            "field": "temperature",
+            "value": 1,
+            "single_evidence_delta": 0.09962264150943392
+          },
+          {
+            "field": "vibration",
+            "value": 1,
+            "single_evidence_delta": 0.42482758620689653
+          }
+        ],
+        "against": [],
+        "neutral": [],
+        "missing": [
+          "bearing",
+          "cooling",
+          "load"
+        ],
+        "uncertainty_bits": 0.9085495474133165,
+        "category": "observation"
+      },
+      {
+        "hypothesis": "cooling",
+        "prior": 0.15,
+        "posterior": 0.22306021232118703,
+        "support": [
+          {
+            "field": "temperature",
+            "value": 1,
+            "single_evidence_delta": 0.14433962264150949
+          }
+        ],
+        "against": [],
+        "neutral": [
+          {
+            "field": "current",
+            "value": 1,
+            "single_evidence_delta": 2.7755575615628914e-17
+          },
+          {
+            "field": "vibration",
+            "value": 1,
+            "single_evidence_delta": 0.0
+          }
+        ],
+        "missing": [
+          "bearing",
+          "cooling",
+          "load"
+        ],
+        "uncertainty_bits": 0.7657161239109103,
+        "category": "observation"
+      }
+    ],
+    "root_cause_confirmed": false,
+    "uncertainty": "CPT, graph direction and omitted causes are assumed; entropy excludes model error",
+    "suggestions": [
+      {
+        "category": "observation",
+        "text": "Request existing load, cooling and maintenance logs"
+      },
+      {
+        "category": "intervention_proposal_only",
+        "text": "Qualified staff may design an isolated load experiment after separate safety review; no execution"
+      }
+    ],
+    "audit": [
+      {
+        "tool": "read_synthetic_evidence",
+        "category": "observation",
+        "synthetic": true
+      }
+    ]
+  },
+  "calibration": {
+    "seed": 2201,
+    "count": 1000,
+    "candidate_brier": {
+      "0.0": 0.05965473127317612,
+      "0.25": 0.06448481702369775,
+      "0.5": 0.07375239039500894,
+      "0.75": 0.0874574513871097,
+      "1.0": 0.1056
+    },
+    "chosen_shrink": 0.0
+  },
+  "test": {
+    "seed": 2202,
+    "count": 1000,
+    "raw": {
+      "brier": 0.06134206881295389,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "count": 830,
+          "mean_prediction": 0.03060447525797646,
+          "frequency": 0.027710843373493974
+        },
+        {
+          "lower": 0.2,
+          "count": 0,
+          "mean_prediction": null,
+          "frequency": null
+        },
+        {
+          "lower": 0.4,
+          "count": 126,
+          "mean_prediction": 0.49734672126026125,
+          "frequency": 0.5396825396825397
+        },
+        {
+          "lower": 0.6,
+          "count": 44,
+          "mean_prediction": 0.6761213810441173,
+          "frequency": 0.6818181818181818
+        },
+        {
+          "lower": 0.8,
+          "count": 0,
+          "mean_prediction": null,
+          "frequency": null
+        }
+      ]
+    },
+    "frozen_calibrated": {
+      "brier": 0.06134206881295389,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "count": 830,
+          "mean_prediction": 0.03060447525797646,
+          "frequency": 0.027710843373493974
+        },
+        {
+          "lower": 0.2,
+          "count": 0,
+          "mean_prediction": null,
+          "frequency": null
+        },
+        {
+          "lower": 0.4,
+          "count": 126,
+          "mean_prediction": 0.49734672126026125,
+          "frequency": 0.5396825396825397
+        },
+        {
+          "lower": 0.6,
+          "count": 44,
+          "mean_prediction": 0.6761213810441173,
+          "frequency": 0.6818181818181818
+        },
+        {
+          "lower": 0.8,
+          "count": 0,
+          "mean_prediction": null,
+          "frequency": null
+        }
+      ]
+    }
+  },
+  "limits": "Synthetic same-generator calibration only; not real failure probability or external validation"
+}

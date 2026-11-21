@@ -5,7 +5,7 @@
 > **前置：** Python 3.12、矩阵和分类基础；第 06 章训练、第 07 章推理、第 14 章评测、第 17 章安全。  
 > **范围：** 合成分类任务、真实 ONNX CPU 推理、INT8 量化、本地签名模型更新。不是大语言模型部署教程，不是机器人控制或固件 OTA 产品。  
 > **学习目标：** 划分端网云职责；核对算子与运行时；用独立数据比较模型；验证签名、灰度、健康检查和回滚。  
-> **交付状态：** 可运行实验与 M4 CPU 记录已提供。原任务要求先 x86 再目标设备；该顺序尚未完成。x86 CI 入口已准备，等待实际执行。功耗及其他 SoC 未验证。
+> **交付状态：** 真实 x86 CI 已通过，随后 M4 CPU 完整复跑与同一份 x86 模型的移植运行均通过，已补齐先 x86 后目标设备的顺序证据。功耗及其他 SoC 未验证。
 
 ## 1. 本章解决什么问题
 
@@ -147,7 +147,9 @@ labs/edge_cloud/
   test_edge_cloud.py  # Standard-library-only tests
   requirements.txt
   ci-job.yml          # Job example, inactive until integrated
-  evidence/m4-20261120/
+  evidence/x86-20261120/
+  evidence/m4-after-x86/
+  evidence/m4-20261120/ # Earlier exploratory run
 ```
 
 [真实训练与推理代码](../labs/edge_cloud/benchmark.py)使用 NumPy 训练，再用 ONNX helper 构建并检查模型。它不下载外部权重。模型用 opset 17、IR 10，静态 QDQ、INT8 激活、按通道 INT8 权重。预处理先推导图形状，不在量化前做融合。关于 QDQ、校准与精度损失的机制，见 [ORT 量化文档](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)。
@@ -173,7 +175,7 @@ python3.12 -m venv /tmp/leanagentbook-edge-env
 
 新输出目录必须不存在。默认验收要求浮点准确率至少 85%，INT8 相比浮点下降不超过 3 个百分点；不要求 INT8 更快。数据生成后保存独立分割和 hash，输出模型与数据均很小。详细重现说明见[实验说明](../labs/edge_cloud/README.md)。
 
-原任务的 x86 验证入口是 [CI 作业示例](../labs/edge_cloud/ci-job.yml)。整合进实际 workflow 后运行，保留工作流 URL、提交 SHA 与 artifact。`--expect-arch x86_64` 防止把 ARM 机器误记成 x86。补完 x86 后，再按同样步骤复跑目标设备。
+实际 [x86 工作流](https://github.com/cfrs2005/leanagentbook/actions/runs/44878247748) 已成功，提交为 `b79f1b575fae7e70311003ea05c12085221f822f`。它使用 `--expect-arch x86_64`，并保存推理和升级产物。随后已在 M4 复跑完整实验，并直接运行未经修改的 x86 模型文件。可复用 [CI 作业示例](../labs/edge_cloud/ci-job.yml)，实际工作流位于 `.github/workflows/edge-evidence.yml`。
 
 ## 7. 工程案例与本次证据
 
@@ -183,15 +185,15 @@ python3.12 -m venv /tmp/leanagentbook-edge-env
 
 每组独立子进程，单线程、批量 1，预热 100 次。512 个测试输入顺序执行 5 遍，共 2560 次。计时从真实 `session.run()` 前开始，在结果返回后结束；不包含载入、构造输入和 CSV 写入。载入时间另记。profiler 另建会话，避免影响计时。
 
-![真实 CPU 推理延迟，中位数与 P95](../labs/edge_cloud/evidence/m4-20261120/latency.svg)
+![真实 CPU 推理延迟，中位数与 P95](../labs/edge_cloud/evidence/m4-after-x86/latency.svg)
 
 | 指标 | 多数类基线 | 浮点 ONNX | INT8 QDQ ONNX |
 | --- | ---: | ---: | ---: |
 | 测试准确率 | 36.13% | 93.95% | 93.55% |
 | 模型文件 | 不适用 | 3050 字节 | 3103 字节 |
-| 中位延迟 | 未计时 | 2.375 μs | 3.916 μs |
-| P95 延迟 | 未计时 | 2.875 μs | 4.250 μs |
-| 独立进程 RSS 峰值 | 未测 | 66.06 MiB | 66.25 MiB |
+| 中位延迟 | 未计时 | 2.292 μs | 3.833 μs |
+| P95 延迟 | 未计时 | 2.750 μs | 4.042 μs |
+| 独立进程 RSS 峰值 | 未测 | 66.03 MiB | 66.36 MiB |
 | 功耗 | 未测 | 未测 | 未测 |
 
 RSS 是整个测量进程的峰值，包含解释器、库、数据及会话，不是模型独占内存。微秒级测量会受系统调度、温度与调用成本影响；这里只展示一次本机运行，不是跨设备性能排行。没有功耗测量权限或仪器证据，因此不计算每次推理能耗，也不把芯片 TDP 当作功耗。
@@ -200,14 +202,26 @@ RSS 是整个测量进程的峰值，包含解释器、库、数据及会话，�
 
 原始图有 Add、MatMul、Relu；量化图新增 QuantizeLinear、DequantizeLinear。执行 profile 显示浮点用 CPU 的 FusedGemm/Gemm，INT8 用 CPU 的 QLinearMatMul 和量化转换内核。这提供了整数路径真实执行的证据。导出模型与 NumPy 在 32 个验证输入上的最大绝对输出误差为 0；这只是选定样本上的数值对照。
 
-完整 hash 与执行记录见[本次 summary](../labs/edge_cloud/evidence/m4-20261120/summary.json)，请求级原始计时见[浮点 CSV](../labs/edge_cloud/evidence/m4-20261120/float-requests.csv)和[INT8 CSV](../labs/edge_cloud/evidence/m4-20261120/int8-requests.csv)。本机模型 SHA：
+完整 hash 与执行记录见[本次 summary](../labs/edge_cloud/evidence/m4-after-x86/summary.json)，请求级原始计时见[浮点 CSV](../labs/edge_cloud/evidence/m4-after-x86/float-requests.csv)和[INT8 CSV](../labs/edge_cloud/evidence/m4-after-x86/int8-requests.csv)。本机模型 SHA：
 
 ```text
 float 61cde670c0edddab83fe0071fc25f02723184e74879b33bf9548509cc7612673
 int8  b0b499446405a443de33ad27edfc12876f344a58b5816103943f6c400a70637c
 ```
 
-### 7.2 从合成案例迁移到设备
+### 7.2 x86 到 M4 的实际顺序
+
+[x86 运行记录](../labs/edge_cloud/evidence/x86-20261120/run.json)显示 CI 于 UTC 2026-11-21 07:01:47 完成；M4 完整复跑的 summary 时间是 UTC 07:03:47，后续同文件移植时间见对应 summary。以上均为洛杉矶 2026-11-20 晚间。旧的先行 M4 记录保留为历史证据，当前表格和图使用 CI 之后的新结果。
+
+| 实际运行 | 架构 | 浮点准确率 / INT8 准确率 | 浮点 / INT8 中位延迟 | OTA 检查 |
+| --- | --- | --- | --- | --- |
+| GitHub Ubuntu CI | x86_64 | 93.95% / 93.55% | 4.106 / 7.256 μs | 12/12 通过 |
+| M4 完整复跑 | arm64 | 93.95% / 93.55% | 2.292 / 3.833 μs | 12/12 通过 |
+| x86 原文件直接在 M4 运行 | arm64 | 93.95% / 93.55% | 2.333 / 3.916 μs | 12/12 通过 |
+
+[x86 原始记录](../labs/edge_cloud/evidence/x86-20261120/summary.json)与[同文件移植记录](../labs/edge_cloud/evidence/m4-after-x86/x86-artifacts-on-m4/summary.json)中的模型 SHA 一致，移植没有重训或修改模型。三组都包含实际 CPU provider、QLinearMatMul 内核和逐请求计时记录。x86 runner 的 `soc` 字段只返回 `x86_64`，未采集具体 CPU 型号；不要把共享 CI 与 M4 的耗时直接当作硬件性能排名。M4 完整复跑会重新训练，因此其模型 SHA 可与 x86 产物不同；同文件移植检查用于分开验证模型可移植性。
+
+### 7.3 从合成案例迁移到设备
 
 设备案例中，可以将振动、电流和温度窗口变成固定特征，由本地小模型先筛选异常，云端结合维修记录分析原因。但本实验的 16 维输入不对应真实传感单位，不能直接拿它控制设备。迁移时先定义采样、缺失值、归一化、特征单位与标签，再按时间或设备划分数据，避免同一故障片段同时出现在训练和测试中。
 
@@ -229,7 +243,7 @@ int8  b0b499446405a443de33ad27edfc12876f344a58b5816103943f6c400a70637c
 
 灰度采用稳定设备 ID 的 hash 分组。先小比例，再依据错误率、推理输出、加载失败和资源预算扩大比例。启动健康只证明“现在能运行”；生产还需要持续健康窗口。若延迟或准确率代理指标恶化，应冻结放量并恢复旧版本。
 
-本实验测试损坏签名、篡改元数据、篡改模型、不兼容契约和运行时、版本重放、灰度排除、断网、下载中断、激活后重启及真实模型载入失败回滚。中断是异常注入，不是拔电测试。12 项结果见[升级验收记录](../labs/edge_cloud/evidence/m4-20261120/ota-tests.json)。
+本实验测试损坏签名、篡改元数据、篡改模型、不兼容契约和运行时、版本重放、灰度排除、断网、下载中断、激活后重启及真实模型载入失败回滚。中断是异常注入，不是拔电测试。12 项结果见[升级验收记录](../labs/edge_cloud/evidence/m4-after-x86/ota-tests.json)。
 
 这里没有实现密钥撤销、轮换、可信时间与过期策略、门限签名、多角色元数据、并发更新锁和完整网络传输。它不是完整 TUF 实现。需要抵抗冻结、回滚、混搭元数据或签名密钥失陷时，应采用成熟更新框架并验证其威胁模型。[TUF 规范](https://theupdateframework.github.io/specification/latest/)
 
@@ -248,7 +262,7 @@ RK3588 验收表需加 Toolkit2、Runtime、驱动版本和算子转换报告；
 3. 查看两组请求 CSV，重算中位数与 P95。核对不是只测空函数或模型载入。
 4. 检查图算子和 profile provider，确认真正执行的内核。
 5. 运行签名升级检查，确认断网后旧模型仍能执行推理，坏候选不能长期取代旧模型。
-6. 整合 CI 示例，在真实 x86 runner 保存产物；随后复跑目标设备。
+6. 运行真实 x86 workflow 并保存产物；随后在目标设备复跑，并直接运行同一份已校验 hash 的模型。
 7. 记录功耗工具、测量窗口、空闲基线和负载条件。没有测量证据时保留“未测”。
 
 ### 验收标准
@@ -260,7 +274,7 @@ RK3588 验收表需加 Toolkit2、Runtime、驱动版本和算子转换报告；
 | 量化质量 | 浮点准确率 ≥85%，INT8 下降 ≤3 个百分点 | 已验证，仅适用合成实验 |
 | 资源证据 | 记录模型大小、请求级时延、内存、平台及 provider | 已验证 |
 | 安全升级 | 真实签名和 12 项恢复/拒绝检查通过 | 已验证，本地教学范围 |
-| x86 → 目标流程 | 真实 x86 成功记录，再复跑目标 | 待补 x86 CI 与后续目标复跑 |
+| x86 → 目标流程 | 真实 x86 成功记录，再复跑目标 | 已完成：x86 CI → M4 复跑与同文件移植 |
 | 功耗 | 实际测量及方法可复查 | 未测，完整硬件验收未完成 |
 | RK3588/Jetson/NPU | 对应实机、SDK、算子与资源报告 | 未验证，不在本次设备声明中 |
 

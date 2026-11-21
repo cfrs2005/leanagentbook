@@ -1,0 +1,48 @@
+{
+  "sha256": "d2b294bb0c1786cfe1d2d7a90f690988347baad84bccec16968e4ba8ac2f5e42",
+  "bytes": 3050,
+  "accuracy": 0.939453125,
+  "median_us": 4.106,
+  "p95_us": 5.1172499999999985,
+  "load_ms": 2.097876,
+  "process_peak_rss_bytes": 136585216,
+  "graph_ops": [
+    "Add",
+    "MatMul",
+    "Relu"
+  ],
+  "executed_kernels": [
+    [
+      "FusedGemm",
+      "CPUExecutionProvider"
+    ],
+    [
+      "Gemm",
+      "CPUExecutionProvider"
+    ]
+  ],
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "requests": 2560,
+  "warmup": 100,
+  "threads": 1,
+  "input": {
+    "features": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        16
+      ]
+    }
+  },
+  "output": {
+    "logits": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3
+      ]
+    }
+  }
+}

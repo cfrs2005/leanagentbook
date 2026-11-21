@@ -1,0 +1,9002 @@
+[
+  {
+    "id": "2202-0",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-1",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-2",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-3",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-4",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-5",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-6",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-7",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-8",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-9",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-10",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-11",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-12",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-13",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-14",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-15",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-16",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-17",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-18",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-19",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-20",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-21",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-22",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-23",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-24",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-25",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-26",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-27",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-28",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-29",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-30",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-31",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-32",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-33",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-34",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-35",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-36",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-37",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-38",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-39",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-40",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-41",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-42",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-43",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-44",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-45",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-46",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-47",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-48",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-49",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-50",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-51",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-52",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-53",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-54",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-55",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-56",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-57",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-58",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-59",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-60",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-61",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-62",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-63",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-64",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-65",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-66",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-67",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-68",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-69",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-70",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-71",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-72",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-73",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-74",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-75",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-76",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-77",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-78",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-79",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-80",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-81",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-82",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-83",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-84",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-85",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-86",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-87",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-88",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-89",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-90",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-91",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-92",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-93",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-94",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-95",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-96",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-97",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-98",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-99",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-100",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-101",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-102",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-103",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-104",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-105",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-106",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-107",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-108",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-109",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-110",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-111",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-112",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-113",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-114",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-115",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-116",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-117",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-118",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-119",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-120",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-121",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-122",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-123",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-124",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-125",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-126",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-127",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-128",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-129",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-130",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-131",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-132",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-133",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-134",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-135",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-136",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-137",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-138",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-139",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-140",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-141",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-142",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-143",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-144",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-145",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-146",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-147",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-148",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-149",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-150",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-151",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-152",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-153",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-154",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-155",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-156",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-157",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-158",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-159",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-160",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-161",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-162",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-163",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-164",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-165",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-166",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-167",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-168",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-169",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-170",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-171",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-172",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-173",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-174",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-175",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-176",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-177",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-178",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-179",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-180",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-181",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-182",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-183",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-184",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-185",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-186",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-187",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-188",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-189",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-190",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-191",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-192",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-193",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-194",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-195",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-196",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-197",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-198",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-199",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-200",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-201",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-202",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-203",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-204",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-205",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-206",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-207",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-208",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-209",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-210",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-211",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-212",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-213",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-214",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-215",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-216",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-217",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-218",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-219",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-220",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-221",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-222",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-223",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-224",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-225",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-226",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-227",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-228",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-229",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-230",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-231",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-232",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-233",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-234",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-235",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-236",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-237",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-238",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-239",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-240",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-241",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-242",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-243",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-244",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-245",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-246",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-247",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-248",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-249",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-250",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-251",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-252",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-253",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-254",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-255",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-256",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-257",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-258",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-259",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-260",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-261",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-262",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-263",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-264",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-265",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-266",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-267",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-268",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-269",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-270",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-271",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-272",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-273",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-274",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-275",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-276",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-277",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-278",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-279",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-280",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-281",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-282",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-283",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-284",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-285",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-286",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-287",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-288",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-289",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-290",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-291",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-292",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-293",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-294",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-295",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-296",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-297",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-298",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-299",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-300",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-301",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-302",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-303",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-304",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-305",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-306",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-307",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-308",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-309",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-310",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-311",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-312",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-313",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-314",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-315",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-316",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-317",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-318",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-319",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-320",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-321",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-322",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-323",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-324",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-325",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-326",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-327",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-328",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-329",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-330",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-331",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-332",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-333",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-334",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-335",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-336",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-337",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-338",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-339",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-340",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-341",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-342",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-343",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-344",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-345",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-346",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-347",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-348",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-349",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-350",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-351",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-352",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-353",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-354",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-355",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-356",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-357",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-358",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-359",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-360",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-361",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-362",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-363",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-364",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-365",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-366",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-367",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-368",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-369",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-370",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-371",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-372",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-373",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-374",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-375",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-376",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-377",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-378",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-379",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-380",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-381",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-382",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-383",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-384",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-385",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-386",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-387",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-388",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-389",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-390",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-391",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-392",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-393",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-394",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-395",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-396",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-397",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-398",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-399",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-400",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-401",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-402",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-403",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-404",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-405",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-406",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-407",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-408",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-409",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-410",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-411",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-412",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-413",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-414",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-415",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-416",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-417",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-418",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-419",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-420",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-421",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-422",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-423",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-424",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-425",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-426",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-427",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-428",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-429",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-430",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-431",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-432",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-433",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-434",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-435",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-436",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-437",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-438",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-439",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-440",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-441",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-442",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-443",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-444",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-445",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-446",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-447",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-448",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-449",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-450",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-451",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-452",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-453",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-454",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-455",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-456",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-457",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-458",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-459",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-460",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-461",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-462",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-463",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-464",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-465",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-466",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-467",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-468",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-469",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-470",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-471",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-472",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-473",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-474",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-475",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-476",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-477",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-478",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-479",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-480",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-481",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-482",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-483",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-484",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-485",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-486",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-487",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-488",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-489",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-490",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-491",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-492",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-493",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-494",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-495",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-496",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-497",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-498",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-499",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-500",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-501",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-502",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-503",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-504",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-505",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-506",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-507",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-508",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-509",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-510",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-511",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-512",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-513",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-514",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-515",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-516",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-517",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-518",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-519",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-520",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-521",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-522",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-523",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-524",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-525",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-526",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-527",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-528",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-529",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-530",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-531",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-532",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-533",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-534",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-535",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-536",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-537",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-538",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-539",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-540",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-541",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-542",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-543",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-544",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-545",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-546",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-547",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-548",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-549",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-550",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-551",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-552",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-553",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-554",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-555",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-556",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-557",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-558",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-559",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-560",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-561",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-562",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-563",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-564",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-565",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-566",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-567",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-568",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-569",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-570",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-571",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-572",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-573",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-574",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-575",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-576",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-577",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-578",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-579",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-580",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-581",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-582",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-583",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-584",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-585",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-586",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-587",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-588",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-589",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-590",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-591",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-592",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-593",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-594",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-595",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-596",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-597",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-598",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-599",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-600",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-601",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-602",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-603",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-604",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-605",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-606",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-607",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-608",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-609",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-610",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-611",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-612",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-613",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-614",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-615",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-616",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-617",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-618",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-619",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-620",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-621",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-622",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-623",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-624",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-625",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-626",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-627",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-628",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-629",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-630",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-631",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-632",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-633",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-634",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-635",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-636",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-637",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-638",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-639",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-640",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-641",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-642",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-643",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-644",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-645",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-646",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-647",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-648",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-649",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-650",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-651",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-652",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-653",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-654",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-655",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-656",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-657",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-658",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-659",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-660",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-661",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-662",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-663",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-664",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-665",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-666",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-667",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-668",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-669",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-670",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-671",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-672",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-673",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-674",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-675",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-676",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-677",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-678",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-679",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-680",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-681",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-682",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-683",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-684",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-685",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-686",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-687",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-688",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-689",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-690",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-691",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-692",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-693",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-694",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-695",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-696",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-697",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-698",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-699",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-700",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-701",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-702",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-703",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-704",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-705",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-706",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-707",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-708",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-709",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-710",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-711",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-712",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-713",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-714",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-715",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-716",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-717",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-718",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-719",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-720",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-721",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-722",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-723",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-724",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-725",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-726",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-727",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-728",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-729",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-730",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-731",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-732",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-733",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-734",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-735",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-736",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-737",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-738",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-739",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-740",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-741",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-742",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-743",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-744",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-745",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-746",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-747",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-748",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-749",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-750",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-751",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-752",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-753",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-754",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-755",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-756",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-757",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-758",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-759",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-760",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-761",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-762",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-763",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-764",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-765",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-766",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-767",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-768",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-769",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-770",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-771",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-772",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-773",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-774",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-775",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-776",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-777",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-778",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-779",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-780",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-781",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-782",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-783",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-784",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-785",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-786",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-787",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-788",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-789",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-790",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-791",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-792",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-793",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-794",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-795",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-796",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-797",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-798",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-799",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-800",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-801",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-802",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-803",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-804",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-805",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-806",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-807",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-808",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-809",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-810",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-811",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-812",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-813",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-814",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-815",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-816",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-817",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-818",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-819",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-820",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-821",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-822",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-823",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-824",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-825",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-826",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-827",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-828",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-829",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-830",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-831",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-832",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-833",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-834",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-835",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-836",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-837",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-838",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-839",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-840",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-841",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-842",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-843",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-844",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-845",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-846",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-847",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-848",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-849",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-850",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-851",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-852",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-853",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-854",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-855",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-856",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-857",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-858",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-859",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-860",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-861",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-862",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-863",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-864",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-865",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-866",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-867",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-868",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-869",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-870",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-871",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-872",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-873",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-874",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-875",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-876",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-877",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-878",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-879",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-880",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-881",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-882",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-883",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-884",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-885",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-886",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-887",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-888",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-889",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-890",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-891",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-892",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-893",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-894",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-895",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-896",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-897",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-898",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-899",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-900",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-901",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-902",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-903",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-904",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-905",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-906",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-907",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-908",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-909",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-910",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-911",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-912",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-913",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-914",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-915",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-916",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-917",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-918",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-919",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-920",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-921",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-922",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-923",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-924",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-925",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-926",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-927",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-928",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-929",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-930",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-931",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-932",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-933",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-934",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-935",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-936",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-937",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-938",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-939",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-940",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-941",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-942",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-943",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-944",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-945",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-946",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-947",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-948",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-949",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-950",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-951",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-952",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-953",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-954",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-955",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-956",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-957",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-958",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-959",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-960",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-961",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-962",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-963",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-964",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-965",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-966",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-967",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-968",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-969",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-970",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-971",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-972",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-973",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-974",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-975",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-976",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-977",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-978",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-979",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-980",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-981",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-982",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-983",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-984",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 1
+  },
+  {
+    "id": "2202-985",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-986",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-987",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-988",
+    "load": 0,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-989",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 1
+  },
+  {
+    "id": "2202-990",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-991",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 1,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-992",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-993",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-994",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-995",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-996",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-997",
+    "load": 1,
+    "bearing": 1,
+    "cooling": 0,
+    "current": 1,
+    "temperature": 1,
+    "vibration": 0
+  },
+  {
+    "id": "2202-998",
+    "load": 0,
+    "bearing": 0,
+    "cooling": 0,
+    "current": 0,
+    "temperature": 0,
+    "vibration": 0
+  },
+  {
+    "id": "2202-999",
+    "load": 1,
+    "bearing": 0,
+    "cooling": 1,
+    "current": 0,
+    "temperature": 1,
+    "vibration": 0
+  }
+]

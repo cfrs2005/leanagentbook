@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620">
+<title>因果诊断：模型假设、只读证据与有限建议</title>
+<desc>负载、轴承和冷却影响三种电机症状。脚本 Agent 只读合成证据，输出后验、反证和缺失项。干预仅在模拟器中计算，不控制设备。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#587368"/></marker></defs>
+<rect width="1080" height="620" rx="20" fill="#faf6ed"/>
+<g font-family="sans-serif" fill="#263f38">
+<text x="45" y="55" font-size="28" font-weight="bold">先提出假设，再收集证据</text>
+<text x="45" y="88" font-size="17">合成电机模型 · 人为概率表 · 不是工程实测</text>
+<g stroke="#587368" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M180 180 L180 275"/><path d="M180 180 L510 275"/><path d="M180 180 L880 275"/>
+<path d="M510 180 L180 275"/><path d="M510 180 L510 275"/><path d="M510 180 L880 275"/>
+<path d="M880 180 L510 275"/>
+</g>
+<g fill="#e0ebe3" stroke="#587368">
+<rect x="70" y="125" width="220" height="55" rx="10"/><rect x="400" y="125" width="220" height="55" rx="10"/><rect x="770" y="125" width="220" height="55" rx="10"/>
+<rect x="70" y="275" width="220" height="55" rx="10"/><rect x="400" y="275" width="220" height="55" rx="10"/><rect x="770" y="275" width="220" height="55" rx="10"/>
+</g>
+<g text-anchor="middle" font-size="21">
+<text x="180" y="160">L 高负载</text><text x="510" y="160">B 轴承故障</text><text x="880" y="160">C 冷却故障</text>
+<text x="180" y="310">I 电流高</text><text x="510" y="310">T 温度高</text><text x="880" y="310">V 振动高</text>
+</g>
+<path d="M70 365 H1000" stroke="#b9b3a7"/>
+<text x="65" y="410" font-size="21">只读证据 → 冲突检查 → 精确贝叶斯推断 → 支持 / 反对 / 缺失</text>
+<rect x="65" y="445" width="945" height="115" rx="12" fill="#f2e2d4"/>
+<text x="90" y="478" font-size="19">观测：P(H | E)　　模拟干预：P(Y | do(X))</text>
+<text x="90" y="510" font-size="19">反事实：固定同一个体的外生变量 U，再替换结构方程</text>
+<text x="90" y="541" font-size="19" fill="#8c422d">输出验证建议；不发设备命令；最大后验不等于根因确认。</text>
+<text x="65" y="593" font-size="16">图方向和独立噪声是教学假设。未知混杂、测量偏差和模型外故障仍可能存在。</text>
+</g></svg>

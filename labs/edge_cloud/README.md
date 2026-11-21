@@ -29,9 +29,9 @@ python3.12 -m venv /tmp/leanagentbook-edge-env
 
 ## x86 与设备移植
 
-[CI 作业示例](ci-job.yml) 需整合进仓库的 `.github/workflows/` 后才会执行。Ubuntu runner 必须通过 `--expect-arch x86_64`。保存实际工作流 URL、提交 SHA 与 artifact，才可登记 x86 已验证。代码能在 x86 安装，不等于已有 x86 测试证据。
+[真实 x86 CI](https://github.com/cfrs2005/leanagentbook/actions/runs/44878247748) 已通过，提交 `b79f1b575fae7e70311003ea05c12085221f822f`，工作流为 `.github/workflows/edge-evidence.yml`。产物已下载至 [x86 证据](evidence/x86-20261120/README.md)，确认 `x86_64`、CPU provider、真实整数内核和 12 项 OTA 测试。具体 x86 CPU 型号未采集；不把架构字段当成 SoC 型号。保留 [CI 作业示例](ci-job.yml) 供其他仓库整合。
 
-本次可访问目标是 Apple M4 的 CPU；并未验证 GPU、Apple Neural Engine、RK3588、Jetson 或其他 NPU。原任务的“先 x86 后目标平台”顺序尚未完成；应先补 x86，再复跑目标。本章展示的 M4 记录是先行设备实验，不伪装成按原顺序完成。
+本次可访问目标是 Apple M4 的 CPU；并未验证 GPU、Apple Neural Engine、RK3588、Jetson 或其他 NPU。原任务的“先 x86 后目标平台”顺序现已完成：CI 完成后，使用原独立环境完成 [M4 新复跑](evidence/m4-after-x86/README.md)，并将未经修改的 x86 模型直接在 M4 运行。完整复跑及同文件移植各自通过 12 项 OTA 检查。旧 `m4-20261120` 目录保留历史，不覆盖原证据。
 
 RK3588 移植应固定 RKNN Toolkit2 / Runtime / 驱动版本，重新转换并查询算子支持；Jetson 应固定 JetPack / TensorRT / CUDA，重建 engine。逐算子比对、回退比例、峰值内存、散热稳定后延迟与整机能耗都要在目标实机上记录。没有功耗仪或获准的系统测量工具，本次功耗字段为 `null`，不是 0 W，也不使用 TDP 替代。
 

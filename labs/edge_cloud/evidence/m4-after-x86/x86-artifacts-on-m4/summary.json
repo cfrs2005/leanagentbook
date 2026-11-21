@@ -1,0 +1,121 @@
+{
+  "measured_at_utc": "2026-11-21T07:04:02.952320+00:00",
+  "architecture": "arm64",
+  "soc": "Apple M4",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "onnxruntime": "1.23.2",
+  "models": {
+    "float": {
+      "sha256": "d2b294bb0c1786cfe1d2d7a90f690988347baad84bccec16968e4ba8ac2f5e42",
+      "bytes": 3050,
+      "accuracy": 0.939453125,
+      "median_us": 2.333,
+      "p95_us": 2.625,
+      "load_ms": 19.425667,
+      "process_peak_rss_bytes": 69369856,
+      "graph_ops": [
+        "Add",
+        "MatMul",
+        "Relu"
+      ],
+      "executed_kernels": [
+        [
+          "FusedGemm",
+          "CPUExecutionProvider"
+        ],
+        [
+          "Gemm",
+          "CPUExecutionProvider"
+        ]
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "requests": 2560,
+      "warmup": 100,
+      "threads": 1,
+      "input": {
+        "features": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            16
+          ]
+        }
+      },
+      "output": {
+        "logits": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    "int8": {
+      "sha256": "600b1ed50f52ba5ae485aad0db29834c4f012c3fe57f75c44585a1dd724bd91d",
+      "bytes": 3103,
+      "accuracy": 0.935546875,
+      "median_us": 3.916,
+      "p95_us": 4.167,
+      "load_ms": 1.963083,
+      "process_peak_rss_bytes": 69386240,
+      "graph_ops": [
+        "Add",
+        "DequantizeLinear",
+        "MatMul",
+        "QuantizeLinear",
+        "Relu"
+      ],
+      "executed_kernels": [
+        [
+          "Add",
+          "CPUExecutionProvider"
+        ],
+        [
+          "DequantizeLinear",
+          "CPUExecutionProvider"
+        ],
+        [
+          "QLinearMatMul",
+          "CPUExecutionProvider"
+        ],
+        [
+          "QuantizeLinear",
+          "CPUExecutionProvider"
+        ]
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "requests": 2560,
+      "warmup": 100,
+      "threads": 1,
+      "input": {
+        "features": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            16
+          ]
+        }
+      },
+      "output": {
+        "logits": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "source_run": "https://github.com/cfrs2005/leanagentbook/actions/runs/44878247748",
+  "method": "Unmodified x86 artifact models and data executed on M4; no retraining",
+  "power": {
+    "status": "not measured",
+    "watts": null
+  }
+}

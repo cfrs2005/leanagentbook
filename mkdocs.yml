@@ -63,6 +63,9 @@ nav:
   - 分布式与机器人:
       - 18 · 独立 Worker 与调度: chapters/18-distributed-agents.md
       - 19 · 时间序列与异常检测: chapters/19-time-series.md
+      - 20 · ROS 数据与事件: chapters/20-robotics-ros.md
+      - 21 · 边缘推理与安全升级: chapters/21-edge-cloud.md
+      - 22 · 因果诊断与反事实: chapters/22-causal-diagnosis.md
   - 综合设计:
       - 23 · 企业平台架构: chapters/23-platform-architecture.md
       - 24 · 机器人诊断实战: chapters/24-robot-diagnosis.md
@@ -90,7 +93,11 @@ nav:
       - 评测与发布门禁: labs/evaluation/README.md
       - 观测与只读回放: labs/observability/README.md
       - 崩溃与恢复实验: labs/durable_execution/README.md
-      - 机器人诊断实验: labs/robot_diagnosis/GUIDE.md
+      - ROS Bag 实验: labs/robotics_ros/README.md
+      - 边缘推理与升级: labs/edge_cloud/README.md
+      - 因果诊断实验: labs/causal_diagnosis/README.md
+      - 机器人诊断基础: labs/robot_diagnosis/GUIDE.md
+      - 端到端诊断原型: labs/robot_platform/README.md
   - 关于本书:
       - 参与编写: CONTRIBUTING.md
       - 来源记录: references/README.md

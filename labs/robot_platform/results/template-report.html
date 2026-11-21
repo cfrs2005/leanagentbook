@@ -1,0 +1,476 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>机器人诊断教学原型</title><style>body{max-width:980px;margin:40px auto;padding:0 20px;background:#f8f5ee;color:#233c34;font:16px sans-serif}article{background:#fffdf8;padding:24px;margin:18px 0;border:1px solid #c9d7cb;border-radius:12px}h2{font-size:20px}li{margin:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}summary{font-weight:bold;cursor:pointer}</style><h1>机器人诊断 · 证据与复核</h1><p>教学租户 A · 只读页面 · 全部数据为合成 · 不发送控制指令</p><article><h2>tenant-a:robot-a:abnormal</h2><strong>观测异常，待复核</strong><ul><li>电流超限支持检查负载与传感器；不能直接确认电机损坏。</li><li>振动教学标量没有频带定义；现场需先核对采样、单位与安装。</li></ul><p>语言建议（须核对）：请人工核对证据；当前结果不是根因确认。</p><p>根因尚未确认；不发送机器人控制指令。</p><details><summary>查看原始证据、版本与耗时</summary><pre>{
+  &quot;id&quot;: &quot;tenant-a:robot-a:abnormal&quot;,
+  &quot;device&quot;: &quot;robot-a&quot;,
+  &quot;state&quot;: &quot;review&quot;,
+  &quot;report&quot;: {
+    &quot;automatic_control&quot;: false,
+    &quot;diagnosis&quot;: {
+      &quot;automatic_control&quot;: false,
+      &quot;events&quot;: [
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 3.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: []
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 1.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: []
+            }
+          ],
+          &quot;hypotheses&quot;: [],
+          &quot;missing&quot;: [],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;normal&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 5,
+            &quot;start_s&quot;: 0
+          }
+        },
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 10.0,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: [
+                {
+                  &quot;time_s&quot;: 6,
+                  &quot;value&quot;: 9.0
+                },
+                {
+                  &quot;time_s&quot;: 7,
+                  &quot;value&quot;: 10.0
+                }
+              ]
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 8.0,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: [
+                {
+                  &quot;time_s&quot;: 6,
+                  &quot;value&quot;: 7.0
+                },
+                {
+                  &quot;time_s&quot;: 7,
+                  &quot;value&quot;: 8.0
+                }
+              ]
+            }
+          ],
+          &quot;hypotheses&quot;: [
+            {
+              &quot;basis_fields&quot;: [
+                &quot;motor_current_a&quot;,
+                &quot;vibration_mm_s&quot;
+              ],
+              &quot;confirmed&quot;: false,
+              &quot;statement&quot;: &quot;负载变化或传感器偏差可能解释超阈值。&quot;
+            }
+          ],
+          &quot;missing&quot;: [],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;abnormal&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 10,
+            &quot;start_s&quot;: 5
+          }
+        }
+      ],
+      &quot;root_cause_confirmed&quot;: false,
+      &quot;rule&quot;: {
+        &quot;comparison&quot;: &quot;&gt;=&quot;,
+        &quot;minimum_hits_per_signal&quot;: 2,
+        &quot;thresholds&quot;: {
+          &quot;motor_current_a&quot;: 8.0,
+          &quot;vibration_mm_s&quot;: 6.0
+        },
+        &quot;window_seconds&quot;: 5
+      },
+      &quot;rule_version&quot;: &quot;synthetic-threshold-v1&quot;,
+      &quot;schema_version&quot;: &quot;1.0&quot;,
+      &quot;scope&quot;: &quot;synthetic_csv_only&quot;,
+      &quot;source&quot;: {
+        &quot;expected_interval_s&quot;: 1,
+        &quot;sample_count&quot;: 10,
+        &quot;sha256&quot;: &quot;539ac850f2a1d2284f0434091b2584a33a2bc9f0667493f942f3ca8414cbc1d8&quot;,
+        &quot;synthetic&quot;: true
+      }
+    },
+    &quot;language&quot;: {
+      &quot;mode&quot;: &quot;extractive_template&quot;,
+      &quot;text&quot;: &quot;请人工核对证据；当前结果不是根因确认。&quot;,
+      &quot;verified&quot;: true
+    },
+    &quot;measurement&quot;: {
+      &quot;cost_note&quot;: &quot;No paid API; local compute, power and human cost not priced&quot;,
+      &quot;external_api_cost&quot;: 0,
+      &quot;input_bytes&quot;: 113,
+      &quot;processing_seconds&quot;: 0.0009382078424096107
+    },
+    &quot;picture&quot;: {
+      &quot;id&quot;: &quot;motor-schematic-v1&quot;,
+      &quot;model_recognition&quot;: false,
+      &quot;sha256&quot;: &quot;d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0&quot;,
+      &quot;source&quot;: &quot;original synthetic diagram; not a field photograph&quot;
+    },
+    &quot;references&quot;: [
+      {
+        &quot;id&quot;: &quot;current&quot;,
+        &quot;signal&quot;: &quot;motor_current_a&quot;,
+        &quot;source_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+        &quot;text&quot;: &quot;电流超限支持检查负载与传感器；不能直接确认电机损坏。&quot;
+      },
+      {
+        &quot;id&quot;: &quot;vibration&quot;,
+        &quot;signal&quot;: &quot;vibration_mm_s&quot;,
+        &quot;source_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+        &quot;text&quot;: &quot;振动教学标量没有频带定义；现场需先核对采样、单位与安装。&quot;
+      }
+    ],
+    &quot;review_required&quot;: true,
+    &quot;root_cause_confirmed&quot;: false,
+    &quot;status&quot;: &quot;abnormal&quot;,
+    &quot;trace&quot;: [
+      {
+        &quot;step&quot;: 1,
+        &quot;tool&quot;: &quot;analyze_synthetic_csv&quot;
+      },
+      {
+        &quot;step&quot;: 2,
+        &quot;tool&quot;: &quot;retrieve_by_observed_signal&quot;
+      },
+      {
+        &quot;step&quot;: 3,
+        &quot;tool&quot;: &quot;attach_hashed_synthetic_diagram&quot;
+      },
+      {
+        &quot;mode&quot;: &quot;extractive_template&quot;,
+        &quot;step&quot;: 4,
+        &quot;tool&quot;: &quot;language_draft&quot;
+      }
+    ],
+    &quot;versions&quot;: {
+      &quot;config_version&quot;: &quot;synthetic-config-1&quot;,
+      &quot;knowledge_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+      &quot;policy_version&quot;: &quot;readonly-inspection-v1&quot;,
+      &quot;software_version&quot;: &quot;synthetic-fw-1&quot;
+    }
+  },
+  &quot;report_hash&quot;: &quot;e6a0f6183755e4dd9289f8f1ce448e12d985fb9b1b8db5983220a661f4874d2c&quot;
+}</pre></details></article><article><h2>tenant-a:robot-a:missing</h2><strong>数据不足，需补采</strong><ul><li>缺失样本不能当作正常；先检查采集链路并补充记录。</li></ul><p>语言建议（须核对）：请人工核对证据；当前结果不是根因确认。</p><p>根因尚未确认；不发送机器人控制指令。</p><details><summary>查看原始证据、版本与耗时</summary><pre>{
+  &quot;id&quot;: &quot;tenant-a:robot-a:missing&quot;,
+  &quot;device&quot;: &quot;robot-a&quot;,
+  &quot;state&quot;: &quot;review&quot;,
+  &quot;report&quot;: {
+    &quot;automatic_control&quot;: false,
+    &quot;diagnosis&quot;: {
+      &quot;automatic_control&quot;: false,
+      &quot;events&quot;: [
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 3.2,
+              &quot;observed_count&quot;: 3,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: []
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 1.2,
+              &quot;observed_count&quot;: 4,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: []
+            }
+          ],
+          &quot;hypotheses&quot;: [],
+          &quot;missing&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;time_s&quot;: 1
+            },
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;time_s&quot;: 2
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;time_s&quot;: 2
+            }
+          ],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;insufficient_data&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;,
+            &quot;窗口有缺失值，无法排除未观测时段的异常。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 5,
+            &quot;start_s&quot;: 0
+          }
+        },
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 3.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: []
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 1.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: []
+            }
+          ],
+          &quot;hypotheses&quot;: [],
+          &quot;missing&quot;: [],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;normal&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 10,
+            &quot;start_s&quot;: 5
+          }
+        }
+      ],
+      &quot;root_cause_confirmed&quot;: false,
+      &quot;rule&quot;: {
+        &quot;comparison&quot;: &quot;&gt;=&quot;,
+        &quot;minimum_hits_per_signal&quot;: 2,
+        &quot;thresholds&quot;: {
+          &quot;motor_current_a&quot;: 8.0,
+          &quot;vibration_mm_s&quot;: 6.0
+        },
+        &quot;window_seconds&quot;: 5
+      },
+      &quot;rule_version&quot;: &quot;synthetic-threshold-v1&quot;,
+      &quot;schema_version&quot;: &quot;1.0&quot;,
+      &quot;scope&quot;: &quot;synthetic_csv_only&quot;,
+      &quot;source&quot;: {
+        &quot;expected_interval_s&quot;: 1,
+        &quot;sample_count&quot;: 9,
+        &quot;sha256&quot;: &quot;84f3971adbdb29c0df7609c12b7c6de94dbd61238d462b3e1f036146143a0344&quot;,
+        &quot;synthetic&quot;: true
+      }
+    },
+    &quot;language&quot;: {
+      &quot;mode&quot;: &quot;extractive_template&quot;,
+      &quot;text&quot;: &quot;请人工核对证据；当前结果不是根因确认。&quot;,
+      &quot;verified&quot;: true
+    },
+    &quot;measurement&quot;: {
+      &quot;cost_note&quot;: &quot;No paid API; local compute, power and human cost not priced&quot;,
+      &quot;external_api_cost&quot;: 0,
+      &quot;input_bytes&quot;: 107,
+      &quot;processing_seconds&quot;: 0.0010738749988377094
+    },
+    &quot;picture&quot;: {
+      &quot;id&quot;: &quot;motor-schematic-v1&quot;,
+      &quot;model_recognition&quot;: false,
+      &quot;sha256&quot;: &quot;d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0&quot;,
+      &quot;source&quot;: &quot;original synthetic diagram; not a field photograph&quot;
+    },
+    &quot;references&quot;: [
+      {
+        &quot;id&quot;: &quot;missing&quot;,
+        &quot;signal&quot;: &quot;missing&quot;,
+        &quot;source_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+        &quot;text&quot;: &quot;缺失样本不能当作正常；先检查采集链路并补充记录。&quot;
+      }
+    ],
+    &quot;review_required&quot;: true,
+    &quot;root_cause_confirmed&quot;: false,
+    &quot;status&quot;: &quot;insufficient_data&quot;,
+    &quot;trace&quot;: [
+      {
+        &quot;step&quot;: 1,
+        &quot;tool&quot;: &quot;analyze_synthetic_csv&quot;
+      },
+      {
+        &quot;step&quot;: 2,
+        &quot;tool&quot;: &quot;retrieve_by_observed_signal&quot;
+      },
+      {
+        &quot;step&quot;: 3,
+        &quot;tool&quot;: &quot;attach_hashed_synthetic_diagram&quot;
+      },
+      {
+        &quot;mode&quot;: &quot;extractive_template&quot;,
+        &quot;step&quot;: 4,
+        &quot;tool&quot;: &quot;language_draft&quot;
+      }
+    ],
+    &quot;versions&quot;: {
+      &quot;config_version&quot;: &quot;synthetic-config-1&quot;,
+      &quot;knowledge_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+      &quot;policy_version&quot;: &quot;readonly-inspection-v1&quot;,
+      &quot;software_version&quot;: &quot;synthetic-fw-1&quot;
+    }
+  },
+  &quot;report_hash&quot;: &quot;06a6d9bec487dd9986b7a110c2f78ce0f2dd428e440273e1335c9248e158c2cf&quot;
+}</pre></details></article><article><h2>tenant-a:robot-a:normal</h2><strong>当前规则未发现异常</strong><ul></ul><p>语言建议（须核对）：请人工核对证据；当前结果不是根因确认。</p><p>根因尚未确认；不发送机器人控制指令。</p><details><summary>查看原始证据、版本与耗时</summary><pre>{
+  &quot;id&quot;: &quot;tenant-a:robot-a:normal&quot;,
+  &quot;device&quot;: &quot;robot-a&quot;,
+  &quot;state&quot;: &quot;review&quot;,
+  &quot;report&quot;: {
+    &quot;automatic_control&quot;: false,
+    &quot;diagnosis&quot;: {
+      &quot;automatic_control&quot;: false,
+      &quot;events&quot;: [
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 3.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: []
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 1.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: []
+            }
+          ],
+          &quot;hypotheses&quot;: [],
+          &quot;missing&quot;: [],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;normal&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 5,
+            &quot;start_s&quot;: 0
+          }
+        },
+        {
+          &quot;evidence&quot;: [
+            {
+              &quot;field&quot;: &quot;motor_current_a&quot;,
+              &quot;max&quot;: 3.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 8.0,
+              &quot;threshold_hits&quot;: []
+            },
+            {
+              &quot;field&quot;: &quot;vibration_mm_s&quot;,
+              &quot;max&quot;: 1.2,
+              &quot;observed_count&quot;: 5,
+              &quot;threshold&quot;: 6.0,
+              &quot;threshold_hits&quot;: []
+            }
+          ],
+          &quot;hypotheses&quot;: [],
+          &quot;missing&quot;: [],
+          &quot;next_step&quot;: &quot;人工核对工况和传感器记录；必要时按现场安全规程补采。&quot;,
+          &quot;status&quot;: &quot;normal&quot;,
+          &quot;uncertainty&quot;: [
+            &quot;阈值仅用于教学；未校准故障概率。&quot;,
+            &quot;合成数据不能证明实机表现；故障假设不等于根因。&quot;
+          ],
+          &quot;window&quot;: {
+            &quot;end_exclusive_s&quot;: 10,
+            &quot;start_s&quot;: 5
+          }
+        }
+      ],
+      &quot;root_cause_confirmed&quot;: false,
+      &quot;rule&quot;: {
+        &quot;comparison&quot;: &quot;&gt;=&quot;,
+        &quot;minimum_hits_per_signal&quot;: 2,
+        &quot;thresholds&quot;: {
+          &quot;motor_current_a&quot;: 8.0,
+          &quot;vibration_mm_s&quot;: 6.0
+        },
+        &quot;window_seconds&quot;: 5
+      },
+      &quot;rule_version&quot;: &quot;synthetic-threshold-v1&quot;,
+      &quot;schema_version&quot;: &quot;1.0&quot;,
+      &quot;scope&quot;: &quot;synthetic_csv_only&quot;,
+      &quot;source&quot;: {
+        &quot;expected_interval_s&quot;: 1,
+        &quot;sample_count&quot;: 10,
+        &quot;sha256&quot;: &quot;525b8ac082e9073b3c854ccbaaaf22dc3174fe9f9c3ec791c416042f0b01b2c8&quot;,
+        &quot;synthetic&quot;: true
+      }
+    },
+    &quot;language&quot;: {
+      &quot;mode&quot;: &quot;extractive_template&quot;,
+      &quot;text&quot;: &quot;请人工核对证据；当前结果不是根因确认。&quot;,
+      &quot;verified&quot;: true
+    },
+    &quot;measurement&quot;: {
+      &quot;cost_note&quot;: &quot;No paid API; local compute, power and human cost not priced&quot;,
+      &quot;external_api_cost&quot;: 0,
+      &quot;input_bytes&quot;: 118,
+      &quot;processing_seconds&quot;: 0.0006244578398764133
+    },
+    &quot;picture&quot;: {
+      &quot;id&quot;: &quot;motor-schematic-v1&quot;,
+      &quot;model_recognition&quot;: false,
+      &quot;sha256&quot;: &quot;d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0&quot;,
+      &quot;source&quot;: &quot;original synthetic diagram; not a field photograph&quot;
+    },
+    &quot;references&quot;: [],
+    &quot;review_required&quot;: true,
+    &quot;root_cause_confirmed&quot;: false,
+    &quot;status&quot;: &quot;normal&quot;,
+    &quot;trace&quot;: [
+      {
+        &quot;step&quot;: 1,
+        &quot;tool&quot;: &quot;analyze_synthetic_csv&quot;
+      },
+      {
+        &quot;step&quot;: 2,
+        &quot;tool&quot;: &quot;retrieve_by_observed_signal&quot;
+      },
+      {
+        &quot;step&quot;: 3,
+        &quot;tool&quot;: &quot;attach_hashed_synthetic_diagram&quot;
+      },
+      {
+        &quot;mode&quot;: &quot;extractive_template&quot;,
+        &quot;step&quot;: 4,
+        &quot;tool&quot;: &quot;language_draft&quot;
+      }
+    ],
+    &quot;versions&quot;: {
+      &quot;config_version&quot;: &quot;synthetic-config-1&quot;,
+      &quot;knowledge_version&quot;: &quot;86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5&quot;,
+      &quot;policy_version&quot;: &quot;readonly-inspection-v1&quot;,
+      &quot;software_version&quot;: &quot;synthetic-fw-1&quot;
+    }
+  },
+  &quot;report_hash&quot;: &quot;cbbcc3585b8cebcd9a4c858c401ad3147d7c8fff958c8b176c1b7492de19c519&quot;
+}</pre></details></article><p>检查审批记录：1（演示脚本模拟人员提交）</p></html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+<title id="title">CPU ONNX 实测延迟</title><desc id="desc">两组真实推理的中位数和 P95；不是设备性能排名。</desc>
+<rect width="1000" height="360" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,sans-serif" fill="#22312F">
+<text x="30" y="44" font-size="25">CPU 单请求延迟 · 微秒 · 越短越快</text>
+<text x="30" y="76" font-size="16">每组 2560 次，预热 100 次，单线程；数据见 requests.csv</text>
+<text x="30" y="140" font-size="20">float</text>
+<rect x="130" y="120" width="317.5" height="20" fill="#316653"/>
+<text x="462.5" y="136" font-size="16">中位 2.292 μs</text>
+<rect x="130" y="150" width="381.0" height="20" fill="#B94F2D"/>
+<text x="526.0" y="166" font-size="16">P95 2.750 μs</text>
+<text x="30" y="235" font-size="20">int8</text>
+<rect x="130" y="215" width="531.0" height="20" fill="#316653"/>
+<text x="676.0" y="231" font-size="16">中位 3.833 μs</text>
+<rect x="130" y="245" width="560.0" height="20" fill="#B94F2D"/>
+<text x="705.0" y="261" font-size="16">P95 4.042 μs</text>
+<text x="30" y="335" font-size="16">小模型中量化开销可能超过收益；功耗未测，不能从延迟推算。</text></g></svg>

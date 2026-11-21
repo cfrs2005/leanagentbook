@@ -1,0 +1,632 @@
+{
+  "schema": "robot-platform-demo-v1",
+  "synthetic": true,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.3-arm64-arm-64bit"
+  },
+  "offline_attempt": {
+    "sent": 0,
+    "offline": true
+  },
+  "simulated_ack_loss": {
+    "sent": 0,
+    "offline": false,
+    "ack_lost": true
+  },
+  "recovered_sync": {
+    "sent": 3,
+    "offline": false
+  },
+  "expected": {
+    "normal": "normal",
+    "abnormal": "abnormal",
+    "missing": "insufficient_data"
+  },
+  "actual": {
+    "abnormal": "abnormal",
+    "missing": "insufficient_data",
+    "normal": "normal"
+  },
+  "correct_cases": 3,
+  "case_count": 3,
+  "unique_jobs": 3,
+  "approval_denied_status": 403,
+  "approval": [
+    200,
+    {
+      "automatic_control": false,
+      "duplicate": false
+    }
+  ],
+  "duplicate_approval": [
+    200,
+    {
+      "automatic_control": false,
+      "duplicate": true
+    }
+  ],
+  "reports": {
+    "inspections": [
+      {
+        "action": "create_inspection_record",
+        "actor": "approver",
+        "job_id": "tenant-a:robot-a:abnormal",
+        "report_hash": "bc1335b90f8eb32c70e372c0febc814a4495e57730df113a74cc26c1034a4785"
+      }
+    ],
+    "jobs": [
+      {
+        "device": "robot-a",
+        "id": "tenant-a:robot-a:abnormal",
+        "report": {
+          "automatic_control": false,
+          "diagnosis": {
+            "automatic_control": false,
+            "events": [
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 3.2,
+                    "observed_count": 5,
+                    "threshold": 8.0,
+                    "threshold_hits": []
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 1.2,
+                    "observed_count": 5,
+                    "threshold": 6.0,
+                    "threshold_hits": []
+                  }
+                ],
+                "hypotheses": [],
+                "missing": [],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "normal",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。"
+                ],
+                "window": {
+                  "end_exclusive_s": 5,
+                  "start_s": 0
+                }
+              },
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 10.0,
+                    "observed_count": 5,
+                    "threshold": 8.0,
+                    "threshold_hits": [
+                      {
+                        "time_s": 6,
+                        "value": 9.0
+                      },
+                      {
+                        "time_s": 7,
+                        "value": 10.0
+                      }
+                    ]
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 8.0,
+                    "observed_count": 5,
+                    "threshold": 6.0,
+                    "threshold_hits": [
+                      {
+                        "time_s": 6,
+                        "value": 7.0
+                      },
+                      {
+                        "time_s": 7,
+                        "value": 8.0
+                      }
+                    ]
+                  }
+                ],
+                "hypotheses": [
+                  {
+                    "basis_fields": [
+                      "motor_current_a",
+                      "vibration_mm_s"
+                    ],
+                    "confirmed": false,
+                    "statement": "负载变化或传感器偏差可能解释超阈值。"
+                  }
+                ],
+                "missing": [],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "abnormal",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。"
+                ],
+                "window": {
+                  "end_exclusive_s": 10,
+                  "start_s": 5
+                }
+              }
+            ],
+            "root_cause_confirmed": false,
+            "rule": {
+              "comparison": ">=",
+              "minimum_hits_per_signal": 2,
+              "thresholds": {
+                "motor_current_a": 8.0,
+                "vibration_mm_s": 6.0
+              },
+              "window_seconds": 5
+            },
+            "rule_version": "synthetic-threshold-v1",
+            "schema_version": "1.0",
+            "scope": "synthetic_csv_only",
+            "source": {
+              "expected_interval_s": 1,
+              "sample_count": 10,
+              "sha256": "539ac850f2a1d2284f0434091b2584a33a2bc9f0667493f942f3ca8414cbc1d8",
+              "synthetic": true
+            }
+          },
+          "language": {
+            "generation_seconds": 0.4660260840319097,
+            "input_tokens": 40,
+            "mode": "real_local_flan_t5_draft",
+            "model": "google/flan-t5-small",
+            "output_tokens": 7,
+            "policy": "Unverified draft only; cannot change evidence, status, approval or control",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "text": "Observe the evidence.",
+            "verified": false
+          },
+          "measurement": {
+            "cost_note": "No paid API; local compute, power and human cost not priced",
+            "external_api_cost": 0,
+            "input_bytes": 113,
+            "processing_seconds": 0.4673554580658674
+          },
+          "picture": {
+            "id": "motor-schematic-v1",
+            "model_recognition": false,
+            "sha256": "d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0",
+            "source": "original synthetic diagram; not a field photograph"
+          },
+          "references": [
+            {
+              "id": "current",
+              "signal": "motor_current_a",
+              "source_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+              "text": "电流超限支持检查负载与传感器；不能直接确认电机损坏。"
+            },
+            {
+              "id": "vibration",
+              "signal": "vibration_mm_s",
+              "source_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+              "text": "振动教学标量没有频带定义；现场需先核对采样、单位与安装。"
+            }
+          ],
+          "review_required": true,
+          "root_cause_confirmed": false,
+          "status": "abnormal",
+          "trace": [
+            {
+              "step": 1,
+              "tool": "analyze_synthetic_csv"
+            },
+            {
+              "step": 2,
+              "tool": "retrieve_by_observed_signal"
+            },
+            {
+              "step": 3,
+              "tool": "attach_hashed_synthetic_diagram"
+            },
+            {
+              "mode": "real_local_flan_t5_draft",
+              "step": 4,
+              "tool": "language_draft"
+            }
+          ],
+          "versions": {
+            "config_version": "synthetic-config-1",
+            "knowledge_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+            "policy_version": "readonly-inspection-v1",
+            "software_version": "synthetic-fw-1"
+          }
+        },
+        "report_hash": "bc1335b90f8eb32c70e372c0febc814a4495e57730df113a74cc26c1034a4785",
+        "state": "review"
+      },
+      {
+        "device": "robot-a",
+        "id": "tenant-a:robot-a:missing",
+        "report": {
+          "automatic_control": false,
+          "diagnosis": {
+            "automatic_control": false,
+            "events": [
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 3.2,
+                    "observed_count": 3,
+                    "threshold": 8.0,
+                    "threshold_hits": []
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 1.2,
+                    "observed_count": 4,
+                    "threshold": 6.0,
+                    "threshold_hits": []
+                  }
+                ],
+                "hypotheses": [],
+                "missing": [
+                  {
+                    "field": "motor_current_a",
+                    "time_s": 1
+                  },
+                  {
+                    "field": "motor_current_a",
+                    "time_s": 2
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "time_s": 2
+                  }
+                ],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "insufficient_data",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。",
+                  "窗口有缺失值，无法排除未观测时段的异常。"
+                ],
+                "window": {
+                  "end_exclusive_s": 5,
+                  "start_s": 0
+                }
+              },
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 3.2,
+                    "observed_count": 5,
+                    "threshold": 8.0,
+                    "threshold_hits": []
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 1.2,
+                    "observed_count": 5,
+                    "threshold": 6.0,
+                    "threshold_hits": []
+                  }
+                ],
+                "hypotheses": [],
+                "missing": [],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "normal",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。"
+                ],
+                "window": {
+                  "end_exclusive_s": 10,
+                  "start_s": 5
+                }
+              }
+            ],
+            "root_cause_confirmed": false,
+            "rule": {
+              "comparison": ">=",
+              "minimum_hits_per_signal": 2,
+              "thresholds": {
+                "motor_current_a": 8.0,
+                "vibration_mm_s": 6.0
+              },
+              "window_seconds": 5
+            },
+            "rule_version": "synthetic-threshold-v1",
+            "schema_version": "1.0",
+            "scope": "synthetic_csv_only",
+            "source": {
+              "expected_interval_s": 1,
+              "sample_count": 9,
+              "sha256": "84f3971adbdb29c0df7609c12b7c6de94dbd61238d462b3e1f036146143a0344",
+              "synthetic": true
+            }
+          },
+          "language": {
+            "generation_seconds": 0.08277899981476367,
+            "input_tokens": 41,
+            "mode": "real_local_flan_t5_draft",
+            "model": "google/flan-t5-small",
+            "output_tokens": 18,
+            "policy": "Unverified draft only; cannot change evidence, status, approval or control",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "text": "i.e. a systyrical error.",
+            "verified": false
+          },
+          "measurement": {
+            "cost_note": "No paid API; local compute, power and human cost not priced",
+            "external_api_cost": 0,
+            "input_bytes": 107,
+            "processing_seconds": 0.08346441690810025
+          },
+          "picture": {
+            "id": "motor-schematic-v1",
+            "model_recognition": false,
+            "sha256": "d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0",
+            "source": "original synthetic diagram; not a field photograph"
+          },
+          "references": [
+            {
+              "id": "missing",
+              "signal": "missing",
+              "source_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+              "text": "缺失样本不能当作正常；先检查采集链路并补充记录。"
+            }
+          ],
+          "review_required": true,
+          "root_cause_confirmed": false,
+          "status": "insufficient_data",
+          "trace": [
+            {
+              "step": 1,
+              "tool": "analyze_synthetic_csv"
+            },
+            {
+              "step": 2,
+              "tool": "retrieve_by_observed_signal"
+            },
+            {
+              "step": 3,
+              "tool": "attach_hashed_synthetic_diagram"
+            },
+            {
+              "mode": "real_local_flan_t5_draft",
+              "step": 4,
+              "tool": "language_draft"
+            }
+          ],
+          "versions": {
+            "config_version": "synthetic-config-1",
+            "knowledge_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+            "policy_version": "readonly-inspection-v1",
+            "software_version": "synthetic-fw-1"
+          }
+        },
+        "report_hash": "9ec5120d4851350308e39504a6c0ec696897874f33ee9e06a5046627fba2f756",
+        "state": "review"
+      },
+      {
+        "device": "robot-a",
+        "id": "tenant-a:robot-a:normal",
+        "report": {
+          "automatic_control": false,
+          "diagnosis": {
+            "automatic_control": false,
+            "events": [
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 3.2,
+                    "observed_count": 5,
+                    "threshold": 8.0,
+                    "threshold_hits": []
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 1.2,
+                    "observed_count": 5,
+                    "threshold": 6.0,
+                    "threshold_hits": []
+                  }
+                ],
+                "hypotheses": [],
+                "missing": [],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "normal",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。"
+                ],
+                "window": {
+                  "end_exclusive_s": 5,
+                  "start_s": 0
+                }
+              },
+              {
+                "evidence": [
+                  {
+                    "field": "motor_current_a",
+                    "max": 3.2,
+                    "observed_count": 5,
+                    "threshold": 8.0,
+                    "threshold_hits": []
+                  },
+                  {
+                    "field": "vibration_mm_s",
+                    "max": 1.2,
+                    "observed_count": 5,
+                    "threshold": 6.0,
+                    "threshold_hits": []
+                  }
+                ],
+                "hypotheses": [],
+                "missing": [],
+                "next_step": "人工核对工况和传感器记录；必要时按现场安全规程补采。",
+                "status": "normal",
+                "uncertainty": [
+                  "阈值仅用于教学；未校准故障概率。",
+                  "合成数据不能证明实机表现；故障假设不等于根因。"
+                ],
+                "window": {
+                  "end_exclusive_s": 10,
+                  "start_s": 5
+                }
+              }
+            ],
+            "root_cause_confirmed": false,
+            "rule": {
+              "comparison": ">=",
+              "minimum_hits_per_signal": 2,
+              "thresholds": {
+                "motor_current_a": 8.0,
+                "vibration_mm_s": 6.0
+              },
+              "window_seconds": 5
+            },
+            "rule_version": "synthetic-threshold-v1",
+            "schema_version": "1.0",
+            "scope": "synthetic_csv_only",
+            "source": {
+              "expected_interval_s": 1,
+              "sample_count": 10,
+              "sha256": "525b8ac082e9073b3c854ccbaaaf22dc3174fe9f9c3ec791c416042f0b01b2c8",
+              "synthetic": true
+            }
+          },
+          "language": {
+            "generation_seconds": 0.020369624951854348,
+            "input_tokens": 38,
+            "mode": "real_local_flan_t5_draft",
+            "model": "google/flan-t5-small",
+            "output_tokens": 3,
+            "policy": "Unverified draft only; cannot change evidence, status, approval or control",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "text": ".",
+            "verified": false
+          },
+          "measurement": {
+            "cost_note": "No paid API; local compute, power and human cost not priced",
+            "external_api_cost": 0,
+            "input_bytes": 118,
+            "processing_seconds": 0.021050707902759314
+          },
+          "picture": {
+            "id": "motor-schematic-v1",
+            "model_recognition": false,
+            "sha256": "d6c088b5a8256e2a3a625e26e00173f1aa9528309071e9ac48b236e7b1d6cfe0",
+            "source": "original synthetic diagram; not a field photograph"
+          },
+          "references": [],
+          "review_required": true,
+          "root_cause_confirmed": false,
+          "status": "normal",
+          "trace": [
+            {
+              "step": 1,
+              "tool": "analyze_synthetic_csv"
+            },
+            {
+              "step": 2,
+              "tool": "retrieve_by_observed_signal"
+            },
+            {
+              "step": 3,
+              "tool": "attach_hashed_synthetic_diagram"
+            },
+            {
+              "mode": "real_local_flan_t5_draft",
+              "step": 4,
+              "tool": "language_draft"
+            }
+          ],
+          "versions": {
+            "config_version": "synthetic-config-1",
+            "knowledge_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+            "policy_version": "readonly-inspection-v1",
+            "software_version": "synthetic-fw-1"
+          }
+        },
+        "report_hash": "9bf156b64f3ad5ab259d7f2fc06eba61c7cca6de2ee04ac453b0209c80d752f5",
+        "state": "review"
+      }
+    ],
+    "tenant": "tenant-a"
+  },
+  "audit": [
+    {
+      "sequence": 1,
+      "kind": "ingested",
+      "job_id": "tenant-a:robot-a:abnormal",
+      "tenant": "tenant-a",
+      "detail": {
+        "payload_hash": "73ff43c7b86653fa084d5858682a515716889df4fceac0acb70a2d3e4eb54dcc"
+      }
+    },
+    {
+      "sequence": 2,
+      "kind": "ingested",
+      "job_id": "tenant-a:robot-a:missing",
+      "tenant": "tenant-a",
+      "detail": {
+        "payload_hash": "7bd1d6abd815e72a62fdc23e59800c4e7ffd9d742395e2266bc0852665afd785"
+      }
+    },
+    {
+      "sequence": 3,
+      "kind": "ingested",
+      "job_id": "tenant-a:robot-a:normal",
+      "tenant": "tenant-a",
+      "detail": {
+        "payload_hash": "29e04b2d8d707546c4709d136cbed64332fe79a5587030be2596a569639a19db"
+      }
+    },
+    {
+      "sequence": 4,
+      "kind": "report_ready",
+      "job_id": "tenant-a:robot-a:abnormal",
+      "tenant": "tenant-a",
+      "detail": {
+        "report_hash": "bc1335b90f8eb32c70e372c0febc814a4495e57730df113a74cc26c1034a4785"
+      }
+    },
+    {
+      "sequence": 5,
+      "kind": "report_ready",
+      "job_id": "tenant-a:robot-a:missing",
+      "tenant": "tenant-a",
+      "detail": {
+        "report_hash": "9ec5120d4851350308e39504a6c0ec696897874f33ee9e06a5046627fba2f756"
+      }
+    },
+    {
+      "sequence": 6,
+      "kind": "report_ready",
+      "job_id": "tenant-a:robot-a:normal",
+      "tenant": "tenant-a",
+      "detail": {
+        "report_hash": "9bf156b64f3ad5ab259d7f2fc06eba61c7cca6de2ee04ac453b0209c80d752f5"
+      }
+    },
+    {
+      "sequence": 7,
+      "kind": "inspection_approved",
+      "job_id": "tenant-a:robot-a:abnormal",
+      "tenant": "tenant-a",
+      "detail": {
+        "action": "create_inspection_record"
+      }
+    }
+  ],
+  "knowledge_version": "86801dee347848a1c2da5b3db109d74926ab53ba799ab1a83eb7df3879647de5",
+  "wall_seconds_excluding_model_load": 1.1473912501242012,
+  "model_mode": "real_local_model",
+  "scope": "Local HTTP and SQLite; no robot, cloud host, real identity provider or physical control",
+  "source_hashes": {
+    "platform_app.py": "d1e0bdf64a6d66ebd8d5288f1b17e8facc9eaafb141ef8564b4b0611669f0b75",
+    "demo.py": "4c776390607f32672f43cebb326b0e3a45121937273cc7730d43f1304d7074b0",
+    "model_adapter.py": "0ada92e2c4affd70e4111efedb24311bd579e3455d7da521895e7bb76e1e51c4"
+  }
+}

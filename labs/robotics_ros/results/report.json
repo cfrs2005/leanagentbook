@@ -1,0 +1,524 @@
+{
+  "synthetic": true,
+  "python": "3.12.14",
+  "rosbags": "0.10.11",
+  "topics": {
+    "/lidar": {
+      "count": 40,
+      "expected": 40,
+      "missing_sequences": [],
+      "median_period_ms": 100.0,
+      "max_gap_ms": 100.0,
+      "observed_hz": 10.0,
+      "record_minus_header_ms_range": [
+        5.0,
+        7.0
+      ]
+    },
+    "/camera": {
+      "count": 40,
+      "expected": 40,
+      "missing_sequences": [],
+      "median_period_ms": 100.0,
+      "max_gap_ms": 100.0,
+      "observed_hz": 10.0,
+      "record_minus_header_ms_range": [
+        -65.0,
+        -63.0
+      ]
+    },
+    "/imu": {
+      "count": 190,
+      "expected": 200,
+      "missing_sequences": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "median_period_ms": 20.0,
+      "max_gap_ms": 220.0,
+      "observed_hz": 47.48743718592965,
+      "record_minus_header_ms_range": [
+        5.0,
+        7.0
+      ]
+    },
+    "/encoder": {
+      "count": 80,
+      "expected": 80,
+      "missing_sequences": [],
+      "median_period_ms": 50.0,
+      "max_gap_ms": 50.0,
+      "observed_hz": 20.0,
+      "record_minus_header_ms_range": [
+        5.0,
+        7.0
+      ]
+    },
+    "/motor": {
+      "count": 80,
+      "expected": 80,
+      "missing_sequences": [],
+      "median_period_ms": 50.0,
+      "max_gap_ms": 50.0,
+      "observed_hz": 20.0,
+      "record_minus_header_ms_range": [
+        5.0,
+        7.0
+      ]
+    },
+    "/battery": {
+      "count": 8,
+      "expected": 8,
+      "missing_sequences": [],
+      "median_period_ms": 500.0,
+      "max_gap_ms": 500.0,
+      "observed_hz": 2.0,
+      "record_minus_header_ms_range": [
+        5.0,
+        7.0
+      ]
+    },
+    "/context": {
+      "count": 1,
+      "expected": 1,
+      "kind": "nonperiodic String"
+    },
+    "/events": {
+      "count": 1,
+      "expected": 1,
+      "kind": "nonperiodic String"
+    }
+  },
+  "alignment_before": [
+    {
+      "camera_seq": 0,
+      "imu_seq": 3,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 1,
+      "imu_seq": 8,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 2,
+      "imu_seq": 13,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 3,
+      "imu_seq": 18,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 4,
+      "imu_seq": 23,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 5,
+      "imu_seq": 28,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 6,
+      "imu_seq": 33,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 7,
+      "imu_seq": 38,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 8,
+      "imu_seq": 43,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 9,
+      "imu_seq": 48,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 10,
+      "imu_seq": 53,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 11,
+      "imu_seq": 58,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 12,
+      "imu_seq": 63,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 13,
+      "imu_seq": 68,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 14,
+      "imu_seq": 73,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 15,
+      "imu_seq": 78,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 16,
+      "imu_seq": 83,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 17,
+      "imu_seq": 88,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 18,
+      "imu_seq": 93,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 19,
+      "imu_seq": 98,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 20,
+      "imu_seq": null,
+      "true_error_ns": null
+    },
+    {
+      "camera_seq": 21,
+      "imu_seq": null,
+      "true_error_ns": null
+    },
+    {
+      "camera_seq": 22,
+      "imu_seq": 113,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 23,
+      "imu_seq": 118,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 24,
+      "imu_seq": 123,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 25,
+      "imu_seq": 128,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 26,
+      "imu_seq": 133,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 27,
+      "imu_seq": 138,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 28,
+      "imu_seq": 143,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 29,
+      "imu_seq": 148,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 30,
+      "imu_seq": 153,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 31,
+      "imu_seq": 158,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 32,
+      "imu_seq": 163,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 33,
+      "imu_seq": 168,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 34,
+      "imu_seq": 173,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 35,
+      "imu_seq": 178,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 36,
+      "imu_seq": 183,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 37,
+      "imu_seq": 188,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 38,
+      "imu_seq": 193,
+      "true_error_ns": 60000000
+    },
+    {
+      "camera_seq": 39,
+      "imu_seq": 198,
+      "true_error_ns": 60000000
+    }
+  ],
+  "alignment_after": [
+    {
+      "camera_seq": 0,
+      "imu_seq": 0,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 1,
+      "imu_seq": 5,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 2,
+      "imu_seq": 10,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 3,
+      "imu_seq": 15,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 4,
+      "imu_seq": 20,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 5,
+      "imu_seq": 25,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 6,
+      "imu_seq": 30,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 7,
+      "imu_seq": 35,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 8,
+      "imu_seq": 40,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 9,
+      "imu_seq": 45,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 10,
+      "imu_seq": 50,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 11,
+      "imu_seq": 55,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 12,
+      "imu_seq": 60,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 13,
+      "imu_seq": 65,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 14,
+      "imu_seq": 70,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 15,
+      "imu_seq": 75,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 16,
+      "imu_seq": 80,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 17,
+      "imu_seq": 85,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 18,
+      "imu_seq": 90,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 19,
+      "imu_seq": 95,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 20,
+      "imu_seq": null,
+      "true_error_ns": null
+    },
+    {
+      "camera_seq": 21,
+      "imu_seq": null,
+      "true_error_ns": null
+    },
+    {
+      "camera_seq": 22,
+      "imu_seq": 110,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 23,
+      "imu_seq": 115,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 24,
+      "imu_seq": 120,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 25,
+      "imu_seq": 125,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 26,
+      "imu_seq": 130,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 27,
+      "imu_seq": 135,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 28,
+      "imu_seq": 140,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 29,
+      "imu_seq": 145,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 30,
+      "imu_seq": 150,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 31,
+      "imu_seq": 155,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 32,
+      "imu_seq": 160,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 33,
+      "imu_seq": 165,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 34,
+      "imu_seq": 170,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 35,
+      "imu_seq": 175,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 36,
+      "imu_seq": 180,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 37,
+      "imu_seq": 185,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 38,
+      "imu_seq": 190,
+      "true_error_ns": 0
+    },
+    {
+      "camera_seq": 39,
+      "imu_seq": 195,
+      "true_error_ns": 0
+    }
+  ],
+  "event": {
+    "record_window_relative_s": [
+      1.8,
+      2.6
+    ],
+    "sensor_rows": 80,
+    "context_rows": 2,
+    "anomalous_motor_sequences": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "thinned_motor_rows": 76,
+  "scope": "Offline CDR/SQLite readback only; no DDS, ros2 bag play or physical device validation"
+}

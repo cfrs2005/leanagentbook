@@ -1,0 +1,23 @@
+{
+  "tests": [
+    "__main__.SignedUpdateTests.test_canary_excludes_device",
+    "__main__.SignedUpdateTests.test_damaged_signature",
+    "__main__.SignedUpdateTests.test_download_interruption",
+    "__main__.SignedUpdateTests.test_metadata_tamper",
+    "__main__.SignedUpdateTests.test_offline_uses_existing_inference",
+    "__main__.SignedUpdateTests.test_payload_tamper",
+    "__main__.SignedUpdateTests.test_real_health_failure_rolls_back",
+    "__main__.SignedUpdateTests.test_real_quantized_model_activation",
+    "__main__.SignedUpdateTests.test_restart_after_activation",
+    "__main__.SignedUpdateTests.test_signed_incompatible_contract",
+    "__main__.SignedUpdateTests.test_signed_wrong_runtime",
+    "__main__.SignedUpdateTests.test_stale_rejected"
+  ],
+  "run": 12,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "signature": "Ed25519 ephemeral teaching keys; private key never saved",
+  "health": "real ORT CPU inference on 32 validation samples",
+  "limits": "single process; exception injection, not physical power-cut testing"
+}

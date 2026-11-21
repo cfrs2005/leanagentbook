@@ -1,0 +1,198 @@
+{
+  "measured_at_utc": "2026-11-21T07:03:47.192628+00:00",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "architecture": "arm64",
+  "soc": "Apple M4",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "onnx": "1.19.1",
+  "onnxruntime": "1.23.2",
+  "training": {
+    "seeds": {
+      "train": 2101,
+      "validation": 2102,
+      "test": 2103,
+      "weights": 2104
+    },
+    "split_counts": [
+      2048,
+      512,
+      512
+    ],
+    "calibration": "first 256 training rows only",
+    "data_sha256": "e9fa4dc854123277d31c6cf38bfb07bc2a86d547e322574dee8e15a822641aae",
+    "history": [
+      {
+        "epoch": 1,
+        "validation_accuracy": 0.45703125
+      },
+      {
+        "epoch": 26,
+        "validation_accuracy": 0.8828125
+      },
+      {
+        "epoch": 51,
+        "validation_accuracy": 0.912109375
+      },
+      {
+        "epoch": 76,
+        "validation_accuracy": 0.92578125
+      },
+      {
+        "epoch": 101,
+        "validation_accuracy": 0.927734375
+      },
+      {
+        "epoch": 126,
+        "validation_accuracy": 0.92578125
+      },
+      {
+        "epoch": 151,
+        "validation_accuracy": 0.931640625
+      },
+      {
+        "epoch": 176,
+        "validation_accuracy": 0.935546875
+      },
+      {
+        "epoch": 201,
+        "validation_accuracy": 0.939453125
+      },
+      {
+        "epoch": 226,
+        "validation_accuracy": 0.939453125
+      },
+      {
+        "epoch": 251,
+        "validation_accuracy": 0.939453125
+      },
+      {
+        "epoch": 276,
+        "validation_accuracy": 0.9375
+      },
+      {
+        "epoch": 300,
+        "validation_accuracy": 0.939453125
+      }
+    ],
+    "baseline": {
+      "strategy": "training-majority",
+      "class": 0,
+      "test_accuracy": 0.361328125
+    },
+    "export_numpy_max_abs_error": 0.0
+  },
+  "models": {
+    "float": {
+      "sha256": "61cde670c0edddab83fe0071fc25f02723184e74879b33bf9548509cc7612673",
+      "bytes": 3050,
+      "accuracy": 0.939453125,
+      "median_us": 2.292,
+      "p95_us": 2.75,
+      "load_ms": 1.413333,
+      "process_peak_rss_bytes": 69238784,
+      "graph_ops": [
+        "Add",
+        "MatMul",
+        "Relu"
+      ],
+      "executed_kernels": [
+        [
+          "FusedGemm",
+          "CPUExecutionProvider"
+        ],
+        [
+          "Gemm",
+          "CPUExecutionProvider"
+        ]
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "requests": 2560,
+      "warmup": 100,
+      "threads": 1,
+      "input": {
+        "features": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            16
+          ]
+        }
+      },
+      "output": {
+        "logits": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    "int8": {
+      "sha256": "b0b499446405a443de33ad27edfc12876f344a58b5816103943f6c400a70637c",
+      "bytes": 3103,
+      "accuracy": 0.935546875,
+      "median_us": 3.833,
+      "p95_us": 4.042,
+      "load_ms": 2.311167,
+      "process_peak_rss_bytes": 69582848,
+      "graph_ops": [
+        "Add",
+        "DequantizeLinear",
+        "MatMul",
+        "QuantizeLinear",
+        "Relu"
+      ],
+      "executed_kernels": [
+        [
+          "Add",
+          "CPUExecutionProvider"
+        ],
+        [
+          "DequantizeLinear",
+          "CPUExecutionProvider"
+        ],
+        [
+          "QLinearMatMul",
+          "CPUExecutionProvider"
+        ],
+        [
+          "QuantizeLinear",
+          "CPUExecutionProvider"
+        ]
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "requests": 2560,
+      "warmup": 100,
+      "threads": 1,
+      "input": {
+        "features": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            16
+          ]
+        }
+      },
+      "output": {
+        "logits": {
+          "dtype": "float32",
+          "shape": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "power": {
+    "status": "not measured",
+    "watts": null
+  },
+  "scope": "CPU only; synthetic data; no network or physical device actuation"
+}

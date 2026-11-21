@@ -8,7 +8,7 @@
 
 [在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **持续更新中的学习切片**：导读、01–19/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
+> 当前为 **持续更新中的学习切片**：导读与全部 24 章均已有首版或设计稿；各章仍有需补齐的任务，不等于整书已验收。模拟结果不能证明真实模型质量或机器人现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -37,7 +37,10 @@
 | 一次任务为什么失败或变慢？ | [15 · 运行观测](chapters/15-observability.md) | 脱敏轨迹、离线报告与只读回放 |
 | 进程突然退出，任务还能继续吗？ | [16 · 持久化与恢复](chapters/16-durable-execution.md) | 崩溃恢复、租约与幂等实验 |
 | 多个部门怎样共用 Agent 平台？ | [23 · 平台架构设计](chapters/23-platform-architecture.md) | 身份与数据边界、部署图、故障推演表 |
-| 设备数据上不了云，怎么诊断？ | [24 · 机器人诊断首个切片](chapters/24-robot-diagnosis.md) | 业务图、系统图、事件证据报告 |
+| Bag 时间戳怎样校正与切片？ | [20 · ROS 数据体系](chapters/20-robotics-ros.md) | 真实 Bag、时间真值与可独立读取的事件片段 |
+| INT8 是否更快，更新失败怎样恢复？ | [21 · 边云协同](chapters/21-edge-cloud.md) | x86/M4 推理、签名升级与回滚证据 |
+| 相关信号能否说明故障原因？ | [22 · 因果诊断](chapters/22-causal-diagnosis.md) | 贝叶斯推断、干预、反事实与校准 |
+| 设备断网后怎样上传并复核？ | [24 · 机器人诊断实战](chapters/24-robot-diagnosis.md) | HTTP、缓存恢复、证据报告与检查审批 |
 
 ## 六条学习主线
 
@@ -58,7 +61,9 @@
 git clone https://github.com/cfrs2005/leanagentbook.git
 cd leanagentbook
 python3 scripts/check_book.py
-python3 scripts/test_labs.py
+python3 -m venv .lab-venv
+.lab-venv/bin/python -m pip install -r labs/rag_pipeline/requirements-pdf.txt -r labs/data_engineering/requirements.txt
+.lab-venv/bin/python scripts/test_labs.py
 ```
 
 实验运行入口、输入和预期输出见各章。测试通过只说明离线实验符合断言，不代表全书已经完成。

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<title>ROS 数据证据链与时间同步</title><desc>六类合成传感器写入真实 SQLite CDR Bag；离线校时、缺失检查、事件提取与独立回读。相机偏移七十毫秒，IMU 在二秒到二点二秒缺失。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 Z" fill="#546a7b"/></marker></defs>
+<rect width="1200" height="720" fill="#f8f5ed"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#243746">
+<text x="45" y="52" font-size="30" font-weight="bold">ROS 数据：先验证时间，再解释异常</text>
+<text x="45" y="88" font-size="18">原创合成数据 · ROS2 metadata v8 · SQLite3 + CDR · Humble 消息定义</text>
+<g stroke="#a6b4bb" stroke-width="2" fill="#fffdf8">
+<rect x="45" y="125" width="240" height="170" rx="15"/>
+<rect x="330" y="125" width="240" height="170" rx="15"/>
+<rect x="615" y="125" width="240" height="170" rx="15"/>
+<rect x="900" y="125" width="255" height="170" rx="15"/>
+</g>
+<g font-size="20"><text x="65" y="163" font-weight="bold">1. 数据与真值</text><text x="65" y="201">6 个信号 / 2 个上下文</text><text x="65" y="234">偏移、缺失、异常区间</text><text x="65" y="267">独立 truth.json</text>
+<text x="350" y="163" font-weight="bold">2. 真实 Bag</text><text x="350" y="201">440 条 CDR 消息</text><text x="350" y="234">header / record 时间</text><text x="350" y="267">软件版本 + 配置哈希</text>
+<text x="635" y="163" font-weight="bold">3. 离线分析</text><text x="635" y="201">逐 Topic 统计与抽稀</text><text x="635" y="234">38 组对齐 / 2 组缺失</text><text x="635" y="267">不启动 DDS</text>
+<text x="920" y="163" font-weight="bold">4. 事件 Bag</text><text x="920" y="201">80 条信号 + 2 条上下文</text><text x="920" y="234">8 条电机异常样本</text><text x="920" y="267">新 Reader 独立解码</text></g>
+<g stroke="#546a7b" stroke-width="3" marker-end="url(#arrow)"><path d="M285 210 H322"/><path d="M570 210 H607"/><path d="M855 210 H892"/></g>
+<text x="45" y="350" font-size="23" font-weight="bold">时间轴：统一到生成时钟；不是用接收时间替代采样时间</text>
+<rect x="660" y="385" width="240" height="220" rx="8" fill="#f7e1cb"/>
+<text x="670" y="408" font-size="16">事件窗口 [1.8, 2.6) 秒</text>
+<g stroke="#9caeb8" stroke-width="2"><path d="M120 450 H1080"/><path d="M120 515 H1080"/><path d="M120 580 H1080"/></g>
+<g font-size="18"><text x="45" y="455">相机</text><text x="45" y="520">IMU</text><text x="45" y="585">电机</text><text x="115" y="632">0</text><text x="410" y="632">1</text><text x="710" y="632">2</text><text x="1010" y="632">3 秒</text></g>
+<g fill="#437d96"><circle cx="420" cy="450" r="7"/><circle cx="441" cy="450" r="7" fill="#b3583e"/><circle cx="420" cy="515" r="7"/><circle cx="450" cy="515" r="7"/><circle cx="480" cy="515" r="7"/></g>
+<text x="285" y="432" font-size="16">蓝：真值；红：header +70 ms</text>
+<rect x="720" y="501" width="60" height="28" fill="#f8f5ed" stroke="#b3583e" stroke-dasharray="5 4"/>
+<text x="795" y="511" font-size="16">缺失 [2.0, 2.2)</text>
+<path d="M120 579 H720 V548 H840 V579 H1080" fill="none" stroke="#b3583e" stroke-width="4"/>
+<text x="875" y="563" font-size="16">12 A / [2.0, 2.4)</text>
+<text x="45" y="682" font-size="18">边界：原生消息类型作为教学容器；非真实点云、图像或 IMU 数据；未验证 ROS 实时回放。</text>
+</g></svg>
