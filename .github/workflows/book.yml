@@ -18,10 +18,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Check course links and SVGs
         run: python scripts/check_book.py
-      - name: Test agent loop
-        run: python -m unittest discover -s labs/agent_loop -p 'test_*.py'
-      - name: Test robot diagnosis
-        run: python -m unittest discover -s labs/robot_diagnosis -p 'test_*.py'
+      - name: Test all course labs
+        run: python scripts/test_labs.py
       - name: Package course sources
         if: matrix.python-version == '3.11'
         run: git archive --format=zip --output=course-source.zip HEAD

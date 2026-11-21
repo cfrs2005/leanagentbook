@@ -40,8 +40,10 @@ nav:
   - 阅读首页: index.md
   - 开始学习:
       - 00 · 从面试追问开始: chapters/00-start-here.md
+      - 01 · 模型基础: chapters/01-model-foundations.md
       - 02 · Agent 工作原理: chapters/02-agent-loop.md
       - 03 · Runtime 与 Harness: chapters/03-runtime-harness.md
+      - 04 · 工作流与多 Agent: chapters/04-workflow-orchestration.md
       - 24 · 机器人诊断实战: chapters/24-robot-diagnosis.md
   - 完整课程:
       - 24 章进度: ROADMAP.md
@@ -49,7 +51,9 @@ nav:
       - 学习路线: ai-agent-engineering-book-kit/07-learning-roadmap.md
       - 术语速查: ai-agent-engineering-book-kit/08-glossary-seed.md
   - 动手实验:
+      - 模型边界实验: labs/model_foundations/README.md
       - Agent 离线实验: labs/agent_loop/README.md
+      - 工作流协作实验: labs/workflow_orchestration/README.md
       - 机器人诊断实验: labs/robot_diagnosis/GUIDE.md
   - 关于本书:
       - 参与编写: CONTRIBUTING.md

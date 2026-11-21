@@ -6,9 +6,9 @@
 
 一套持续编写的中文开源课程。以企业助手和机器人诊断为主线，覆盖 6 个部分、24 章。先看图，再看表，最后运行实验。
 
-[在线阅读全书](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
+[在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **v0.1 首批学习切片**：导读、02/03/24 章首版及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
+> 当前为 **持续更新中的学习切片**：导读、01–04/24 章首版及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -17,8 +17,10 @@
 | 你想弄清什么 | 阅读入口 | 学完交付什么 |
 |---|---|---|
 | 面试里追问的到底是什么能力？ | [00 · 从问题开始](chapters/00-start-here.md) | 一份有证据的能力自查表 |
+| Token、上下文和结构化输出是什么？ | [01 · 模型基础](chapters/01-model-foundations.md) | 预算边界与输出校验实验 |
 | Agent 为什么会一直调用工具？ | [02 · Agent 工作原理](chapters/02-agent-loop.md) | 能终止、能处理失败的最小循环 |
 | Runtime、Harness、MCP 怎么分工？ | [03 · Runtime 与 Harness](chapters/03-runtime-harness.md) | 职责图和运行约束 |
+| 什么时候应该用多个 Agent？ | [04 · 工作流与多 Agent](chapters/04-workflow-orchestration.md) | 并行执行、有限重试与审批实验 |
 | 设备数据上不了云，怎么诊断？ | [24 · 机器人诊断首个切片](chapters/24-robot-diagnosis.md) | 业务图、系统图、事件证据报告 |
 
 ## 六条学习主线
@@ -40,8 +42,7 @@
 git clone https://github.com/cfrs2005/leanagentbook.git
 cd leanagentbook
 python3 scripts/check_book.py
-python3 -m unittest discover -s labs/agent_loop -p 'test_*.py'
-python3 -m unittest discover -s labs/robot_diagnosis -p 'test_*.py'
+python3 scripts/test_labs.py
 ```
 
 实验运行入口、输入和预期输出见各章。测试通过只说明离线实验符合断言，不代表全书已经完成。

@@ -34,3 +34,10 @@ python3 -m unittest discover -s labs/robot_diagnosis -p 'test_*.py'
 ```
 
 GitHub Actions 另配置 Python 3.11 和 3.13 的检查矩阵；以对应提交的 Actions 实际结果为准。图表未使用浏览器检查。完整 24 章与实机评测未完成，下一批见路线图。
+
+
+## v0.2 网站与新增基础课程
+
+2026-11-20：新增 01/04 章；四个实验共 54 项测试在整合环境 Python 3.13 上通过。新增 `scripts/test_labs.py`，后续实验会自动纳入检查。网站使用严格构建及生成后链接检查，搜索索引必须包含所有已发布章节。
+
+GitHub Pages 已部署。Chrome 中已实际完成首页打开、中文“循环”搜索、搜索结果进入第 02 章，并查看 SVG 和 Mermaid 流程图。此记录不表示真实模型或完整 24 章已验收。

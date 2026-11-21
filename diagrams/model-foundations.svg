@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">模型请求的五个边界</title>
+  <desc id="desc">应用组装消息并检查预算，模型生成候选响应，应用检查结构，再用受信任来源核对事实。超限和不合格响应停止处理。离线实验只覆盖人工预算与固定样例的结构校验。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22312F"/></marker>
+  </defs>
+  <rect width="1200" height="620" fill="#F6F1E7"/>
+  <g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+    <text x="40" y="64" font-size="34" font-weight="700">01 · 从输入到可信使用</text>
+    <text x="40" y="101" font-size="18" fill="#596963">生成是一个环节；预算、执行权限和事实核对由应用负责。</text>
+    <g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+      <rect x="40" y="150" width="200" height="170" rx="12"/>
+      <rect x="270" y="150" width="200" height="170" rx="12"/>
+      <rect x="500" y="150" width="200" height="170" rx="12"/>
+      <rect x="730" y="150" width="200" height="170" rx="12"/>
+      <rect x="960" y="150" width="200" height="170" rx="12"/>
+    </g>
+    <g font-size="16" fill="#B94F2D" font-weight="700">
+      <text x="60" y="181">01 / 应用</text><text x="290" y="181">02 / 应用</text>
+      <text x="520" y="181">03 / 模型</text><text x="750" y="181">04 / 应用</text>
+      <text x="980" y="181">05 / 应用</text>
+    </g>
+    <g font-size="24" font-weight="700">
+      <text x="60" y="222">组装消息</text><text x="290" y="222">检查预算</text>
+      <text x="520" y="222">逐步生成</text><text x="750" y="222">校验结构</text>
+      <text x="980" y="222">核对事实</text>
+    </g>
+    <g font-size="16" fill="#596963">
+      <text x="60" y="260">指令、问题、历史</text><text x="60" y="289">工具说明与资料</text>
+      <text x="290" y="260">完整输入与输出预留</text><text x="290" y="289">使用匹配的计数规则</text>
+      <text x="520" y="260">Token 与向量计算</text><text x="520" y="289">选择后续 Token</text>
+      <text x="750" y="260">语法、字段、类型</text><text x="750" y="289">检查结束状态</text>
+      <text x="980" y="260">受信任来源与时间</text><text x="980" y="289">不支持则标记未知</text>
+    </g>
+    <g fill="none" stroke="#22312F" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M240 235 H266"/><path d="M470 235 H496"/>
+      <path d="M700 235 H726"/><path d="M930 235 H956"/>
+      <path d="M370 320 V354"/><path d="M830 320 V354"/>
+    </g>
+    <text x="306" y="383" font-size="18" fill="#B94F2D">超限：停止</text>
+    <text x="758" y="383" font-size="18" fill="#B94F2D">不合格：拒绝</text>
+    <rect x="40" y="425" width="1120" height="145" rx="12" fill="#FFFCF6" stroke="#D9D2C4"/>
+    <text x="64" y="463" font-size="21" fill="#316653" font-weight="700">本章离线实验只覆盖预算与结构边界</text>
+    <text x="64" y="501" font-size="18">80 输入单位 + 20 输出预留 = 100：通过　　81 + 20：拒绝</text>
+    <text x="64" y="536" font-size="18">人工单位不是 Token；固定样例不是模型响应；结构通过不代表事实正确。</text>
+  </g>
+</svg>

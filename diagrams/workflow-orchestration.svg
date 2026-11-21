@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">工作流编排：两个脚本 Worker 与人工审批</title>
+<desc id="desc">Supervisor 分配不可变合成上下文，两个 Worker 并行执行。单次超时和临时错误有限重试。全部成功后汇总并等待审批，批准只记录模拟报告事件；失败或拒绝不发布。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#22312F" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="640" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="48" y="60" font-size="34">04 工作流与任务编排</text>
+<text x="48" y="96" font-size="18" fill="#596963">单进程 · 标准库 asyncio · 合成数据 · 无真实 LLM</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="48" y="185" width="250" height="130" rx="14"/>
+<rect x="390" y="140" width="300" height="110" rx="14"/>
+<rect x="390" y="300" width="300" height="110" rx="14"/>
+<rect x="790" y="185" width="355" height="130" rx="14"/>
+<rect x="790" y="400" width="355" height="120" rx="14"/>
+</g>
+<g font-size="22">
+<text x="72" y="225">01 Supervisor</text>
+<text x="414" y="180">02 读数 Worker</text>
+<text x="414" y="340">03 复核 Worker</text>
+<text x="814" y="225">04 按名称汇总</text>
+<text x="814" y="440">05 人工审批入口</text>
+</g>
+<g font-size="18" fill="#596963">
+<text x="72" y="264">分配同一份只读上下文</text>
+<text x="414" y="218">最大值与样本数</text>
+<text x="414" y="378">按固定阈值生成建议</text>
+<text x="814" y="264">两项成功才生成报告草稿</text>
+<text x="814" y="478">等待 / 拒绝 / 批准后模拟发布</text>
+</g>
+<g fill="none" stroke="#22312F" stroke-width="2" marker-end="url(#arrow)">
+<path d="M298 225 H340 V195 H390"/>
+<path d="M298 275 H340 V355 H390"/>
+<path d="M690 195 H740 V225 H790"/>
+<path d="M690 355 H740 V275 H790"/>
+<path d="M967 315 V400"/>
+</g>
+<text x="48" y="465" font-size="20" fill="#B94F2D">每个 Worker：单次超时 + 最多 2 次尝试</text>
+<text x="48" y="501" font-size="18" fill="#596963">临时错误可重试；永久错误立即返回失败</text>
+<text x="48" y="554" font-size="20" fill="#316653">总时限覆盖执行与退避；超时取消需要 Worker 配合</text>
+<text x="48" y="594" font-size="18" fill="#596963">失败保留诊断结果，不进入审批。CLI 参数仅为教学入口，不验证审批人身份。</text>
+</g></svg>
