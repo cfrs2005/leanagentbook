@@ -37,3 +37,7 @@ node scripts/check_mermaid.mjs --env /tmp/leanagentbook-mermaid-11.4.1 --out /tm
 **没有启动浏览器，没有访问读书网页，也没有执行 SVG 布局或 UI 验证。** 本结果证明固定版本解析器接受这些源码，不证明图中文字没有遮挡、网页脚本已加载或其他 Mermaid 版本完全兼容。JSDOM 不是真实浏览器渲染器。未修改章节，也未提交 Git。
 
 官方接口说明：[Mermaid Usage](https://mermaid.js.org/config/usage.html)，访问日期2026-11-20。网页当前版本可能不同；本检查的版本以本地包和依赖锁为准。
+
+## 跨机器安装修订
+
+首轮 CI 发现临时目录生成的锁文件包含本机路径。已重新生成标准 registry 锁（196 个 package 条目），检查所有包均无 file: 本地依赖或 link 条目，并在全新目录执行 npm ci 与 72 块解析成功。固定顶层版本仍为 Mermaid 11.4.1 / JSDOM 26.0.0。该修订保留在 Git 历史中，不能把此前本机已有依赖上的通过当作干净安装证明。
