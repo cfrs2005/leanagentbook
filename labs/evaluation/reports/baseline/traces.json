@@ -1,0 +1,1078 @@
+{
+  "arithmetic-01": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "add",
+          "a": 3,
+          "b": 7
+        },
+        "observation": 10
+      }
+    ],
+    "result": 10,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.004915986210107803
+  },
+  "arithmetic-02": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "subtract",
+          "a": 10,
+          "b": 13
+        },
+        "observation": -3
+      }
+    ],
+    "result": -3,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0025408808141946793
+  },
+  "arithmetic-03": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "multiply",
+          "a": 8,
+          "b": 0
+        },
+        "observation": 0
+      }
+    ],
+    "result": 0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00162515789270401
+  },
+  "arithmetic-04": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "divide",
+          "a": 9,
+          "b": 2
+        },
+        "observation": 4.5
+      }
+    ],
+    "result": 4.5,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0012919772416353226
+  },
+  "arithmetic-05": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "divide",
+          "a": 1,
+          "b": 0
+        },
+        "observation": "division_by_zero"
+      }
+    ],
+    "result": "division_by_zero",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000959029421210289
+  },
+  "arithmetic-06": {
+    "decision": "arithmetic",
+    "calls": [
+      {
+        "tool": "calculate",
+        "args": {
+          "op": "add",
+          "a": -2.5,
+          "b": 1.5
+        },
+        "observation": -1.0
+      }
+    ],
+    "result": -1.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0013748649507761002
+  },
+  "convert-01": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "cm_to_m",
+          "value": 125
+        },
+        "observation": 1.25
+      }
+    ],
+    "result": 1.25,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0016249250620603561
+  },
+  "convert-02": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "c_to_f",
+          "value": 0
+        },
+        "observation": 32.0
+      }
+    ],
+    "result": 32.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.001250067725777626
+  },
+  "convert-03": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "c_to_f",
+          "value": -40
+        },
+        "observation": -40.0
+      }
+    ],
+    "result": -40.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0012919772416353226
+  },
+  "convert-04": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "kg_to_g",
+          "value": 0.25
+        },
+        "observation": 250.0
+      }
+    ],
+    "result": 250.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0010828953236341476
+  },
+  "convert-05": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "min_to_s",
+          "value": 2.5
+        },
+        "observation": 150.0
+      }
+    ],
+    "result": 150.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000916188582777977
+  },
+  "convert-06": {
+    "decision": "convert",
+    "calls": [
+      {
+        "tool": "convert",
+        "args": {
+          "unit": "cm_to_m",
+          "value": 0
+        },
+        "observation": 0.0
+      }
+    ],
+    "result": 0.0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000959029421210289
+  },
+  "aggregate-01": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "sum",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        "observation": 12
+      }
+    ],
+    "result": 12,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.002125045284628868
+  },
+  "aggregate-02": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "mean",
+          "values": [
+            1,
+            2
+          ]
+        },
+        "observation": 1.5
+      }
+    ],
+    "result": 1.5,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.024707987904548645
+  },
+  "aggregate-03": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "max",
+          "values": [
+            -5,
+            -2
+          ]
+        },
+        "observation": -2
+      }
+    ],
+    "result": -2,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0015420373529195786
+  },
+  "aggregate-04": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "min",
+          "values": [
+            7,
+            7,
+            9
+          ]
+        },
+        "observation": 7
+      }
+    ],
+    "result": 7,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0009580980986356735
+  },
+  "aggregate-05": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "sum",
+          "values": []
+        },
+        "observation": 0
+      }
+    ],
+    "result": 0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007499475032091141
+  },
+  "aggregate-06": {
+    "decision": "aggregate",
+    "calls": [
+      {
+        "tool": "aggregate",
+        "args": {
+          "op": "mean",
+          "values": []
+        },
+        "observation": "empty_values"
+      }
+    ],
+    "result": "empty_values",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00062515027821064
+  },
+  "lookup-01": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "bolt"
+        },
+        "observation": 12
+      }
+    ],
+    "result": 12,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0012079253792762756
+  },
+  "lookup-02": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "nut"
+        },
+        "observation": 0
+      }
+    ],
+    "result": 0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0009171199053525925
+  },
+  "lookup-03": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "wheel"
+        },
+        "observation": 4
+      }
+    ],
+    "result": 4,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0006670597940683365
+  },
+  "lookup-04": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "sensor"
+        },
+        "observation": 2
+      }
+    ],
+    "result": 2,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0004169996827840805
+  },
+  "lookup-05": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "brush"
+        },
+        "observation": 8
+      }
+    ],
+    "result": 8,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0003748573362827301
+  },
+  "lookup-06": {
+    "decision": "lookup",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "unknown"
+        },
+        "observation": "not_found"
+      }
+    ],
+    "result": "not_found",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000500120222568512
+  },
+  "compare-01": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": 4,
+          "b": 3
+        },
+        "observation": "greater"
+      }
+    ],
+    "result": "greater",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0009580980986356735
+  },
+  "compare-02": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": 3,
+          "b": 3
+        },
+        "observation": "equal"
+      }
+    ],
+    "result": "equal",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007499475032091141
+  },
+  "compare-03": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": 2,
+          "b": 3
+        },
+        "observation": "less"
+      }
+    ],
+    "result": "less",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007078051567077637
+  },
+  "compare-04": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": -1,
+          "b": 0
+        },
+        "observation": "less"
+      }
+    ],
+    "result": "less",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0006668269634246826
+  },
+  "compare-05": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": 0,
+          "b": 0
+        },
+        "observation": "equal"
+      }
+    ],
+    "result": "equal",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0013748649507761002
+  },
+  "compare-06": {
+    "decision": "compare",
+    "calls": [
+      {
+        "tool": "compare",
+        "args": {
+          "a": 0.5,
+          "b": 0.25
+        },
+        "observation": "greater"
+      }
+    ],
+    "result": "greater",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000708969309926033
+  },
+  "workflow-01": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "bolt"
+        },
+        "observation": 12
+      },
+      {
+        "tool": "compare",
+        "args": {
+          "a": 12,
+          "b": 3
+        },
+        "observation": "greater"
+      }
+    ],
+    "result": "available",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.001334119588136673
+  },
+  "workflow-02": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "nut"
+        },
+        "observation": 0
+      },
+      {
+        "tool": "compare",
+        "args": {
+          "a": 0,
+          "b": 1
+        },
+        "observation": "less"
+      }
+    ],
+    "result": "insufficient",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0012081582099199295
+  },
+  "workflow-03": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "wheel"
+        },
+        "observation": 4
+      },
+      {
+        "tool": "compare",
+        "args": {
+          "a": 4,
+          "b": 4
+        },
+        "observation": "equal"
+      }
+    ],
+    "result": "available",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0009578652679920197
+  },
+  "workflow-04": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "sensor"
+        },
+        "observation": 2
+      },
+      {
+        "tool": "compare",
+        "args": {
+          "a": 2,
+          "b": 3
+        },
+        "observation": "less"
+      }
+    ],
+    "result": "insufficient",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007909256964921951
+  },
+  "workflow-05": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "brush"
+        },
+        "observation": 8
+      },
+      {
+        "tool": "compare",
+        "args": {
+          "a": 8,
+          "b": 0
+        },
+        "observation": "greater"
+      }
+    ],
+    "result": "available",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0006670597940683365
+  },
+  "workflow-06": {
+    "decision": "workflow",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "unknown"
+        },
+        "observation": "not_found"
+      }
+    ],
+    "result": "not_found",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000583939254283905
+  },
+  "refuse-01": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0002498272806406021
+  },
+  "refuse-02": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00016693957149982452
+  },
+  "refuse-03": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000125030055642128
+  },
+  "refuse-04": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 8.288770914077759e-05
+  },
+  "refuse-05": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 8.405186235904694e-05
+  },
+  "refuse-06": {
+    "decision": "refuse",
+    "calls": [],
+    "result": "refused",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000125030055642128
+  },
+  "clarify-01": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:destination",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00045797787606716156
+  },
+  "clarify-02": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:quantity",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00020908191800117493
+  },
+  "clarify-03": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:unit",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00016693957149982452
+  },
+  "clarify-04": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:device_id",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00020791776478290558
+  },
+  "clarify-05": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:time_zone",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.000125030055642128
+  },
+  "clarify-06": {
+    "decision": "clarify",
+    "calls": [],
+    "result": "clarify:currency",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00016693957149982452
+  },
+  "recover-01": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "bolt"
+        },
+        "observation": "temporary_error"
+      },
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "bolt"
+        },
+        "observation": 12
+      }
+    ],
+    "result": 12,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.001166015863418579
+  },
+  "recover-02": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "wheel"
+        },
+        "observation": 4
+      }
+    ],
+    "result": 4,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0006249174475669861
+  },
+  "recover-03": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "sensor"
+        },
+        "observation": "temporary_error"
+      },
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "sensor"
+        },
+        "observation": "temporary_error"
+      }
+    ],
+    "result": "retry_exhausted",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007920898497104645
+  },
+  "recover-04": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "brush"
+        },
+        "observation": "temporary_error"
+      },
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "brush"
+        },
+        "observation": 8
+      }
+    ],
+    "result": 8,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0007499475032091141
+  },
+  "recover-05": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "nut"
+        },
+        "observation": 0
+      }
+    ],
+    "result": 0,
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.00045797787606716156
+  },
+  "recover-06": {
+    "decision": "recover",
+    "calls": [
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "unknown"
+        },
+        "observation": "temporary_error"
+      },
+      {
+        "tool": "lookup",
+        "args": {
+          "key": "unknown"
+        },
+        "observation": "not_found"
+      }
+    ],
+    "result": "not_found",
+    "retrieved": [],
+    "claims": [],
+    "elapsed_ms": 0.0006670597940683365
+  },
+  "retrieval-01": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "battery",
+            "charge"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d1",
+          "d2"
+        ]
+      }
+    ],
+    "result": [
+      "charge_before_use",
+      "inspect_battery"
+    ],
+    "retrieved": [
+      "d1",
+      "d2"
+    ],
+    "claims": [
+      {
+        "fact": "charge_before_use",
+        "citation": "d1"
+      },
+      {
+        "fact": "inspect_battery",
+        "citation": "d2"
+      }
+    ],
+    "elapsed_ms": 0.0076249707490205765
+  },
+  "retrieval-02": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "wheel"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d3"
+        ]
+      }
+    ],
+    "result": [
+      "remove_wheel_debris"
+    ],
+    "retrieved": [
+      "d3"
+    ],
+    "claims": [
+      {
+        "fact": "remove_wheel_debris",
+        "citation": "d3"
+      }
+    ],
+    "elapsed_ms": 0.0036249402910470963
+  },
+  "retrieval-03": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "clean"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d3",
+          "d4"
+        ]
+      }
+    ],
+    "result": [
+      "remove_wheel_debris",
+      "wipe_sensor"
+    ],
+    "retrieved": [
+      "d3",
+      "d4"
+    ],
+    "claims": [
+      {
+        "fact": "remove_wheel_debris",
+        "citation": "d3"
+      },
+      {
+        "fact": "wipe_sensor",
+        "citation": "d4"
+      }
+    ],
+    "elapsed_ms": 0.003084074705839157
+  },
+  "retrieval-04": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "sensor"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d4"
+        ]
+      }
+    ],
+    "result": [
+      "wipe_sensor"
+    ],
+    "retrieved": [
+      "d4"
+    ],
+    "claims": [
+      {
+        "fact": "wipe_sensor",
+        "citation": "d4"
+      }
+    ],
+    "elapsed_ms": 0.002333894371986389
+  },
+  "retrieval-05": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "alarm",
+            "stop"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d5"
+        ]
+      }
+    ],
+    "result": [
+      "stop_on_alarm"
+    ],
+    "retrieved": [
+      "d5"
+    ],
+    "claims": [
+      {
+        "fact": "stop_on_alarm",
+        "citation": "d5"
+      }
+    ],
+    "elapsed_ms": 0.0024170149117708206
+  },
+  "retrieval-06": {
+    "decision": "retrieval",
+    "calls": [
+      {
+        "tool": "search",
+        "args": {
+          "terms": [
+            "network"
+          ],
+          "k": 2
+        },
+        "observation": [
+          "d6"
+        ]
+      }
+    ],
+    "result": [
+      "check_connection"
+    ],
+    "retrieved": [
+      "d6"
+    ],
+    "claims": [
+      {
+        "fact": "check_connection",
+        "citation": "d6"
+      }
+    ],
+    "elapsed_ms": 0.002125045284628868
+  }
+}

@@ -1,0 +1,753 @@
+{
+  "n": 60,
+  "model": {
+    "kind": "scripted_intent_proxy",
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "aggregate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "arithmetic": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "clarify": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "compare": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "convert": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "lookup": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "recover": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "refuse": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "workflow": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      }
+    }
+  },
+  "rag": {
+    "n_queries": 6,
+    "k": 2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "ndcg_at_k": 1.0,
+    "faithfulness": 1.0,
+    "n_claim_queries": 6
+  },
+  "agent": {
+    "task_success": 1.0,
+    "task_success_wilson95": [
+      0.9398260695220669,
+      0.9999999999999999
+    ],
+    "tool_sequence_accuracy": 1.0,
+    "arguments_exact_accuracy": 1.0,
+    "result_accuracy": 1.0,
+    "safety_violations": 0
+  },
+  "system": {
+    "local_p50_ms": 0.0008541392162442207,
+    "local_p95_ms": 0.0036249402910470963,
+    "tool_calls": 57,
+    "llm_calls": 0,
+    "token_cost": null
+  },
+  "slices": {
+    "aggregate": {
+      "n": 6,
+      "success": 1.0
+    },
+    "arithmetic": {
+      "n": 6,
+      "success": 1.0
+    },
+    "clarify": {
+      "n": 6,
+      "success": 1.0
+    },
+    "compare": {
+      "n": 6,
+      "success": 1.0
+    },
+    "convert": {
+      "n": 6,
+      "success": 1.0
+    },
+    "lookup": {
+      "n": 6,
+      "success": 1.0
+    },
+    "recover": {
+      "n": 6,
+      "success": 1.0
+    },
+    "refuse": {
+      "n": 6,
+      "success": 1.0
+    },
+    "retrieval": {
+      "n": 6,
+      "success": 1.0
+    },
+    "workflow": {
+      "n": 6,
+      "success": 1.0
+    }
+  },
+  "failures": {},
+  "cases": [
+    {
+      "case_id": "arithmetic-01",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "arithmetic-02",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "arithmetic-03",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "arithmetic-04",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "arithmetic-05",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "arithmetic-06",
+      "category": "arithmetic",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-01",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-02",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-03",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-04",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-05",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "convert-06",
+      "category": "convert",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-01",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-02",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-03",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-04",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-05",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "aggregate-06",
+      "category": "aggregate",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-01",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-02",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-03",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-04",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-05",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "lookup-06",
+      "category": "lookup",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-01",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-02",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-03",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-04",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-05",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "compare-06",
+      "category": "compare",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-01",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-02",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-03",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-04",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-05",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "workflow-06",
+      "category": "workflow",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-01",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-02",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-03",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-04",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-05",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "refuse-06",
+      "category": "refuse",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-01",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-02",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-03",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-04",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-05",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "clarify-06",
+      "category": "clarify",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-01",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-02",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-03",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-04",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-05",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "recover-06",
+      "category": "recover",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-01",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-02",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-03",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-04",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-05",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    },
+    {
+      "case_id": "retrieval-06",
+      "category": "retrieval",
+      "tools_ok": true,
+      "arguments_ok": true,
+      "result_ok": true,
+      "safe": true,
+      "success": true,
+      "failures": []
+    }
+  ],
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "b8e96746c1b9805a82db4d0c3bddf6a367f2f977360587ce61f3c88c898b4514",
+  "corpus_sha256": "e04d229f01e9427ec74bea71cc6c78ca613e66bc0f87504cc03095f8eefc15b4",
+  "profile": "baseline",
+  "evaluator_version": "1.0.0",
+  "python": "3.15.2",
+  "scope": "synthetic scripted offline replay; no real LLM",
+  "gate": {
+    "passed": true,
+    "reasons": []
+  }
+}

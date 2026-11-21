@@ -1,0 +1,60 @@
+[
+  {
+    "id": "d1",
+    "tags": [
+      "battery",
+      "charge"
+    ],
+    "facts": [
+      "charge_before_use"
+    ]
+  },
+  {
+    "id": "d2",
+    "tags": [
+      "battery"
+    ],
+    "facts": [
+      "inspect_battery"
+    ]
+  },
+  {
+    "id": "d3",
+    "tags": [
+      "wheel",
+      "clean"
+    ],
+    "facts": [
+      "remove_wheel_debris"
+    ]
+  },
+  {
+    "id": "d4",
+    "tags": [
+      "sensor",
+      "clean"
+    ],
+    "facts": [
+      "wipe_sensor"
+    ]
+  },
+  {
+    "id": "d5",
+    "tags": [
+      "alarm",
+      "stop"
+    ],
+    "facts": [
+      "stop_on_alarm"
+    ]
+  },
+  {
+    "id": "d6",
+    "tags": [
+      "network"
+    ],
+    "facts": [
+      "check_connection"
+    ]
+  }
+]

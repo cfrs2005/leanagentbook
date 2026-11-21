@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+<title id="title">第 16 章：任务恢复与副作用边界</title>
+<desc id="desc">任务持久化后由 Worker 领取租约，逐步提交幂等副作用和检查点。Worker 崩溃后，租约到期触发有限重试，新 Worker 从检查点恢复。外部服务必须独立提供幂等与对账。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#22312F"/></marker></defs>
+<rect width="1200" height="610" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="40" y="55" font-size="34">16 / 进程可以退出，任务状态必须留下</text>
+<text x="40" y="88" font-size="18" fill="#596963">本地事务保护状态；租约限制写入者；幂等键限制重复副作用。</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="40" y="125" width="240" height="125" rx="12"/>
+<rect x="330" y="125" width="240" height="125" rx="12"/>
+<rect x="620" y="125" width="250" height="125" rx="12"/>
+<rect x="920" y="125" width="240" height="125" rx="12"/>
+<rect x="330" y="315" width="540" height="115" rx="12"/>
+<rect x="40" y="485" width="1120" height="85" rx="12"/>
+</g>
+<g font-size="22">
+<text x="60" y="160">① 入队与去重</text><text x="350" y="160">② 领取与心跳</text>
+<text x="640" y="160">③ 副作用账本</text><text x="940" y="160">④ 检查点与终态</text>
+</g>
+<g font-size="17" fill="#596963">
+<text x="60" y="194">业务任务 ID 固定</text><text x="60" y="222">输入不一致则拒绝</text>
+<text x="350" y="194">每次领取换执行凭证</text><text x="350" y="222">过期凭证不能继续写入</text>
+<text x="640" y="194">任务 ID + 步骤唯一键</text><text x="640" y="222">已提交的记录不会重复</text>
+<text x="940" y="194">保存下一步骤编号</text><text x="940" y="222">完成 / 取消 / 超时 / DLQ</text>
+</g>
+<g stroke="#22312F" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M280 185H320"/><path d="M570 185H610"/><path d="M870 185H910"/>
+<path d="M745 250V305"/><path d="M330 370H300V270H450V258"/>
+</g>
+<text x="760" y="290" font-size="17" fill="#B94F2D">进程崩溃</text>
+<text x="355" y="351" font-size="22" fill="#316653">⑤ 租约到期 → 退避 → 新 Worker 恢复</text>
+<text x="355" y="387" font-size="17">副作用已提交但检查点未保存？重放同一步，由账本去重。</text>
+<text x="355" y="413" font-size="17">超过尝试次数进入 DLQ；总期限到达后停止继续领取。</text>
+<text x="65" y="520" font-size="21" fill="#B94F2D">外部边界：本地事务无法同时提交远端支付与本地检查点</text>
+<text x="65" y="551" font-size="18">接收端幂等键 + 查询回执 + 对账 / 补偿；取消不能撤回已经发生的事实。</text>
+</g>
+</svg>

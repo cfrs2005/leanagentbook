@@ -44,6 +44,12 @@ nav:
       - 02 · Agent 工作原理: chapters/02-agent-loop.md
       - 03 · Runtime 与 Harness: chapters/03-runtime-harness.md
       - 04 · 工作流与多 Agent: chapters/04-workflow-orchestration.md
+  - 工程与治理:
+      - 14 · 评测与质量: chapters/14-evaluation.md
+      - 15 · 运行观测与回放: chapters/15-observability.md
+      - 16 · 持久化与恢复: chapters/16-durable-execution.md
+  - 综合设计:
+      - 23 · 企业平台架构: chapters/23-platform-architecture.md
       - 24 · 机器人诊断实战: chapters/24-robot-diagnosis.md
   - 完整课程:
       - 24 章进度: ROADMAP.md
@@ -54,6 +60,9 @@ nav:
       - 模型边界实验: labs/model_foundations/README.md
       - Agent 离线实验: labs/agent_loop/README.md
       - 工作流协作实验: labs/workflow_orchestration/README.md
+      - 评测与发布门禁: labs/evaluation/README.md
+      - 观测与只读回放: labs/observability/README.md
+      - 崩溃与恢复实验: labs/durable_execution/README.md
       - 机器人诊断实验: labs/robot_diagnosis/GUIDE.md
   - 关于本书:
       - 参与编写: CONTRIBUTING.md

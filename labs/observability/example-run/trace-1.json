@@ -1,0 +1,87 @@
+{
+  "schema": "lab-trace-v1",
+  "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+  "spans": [
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "edffdd140ced42a1",
+      "parent_id": null,
+      "kind": "workflow",
+      "start_ns": 1298562721143291,
+      "end_ns": 1298562721172375,
+      "status": "ok",
+      "attributes": {
+        "dataset": "synthetic-v1"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "568a22f3bb884332",
+      "parent_id": "edffdd140ced42a1",
+      "kind": "retrieval",
+      "start_ns": 1298562721151708,
+      "end_ns": 1298562721154375,
+      "status": "ok",
+      "attributes": {
+        "documents": 2
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "98b0f5e9e5064aca",
+      "parent_id": "edffdd140ced42a1",
+      "kind": "model",
+      "start_ns": 1298562721159208,
+      "end_ns": 1298562721160958,
+      "status": "ok",
+      "attributes": {
+        "model": "scripted-v1",
+        "result": "inspect"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "61529d2a6c6d46cd",
+      "parent_id": "edffdd140ced42a1",
+      "kind": "approval",
+      "start_ns": 1298562721164291,
+      "end_ns": 1298562721165000,
+      "status": "ok",
+      "attributes": {
+        "approval": "approved"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "6a0cf4537cc04beb",
+      "parent_id": "edffdd140ced42a1",
+      "kind": "tool",
+      "start_ns": 1298562721167750,
+      "end_ns": 1298562721168833,
+      "status": "ok",
+      "attributes": {
+        "effect": "read",
+        "samples": 3
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "95b9b667577d455e8feafaa3f81e012b",
+      "span_id": "5bb56fec0adf4e09",
+      "parent_id": "edffdd140ced42a1",
+      "kind": "tool",
+      "start_ns": 1298562721171166,
+      "end_ns": 1298562721171833,
+      "status": "ok",
+      "attributes": {
+        "effect": "write",
+        "result": "draft_only"
+      },
+      "error_type": null
+    }
+  ]
+}

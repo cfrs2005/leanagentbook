@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">第15章：从任务轨迹到只读回放</title>
+<desc id="desc">一个工作流根 Span 连接检索、模型、审批与工具子 Span。属性白名单在落盘前删除敏感文本。摘要和离线报告读取安全记录。回放禁止调用外部工具，写操作明确阻止。</desc>
+<rect width="1200" height="650" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#22312F">
+<text x="40" y="57" font-size="34">15 · 每次任务都有可检查的轨迹</text>
+<text x="40" y="94" font-size="18" fill="#596963">原创轻量实验 · 合成数据 · 脚本模型 · 本机实测耗时</text>
+<rect x="40" y="125" width="1120" height="280" rx="14" fill="#FFFCF6" stroke="#D9D2C4"/>
+<rect x="415" y="150" width="370" height="65" rx="10" fill="#316653"/>
+<text x="442" y="179" font-size="20" fill="#FFFCF6">workflow：整个任务</text>
+<text x="442" y="201" font-size="15" fill="#FFFCF6">同一 trace_id；根节点 parent_id 为空</text>
+<path d="M600 215V245M168 245H1008M168 245V270M448 245V270M728 245V270M1008 245V270" fill="none" stroke="#22312F" stroke-width="2"/>
+<g fill="#F6F1E7" stroke="#D9D2C4"><rect x="65" y="270" width="210" height="80" rx="8"/><rect x="345" y="270" width="210" height="80" rx="8"/><rect x="625" y="270" width="210" height="80" rx="8"/><rect x="905" y="270" width="210" height="80" rx="8"/></g>
+<g font-size="19"><text x="85" y="300">retrieval / 检索</text><text x="365" y="300">model / 模型</text><text x="645" y="300">approval / 审批</text><text x="925" y="300">tool / 工具</text></g>
+<g font-size="15" fill="#596963"><text x="85" y="329">文档数；不保存原文</text><text x="365" y="329">固定规则；用量未知</text><text x="645" y="329">拒绝时结束任务</text><text x="925" y="329">失败保留类型与父链</text><text x="65" y="382">连接线表示父子关系。时间先后另由起止时间表示；同级节点不等于并行。</text></g>
+<path d="M230 405V440M970 405V440" stroke="#22312F" stroke-width="2"/>
+<rect x="40" y="440" width="535" height="155" rx="12" fill="#FFFCF6" stroke="#D9D2C4"/>
+<text x="65" y="477" font-size="21" fill="#B94F2D">01 先脱敏，再落盘与聚合</text>
+<text x="65" y="511" font-size="17">字段白名单 → trace JSON → 离线 HTML</text>
+<text x="65" y="542" font-size="17">根 Span 统计任务耗时；失败纳入分母</text>
+<text x="65" y="573" font-size="17">p50 / p95 / p99 必须同时说明样本数</text>
+<rect x="625" y="440" width="535" height="155" rx="12" fill="#FFFCF6" stroke="#D9D2C4"/>
+<text x="650" y="477" font-size="21" fill="#316653">02 回放只检查已存证据</text>
+<text x="650" y="511" font-size="17">先验结构与父链 → 展示记录</text>
+<text x="650" y="542" font-size="17">写操作：blocked_write；工具执行数：0</text>
+<text x="650" y="573" font-size="17">不恢复现场；不重发消息；不控制设备</text>
+<text x="40" y="630" font-size="15" fill="#596963">图中工具包含只读计算和写入计划；实验没有任何外部写入实现。</text>
+</g></svg>

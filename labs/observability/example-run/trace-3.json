@@ -1,0 +1,59 @@
+{
+  "schema": "lab-trace-v1",
+  "trace_id": "b52ed557bbac4941936c46d3d53da1f9",
+  "spans": [
+    {
+      "trace_id": "b52ed557bbac4941936c46d3d53da1f9",
+      "span_id": "6691d7f92ee442bf",
+      "parent_id": null,
+      "kind": "workflow",
+      "start_ns": 1298562721263500,
+      "end_ns": 1298562721273708,
+      "status": "error",
+      "attributes": {
+        "dataset": "synthetic-v1"
+      },
+      "error_type": "PermissionError"
+    },
+    {
+      "trace_id": "b52ed557bbac4941936c46d3d53da1f9",
+      "span_id": "7c949919672d40cd",
+      "parent_id": "6691d7f92ee442bf",
+      "kind": "retrieval",
+      "start_ns": 1298562721265708,
+      "end_ns": 1298562721266208,
+      "status": "ok",
+      "attributes": {
+        "documents": 2
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "b52ed557bbac4941936c46d3d53da1f9",
+      "span_id": "3dd0c3d9f29b4c96",
+      "parent_id": "6691d7f92ee442bf",
+      "kind": "model",
+      "start_ns": 1298562721268291,
+      "end_ns": 1298562721268875,
+      "status": "ok",
+      "attributes": {
+        "model": "scripted-v1",
+        "result": "inspect"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "b52ed557bbac4941936c46d3d53da1f9",
+      "span_id": "0e0b2200be194c76",
+      "parent_id": "6691d7f92ee442bf",
+      "kind": "approval",
+      "start_ns": 1298562721270958,
+      "end_ns": 1298562721272333,
+      "status": "error",
+      "attributes": {
+        "approval": "rejected"
+      },
+      "error_type": "PermissionError"
+    }
+  ]
+}

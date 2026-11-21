@@ -1,0 +1,22 @@
+{
+  "trace_count": 3,
+  "failed_traces": 2,
+  "failure_rate": 0.6666666666666666,
+  "task_latency_ms": {
+    "p50": 0.018292,
+    "p95": 0.029084,
+    "p99": 0.029084
+  },
+  "tool_latency_ms": {
+    "p50": 0.001083,
+    "p95": 0.003375,
+    "p99": 0.003375
+  },
+  "tool_sample_count": 3,
+  "ttft_ms": null,
+  "tpot_ms": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "cost_usd": null,
+  "measurement": "local perf_counter_ns; synthetic scripted model; nearest-rank"
+}

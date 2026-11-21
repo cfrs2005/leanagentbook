@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+<title id="title">第14章：四层离线评估与发布门禁</title>
+<desc id="desc">冻结合成数据和语料，通过脚本执行器生成轨迹，由四层评估得到指标、失败类别和置信区间，再以绝对阈值、安全检查和基线比较决定通过或阻断。在线实验是后续未实测阶段。</desc>
+<rect width="1200" height="580" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="40" y="56" font-size="32">14  从“看起来正确”到可重复验收</text>
+<text x="40" y="90" font-size="17" fill="#596963">60 条合成样本 · 10 类契约 · 无真实 LLM · 保存逐步观察</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="40" y="130" width="250" height="150" rx="12"/>
+<rect x="345" y="130" width="245" height="150" rx="12"/>
+<rect x="645" y="130" width="510" height="150" rx="12"/>
+<rect x="40" y="340" width="550" height="170" rx="12"/>
+<rect x="645" y="340" width="510" height="170" rx="12"/>
+</g>
+<g stroke="#316653" stroke-width="3" fill="none"><path d="M290 200 H332 m-10 -7 10 7 -10 7 M590 200 H632 m-10 -7 10 7 -10 7 M900 280 V326 m-7 -10 7 10 7 -10 M645 425 H605 m10 -7 -10 7 10 7"/></g>
+<g font-size="21" fill="#B94F2D"><text x="60" y="166">01 冻结金标与语料</text><text x="365" y="166">02 执行并留证</text><text x="665" y="166">03 四层度量</text><text x="665" y="378">04 门禁检查</text><text x="60" y="378">05 决策与后续</text></g>
+<g font-size="17">
+<text x="60" y="205">输入 / 期望工具与参数</text><text x="60" y="235">结果 / 相关性 / 版本哈希</text>
+<text x="365" y="205">分支、工具、重试、结果</text><text x="365" y="235">每个 case 保存完整轨迹</text>
+<text x="665" y="205">模型：分类代理　RAG：召回与事实支持</text><text x="665" y="235">Agent：任务与轨迹　系统：调用与耗时</text>
+<text x="665" y="416">绝对阈值 + 每类切片 + 安全零容忍</text><text x="665" y="449">同数据版本比较；保留失败原因</text><text x="665" y="482">通过 exit 0 / 阻断 exit 1 / 配置错误 exit 2</text>
+<text x="60" y="416">离线通过只说明这些契约通过</text><text x="60" y="449">下一阶段：影子流量 → 随机 A/B → 监控</text><text x="60" y="482" fill="#596963">线上阶段、人工裁判校准：本实验未实测</text>
+</g>
+<text x="40" y="552" font-size="16" fill="#596963">不要用一次平均分覆盖安全失败；不要把合成样本的满分解释为生产可靠性。</text>
+</g></svg>

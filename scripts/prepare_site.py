@@ -9,7 +9,9 @@ if DEST.exists():
 DEST.mkdir(parents=True)
 for name in ['chapters', 'diagrams', 'labs', 'references', 'ai-agent-engineering-book-kit']:
     shutil.copytree(ROOT / name, DEST / name,
-                    ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
+                    ignore=shutil.ignore_patterns('__pycache__', '*.pyc', 'output', '*.db',
+                                                  '*.db-wal', '*.db-shm', '*.sqlite',
+                                                  '*.sqlite-wal', '*.sqlite-shm'))
 for name in ['README.md', 'ROADMAP.md', 'CONTRIBUTING.md', 'CHANGELOG.md', 'VALIDATION.md', 'LICENSE']:
     shutil.copy2(ROOT / name, DEST / name)
 # MkDocs uses index.md for the homepage. Fix root links without changing nested READMEs.

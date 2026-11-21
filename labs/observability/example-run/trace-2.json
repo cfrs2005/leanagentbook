@@ -1,0 +1,73 @@
+{
+  "schema": "lab-trace-v1",
+  "trace_id": "b9d05d9d21124189a677bbec5730243f",
+  "spans": [
+    {
+      "trace_id": "b9d05d9d21124189a677bbec5730243f",
+      "span_id": "14e38d8b5a0947fa",
+      "parent_id": null,
+      "kind": "workflow",
+      "start_ns": 1298562721218583,
+      "end_ns": 1298562721236875,
+      "status": "error",
+      "attributes": {
+        "dataset": "synthetic-v1"
+      },
+      "error_type": "TimeoutError"
+    },
+    {
+      "trace_id": "b9d05d9d21124189a677bbec5730243f",
+      "span_id": "84ac411146594689",
+      "parent_id": "14e38d8b5a0947fa",
+      "kind": "retrieval",
+      "start_ns": 1298562721221541,
+      "end_ns": 1298562721222250,
+      "status": "ok",
+      "attributes": {
+        "documents": 2
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "b9d05d9d21124189a677bbec5730243f",
+      "span_id": "5654b56bfb1c4aa4",
+      "parent_id": "14e38d8b5a0947fa",
+      "kind": "model",
+      "start_ns": 1298562721224666,
+      "end_ns": 1298562721225500,
+      "status": "ok",
+      "attributes": {
+        "model": "scripted-v1",
+        "result": "inspect"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "b9d05d9d21124189a677bbec5730243f",
+      "span_id": "fc89f150c5074e16",
+      "parent_id": "14e38d8b5a0947fa",
+      "kind": "approval",
+      "start_ns": 1298562721227708,
+      "end_ns": 1298562721228166,
+      "status": "ok",
+      "attributes": {
+        "approval": "approved"
+      },
+      "error_type": null
+    },
+    {
+      "trace_id": "b9d05d9d21124189a677bbec5730243f",
+      "span_id": "237c6e789c674095",
+      "parent_id": "14e38d8b5a0947fa",
+      "kind": "tool",
+      "start_ns": 1298562721230333,
+      "end_ns": 1298562721233708,
+      "status": "error",
+      "attributes": {
+        "effect": "read",
+        "samples": 3
+      },
+      "error_type": "TimeoutError"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 
 [在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **持续更新中的学习切片**：导读、01–04/24 章首版及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
+> 当前为 **持续更新中的学习切片**：导读、01–04/14–16/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -21,6 +21,10 @@
 | Agent 为什么会一直调用工具？ | [02 · Agent 工作原理](chapters/02-agent-loop.md) | 能终止、能处理失败的最小循环 |
 | Runtime、Harness、MCP 怎么分工？ | [03 · Runtime 与 Harness](chapters/03-runtime-harness.md) | 职责图和运行约束 |
 | 什么时候应该用多个 Agent？ | [04 · 工作流与多 Agent](chapters/04-workflow-orchestration.md) | 并行执行、有限重试与审批实验 |
+| 改了 Agent，怎样知道有没有退步？ | [14 · 评测与质量](chapters/14-evaluation.md) | 有标注样本、回放报告与发布门禁 |
+| 一次任务为什么失败或变慢？ | [15 · 运行观测](chapters/15-observability.md) | 脱敏轨迹、离线报告与只读回放 |
+| 进程突然退出，任务还能继续吗？ | [16 · 持久化与恢复](chapters/16-durable-execution.md) | 崩溃恢复、租约与幂等实验 |
+| 多个部门怎样共用 Agent 平台？ | [23 · 平台架构设计](chapters/23-platform-architecture.md) | 身份与数据边界、部署图、故障推演表 |
 | 设备数据上不了云，怎么诊断？ | [24 · 机器人诊断首个切片](chapters/24-robot-diagnosis.md) | 业务图、系统图、事件证据报告 |
 
 ## 六条学习主线

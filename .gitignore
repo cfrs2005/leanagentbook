@@ -7,3 +7,12 @@ build/
 private/
 .env
 .env.*
+
+# Local lab runs; committed examples use dedicated fixture directories.
+labs/*/output/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<title>第15章 · 离线观测报告</title><style>
+body{background:#F6F1E7;color:#22312F;font:16px/1.6 'PingFang SC','Microsoft YaHei',sans-serif;margin:2rem}
+h1{color:#B94F2D}section{background:#FFFCF6;padding:1rem;margin:1rem 0;border:1px solid #D9D2C4}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:.5rem;border-bottom:1px solid #D9D2C4}
+pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;color:#316653}h2{overflow-wrap:anywhere;font-size:1.1rem}
+</style><h1>第15章 · 离线观测报告</h1>
+<p>合成数据 / 确定性脚本模型 / 本机实测耗时。写入步骤仅为计划。没有外部调用。</p>
+<section><h2>运行摘要</h2><p>本批全部任务含失败；nearest-rank 分位数，单位毫秒。小样本不能估计生产尾延迟。
+null 表示未知：无流式 token 事件、供应商用量与价格，因此不报告 TTFT、TPOT、token 或费用。</p><pre>{
+  &quot;trace_count&quot;: 3,
+  &quot;failed_traces&quot;: 2,
+  &quot;failure_rate&quot;: 0.6666666666666666,
+  &quot;task_latency_ms&quot;: {
+    &quot;p50&quot;: 0.018292,
+    &quot;p95&quot;: 0.029084,
+    &quot;p99&quot;: 0.029084
+  },
+  &quot;tool_latency_ms&quot;: {
+    &quot;p50&quot;: 0.001083,
+    &quot;p95&quot;: 0.003375,
+    &quot;p99&quot;: 0.003375
+  },
+  &quot;tool_sample_count&quot;: 3,
+  &quot;ttft_ms&quot;: null,
+  &quot;tpot_ms&quot;: null,
+  &quot;input_tokens&quot;: null,
+  &quot;output_tokens&quot;: null,
+  &quot;cost_usd&quot;: null,
+  &quot;measurement&quot;: &quot;local perf_counter_ns; synthetic scripted model; nearest-rank&quot;
+}</pre></section><section><h2>任务 95b9b667577d455e8feafaa3f81e012b</h2><div class="scroll"><table><thead><tr><th>Span</th><th>Parent</th><th>类型</th><th>状态</th><th>起点 ms</th><th>耗时 ms</th><th>错误</th><th>安全属性</th></tr></thead><tbody><tr><td>edffdd140ced42a1</td><td>根节点</td><td>workflow</td><td>ok</td><td>0.0000</td><td>0.0291</td><td>—</td><td>{&quot;dataset&quot;: &quot;synthetic-v1&quot;}</td></tr><tr><td>568a22f3bb884332</td><td>edffdd140ced42a1</td><td>retrieval</td><td>ok</td><td>0.0084</td><td>0.0027</td><td>—</td><td>{&quot;documents&quot;: 2}</td></tr><tr><td>98b0f5e9e5064aca</td><td>edffdd140ced42a1</td><td>model</td><td>ok</td><td>0.0159</td><td>0.0018</td><td>—</td><td>{&quot;model&quot;: &quot;scripted-v1&quot;, &quot;result&quot;: &quot;inspect&quot;}</td></tr><tr><td>61529d2a6c6d46cd</td><td>edffdd140ced42a1</td><td>approval</td><td>ok</td><td>0.0210</td><td>0.0007</td><td>—</td><td>{&quot;approval&quot;: &quot;approved&quot;}</td></tr><tr><td>6a0cf4537cc04beb</td><td>edffdd140ced42a1</td><td>tool</td><td>ok</td><td>0.0245</td><td>0.0011</td><td>—</td><td>{&quot;effect&quot;: &quot;read&quot;, &quot;samples&quot;: 3}</td></tr><tr><td>5bb56fec0adf4e09</td><td>edffdd140ced42a1</td><td>tool</td><td>ok</td><td>0.0279</td><td>0.0007</td><td>—</td><td>{&quot;effect&quot;: &quot;write&quot;, &quot;result&quot;: &quot;draft_only&quot;}</td></tr></tbody></table></div><details><summary>只读回放（不执行任何工具）</summary><pre>{
+  &quot;trace_id&quot;: &quot;95b9b667577d455e8feafaa3f81e012b&quot;,
+  &quot;mode&quot;: &quot;read_only&quot;,
+  &quot;executed_tools&quot;: 0,
+  &quot;events&quot;: [
+    {
+      &quot;span_id&quot;: &quot;edffdd140ced42a1&quot;,
+      &quot;kind&quot;: &quot;workflow&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;568a22f3bb884332&quot;,
+      &quot;kind&quot;: &quot;retrieval&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;98b0f5e9e5064aca&quot;,
+      &quot;kind&quot;: &quot;model&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;61529d2a6c6d46cd&quot;,
+      &quot;kind&quot;: &quot;approval&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;6a0cf4537cc04beb&quot;,
+      &quot;kind&quot;: &quot;tool&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded_tool&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;5bb56fec0adf4e09&quot;,
+      &quot;kind&quot;: &quot;tool&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;blocked_write&quot;
+    }
+  ]
+}</pre></details></section><section><h2>任务 b9d05d9d21124189a677bbec5730243f</h2><div class="scroll"><table><thead><tr><th>Span</th><th>Parent</th><th>类型</th><th>状态</th><th>起点 ms</th><th>耗时 ms</th><th>错误</th><th>安全属性</th></tr></thead><tbody><tr><td>14e38d8b5a0947fa</td><td>根节点</td><td>workflow</td><td>error</td><td>0.0000</td><td>0.0183</td><td>TimeoutError</td><td>{&quot;dataset&quot;: &quot;synthetic-v1&quot;}</td></tr><tr><td>84ac411146594689</td><td>14e38d8b5a0947fa</td><td>retrieval</td><td>ok</td><td>0.0030</td><td>0.0007</td><td>—</td><td>{&quot;documents&quot;: 2}</td></tr><tr><td>5654b56bfb1c4aa4</td><td>14e38d8b5a0947fa</td><td>model</td><td>ok</td><td>0.0061</td><td>0.0008</td><td>—</td><td>{&quot;model&quot;: &quot;scripted-v1&quot;, &quot;result&quot;: &quot;inspect&quot;}</td></tr><tr><td>fc89f150c5074e16</td><td>14e38d8b5a0947fa</td><td>approval</td><td>ok</td><td>0.0091</td><td>0.0005</td><td>—</td><td>{&quot;approval&quot;: &quot;approved&quot;}</td></tr><tr><td>237c6e789c674095</td><td>14e38d8b5a0947fa</td><td>tool</td><td>error</td><td>0.0118</td><td>0.0034</td><td>TimeoutError</td><td>{&quot;effect&quot;: &quot;read&quot;, &quot;samples&quot;: 3}</td></tr></tbody></table></div><details><summary>只读回放（不执行任何工具）</summary><pre>{
+  &quot;trace_id&quot;: &quot;b9d05d9d21124189a677bbec5730243f&quot;,
+  &quot;mode&quot;: &quot;read_only&quot;,
+  &quot;executed_tools&quot;: 0,
+  &quot;events&quot;: [
+    {
+      &quot;span_id&quot;: &quot;14e38d8b5a0947fa&quot;,
+      &quot;kind&quot;: &quot;workflow&quot;,
+      &quot;recorded_status&quot;: &quot;error&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;84ac411146594689&quot;,
+      &quot;kind&quot;: &quot;retrieval&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;5654b56bfb1c4aa4&quot;,
+      &quot;kind&quot;: &quot;model&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;fc89f150c5074e16&quot;,
+      &quot;kind&quot;: &quot;approval&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;237c6e789c674095&quot;,
+      &quot;kind&quot;: &quot;tool&quot;,
+      &quot;recorded_status&quot;: &quot;error&quot;,
+      &quot;action&quot;: &quot;inspect_recorded_tool&quot;
+    }
+  ]
+}</pre></details></section><section><h2>任务 b52ed557bbac4941936c46d3d53da1f9</h2><div class="scroll"><table><thead><tr><th>Span</th><th>Parent</th><th>类型</th><th>状态</th><th>起点 ms</th><th>耗时 ms</th><th>错误</th><th>安全属性</th></tr></thead><tbody><tr><td>6691d7f92ee442bf</td><td>根节点</td><td>workflow</td><td>error</td><td>0.0000</td><td>0.0102</td><td>PermissionError</td><td>{&quot;dataset&quot;: &quot;synthetic-v1&quot;}</td></tr><tr><td>7c949919672d40cd</td><td>6691d7f92ee442bf</td><td>retrieval</td><td>ok</td><td>0.0022</td><td>0.0005</td><td>—</td><td>{&quot;documents&quot;: 2}</td></tr><tr><td>3dd0c3d9f29b4c96</td><td>6691d7f92ee442bf</td><td>model</td><td>ok</td><td>0.0048</td><td>0.0006</td><td>—</td><td>{&quot;model&quot;: &quot;scripted-v1&quot;, &quot;result&quot;: &quot;inspect&quot;}</td></tr><tr><td>0e0b2200be194c76</td><td>6691d7f92ee442bf</td><td>approval</td><td>error</td><td>0.0075</td><td>0.0014</td><td>PermissionError</td><td>{&quot;approval&quot;: &quot;rejected&quot;}</td></tr></tbody></table></div><details><summary>只读回放（不执行任何工具）</summary><pre>{
+  &quot;trace_id&quot;: &quot;b52ed557bbac4941936c46d3d53da1f9&quot;,
+  &quot;mode&quot;: &quot;read_only&quot;,
+  &quot;executed_tools&quot;: 0,
+  &quot;events&quot;: [
+    {
+      &quot;span_id&quot;: &quot;6691d7f92ee442bf&quot;,
+      &quot;kind&quot;: &quot;workflow&quot;,
+      &quot;recorded_status&quot;: &quot;error&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;7c949919672d40cd&quot;,
+      &quot;kind&quot;: &quot;retrieval&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;3dd0c3d9f29b4c96&quot;,
+      &quot;kind&quot;: &quot;model&quot;,
+      &quot;recorded_status&quot;: &quot;ok&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    },
+    {
+      &quot;span_id&quot;: &quot;0e0b2200be194c76&quot;,
+      &quot;kind&quot;: &quot;approval&quot;,
+      &quot;recorded_status&quot;: &quot;error&quot;,
+      &quot;action&quot;: &quot;inspect_recorded&quot;
+    }
+  ]
+}</pre></details></section></html>
