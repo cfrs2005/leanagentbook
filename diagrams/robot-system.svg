@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="453" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc">
+<title id="title">机器人诊断：设备、现场与云端边界</title><desc id="desc">绿色为已实现本地切片；灰色为未来设计。箭头仅表达数据关系，不代表已联网。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#60746d"/></marker></defs>
+<rect width="1120" height="660" fill="#f6f3ed"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#203c35">
+<text x="40" y="53" font-size="28" font-weight="700">机器人诊断：设备、现场与云端边界</text>
+<text x="40" y="86" font-size="17" fill="#52665e">绿色为已实现本地切片；灰色为未来设计。箭头仅表达数据关系，不代表已联网。</text>
+<path d="M330 215H415" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="372" y="195" font-size="15" text-anchor="middle">授权导出</text>
+<path d="M705 215H790" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="748" y="195" font-size="15" text-anchor="middle">最小证据</text>
+<path d="M790 270H705" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="748" y="294" font-size="15" text-anchor="middle">版本管理</text>
+<path d="M185 395V345H470V300" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="312" y="335" font-size="15" text-anchor="middle">合成输入</text>
+<path d="M560 300V395" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="590" y="355" font-size="15" text-anchor="middle">生成</text>
+<path d="M705 465H790" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="748" y="445" font-size="15" text-anchor="middle">未来展示</text>
+<rect x="40" y="135" width="290" height="165" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="60" y="169" font-size="21" font-weight="700">设备侧（未来接入）</text>
+<text x="60" y="201" font-size="17">资源有限；保留原始记录</text>
+<text x="60" y="229" font-size="17">日志 / 传感器 / bag</text>
+<text x="60" y="257" font-size="17">底层控制与安全联锁独立</text>
+<rect x="415" y="135" width="290" height="165" rx="14" fill="#e4eee5" stroke="#3a7357" stroke-width="2"/>
+<text x="435" y="169" font-size="21" font-weight="700">现场笔记本（已实现）</text>
+<text x="435" y="201" font-size="17">合成 CSV → 校验与窗口检测</text>
+<text x="435" y="229" font-size="17">本地 JSON：证据 + 不确定性</text>
+<text x="435" y="257" font-size="17">无模型调用；无网络请求</text>
+<rect x="790" y="135" width="290" height="165" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="810" y="169" font-size="21" font-weight="700">云端（未实现）</text>
+<text x="810" y="201" font-size="17">审核案例与模型版本管理</text>
+<text x="810" y="229" font-size="17">特征、训练与评测</text>
+<text x="810" y="257" font-size="17">身份、权限与审计</text>
+<rect x="40" y="395" width="290" height="140" rx="14" fill="#e4eee5" stroke="#3a7357" stroke-width="2"/>
+<text x="60" y="429" font-size="21" font-weight="700">实验输入（已实现）</text>
+<text x="60" y="461" font-size="17">正常 / 异常 / 缺失 CSV</text>
+<text x="60" y="489" font-size="17">最多 1 MiB、1 小时</text>
+<rect x="415" y="395" width="290" height="140" rx="14" fill="#e4eee5" stroke="#3a7357" stroke-width="2"/>
+<text x="435" y="429" font-size="21" font-weight="700">本地报告（已实现）</text>
+<text x="435" y="461" font-size="17">时间、数值、规则与文件摘要</text>
+<text x="435" y="489" font-size="17">供人阅读，不确认根因</text>
+<rect x="790" y="395" width="290" height="140" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="810" y="429" font-size="21" font-weight="700">App（未实现）</text>
+<text x="810" y="461" font-size="17">展示事件、补充工况</text>
+<text x="810" y="489" font-size="17">人工复核与提交授权</text>
+<text x="40" y="610" font-size="17" fill="#8b4937">不能将本地可运行结果当作云端、App、rosbag 接入、生产大数据处理或实机验证。</text></g></svg>

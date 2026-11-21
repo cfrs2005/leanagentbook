@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="453" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc">
+<title id="title">机器人诊断：先完成业务闭环</title><desc id="desc">绿色为本切片提供的能力；灰色为人工流程或后续平台能力。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#60746d"/></marker></defs>
+<rect width="1120" height="660" fill="#f6f3ed"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#203c35">
+<text x="40" y="53" font-size="28" font-weight="700">机器人诊断：先完成业务闭环</text>
+<text x="40" y="86" font-size="17" fill="#52665e">绿色为本切片提供的能力；灰色为人工流程或后续平台能力。</text>
+<path d="M350 210H405" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M715 210H770" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M925 290V365" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M770 447H715" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M405 447H350" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M195 365V290" fill="none" stroke="#60746d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="245" y="332" font-size="15" text-anchor="middle">持续改进</text>
+<rect x="40" y="130" width="310" height="160" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="60" y="164" font-size="21" font-weight="700">1 记录现象</text>
+<text x="60" y="196" font-size="17">操作员记录时间与工况</text>
+<text x="60" y="224" font-size="17">先描述现象，不预设根因</text>
+<rect x="405" y="130" width="310" height="160" rx="14" fill="#e4eee5" stroke="#3a7357" stroke-width="2"/>
+<text x="425" y="164" font-size="21" font-weight="700">2 筛选事件</text>
+<text x="425" y="196" font-size="17">笔记本读取合成 CSV</text>
+<text x="425" y="224" font-size="17">生成窗口、证据与缺失说明</text>
+<rect x="770" y="130" width="310" height="160" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="790" y="164" font-size="21" font-weight="700">3 人工复核</text>
+<text x="790" y="196" font-size="17">现场工程师检查上下文</text>
+<text x="790" y="224" font-size="17">区分异常、假设与根因</text>
+<rect x="770" y="365" width="310" height="165" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="790" y="399" font-size="21" font-weight="700">4 按规程验证</text>
+<text x="790" y="431" font-size="17">人工检查、处理与补采</text>
+<text x="790" y="459" font-size="17">安全控制独立于诊断流程</text>
+<rect x="405" y="365" width="310" height="165" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="425" y="399" font-size="21" font-weight="700">5 案例归档</text>
+<text x="425" y="431" font-size="17">授权后提交最小必要证据</text>
+<text x="425" y="459" font-size="17">云端保存复核结论与版本</text>
+<rect x="40" y="365" width="310" height="165" rx="14" fill="#eeece7" stroke="#a5aaa4" stroke-width="2"/>
+<text x="60" y="399" font-size="21" font-weight="700">6 评测与更新</text>
+<text x="60" y="431" font-size="17">维护人员审核标签和模型</text>
+<text x="60" y="459" font-size="17">验证后发布，保留回滚</text>
+<text x="40" y="610" font-size="17" fill="#8b4937">边界：合成数据实验；未连接实机；故障假设不等于根因；不自动控制机器人。</text></g></svg>

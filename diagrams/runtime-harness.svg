@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc"><title id="title">Runtime 与 Harness：分开职责，共同执行</title><desc id="desc">Runtime 管理生命周期并记录内存状态和事件，通过模型适配器决策。Harness 提供上下文、策略和工具执行入口。本例没有持久化或沙箱。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6676"/></marker></defs>
+<rect width="1000" height="560" rx="20" fill="#f7f5ef"/>
+<text x="42" y="52" font-family="sans-serif" font-size="27" fill="#153c4b">Runtime 与 Harness：分开职责，共同执行</text>
+<path d="M 385 160 L 270 160" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 615 160 L 730 160" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 500 205 L 500 285" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 385 330 L 155 330 L 155 390" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 500 375 L 500 390" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 615 330 L 845 330 L 845 390" fill="none" stroke="#4a6676" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="40" y="115" width="230" height="90" rx="12" fill="#dcece7" stroke="#64818a"/>
+<text x="155.0" y="150" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Model Adapter</text>
+<text x="155.0" y="180" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">统一异步决策接口</text>
+<rect x="385" y="115" width="230" height="90" rx="12" fill="#f4e4cd" stroke="#64818a"/>
+<text x="500.0" y="150" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Runtime</text>
+<text x="500.0" y="180" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">启动 · 推进 · 终止</text>
+<rect x="730" y="115" width="230" height="90" rx="12" fill="#ffffff" stroke="#64818a"/>
+<text x="845.0" y="150" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">State / Events</text>
+<text x="845.0" y="180" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">仅保存在内存</text>
+<rect x="385" y="285" width="230" height="90" rx="12" fill="#dcece7" stroke="#64818a"/>
+<text x="500.0" y="320" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Harness</text>
+<text x="500.0" y="350" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">业务工具与执行约束</text>
+<rect x="40" y="390" width="230" height="90" rx="12" fill="#ffffff" stroke="#64818a"/>
+<text x="155.0" y="425" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Context</text>
+<text x="155.0" y="455" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">消息字符预算</text>
+<rect x="385" y="390" width="230" height="90" rx="12" fill="#ffffff" stroke="#64818a"/>
+<text x="500.0" y="425" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Policy</text>
+<text x="500.0" y="455" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">权限 · 步数 · 时限</text>
+<rect x="730" y="390" width="230" height="90" rx="12" fill="#ffffff" stroke="#64818a"/>
+<text x="845.0" y="425" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#153c4b">Tool Executor</text>
+<text x="845.0" y="455" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#31535f">授权 → 校验 → 执行</text>
+<text x="42" y="521" font-family="sans-serif" font-size="17" fill="#31535f">本图是课程职责约定；不同框架的命名和组件边界可能不同。</text></svg>
