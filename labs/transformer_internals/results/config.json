@@ -1,0 +1,27 @@
+{
+  "seed": 17,
+  "ids": [
+    [
+      1,
+      4,
+      2,
+      4,
+      7,
+      3
+    ]
+  ],
+  "batch": 1,
+  "length": 6,
+  "width": 8,
+  "heads": 2,
+  "head_width": 4,
+  "ffn_width": 32,
+  "vocab": 16,
+  "dtype": "float64",
+  "device": "cpu",
+  "weights": "random, untrained; no language capability",
+  "position": "sinusoidal",
+  "architecture": "one pre-norm decoder block; no LM head",
+  "torch": "2.6.0",
+  "python": "3.12.14"
+}

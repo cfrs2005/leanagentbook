@@ -22,9 +22,9 @@
 | 02 | [Agent 的工作原理](chapters/02-agent-loop.md) | 首版切片；完整任务待补齐 |
 | 03 | [Agent Runtime 与 Harness](chapters/03-runtime-harness.md) | 首版切片；完整任务待补齐 |
 | 04 | [Workflow、Multi-Agent 与任务编排](chapters/04-workflow-orchestration.md) | 首版切片；完整任务待补齐 |
-| 05 | Transformer 与模型内部原理 | 已规划，未交付正文 |
-| 06 | 模型训练与后训练 | 已规划，未交付正文 |
-| 07 | LLM Inference 与 Serving | 已规划，未交付正文 |
+| 05 | [Transformer 与模型内部原理](chapters/05-transformer-internals.md) | 首版：真实 PyTorch 张量、遮罩与 KV 等价；简化随机模型 |
+| 06 | [模型训练与后训练](chapters/06-training-post-training.md) | 首版：真实小模型 LoRA/SFT、独立评测与重载；生产数据待补 |
+| 07 | [LLM Inference 与 Serving](chapters/07-inference-serving.md) | 首版：真实 CPU 服务与 96 请求压测；GPU 框架与生产负载待补 |
 | 08 | [模型路由与成本优化](chapters/08-model-routing.md) | 首版：双模型实测、策略回放与精确缓存；业务盲测与在线负载待补 |
 | 09 | [Embedding 与向量检索](chapters/09-vector-retrieval.md) | 首版：双路召回、融合与重排评测；生产 ANN 与中文语料待补 |
 | 10 | [RAG 全链路架构](chapters/10-rag-pipeline.md) | 首版：三种格式摄取、引用、更新与删除；真实生成和 OCR 待补 |
@@ -36,7 +36,7 @@
 | 16 | [Durable Execution 与分布式任务恢复](chapters/16-durable-execution.md) | 首版：真实子进程崩溃与本地账本；跨机与长时运行待补 |
 | 17 | [Agent Security 与权限治理](chapters/17-security-governance.md) | 首版：固定工具授权审批与 OS 拒绝探针；生产身份与完整沙箱待补 |
 | 18 | [分布式 Agent 系统](chapters/18-distributed-agents.md) | 首版：独立进程 HTTP Worker、租约和故障转移；跨机高可用待补 |
-| 19 | Time Series AI 与工业异常检测 | 已规划，未交付正文 |
+| 19 | [Time Series AI 与工业异常检测](chapters/19-time-series.md) | 首版：统计、Isolation Forest、XGBoost 实跑；真实设备数据待补 |
 | 20 | Robotics AI 与 ROS 数据体系 | 已规划，未交付正文 |
 | 21 | Edge AI 与边云协同 | 已规划，未交付正文 |
 | 22 | Causal AI 与智能故障诊断 | 已规划，未交付正文 |
@@ -71,4 +71,4 @@
 
 ## 检索与记忆交付范围
 
-09 章已真实运行固定版本的 MiniLM 嵌入和 TinyBERT 重排；英文合成数据结果不能推断中文效果。10 章已处理真实 PDF、HTML 和 Markdown，回答仍为摘录式。13 章是规则抽取和字节预算；17 章是内存固定工具网关与有限 OS 拒绝探针。当前共 17 章有首版或设计稿，仍未声明任何章节完成全套生产验收。
+09 章已真实运行固定版本的 MiniLM 嵌入和 TinyBERT 重排；英文合成数据结果不能推断中文效果。10 章已处理真实 PDF、HTML 和 Markdown，回答仍为摘录式。13 章是规则抽取和字节预算；17 章是内存固定工具网关与有限 OS 拒绝探针。当前共 21 章有首版或设计稿，仍未声明任何章节完成全套生产验收。

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670" role="img" aria-labelledby="title desc">
+<title id="title">时间序列：先切时间，再拟合模型</title><desc id="desc">训练、开发、测试使用不重叠的原始时间区间。只能向前填补，开发集选阈值，测试集同时报告误报漏报和告警提前量。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#31564b"/></marker></defs>
+<rect width="1200" height="670" rx="22" fill="#f8f5ee"/>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#233c34">
+<text x="50" y="58" font-size="18" fill="#a45135">19 / TIME SERIES</text><text x="50" y="105" font-size="33" font-weight="700">不要让明天的数据，回答今天的问题</text>
+<text x="50" y="145" font-size="19">合成电流、温度、转速 · 1 Hz · 60 秒历史窗口 · 15 秒决策间隔</text>
+<rect x="50" y="188" width="480" height="100" rx="12" fill="#dce9df"/><rect x="542" y="188" width="270" height="100" rx="12" fill="#eadbc5"/><rect x="824" y="188" width="326" height="100" rx="12" fill="#dce6ec"/>
+<g font-size="24" font-weight="700"><text x="75" y="229">训练 0—5399 秒</text><text x="565" y="229">开发 5400—8399</text><text x="847" y="229">测试 8400—11999</text></g>
+<g font-size="18"><text x="75" y="264">拟合统计量 / Isolation Forest / XGBoost</text><text x="565" y="264">只在这里选择阈值</text><text x="847" y="264">冻结参数后报告结果</text></g>
+<g stroke="#31564b" stroke-width="2" fill="#fffdf8"><rect x="50" y="340" width="325" height="150" rx="14"/><rect x="438" y="340" width="325" height="150" rx="14"/><rect x="826" y="340" width="324" height="150" rx="14"/></g>
+<g fill="none" stroke="#31564b" stroke-width="3" marker-end="url(#arrow)"><path d="M382 410H428"/><path d="M770 410H816"/></g>
+<g font-size="23" font-weight="700"><text x="75" y="381">① 过去的数据</text><text x="462" y="381">② 因果窗口特征</text><text x="850" y="381">③ 双口径评价</text></g>
+<g font-size="18"><text x="75" y="421">检查时间戳、单位、缺失</text><text x="75" y="456">短缺口只向前填补</text><text x="462" y="421">均值 / 方差 / RMS / 峰度</text><text x="462" y="456">窗口不能跨训练测试边界</text><text x="850" y="421">窗口：Precision / Recall / F1</text><text x="850" y="456">事件：漏报、提前量、误报频率</text></g>
+<rect x="50" y="533" width="1100" height="91" rx="14" fill="#f0e3d8"/><text x="75" y="571" font-size="22" fill="#a45135">完整测试时段都要看，不能只挑成功告警</text><text x="75" y="604" font-size="18">当前实验是合成慢速遥测；不证明真实设备诊断，不把 1 Hz 数据当作高频振动信号。</text>
+</g></svg>

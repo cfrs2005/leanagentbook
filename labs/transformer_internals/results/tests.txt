@@ -1,0 +1,22 @@
+$ python3 -m unittest discover -s labs/transformer_internals -p test_*.py -v
+test_actual_attention (test_artifacts.ArtifactTests.test_actual_attention) ... ok
+test_incremental_output (test_artifacts.ArtifactTests.test_incremental_output) ... ok
+test_report (test_artifacts.ArtifactTests.test_report) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+$ /tmp/leanagentbook-routing-py312/bin/python labs/transformer_internals/torch_checks.py -v
+test_batch (__main__.AttentionTests.test_batch) ... ok
+test_empty_input (__main__.AttentionTests.test_empty_input) ... ok
+test_invalid_dimensions (__main__.AttentionTests.test_invalid_dimensions) ... ok
+test_numerical_invariants (__main__.AttentionTests.test_numerical_invariants) ... ok
+test_prefill_then_two_token_chunk (__main__.AttentionTests.test_prefill_then_two_token_chunk) ... ok
+test_single_token (__main__.AttentionTests.test_single_token) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

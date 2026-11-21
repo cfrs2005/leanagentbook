@@ -1,0 +1,84 @@
+{
+  "started_utc": "2026-11-21T06:45:39.194244+00:00",
+  "python": "3.12.14",
+  "os": "macOS-26.3-arm64-arm-64bit",
+  "machine": "arm64",
+  "cpu": "Apple M4",
+  "logical_cpus": 10,
+  "host_ram_bytes": "17179869184",
+  "model": "google/flan-t5-small",
+  "model_file_sha256": {
+    "model.safetensors": "495fa51e204676f1a857a9fc13c4c89f3f5ba9f480b898cebca02add25e6d749",
+    "tokenizer_config.json": "fcde0f79bffda3688119c94330866a8fbf8de20ae65a8c492c9bd47c704655a0",
+    "special_tokens_map.json": "5c87151ef0f72a99d1f766a4c418bd2a1f90aaa30a8e22fe5eca9641daebb64f",
+    "config.json": "439aa0fecf5a5546a1def68b1fc45e538e2c94528ce805378daf091e2bf6e4de",
+    "tokenizer.json": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+    "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+    "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+  },
+  "server": {
+    "port": 59453,
+    "torch": "2.6.0",
+    "transformers": "4.48.3",
+    "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "dtype": "torch.float32",
+    "device": "cpu",
+    "torch_threads": 1,
+    "generation_slots": 1,
+    "queue_policy": "thread lock; no FIFO guarantee; client bounded at 2",
+    "parameter_count": 76961152
+  },
+  "gpu_memory": null,
+  "gpu_memory_reason": "CPU only; not applicable",
+  "quantization": "none; FP32",
+  "shared_host_load": true,
+  "seed": 7,
+  "requests_per_cell": 12,
+  "warmups": 1,
+  "input_policy": "fixed repeated synthetic English sentence, token-prefix slice plus EOS",
+  "output_policy": "greedy; min_new_tokens=max_new_tokens; EOS suppressed to fixed length",
+  "clock": "perf_counter; client origin before HTTP connection; server origin after body validation",
+  "memory_policy": "server process lifetime peak RSS; includes loading and warmup; not cell allocation",
+  "cell_order": [
+    [
+      2,
+      128,
+      8
+    ],
+    [
+      2,
+      128,
+      24
+    ],
+    [
+      1,
+      128,
+      8
+    ],
+    [
+      2,
+      32,
+      8
+    ],
+    [
+      1,
+      32,
+      8
+    ],
+    [
+      1,
+      128,
+      24
+    ],
+    [
+      1,
+      32,
+      24
+    ],
+    [
+      2,
+      32,
+      24
+    ]
+  ]
+}

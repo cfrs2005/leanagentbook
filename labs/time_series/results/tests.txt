@@ -1,0 +1,19 @@
+test_committed_report_replays_metrics_without_ml (test_series.SeriesTests.test_committed_report_replays_metrics_without_ml) ... ok
+test_confusion_and_zero_prediction (test_series.SeriesTests.test_confusion_and_zero_prediction) ... ok
+test_false_alarm_episode_grouping (test_series.SeriesTests.test_false_alarm_episode_grouping) ... ok
+test_feature_dimensions_and_time_label (test_series.SeriesTests.test_feature_dimensions_and_time_label) ... ok
+test_future_changes_do_not_change_earlier_features (test_series.SeriesTests.test_future_changes_do_not_change_earlier_features) ... ok
+test_known_statistics (test_series.SeriesTests.test_known_statistics) ... ok
+test_long_missing_gap_is_rejected_not_interpolated (test_series.SeriesTests.test_long_missing_gap_is_rejected_not_interpolated) ... ok
+test_metric_input_failure (test_series.SeriesTests.test_metric_input_failure) ... ok
+test_missing_initial_value_cannot_use_future (test_series.SeriesTests.test_missing_initial_value_cannot_use_future) ... ok
+test_raw_intervals_never_cross_splits (test_series.SeriesTests.test_raw_intervals_never_cross_splits) ... ok
+test_reject_irregular_nonfinite_and_boolean (test_series.SeriesTests.test_reject_irregular_nonfinite_and_boolean) ... ok
+test_seed_and_contract (test_series.SeriesTests.test_seed_and_contract) ... ok
+test_signed_lead_and_missed_events (test_series.SeriesTests.test_signed_lead_and_missed_events) ... ok
+test_threshold_uses_dev_only (test_series.SeriesTests.test_threshold_uses_dev_only) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.585s
+
+OK

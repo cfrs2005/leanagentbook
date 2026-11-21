@@ -45,6 +45,9 @@ nav:
       - 03 · Runtime 与 Harness: chapters/03-runtime-harness.md
       - 04 · 工作流与多 Agent: chapters/04-workflow-orchestration.md
   - 模型工程:
+      - 05 · Transformer 内部原理: chapters/05-transformer-internals.md
+      - 06 · 训练与后训练: chapters/06-training-post-training.md
+      - 07 · 推理与服务: chapters/07-inference-serving.md
       - 08 · 路由与成本: chapters/08-model-routing.md
   - 检索与数据:
       - 09 · 向量检索与融合: chapters/09-vector-retrieval.md
@@ -59,6 +62,7 @@ nav:
       - 17 · 权限与安全: chapters/17-security-governance.md
   - 分布式与机器人:
       - 18 · 独立 Worker 与调度: chapters/18-distributed-agents.md
+      - 19 · 时间序列与异常检测: chapters/19-time-series.md
   - 综合设计:
       - 23 · 企业平台架构: chapters/23-platform-architecture.md
       - 24 · 机器人诊断实战: chapters/24-robot-diagnosis.md
@@ -71,6 +75,10 @@ nav:
       - 模型边界实验: labs/model_foundations/README.md
       - Agent 离线实验: labs/agent_loop/README.md
       - 工作流协作实验: labs/workflow_orchestration/README.md
+      - 注意力与 KV 实验: labs/transformer_internals/README.md
+      - 真实 LoRA 训练: labs/training_post_training/README.md
+      - 真实推理服务压测: labs/inference_serving/README.md
+      - 时间序列异常检测: labs/time_series/README.md
       - 模型路由与缓存: labs/model_routing/README.md
       - 多模态证据检索: labs/multimodal_rag/README.md
       - 数据消费与重放: labs/data_engineering/README.md

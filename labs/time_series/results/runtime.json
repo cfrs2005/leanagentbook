@@ -1,0 +1,6 @@
+{
+  "openmp_source": "torch 2.6.0 macOS arm64 bundled libomp.dylib; read-only reuse",
+  "sha256": "def839a00fd8cab0ee576014fe177423889d003b637f236f9854d05962b53dd0",
+  "library_path_scope": "DYLD_LIBRARY_PATH only for the training process",
+  "system_files_changed": false
+}

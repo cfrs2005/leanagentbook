@@ -1,0 +1,16 @@
+{
+  "model_id": "google/flan-t5-small",
+  "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "seed": 606,
+  "epochs": 8,
+  "batch_size": 4,
+  "learning_rate": 0.001,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "target_modules": ["q", "v"],
+  "max_input_tokens": 128,
+  "max_output_tokens": 8,
+  "cpu_threads": 2,
+  "selection": "minimum_dev_token_loss"
+}

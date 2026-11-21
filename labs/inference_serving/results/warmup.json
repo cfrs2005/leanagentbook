@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "type": "token",
+      "token_id": 37,
+      "index": 1,
+      "server_elapsed_s": 0.06295004184357822,
+      "client_elapsed_s": 0.09536370798014104
+    },
+    {
+      "type": "token",
+      "token_id": 794,
+      "index": 2,
+      "server_elapsed_s": 0.07010520901530981,
+      "client_elapsed_s": 0.10236929100938141
+    },
+    {
+      "type": "token",
+      "token_id": 1407,
+      "index": 3,
+      "server_elapsed_s": 0.0756618338637054,
+      "client_elapsed_s": 0.1078987498767674
+    },
+    {
+      "type": "token",
+      "token_id": 19,
+      "index": 4,
+      "server_elapsed_s": 0.08284124988131225,
+      "client_elapsed_s": 0.11519441590644419
+    },
+    {
+      "type": "token",
+      "token_id": 3,
+      "index": 5,
+      "server_elapsed_s": 0.08794979192316532,
+      "client_elapsed_s": 0.12020316603593528
+    },
+    {
+      "type": "token",
+      "token_id": 9,
+      "index": 6,
+      "server_elapsed_s": 0.09352895896881819,
+      "client_elapsed_s": 0.12587062502279878
+    },
+    {
+      "type": "token",
+      "token_id": 3,
+      "index": 7,
+      "server_elapsed_s": 0.10011683381162584,
+      "client_elapsed_s": 0.13241441594436765
+    },
+    {
+      "type": "token",
+      "token_id": 7,
+      "index": 8,
+      "server_elapsed_s": 0.10497945896349847,
+      "client_elapsed_s": 0.13723466591909528
+    },
+    {
+      "type": "done",
+      "input_tokens": 32,
+      "output_tokens": 8,
+      "text": "The test device is a s",
+      "queue_s": 0.00034433393739163876,
+      "server_elapsed_s": 0.10537799983285367,
+      "process_peak_rss_bytes": 707215360,
+      "client_elapsed_s": 0.13753945799544454
+    }
+  ],
+  "error": null,
+  "duration_s": 0.14984149998053908,
+  "requested_input_tokens": 32,
+  "requested_output_tokens": 8
+}

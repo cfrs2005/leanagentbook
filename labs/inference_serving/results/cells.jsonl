@@ -1,0 +1,8 @@
+{"cell_id": 0, "concurrency": 2, "actual_peak_http_concurrency": 2, "generation_concurrency": 1, "input_tokens": 128, "output_tokens": 8, "requests": 12, "wall_s": 0.7894452919717878}
+{"cell_id": 1, "concurrency": 2, "actual_peak_http_concurrency": 2, "generation_concurrency": 1, "input_tokens": 128, "output_tokens": 24, "requests": 12, "wall_s": 1.9972080001607537}
+{"cell_id": 2, "concurrency": 1, "actual_peak_http_concurrency": 1, "generation_concurrency": 1, "input_tokens": 128, "output_tokens": 8, "requests": 12, "wall_s": 1.175386792048812}
+{"cell_id": 3, "concurrency": 2, "actual_peak_http_concurrency": 2, "generation_concurrency": 1, "input_tokens": 32, "output_tokens": 8, "requests": 12, "wall_s": 0.5941290410701185}
+{"cell_id": 4, "concurrency": 1, "actual_peak_http_concurrency": 1, "generation_concurrency": 1, "input_tokens": 32, "output_tokens": 8, "requests": 12, "wall_s": 0.9328891669865698}
+{"cell_id": 5, "concurrency": 1, "actual_peak_http_concurrency": 1, "generation_concurrency": 1, "input_tokens": 128, "output_tokens": 24, "requests": 12, "wall_s": 2.0114421658217907}
+{"cell_id": 6, "concurrency": 1, "actual_peak_http_concurrency": 1, "generation_concurrency": 1, "input_tokens": 32, "output_tokens": 24, "requests": 12, "wall_s": 1.9437240827828646}
+{"cell_id": 7, "concurrency": 2, "actual_peak_http_concurrency": 2, "generation_concurrency": 1, "input_tokens": 32, "output_tokens": 24, "requests": 12, "wall_s": 1.6286843330599368}

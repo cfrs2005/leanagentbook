@@ -1,0 +1,12 @@
+{"id": "test-00", "scenario": "bank_transfer", "text": "Can we settle the outstanding balance by wire transfer?", "label": "billing"}
+{"id": "test-01", "scenario": "overdue_fee", "text": "An extra late-payment fee appeared on the statement.", "label": "billing"}
+{"id": "test-02", "scenario": "contract_quote", "text": "We need a formal quotation before procurement can approve the subscription.", "label": "billing"}
+{"id": "test-03", "scenario": "billing_merge", "text": "Combine charges for our two branches into one monthly statement.", "label": "billing"}
+{"id": "test-04", "scenario": "audit_viewer", "text": "An external auditor needs read-only entry for one week.", "label": "access"}
+{"id": "test-05", "scenario": "region_login", "text": "Signing in while traveling is blocked by an organization policy.", "label": "access"}
+{"id": "test-06", "scenario": "service_identity", "text": "Our integration account lacks permission to read reports.", "label": "access"}
+{"id": "test-07", "scenario": "username_collision", "text": "The registration form says my work identity already exists.", "label": "access"}
+{"id": "test-08", "scenario": "vibration", "text": "A loose internal screw rattles when the machine moves.", "label": "hardware"}
+{"id": "test-09", "scenario": "caster_flat", "text": "The rear caster has a flat spot that shakes the chassis.", "label": "hardware"}
+{"id": "test-10", "scenario": "antenna_bent", "text": "The wireless antenna broke off its mounting bracket.", "label": "hardware"}
+{"id": "test-11", "scenario": "pump_block", "text": "Debris has physically blocked the fluid pump impeller.", "label": "hardware"}

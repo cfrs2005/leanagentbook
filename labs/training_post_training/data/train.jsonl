@@ -1,0 +1,36 @@
+{"id": "train-00", "scenario": "duplicate_charge", "text": "My card was charged twice for one subscription.", "label": "billing"}
+{"id": "train-01", "scenario": "invoice_address", "text": "Please correct the address printed on my invoice.", "label": "billing"}
+{"id": "train-02", "scenario": "refund_delay", "text": "The promised refund has not reached my bank.", "label": "billing"}
+{"id": "train-03", "scenario": "annual_price", "text": "What is the yearly price for the team plan?", "label": "billing"}
+{"id": "train-04", "scenario": "tax_exemption", "text": "Our nonprofit needs tax removed from the bill.", "label": "billing"}
+{"id": "train-05", "scenario": "cancel_renewal", "text": "Stop the automatic renewal of my paid plan.", "label": "billing"}
+{"id": "train-06", "scenario": "receipt_copy", "text": "Send a receipt for last month's payment.", "label": "billing"}
+{"id": "train-07", "scenario": "card_update", "text": "I need to replace the credit card used for payments.", "label": "billing"}
+{"id": "train-08", "scenario": "discount_missing", "text": "The checkout coupon did not reduce the amount.", "label": "billing"}
+{"id": "train-09", "scenario": "seat_cost", "text": "How much will five additional paid seats cost?", "label": "billing"}
+{"id": "train-10", "scenario": "payment_declined", "text": "The bank rejected my subscription payment.", "label": "billing"}
+{"id": "train-11", "scenario": "currency", "text": "Can our invoices be issued in euros?", "label": "billing"}
+{"id": "train-12", "scenario": "forgot_password", "text": "I forgot my password and cannot sign in.", "label": "access"}
+{"id": "train-13", "scenario": "mfa_phone", "text": "My authentication codes go to a lost phone.", "label": "access"}
+{"id": "train-14", "scenario": "invite_expired", "text": "The invitation link to join the workspace expired.", "label": "access"}
+{"id": "train-15", "scenario": "locked_account", "text": "My account was locked after several login attempts.", "label": "access"}
+{"id": "train-16", "scenario": "role_edit", "text": "I can view documents but need permission to edit them.", "label": "access"}
+{"id": "train-17", "scenario": "sso_error", "text": "Company single sign-on returns an identity error.", "label": "access"}
+{"id": "train-18", "scenario": "user_remove", "text": "Remove a former employee's access to the workspace.", "label": "access"}
+{"id": "train-19", "scenario": "email_verify", "text": "The email verification link never arrived.", "label": "access"}
+{"id": "train-20", "scenario": "session_logout", "text": "The website logs me out every time I open a tab.", "label": "access"}
+{"id": "train-21", "scenario": "admin_transfer", "text": "Give another colleague the administrator role.", "label": "access"}
+{"id": "train-22", "scenario": "recovery_code", "text": "Where can I enter a backup login code?", "label": "access"}
+{"id": "train-23", "scenario": "private_folder", "text": "My colleague cannot open a shared private folder.", "label": "access"}
+{"id": "train-24", "scenario": "battery_empty", "text": "The robot battery drains within ten minutes.", "label": "hardware"}
+{"id": "train-25", "scenario": "wheel_stuck", "text": "The left wheel is jammed and will not turn.", "label": "hardware"}
+{"id": "train-26", "scenario": "lidar_dirty", "text": "The laser sensor is covered in dust.", "label": "hardware"}
+{"id": "train-27", "scenario": "motor_hot", "text": "The drive motor becomes unusually hot.", "label": "hardware"}
+{"id": "train-28", "scenario": "brush_broken", "text": "A cleaning brush snapped during operation.", "label": "hardware"}
+{"id": "train-29", "scenario": "screen_cracked", "text": "The device display has a visible crack.", "label": "hardware"}
+{"id": "train-30", "scenario": "dock_contacts", "text": "The charging dock contacts are bent.", "label": "hardware"}
+{"id": "train-31", "scenario": "water_leak", "text": "Water is leaking from the machine tank.", "label": "hardware"}
+{"id": "train-32", "scenario": "camera_blur", "text": "The onboard camera lens is scratched.", "label": "hardware"}
+{"id": "train-33", "scenario": "fan_noise", "text": "The cooling fan makes a scraping noise.", "label": "hardware"}
+{"id": "train-34", "scenario": "cable_damage", "text": "The power cable insulation is torn.", "label": "hardware"}
+{"id": "train-35", "scenario": "bumper_loose", "text": "The front bumper has become detached.", "label": "hardware"}

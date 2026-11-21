@@ -1,0 +1,1670 @@
+{
+  "config": {
+    "model_id": "google/flan-t5-small",
+    "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "seed": 606,
+    "epochs": 8,
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q",
+      "v"
+    ],
+    "max_input_tokens": 128,
+    "max_output_tokens": 8,
+    "cpu_threads": 2,
+    "selection": "minimum_dev_token_loss"
+  },
+  "data_sha256": {
+    "dev.jsonl": "b3e5126981eed306375282f7acc97217f57b53904122acac022bcf9650b57fc9",
+    "test.jsonl": "2473927e8f6d0b15c36d73764116f3cc82abbdeb79af361d299380ad7b4e6640",
+    "train.jsonl": "fd9cf29924b8b2fbe63844e8dba4818f96bfa3f8c9fefd0eb38459c87ecf2edc"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "os": "Darwin",
+    "machine": "arm64",
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.5.1",
+      "transformers": "4.46.3",
+      "peft": "0.13.2",
+      "numpy": "2.1.3",
+      "sentencepiece": "0.2.0",
+      "psutil": "6.1.0"
+    }
+  },
+  "parameters": {
+    "trainable": 344064,
+    "total_with_adapter": 77305216,
+    "final_update_l2": 10.387324523189564
+  },
+  "selection": {
+    "best_epoch": 8,
+    "best_dev_loss": 0.09866268994907539,
+    "test_used_for_selection": false
+  },
+  "curve": [
+    {
+      "epoch": 0,
+      "train_loss": 5.03944206237793,
+      "dev_loss": 4.931039333343506
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.4435933199193742,
+      "dev_loss": 1.321761240561803
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8056425568130281,
+      "dev_loss": 0.7193957418203354
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3253665038694938,
+      "dev_loss": 0.3907081913203001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1977244292696317,
+      "dev_loss": 0.2421369527777036
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.15764439581996864,
+      "dev_loss": 0.15110368033250174
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.06275022666280468,
+      "dev_loss": 0.10794464933375518
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.08769692391312371,
+      "dev_loss": 0.1652131605272492
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.034501044985113874,
+      "dev_loss": 0.09866268994907539
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "epoch": 1,
+      "loss": 5.618451118469238,
+      "gradient_norm": 2.4049136638641357
+    },
+    {
+      "step": 2,
+      "epoch": 1,
+      "loss": 4.406267166137695,
+      "gradient_norm": 2.5245118141174316
+    },
+    {
+      "step": 3,
+      "epoch": 1,
+      "loss": 3.5021629333496094,
+      "gradient_norm": 2.6252474784851074
+    },
+    {
+      "step": 4,
+      "epoch": 1,
+      "loss": 5.847379684448242,
+      "gradient_norm": 2.6611106395721436
+    },
+    {
+      "step": 5,
+      "epoch": 1,
+      "loss": 4.149278163909912,
+      "gradient_norm": 3.6710903644561768
+    },
+    {
+      "step": 6,
+      "epoch": 1,
+      "loss": 3.8912816047668457,
+      "gradient_norm": 3.8653323650360107
+    },
+    {
+      "step": 7,
+      "epoch": 1,
+      "loss": 3.973029613494873,
+      "gradient_norm": 4.382920742034912
+    },
+    {
+      "step": 8,
+      "epoch": 1,
+      "loss": 2.990865707397461,
+      "gradient_norm": 3.3178117275238037
+    },
+    {
+      "step": 9,
+      "epoch": 1,
+      "loss": 2.4723944664001465,
+      "gradient_norm": 3.79370379447937
+    },
+    {
+      "step": 10,
+      "epoch": 2,
+      "loss": 1.2342455387115479,
+      "gradient_norm": 5.021586894989014
+    },
+    {
+      "step": 11,
+      "epoch": 2,
+      "loss": 1.4394150972366333,
+      "gradient_norm": 6.089653491973877
+    },
+    {
+      "step": 12,
+      "epoch": 2,
+      "loss": 2.1068837642669678,
+      "gradient_norm": 4.972509384155273
+    },
+    {
+      "step": 13,
+      "epoch": 2,
+      "loss": 1.7899353504180908,
+      "gradient_norm": 5.709052085876465
+    },
+    {
+      "step": 14,
+      "epoch": 2,
+      "loss": 1.0289562940597534,
+      "gradient_norm": 4.988372325897217
+    },
+    {
+      "step": 15,
+      "epoch": 2,
+      "loss": 2.672299385070801,
+      "gradient_norm": 11.281909942626953
+    },
+    {
+      "step": 16,
+      "epoch": 2,
+      "loss": 1.7237179279327393,
+      "gradient_norm": 5.252379417419434
+    },
+    {
+      "step": 17,
+      "epoch": 2,
+      "loss": 0.9360606670379639,
+      "gradient_norm": 5.204185485839844
+    },
+    {
+      "step": 18,
+      "epoch": 2,
+      "loss": 1.7671011686325073,
+      "gradient_norm": 9.608543395996094
+    },
+    {
+      "step": 19,
+      "epoch": 3,
+      "loss": 0.4861694276332855,
+      "gradient_norm": 3.4602890014648438
+    },
+    {
+      "step": 20,
+      "epoch": 3,
+      "loss": 0.9263788461685181,
+      "gradient_norm": 4.704074859619141
+    },
+    {
+      "step": 21,
+      "epoch": 3,
+      "loss": 0.9610622525215149,
+      "gradient_norm": 4.031850814819336
+    },
+    {
+      "step": 22,
+      "epoch": 3,
+      "loss": 1.574689269065857,
+      "gradient_norm": 7.914446830749512
+    },
+    {
+      "step": 23,
+      "epoch": 3,
+      "loss": 1.6667900085449219,
+      "gradient_norm": 8.430720329284668
+    },
+    {
+      "step": 24,
+      "epoch": 3,
+      "loss": 0.9551514387130737,
+      "gradient_norm": 4.489217758178711
+    },
+    {
+      "step": 25,
+      "epoch": 3,
+      "loss": 0.9991961717605591,
+      "gradient_norm": 3.5552337169647217
+    },
+    {
+      "step": 26,
+      "epoch": 3,
+      "loss": 0.40881940722465515,
+      "gradient_norm": 2.587693214416504
+    },
+    {
+      "step": 27,
+      "epoch": 3,
+      "loss": 1.6401753425598145,
+      "gradient_norm": 10.695225715637207
+    },
+    {
+      "step": 28,
+      "epoch": 4,
+      "loss": 2.077584981918335,
+      "gradient_norm": 11.519862174987793
+    },
+    {
+      "step": 29,
+      "epoch": 4,
+      "loss": 0.9986911416053772,
+      "gradient_norm": 4.455255031585693
+    },
+    {
+      "step": 30,
+      "epoch": 4,
+      "loss": 0.8103368282318115,
+      "gradient_norm": 3.96150541305542
+    },
+    {
+      "step": 31,
+      "epoch": 4,
+      "loss": 1.024519681930542,
+      "gradient_norm": 6.893484115600586
+    },
+    {
+      "step": 32,
+      "epoch": 4,
+      "loss": 0.6708702445030212,
+      "gradient_norm": 4.292453765869141
+    },
+    {
+      "step": 33,
+      "epoch": 4,
+      "loss": 0.3251645267009735,
+      "gradient_norm": 2.8408029079437256
+    },
+    {
+      "step": 34,
+      "epoch": 4,
+      "loss": 1.1326483488082886,
+      "gradient_norm": 6.044116020202637
+    },
+    {
+      "step": 35,
+      "epoch": 4,
+      "loss": 0.3106972575187683,
+      "gradient_norm": 2.4991681575775146
+    },
+    {
+      "step": 36,
+      "epoch": 4,
+      "loss": 0.9033468961715698,
+      "gradient_norm": 4.534116744995117
+    },
+    {
+      "step": 37,
+      "epoch": 5,
+      "loss": 0.5329038500785828,
+      "gradient_norm": 3.100285768508911
+    },
+    {
+      "step": 38,
+      "epoch": 5,
+      "loss": 0.7307610511779785,
+      "gradient_norm": 2.7340807914733887
+    },
+    {
+      "step": 39,
+      "epoch": 5,
+      "loss": 0.4338282346725464,
+      "gradient_norm": 3.1165919303894043
+    },
+    {
+      "step": 40,
+      "epoch": 5,
+      "loss": 0.8723868727684021,
+      "gradient_norm": 7.346992492675781
+    },
+    {
+      "step": 41,
+      "epoch": 5,
+      "loss": 0.6862157583236694,
+      "gradient_norm": 3.5143649578094482
+    },
+    {
+      "step": 42,
+      "epoch": 5,
+      "loss": 0.24083349108695984,
+      "gradient_norm": 2.591688394546509
+    },
+    {
+      "step": 43,
+      "epoch": 5,
+      "loss": 0.2613685429096222,
+      "gradient_norm": 1.9478703737258911
+    },
+    {
+      "step": 44,
+      "epoch": 5,
+      "loss": 0.5095263719558716,
+      "gradient_norm": 5.391788959503174
+    },
+    {
+      "step": 45,
+      "epoch": 5,
+      "loss": 0.400281697511673,
+      "gradient_norm": 4.102193832397461
+    },
+    {
+      "step": 46,
+      "epoch": 6,
+      "loss": 0.4687225818634033,
+      "gradient_norm": 6.543084621429443
+    },
+    {
+      "step": 47,
+      "epoch": 6,
+      "loss": 0.7505594491958618,
+      "gradient_norm": 7.961094379425049
+    },
+    {
+      "step": 48,
+      "epoch": 6,
+      "loss": 0.27479827404022217,
+      "gradient_norm": 2.963020086288452
+    },
+    {
+      "step": 49,
+      "epoch": 6,
+      "loss": 0.540046215057373,
+      "gradient_norm": 3.1611623764038086
+    },
+    {
+      "step": 50,
+      "epoch": 6,
+      "loss": 0.28431326150894165,
+      "gradient_norm": 2.944331645965576
+    },
+    {
+      "step": 51,
+      "epoch": 6,
+      "loss": 0.043219275772571564,
+      "gradient_norm": 0.5116907358169556
+    },
+    {
+      "step": 52,
+      "epoch": 6,
+      "loss": 0.12988977134227753,
+      "gradient_norm": 1.6966614723205566
+    },
+    {
+      "step": 53,
+      "epoch": 6,
+      "loss": 0.21821735799312592,
+      "gradient_norm": 1.2937906980514526
+    },
+    {
+      "step": 54,
+      "epoch": 6,
+      "loss": 0.1734323799610138,
+      "gradient_norm": 3.19389009475708
+    },
+    {
+      "step": 55,
+      "epoch": 7,
+      "loss": 0.3754953145980835,
+      "gradient_norm": 3.8497304916381836
+    },
+    {
+      "step": 56,
+      "epoch": 7,
+      "loss": 0.21474918723106384,
+      "gradient_norm": 3.630977153778076
+    },
+    {
+      "step": 57,
+      "epoch": 7,
+      "loss": 0.5922216773033142,
+      "gradient_norm": 4.061267375946045
+    },
+    {
+      "step": 58,
+      "epoch": 7,
+      "loss": 0.28500375151634216,
+      "gradient_norm": 3.4636356830596924
+    },
+    {
+      "step": 59,
+      "epoch": 7,
+      "loss": 0.6122893691062927,
+      "gradient_norm": 3.666940927505493
+    },
+    {
+      "step": 60,
+      "epoch": 7,
+      "loss": 0.19271151721477509,
+      "gradient_norm": 2.3524587154388428
+    },
+    {
+      "step": 61,
+      "epoch": 7,
+      "loss": 0.08293602615594864,
+      "gradient_norm": 1.4588764905929565
+    },
+    {
+      "step": 62,
+      "epoch": 7,
+      "loss": 0.5102714896202087,
+      "gradient_norm": 6.300052642822266
+    },
+    {
+      "step": 63,
+      "epoch": 7,
+      "loss": 0.428888201713562,
+      "gradient_norm": 3.9776623249053955
+    },
+    {
+      "step": 64,
+      "epoch": 8,
+      "loss": 0.2496776431798935,
+      "gradient_norm": 3.501702070236206
+    },
+    {
+      "step": 65,
+      "epoch": 8,
+      "loss": 0.11027970910072327,
+      "gradient_norm": 1.7811833620071411
+    },
+    {
+      "step": 66,
+      "epoch": 8,
+      "loss": 0.03867724537849426,
+      "gradient_norm": 0.5496819615364075
+    },
+    {
+      "step": 67,
+      "epoch": 8,
+      "loss": 0.014240563847124577,
+      "gradient_norm": 0.1677062064409256
+    },
+    {
+      "step": 68,
+      "epoch": 8,
+      "loss": 0.2474653720855713,
+      "gradient_norm": 3.492480754852295
+    },
+    {
+      "step": 69,
+      "epoch": 8,
+      "loss": 0.08912187069654465,
+      "gradient_norm": 2.0806009769439697
+    },
+    {
+      "step": 70,
+      "epoch": 8,
+      "loss": 0.07487383484840393,
+      "gradient_norm": 1.0946778059005737
+    },
+    {
+      "step": 71,
+      "epoch": 8,
+      "loss": 0.03696313500404358,
+      "gradient_norm": 0.43129250407218933
+    },
+    {
+      "step": 72,
+      "epoch": 8,
+      "loss": 0.5031351447105408,
+      "gradient_norm": 6.0623250007629395
+    }
+  ],
+  "baseline": {
+    "train": {
+      "metrics": {
+        "n": 36,
+        "correct": 0,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "confusion": {
+          "billing": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 12
+          },
+          "access": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 12
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 12
+          }
+        },
+        "invalid": 36
+      },
+      "predictions": [
+        {
+          "id": "train-00",
+          "scenario": "duplicate_charge",
+          "text": "My card was charged twice for one subscription.",
+          "label": "billing",
+          "prediction": "i have a credit card that was"
+        },
+        {
+          "id": "train-01",
+          "scenario": "invoice_address",
+          "text": "Please correct the address printed on my invoice.",
+          "label": "billing",
+          "prediction": "- please correct the address printed on"
+        },
+        {
+          "id": "train-02",
+          "scenario": "refund_delay",
+          "text": "The promised refund has not reached my bank.",
+          "label": "billing",
+          "prediction": "no, i have no idea what happened"
+        },
+        {
+          "id": "train-03",
+          "scenario": "annual_price",
+          "text": "What is the yearly price for the team plan?",
+          "label": "billing",
+          "prediction": "$9.00"
+        },
+        {
+          "id": "train-04",
+          "scenario": "tax_exemption",
+          "text": "Our nonprofit needs tax removed from the bill.",
+          "label": "billing",
+          "prediction": "request: your nonprofit needs tax removed from"
+        },
+        {
+          "id": "train-05",
+          "scenario": "cancel_renewal",
+          "text": "Stop the automatic renewal of my paid plan.",
+          "label": "billing",
+          "prediction": "no, i don't want to"
+        },
+        {
+          "id": "train-06",
+          "scenario": "receipt_copy",
+          "text": "Send a receipt for last month's payment.",
+          "label": "billing",
+          "prediction": "request a refund for the payment."
+        },
+        {
+          "id": "train-07",
+          "scenario": "card_update",
+          "text": "I need to replace the credit card used for payments.",
+          "label": "billing",
+          "prediction": "no, i have no credit card."
+        },
+        {
+          "id": "train-08",
+          "scenario": "discount_missing",
+          "text": "The checkout coupon did not reduce the amount.",
+          "label": "billing",
+          "prediction": "no, the coupon did not reduce the"
+        },
+        {
+          "id": "train-09",
+          "scenario": "seat_cost",
+          "text": "How much will five additional paid seats cost?",
+          "label": "billing",
+          "prediction": "$45"
+        },
+        {
+          "id": "train-10",
+          "scenario": "payment_declined",
+          "text": "The bank rejected my subscription payment.",
+          "label": "billing",
+          "prediction": "no"
+        },
+        {
+          "id": "train-11",
+          "scenario": "currency",
+          "text": "Can our invoices be issued in euros?",
+          "label": "billing",
+          "prediction": "no"
+        },
+        {
+          "id": "train-12",
+          "scenario": "forgot_password",
+          "text": "I forgot my password and cannot sign in.",
+          "label": "access",
+          "prediction": "i forgot my password and cannot sign in"
+        },
+        {
+          "id": "train-13",
+          "scenario": "mfa_phone",
+          "text": "My authentication codes go to a lost phone.",
+          "label": "access",
+          "prediction": "no, i don't want to"
+        },
+        {
+          "id": "train-14",
+          "scenario": "invite_expired",
+          "text": "The invitation link to join the workspace expired.",
+          "label": "access",
+          "prediction": "no"
+        },
+        {
+          "id": "train-15",
+          "scenario": "locked_account",
+          "text": "My account was locked after several login attempts.",
+          "label": "access",
+          "prediction": "i have a security issue. i"
+        },
+        {
+          "id": "train-16",
+          "scenario": "role_edit",
+          "text": "I can view documents but need permission to edit them.",
+          "label": "access",
+          "prediction": "no, i can't view documents"
+        },
+        {
+          "id": "train-17",
+          "scenario": "sso_error",
+          "text": "Company single sign-on returns an identity error.",
+          "label": "access",
+          "prediction": "no"
+        },
+        {
+          "id": "train-18",
+          "scenario": "user_remove",
+          "text": "Remove a former employee's access to the workspace.",
+          "label": "access",
+          "prediction": "remove the employee's access to the"
+        },
+        {
+          "id": "train-19",
+          "scenario": "email_verify",
+          "text": "The email verification link never arrived.",
+          "label": "access",
+          "prediction": "no"
+        },
+        {
+          "id": "train-20",
+          "scenario": "session_logout",
+          "text": "The website logs me out every time I open a tab.",
+          "label": "access",
+          "prediction": "the website logs me out every time"
+        },
+        {
+          "id": "train-21",
+          "scenario": "admin_transfer",
+          "text": "Give another colleague the administrator role.",
+          "label": "access",
+          "prediction": "request a replacement of the administrator."
+        },
+        {
+          "id": "train-22",
+          "scenario": "recovery_code",
+          "text": "Where can I enter a backup login code?",
+          "label": "access",
+          "prediction": "a backup login code"
+        },
+        {
+          "id": "train-23",
+          "scenario": "private_folder",
+          "text": "My colleague cannot open a shared private folder.",
+          "label": "access",
+          "prediction": "no, i can't open"
+        },
+        {
+          "id": "train-24",
+          "scenario": "battery_empty",
+          "text": "The robot battery drains within ten minutes.",
+          "label": "hardware",
+          "prediction": "the battery drains within ten minutes"
+        },
+        {
+          "id": "train-25",
+          "scenario": "wheel_stuck",
+          "text": "The left wheel is jammed and will not turn.",
+          "label": "hardware",
+          "prediction": "the left wheel is jammed and will"
+        },
+        {
+          "id": "train-26",
+          "scenario": "lidar_dirty",
+          "text": "The laser sensor is covered in dust.",
+          "label": "hardware",
+          "prediction": "the laser sensor is covered in dust."
+        },
+        {
+          "id": "train-27",
+          "scenario": "motor_hot",
+          "text": "The drive motor becomes unusually hot.",
+          "label": "hardware",
+          "prediction": "the drive motor is hot."
+        },
+        {
+          "id": "train-28",
+          "scenario": "brush_broken",
+          "text": "A cleaning brush snapped during operation.",
+          "label": "hardware",
+          "prediction": "a cleaning brush snapped during operation."
+        },
+        {
+          "id": "train-29",
+          "scenario": "screen_cracked",
+          "text": "The device display has a visible crack.",
+          "label": "hardware",
+          "prediction": "no, it's not working."
+        },
+        {
+          "id": "train-30",
+          "scenario": "dock_contacts",
+          "text": "The charging dock contacts are bent.",
+          "label": "hardware",
+          "prediction": "the contact is not working."
+        },
+        {
+          "id": "train-31",
+          "scenario": "water_leak",
+          "text": "Water is leaking from the machine tank.",
+          "label": "hardware",
+          "prediction": "water is leaking from the machine tank"
+        },
+        {
+          "id": "train-32",
+          "scenario": "camera_blur",
+          "text": "The onboard camera lens is scratched.",
+          "label": "hardware",
+          "prediction": "no."
+        },
+        {
+          "id": "train-33",
+          "scenario": "fan_noise",
+          "text": "The cooling fan makes a scraping noise.",
+          "label": "hardware",
+          "prediction": "the cooling fan is not working."
+        },
+        {
+          "id": "train-34",
+          "scenario": "cable_damage",
+          "text": "The power cable insulation is torn.",
+          "label": "hardware",
+          "prediction": "the power cable insulation is torn"
+        },
+        {
+          "id": "train-35",
+          "scenario": "bumper_loose",
+          "text": "The front bumper has become detached.",
+          "label": "hardware",
+          "prediction": "the front bumper has become detached."
+        }
+      ],
+      "token_loss": 5.03944206237793
+    },
+    "dev": {
+      "metrics": {
+        "n": 12,
+        "correct": 0,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "confusion": {
+          "billing": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          },
+          "access": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          }
+        },
+        "invalid": 12
+      },
+      "predictions": [
+        {
+          "id": "dev-00",
+          "scenario": "purchase_order",
+          "text": "Our finance team needs a purchase order number on the next bill.",
+          "label": "billing",
+          "prediction": "purchase order number"
+        },
+        {
+          "id": "dev-01",
+          "scenario": "proration",
+          "text": "We upgraded halfway through the month; explain the partial charge.",
+          "label": "billing",
+          "prediction": "updated halfway through the month."
+        },
+        {
+          "id": "dev-02",
+          "scenario": "credit_balance",
+          "text": "Apply our existing account credit to the next payment.",
+          "label": "billing",
+          "prediction": "request a refund."
+        },
+        {
+          "id": "dev-03",
+          "scenario": "billing_contact",
+          "text": "Future payment notices should go to our accountant.",
+          "label": "billing",
+          "prediction": "request a refund."
+        },
+        {
+          "id": "dev-04",
+          "scenario": "domain_block",
+          "text": "People with our new email domain are denied workspace entry.",
+          "label": "access",
+          "prediction": "no"
+        },
+        {
+          "id": "dev-05",
+          "scenario": "permission_revoke",
+          "text": "A contractor still sees confidential projects after reassignment.",
+          "label": "access",
+          "prediction": "request a refund."
+        },
+        {
+          "id": "dev-06",
+          "scenario": "passkey",
+          "text": "My security key is no longer accepted at sign-in.",
+          "label": "access",
+          "prediction": "no, i have no security key."
+        },
+        {
+          "id": "dev-07",
+          "scenario": "group_membership",
+          "text": "Add the new analyst to the reporting access group.",
+          "label": "access",
+          "prediction": "reporting access group"
+        },
+        {
+          "id": "dev-08",
+          "scenario": "speaker_dead",
+          "text": "The unit no longer produces audible alerts.",
+          "label": "hardware",
+          "prediction": "no, the unit does not produce au"
+        },
+        {
+          "id": "dev-09",
+          "scenario": "seal_worn",
+          "text": "A worn rubber seal lets liquid into the chassis.",
+          "label": "hardware",
+          "prediction": "a worn rubber seal lets liquid into the"
+        },
+        {
+          "id": "dev-10",
+          "scenario": "button_stuck",
+          "text": "The physical start button stays pressed down.",
+          "label": "hardware",
+          "prediction": "the physical start button stays pressed down"
+        },
+        {
+          "id": "dev-11",
+          "scenario": "charging_heat",
+          "text": "The charger smells burnt when plugged in.",
+          "label": "hardware",
+          "prediction": "the charger smells burnt when"
+        }
+      ],
+      "token_loss": 4.931039333343506
+    },
+    "test": {
+      "metrics": {
+        "n": 12,
+        "correct": 0,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "confusion": {
+          "billing": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          },
+          "access": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 4
+          }
+        },
+        "invalid": 12
+      },
+      "predictions": [
+        {
+          "id": "test-00",
+          "scenario": "bank_transfer",
+          "text": "Can we settle the outstanding balance by wire transfer?",
+          "label": "billing",
+          "prediction": "no"
+        },
+        {
+          "id": "test-01",
+          "scenario": "overdue_fee",
+          "text": "An extra late-payment fee appeared on the statement.",
+          "label": "billing",
+          "prediction": "a late-payment fee was charged."
+        },
+        {
+          "id": "test-02",
+          "scenario": "contract_quote",
+          "text": "We need a formal quotation before procurement can approve the subscription.",
+          "label": "billing",
+          "prediction": "request a formal quotation before procurement can"
+        },
+        {
+          "id": "test-03",
+          "scenario": "billing_merge",
+          "text": "Combine charges for our two branches into one monthly statement.",
+          "label": "billing",
+          "prediction": "confirmation of the charges for the"
+        },
+        {
+          "id": "test-04",
+          "scenario": "audit_viewer",
+          "text": "An external auditor needs read-only entry for one week.",
+          "label": "access",
+          "prediction": "access and hardware"
+        },
+        {
+          "id": "test-05",
+          "scenario": "region_login",
+          "text": "Signing in while traveling is blocked by an organization policy.",
+          "label": "access",
+          "prediction": "passports are not allowed."
+        },
+        {
+          "id": "test-06",
+          "scenario": "service_identity",
+          "text": "Our integration account lacks permission to read reports.",
+          "label": "access",
+          "prediction": "no"
+        },
+        {
+          "id": "test-07",
+          "scenario": "username_collision",
+          "text": "The registration form says my work identity already exists.",
+          "label": "access",
+          "prediction": "no, i have no work id."
+        },
+        {
+          "id": "test-08",
+          "scenario": "vibration",
+          "text": "A loose internal screw rattles when the machine moves.",
+          "label": "hardware",
+          "prediction": "a loose internal screw rattles when the"
+        },
+        {
+          "id": "test-09",
+          "scenario": "caster_flat",
+          "text": "The rear caster has a flat spot that shakes the chassis.",
+          "label": "hardware",
+          "prediction": "the rear caster has a flat"
+        },
+        {
+          "id": "test-10",
+          "scenario": "antenna_bent",
+          "text": "The wireless antenna broke off its mounting bracket.",
+          "label": "hardware",
+          "prediction": "the antenna is not working properly."
+        },
+        {
+          "id": "test-11",
+          "scenario": "pump_block",
+          "text": "Debris has physically blocked the fluid pump impeller.",
+          "label": "hardware",
+          "prediction": "debris has physically blocked the fluid"
+        }
+      ],
+      "token_loss": 4.989996433258057
+    }
+  },
+  "after": {
+    "train": {
+      "metrics": {
+        "n": 36,
+        "correct": 35,
+        "accuracy": 0.9722222222222222,
+        "macro_f1": 0.9721739130434782,
+        "confusion": {
+          "billing": {
+            "billing": 11,
+            "access": 1,
+            "hardware": 0,
+            "invalid": 0
+          },
+          "access": {
+            "billing": 0,
+            "access": 12,
+            "hardware": 0,
+            "invalid": 0
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 12,
+            "invalid": 0
+          }
+        },
+        "invalid": 0
+      },
+      "predictions": [
+        {
+          "id": "train-00",
+          "scenario": "duplicate_charge",
+          "text": "My card was charged twice for one subscription.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-01",
+          "scenario": "invoice_address",
+          "text": "Please correct the address printed on my invoice.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-02",
+          "scenario": "refund_delay",
+          "text": "The promised refund has not reached my bank.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-03",
+          "scenario": "annual_price",
+          "text": "What is the yearly price for the team plan?",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-04",
+          "scenario": "tax_exemption",
+          "text": "Our nonprofit needs tax removed from the bill.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-05",
+          "scenario": "cancel_renewal",
+          "text": "Stop the automatic renewal of my paid plan.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-06",
+          "scenario": "receipt_copy",
+          "text": "Send a receipt for last month's payment.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-07",
+          "scenario": "card_update",
+          "text": "I need to replace the credit card used for payments.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-08",
+          "scenario": "discount_missing",
+          "text": "The checkout coupon did not reduce the amount.",
+          "label": "billing",
+          "prediction": "access"
+        },
+        {
+          "id": "train-09",
+          "scenario": "seat_cost",
+          "text": "How much will five additional paid seats cost?",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-10",
+          "scenario": "payment_declined",
+          "text": "The bank rejected my subscription payment.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-11",
+          "scenario": "currency",
+          "text": "Can our invoices be issued in euros?",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "train-12",
+          "scenario": "forgot_password",
+          "text": "I forgot my password and cannot sign in.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-13",
+          "scenario": "mfa_phone",
+          "text": "My authentication codes go to a lost phone.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-14",
+          "scenario": "invite_expired",
+          "text": "The invitation link to join the workspace expired.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-15",
+          "scenario": "locked_account",
+          "text": "My account was locked after several login attempts.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-16",
+          "scenario": "role_edit",
+          "text": "I can view documents but need permission to edit them.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-17",
+          "scenario": "sso_error",
+          "text": "Company single sign-on returns an identity error.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-18",
+          "scenario": "user_remove",
+          "text": "Remove a former employee's access to the workspace.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-19",
+          "scenario": "email_verify",
+          "text": "The email verification link never arrived.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-20",
+          "scenario": "session_logout",
+          "text": "The website logs me out every time I open a tab.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-21",
+          "scenario": "admin_transfer",
+          "text": "Give another colleague the administrator role.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-22",
+          "scenario": "recovery_code",
+          "text": "Where can I enter a backup login code?",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-23",
+          "scenario": "private_folder",
+          "text": "My colleague cannot open a shared private folder.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "train-24",
+          "scenario": "battery_empty",
+          "text": "The robot battery drains within ten minutes.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-25",
+          "scenario": "wheel_stuck",
+          "text": "The left wheel is jammed and will not turn.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-26",
+          "scenario": "lidar_dirty",
+          "text": "The laser sensor is covered in dust.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-27",
+          "scenario": "motor_hot",
+          "text": "The drive motor becomes unusually hot.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-28",
+          "scenario": "brush_broken",
+          "text": "A cleaning brush snapped during operation.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-29",
+          "scenario": "screen_cracked",
+          "text": "The device display has a visible crack.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-30",
+          "scenario": "dock_contacts",
+          "text": "The charging dock contacts are bent.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-31",
+          "scenario": "water_leak",
+          "text": "Water is leaking from the machine tank.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-32",
+          "scenario": "camera_blur",
+          "text": "The onboard camera lens is scratched.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-33",
+          "scenario": "fan_noise",
+          "text": "The cooling fan makes a scraping noise.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-34",
+          "scenario": "cable_damage",
+          "text": "The power cable insulation is torn.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "train-35",
+          "scenario": "bumper_loose",
+          "text": "The front bumper has become detached.",
+          "label": "hardware",
+          "prediction": "hardware"
+        }
+      ],
+      "token_loss": 0.034501044985113874
+    },
+    "dev": {
+      "metrics": {
+        "n": 12,
+        "correct": 10,
+        "accuracy": 0.8333333333333334,
+        "macro_f1": 0.8333333333333334,
+        "confusion": {
+          "billing": {
+            "billing": 4,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 0
+          },
+          "access": {
+            "billing": 0,
+            "access": 3,
+            "hardware": 1,
+            "invalid": 0
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 1,
+            "hardware": 3,
+            "invalid": 0
+          }
+        },
+        "invalid": 0
+      },
+      "predictions": [
+        {
+          "id": "dev-00",
+          "scenario": "purchase_order",
+          "text": "Our finance team needs a purchase order number on the next bill.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "dev-01",
+          "scenario": "proration",
+          "text": "We upgraded halfway through the month; explain the partial charge.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "dev-02",
+          "scenario": "credit_balance",
+          "text": "Apply our existing account credit to the next payment.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "dev-03",
+          "scenario": "billing_contact",
+          "text": "Future payment notices should go to our accountant.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "dev-04",
+          "scenario": "domain_block",
+          "text": "People with our new email domain are denied workspace entry.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "dev-05",
+          "scenario": "permission_revoke",
+          "text": "A contractor still sees confidential projects after reassignment.",
+          "label": "access",
+          "prediction": "hardware"
+        },
+        {
+          "id": "dev-06",
+          "scenario": "passkey",
+          "text": "My security key is no longer accepted at sign-in.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "dev-07",
+          "scenario": "group_membership",
+          "text": "Add the new analyst to the reporting access group.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "dev-08",
+          "scenario": "speaker_dead",
+          "text": "The unit no longer produces audible alerts.",
+          "label": "hardware",
+          "prediction": "access"
+        },
+        {
+          "id": "dev-09",
+          "scenario": "seal_worn",
+          "text": "A worn rubber seal lets liquid into the chassis.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "dev-10",
+          "scenario": "button_stuck",
+          "text": "The physical start button stays pressed down.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "dev-11",
+          "scenario": "charging_heat",
+          "text": "The charger smells burnt when plugged in.",
+          "label": "hardware",
+          "prediction": "hardware"
+        }
+      ],
+      "token_loss": 0.09866268994907539
+    },
+    "test": {
+      "metrics": {
+        "n": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion": {
+          "billing": {
+            "billing": 4,
+            "access": 0,
+            "hardware": 0,
+            "invalid": 0
+          },
+          "access": {
+            "billing": 0,
+            "access": 4,
+            "hardware": 0,
+            "invalid": 0
+          },
+          "hardware": {
+            "billing": 0,
+            "access": 0,
+            "hardware": 4,
+            "invalid": 0
+          }
+        },
+        "invalid": 0
+      },
+      "predictions": [
+        {
+          "id": "test-00",
+          "scenario": "bank_transfer",
+          "text": "Can we settle the outstanding balance by wire transfer?",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "test-01",
+          "scenario": "overdue_fee",
+          "text": "An extra late-payment fee appeared on the statement.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "test-02",
+          "scenario": "contract_quote",
+          "text": "We need a formal quotation before procurement can approve the subscription.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "test-03",
+          "scenario": "billing_merge",
+          "text": "Combine charges for our two branches into one monthly statement.",
+          "label": "billing",
+          "prediction": "billing"
+        },
+        {
+          "id": "test-04",
+          "scenario": "audit_viewer",
+          "text": "An external auditor needs read-only entry for one week.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "test-05",
+          "scenario": "region_login",
+          "text": "Signing in while traveling is blocked by an organization policy.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "test-06",
+          "scenario": "service_identity",
+          "text": "Our integration account lacks permission to read reports.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "test-07",
+          "scenario": "username_collision",
+          "text": "The registration form says my work identity already exists.",
+          "label": "access",
+          "prediction": "access"
+        },
+        {
+          "id": "test-08",
+          "scenario": "vibration",
+          "text": "A loose internal screw rattles when the machine moves.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "test-09",
+          "scenario": "caster_flat",
+          "text": "The rear caster has a flat spot that shakes the chassis.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "test-10",
+          "scenario": "antenna_bent",
+          "text": "The wireless antenna broke off its mounting bracket.",
+          "label": "hardware",
+          "prediction": "hardware"
+        },
+        {
+          "id": "test-11",
+          "scenario": "pump_block",
+          "text": "Debris has physically blocked the fluid pump impeller.",
+          "label": "hardware",
+          "prediction": "hardware"
+        }
+      ],
+      "token_loss": 0.04027029157926639
+    }
+  },
+  "reload": {
+    "max_abs_dev_logits_difference": 0.0,
+    "test_predictions_equal": true
+  },
+  "resources": {
+    "training_and_epoch_validation_seconds": 7.410797875141725,
+    "total_seconds": 14.75359920784831,
+    "process_peak_rss_bytes": 945815552,
+    "process_end_rss_bytes": 939229184,
+    "rss_method": "getrusage RUSAGE_SELF high-water mark; includes loading, training, evaluation and reload",
+    "gpu_peak_memory_bytes": null,
+    "gpu_note": "Not applicable: CPU-only run; unified RAM is not GPU VRAM"
+  },
+  "failures": {
+    "baseline": [
+      {
+        "id": "test-00",
+        "scenario": "bank_transfer",
+        "text": "Can we settle the outstanding balance by wire transfer?",
+        "label": "billing",
+        "prediction": "no"
+      },
+      {
+        "id": "test-01",
+        "scenario": "overdue_fee",
+        "text": "An extra late-payment fee appeared on the statement.",
+        "label": "billing",
+        "prediction": "a late-payment fee was charged."
+      },
+      {
+        "id": "test-02",
+        "scenario": "contract_quote",
+        "text": "We need a formal quotation before procurement can approve the subscription.",
+        "label": "billing",
+        "prediction": "request a formal quotation before procurement can"
+      },
+      {
+        "id": "test-03",
+        "scenario": "billing_merge",
+        "text": "Combine charges for our two branches into one monthly statement.",
+        "label": "billing",
+        "prediction": "confirmation of the charges for the"
+      },
+      {
+        "id": "test-04",
+        "scenario": "audit_viewer",
+        "text": "An external auditor needs read-only entry for one week.",
+        "label": "access",
+        "prediction": "access and hardware"
+      },
+      {
+        "id": "test-05",
+        "scenario": "region_login",
+        "text": "Signing in while traveling is blocked by an organization policy.",
+        "label": "access",
+        "prediction": "passports are not allowed."
+      },
+      {
+        "id": "test-06",
+        "scenario": "service_identity",
+        "text": "Our integration account lacks permission to read reports.",
+        "label": "access",
+        "prediction": "no"
+      },
+      {
+        "id": "test-07",
+        "scenario": "username_collision",
+        "text": "The registration form says my work identity already exists.",
+        "label": "access",
+        "prediction": "no, i have no work id."
+      },
+      {
+        "id": "test-08",
+        "scenario": "vibration",
+        "text": "A loose internal screw rattles when the machine moves.",
+        "label": "hardware",
+        "prediction": "a loose internal screw rattles when the"
+      },
+      {
+        "id": "test-09",
+        "scenario": "caster_flat",
+        "text": "The rear caster has a flat spot that shakes the chassis.",
+        "label": "hardware",
+        "prediction": "the rear caster has a flat"
+      },
+      {
+        "id": "test-10",
+        "scenario": "antenna_bent",
+        "text": "The wireless antenna broke off its mounting bracket.",
+        "label": "hardware",
+        "prediction": "the antenna is not working properly."
+      },
+      {
+        "id": "test-11",
+        "scenario": "pump_block",
+        "text": "Debris has physically blocked the fluid pump impeller.",
+        "label": "hardware",
+        "prediction": "debris has physically blocked the fluid"
+      }
+    ],
+    "after": []
+  }
+}

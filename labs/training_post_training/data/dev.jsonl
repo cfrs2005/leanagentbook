@@ -1,0 +1,12 @@
+{"id": "dev-00", "scenario": "purchase_order", "text": "Our finance team needs a purchase order number on the next bill.", "label": "billing"}
+{"id": "dev-01", "scenario": "proration", "text": "We upgraded halfway through the month; explain the partial charge.", "label": "billing"}
+{"id": "dev-02", "scenario": "credit_balance", "text": "Apply our existing account credit to the next payment.", "label": "billing"}
+{"id": "dev-03", "scenario": "billing_contact", "text": "Future payment notices should go to our accountant.", "label": "billing"}
+{"id": "dev-04", "scenario": "domain_block", "text": "People with our new email domain are denied workspace entry.", "label": "access"}
+{"id": "dev-05", "scenario": "permission_revoke", "text": "A contractor still sees confidential projects after reassignment.", "label": "access"}
+{"id": "dev-06", "scenario": "passkey", "text": "My security key is no longer accepted at sign-in.", "label": "access"}
+{"id": "dev-07", "scenario": "group_membership", "text": "Add the new analyst to the reporting access group.", "label": "access"}
+{"id": "dev-08", "scenario": "speaker_dead", "text": "The unit no longer produces audible alerts.", "label": "hardware"}
+{"id": "dev-09", "scenario": "seal_worn", "text": "A worn rubber seal lets liquid into the chassis.", "label": "hardware"}
+{"id": "dev-10", "scenario": "button_stuck", "text": "The physical start button stays pressed down.", "label": "hardware"}
+{"id": "dev-11", "scenario": "charging_heat", "text": "The charger smells burnt when plugged in.", "label": "hardware"}

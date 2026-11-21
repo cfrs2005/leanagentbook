@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+<title id="title">推理服务的计时边界</title><desc id="desc">客户端开始请求，经排队和输入计算收到首token，再逐token输出。TTFT包含网络与排队；TPOT不含首token之前的时间。实验只有一个生成槽位。</desc>
+<rect width="1200" height="540" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#22312F">
+<text x="44" y="58" font-size="32">07 · 先分清时间花在哪里</text>
+<text x="44" y="96" font-size="18" fill="#596963">概念示意，不按实测时间比例绘制。下方实验使用单生成槽位。</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="44" y="140" width="220" height="110" rx="12"/><rect x="292" y="140" width="220" height="110" rx="12"/>
+<rect x="540" y="140" width="270" height="110" rx="12"/><rect x="838" y="140" width="318" height="110" rx="12"/>
+</g>
+<g font-size="22"><text x="66" y="179">客户端开始计时</text><text x="314" y="179">服务排队</text><text x="562" y="179">输入计算 → 首 token</text><text x="860" y="179">Decode → 后续 token</text></g>
+<g font-size="17" fill="#596963"><text x="66" y="217">连接、发送、等待</text><text x="314" y="217">等待生成槽位</text><text x="562" y="217">Prefill / 编码与首步</text><text x="860" y="217">复用 KV，逐步生成与发送</text></g>
+<g stroke="#22312F" stroke-width="2"><path d="M264 195h28m220 0h28m270 0h28"/><path d="M44 306h1112"/></g>
+<g fill="#B94F2D"><circle cx="70" cy="306" r="7"/><circle cx="788" cy="306" r="7"/></g>
+<g fill="#316653"><circle cx="898" cy="306" r="7"/><circle cx="1008" cy="306" r="7"/><circle cx="1118" cy="306" r="7"/></g>
+<g font-size="18"><text x="52" y="341">t0</text><text x="770" y="341">t1</text><text x="880" y="341">t2</text><text x="990" y="341">t3</text><text x="1100" y="341">tn</text></g>
+<path d="M70 365v12h718v-12" stroke="#B94F2D" fill="none" stroke-width="3"/>
+<text x="225" y="409" font-size="23" fill="#B94F2D">TTFT = t1 - t0，包含排队</text>
+<path d="M788 365v12h330v-12" stroke="#316653" fill="none" stroke-width="3"/>
+<text x="805" y="409" font-size="20" fill="#316653">TPOT = (tn - t1)/(n - 1)</text>
+<text x="44" y="474" font-size="20">吞吐 = 成功请求的总输出 token ÷ 整组墙钟时间</text>
+<text x="44" y="509" font-size="17" fill="#596963">首文本块可能包含多个 token；本实验每个事件只发送一个生成 token ID，保留客户端到达时间。</text>
+</g></svg>

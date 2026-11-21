@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">Transformer 内部计算与缓存</title><desc id="desc">上半部分展示 ID、Embedding、位置、注意力、残差和前馈网络；下半部分展示预填充与增量计算共享 KV 缓存。形状对应单批次六个位置八维的教学实验。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#316653"/></marker></defs>
+<rect width="1200" height="640" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#22312F">
+<text x="42" y="56" font-size="32">05 / Transformer：从 ID 到隐藏状态</text>
+<text x="42" y="91" font-size="18" fill="#596963">合成序列 · 随机权重 · 单层 Pre-Norm · 两个注意力头</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2"><rect x="40" y="125" width="240" height="138" rx="12"/><rect x="320" y="125" width="270" height="138" rx="12"/><rect x="630" y="125" width="250" height="138" rx="12"/><rect x="920" y="125" width="240" height="138" rx="12"/></g>
+<g font-size="20"><text x="60" y="158">① ID → 向量 + 位置</text><text x="340" y="158">② Norm → Q / K / V</text><text x="650" y="158">③ Mask → Softmax</text><text x="940" y="158">④ 加权 V → 合并头</text></g>
+<g font-size="17"><text x="60" y="194">[1, 6] → [1, 6, 8]</text><text x="60" y="230">同一 ID，位置可以不同</text><text x="340" y="194">每个：[1, 2, 6, 4]</text><text x="340" y="230">分数：QKᵀ / √4</text><text x="650" y="194">权重：[1, 2, 6, 6]</text><text x="650" y="230">未来位置权重 = 0</text><text x="940" y="194">投影：[1, 6, 8]</text><text x="940" y="230">与输入残差相加</text></g>
+<g stroke="#316653" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M280 194H312"/><path d="M590 194H622"/><path d="M880 194H912"/><path d="M1040 263V300H570"/></g>
+<rect x="40" y="284" width="520" height="66" rx="10" fill="#E5EDE5"/><text x="60" y="324" font-size="19">⑤ Norm → FFN（8 → 32 → 8）→ 残差相加</text>
+<path d="M40 382H1160" stroke="#D9D2C4"/>
+<text x="42" y="423" font-size="24" fill="#B94F2D">同一组权重，两种计算方式</text>
+<g font-size="19"><text x="42" y="465">Prefill：一次处理已知前缀</text><text x="650" y="465">Decode：只计算新增位置的 Q / K / V</text><text x="42" y="504">缓存每层 K、V；不缓存所有注意力分数</text><text x="650" y="504">新 Q 读取旧 K、V 与新 K、V</text><text x="42" y="568" fill="#316653">验收：全量输出 ≈ 缓存增量输出；修改未来 ID 不得改变过去输出。</text><text x="42" y="604" font-size="16" fill="#596963">本图与实验解释计算结构，不证明语义理解；热图来自真实数值计算，但权重未经训练。</text></g>
+<path d="M515 475H620" stroke="#316653" stroke-width="3" marker-end="url(#arrow)"/>
+</g></svg>

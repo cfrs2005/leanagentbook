@@ -8,7 +8,7 @@
 
 [在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **持续更新中的学习切片**：导读、01–04/08–18/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
+> 当前为 **持续更新中的学习切片**：导读、01–19/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -25,6 +25,10 @@
 | 图片与文字怎样一起提供证据？ | [11 · 多模态检索](chapters/11-multimodal-rag.md) | 真实 CLIP、融合、拒答阈值与原图校验 |
 | 重复、迟到和坏数据怎样处理？ | [12 · 数据流水线](chapters/12-data-engineering.md) | 持久进度、崩溃恢复与真实 Parquet |
 | Worker 退出后谁接着做？ | [18 · 分布式 Agent](chapters/18-distributed-agents.md) | 多进程、心跳、租约与故障转移 |
+| 注意力到底在计算什么？ | [05 · 模型内部原理](chapters/05-transformer-internals.md) | 真实张量、因果遮罩和 KV 等价检查 |
+| 小模型怎样学会一个任务？ | [06 · 训练与后训练](chapters/06-training-post-training.md) | 真实 LoRA、独立评测与重载验证 |
+| 模型服务怎样测快慢？ | [07 · 推理与服务](chapters/07-inference-serving.md) | 真实 HTTP 服务、逐 token 时间和压测 |
+| 传感器异常是否真的报准了？ | [19 · 时间序列](chapters/19-time-series.md) | 时间切分、三种方法、误报漏报和提前量 |
 | 关键词和向量检索怎样互补？ | [09 · 向量检索](chapters/09-vector-retrieval.md) | 标注集、双路召回、融合和重排比较 |
 | 答案能追溯到哪份文档？ | [10 · RAG 全链路](chapters/10-rag-pipeline.md) | 文档摄取、引用回答、更新与删除 |
 | Agent 记错了，怎样更正和删除？ | [13 · 记忆与上下文](chapters/13-memory-context.md) | 版本化记忆、冲突处理和上下文预算 |

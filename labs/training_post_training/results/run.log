@@ -1,0 +1,10 @@
+{"epoch": 1, "train_loss": 1.4435933199193742, "dev_loss": 1.321761240561803}
+{"epoch": 2, "train_loss": 0.8056425568130281, "dev_loss": 0.7193957418203354}
+{"epoch": 3, "train_loss": 0.3253665038694938, "dev_loss": 0.3907081913203001}
+{"epoch": 4, "train_loss": 0.1977244292696317, "dev_loss": 0.2421369527777036}
+{"epoch": 5, "train_loss": 0.15764439581996864, "dev_loss": 0.15110368033250174}
+{"epoch": 6, "train_loss": 0.06275022666280468, "dev_loss": 0.10794464933375518}
+{"epoch": 7, "train_loss": 0.08769692391312371, "dev_loss": 0.1652131605272492}
+{"epoch": 8, "train_loss": 0.034501044985113874, "dev_loss": 0.09866268994907539}
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+{"baseline_test": {"n": 12, "correct": 0, "accuracy": 0.0, "macro_f1": 0.0, "confusion": {"billing": {"billing": 0, "access": 0, "hardware": 0, "invalid": 4}, "access": {"billing": 0, "access": 0, "hardware": 0, "invalid": 4}, "hardware": {"billing": 0, "access": 0, "hardware": 0, "invalid": 4}}, "invalid": 12}, "after_test": {"n": 12, "correct": 12, "accuracy": 1.0, "macro_f1": 1.0, "confusion": {"billing": {"billing": 4, "access": 0, "hardware": 0, "invalid": 0}, "access": {"billing": 0, "access": 4, "hardware": 0, "invalid": 0}, "hardware": {"billing": 0, "access": 0, "hardware": 4, "invalid": 0}}, "invalid": 0}, "reload": {"max_abs_dev_logits_difference": 0.0, "test_predictions_equal": true}, "resources": {"training_and_epoch_validation_seconds": 7.410797875141725, "total_seconds": 14.75359920784831, "process_peak_rss_bytes": 945815552, "process_end_rss_bytes": 939229184, "rss_method": "getrusage RUSAGE_SELF high-water mark; includes loading, training, evaluation and reload", "gpu_peak_memory_bytes": null, "gpu_note": "Not applicable: CPU-only run; unified RAM is not GPU VRAM"}}

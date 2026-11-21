@@ -1,0 +1,29 @@
+ids              [1, 6]
+embedding        [1, 6, 8]
+positions        [6, 8]
+x                [1, 6, 8]
+norm1            [1, 6, 8]
+packed_qkv       [1, 6, 24]
+q                [1, 2, 6, 4]
+k                [1, 2, 6, 4]
+v                [1, 2, 6, 4]
+scores           [1, 2, 6, 6]
+allowed          [6, 6]
+weights          [1, 2, 6, 6]
+context          [1, 2, 6, 4]
+merged           [1, 6, 8]
+projected        [1, 6, 8]
+residual         [1, 6, 8]
+norm2            [1, 6, 8]
+ffn_hidden       [1, 6, 32]
+ffn_output       [1, 6, 8]
+output           [1, 6, 8]
+{
+  "kv_max_abs_error": 2.220446049250313e-16,
+  "prefix_max_abs_error": 0.0,
+  "future_weight_max": 0.0,
+  "row_sum_max_error": 1.1102230246251565e-16,
+  "sdpa_max_abs_error": 1.1102230246251565e-16,
+  "unmasked_prefix_change": 0.12282722862095896
+}
+PASS: 6 numerical checks
