@@ -33,7 +33,7 @@ python3.12 -m venv /tmp/leanagentbook-edge-env
 
 本次可访问目标是 Apple M4 的 CPU；并未验证 GPU、Apple Neural Engine、RK3588、Jetson 或其他 NPU。原任务的“先 x86 后目标平台”顺序现已完成：CI 完成后，使用原独立环境完成 [M4 新复跑](evidence/m4-after-x86/README.md)，并将未经修改的 x86 模型直接在 M4 运行。完整复跑及同文件移植各自通过 12 项 OTA 检查。旧 `m4-20261120` 目录保留历史，不覆盖原证据。
 
-RK3588 移植应固定 RKNN Toolkit2 / Runtime / 驱动版本，重新转换并查询算子支持；Jetson 应固定 JetPack / TensorRT / CUDA，重建 engine。逐算子比对、回退比例、峰值内存、散热稳定后延迟与整机能耗都要在目标实机上记录。没有功耗仪或获准的系统测量工具，本次功耗字段为 `null`，不是 0 W，也不使用 TDP 替代。
+RK3588 移植应固定 RKNN Toolkit2 / Runtime / 驱动版本，重新转换并查询算子支持；Jetson 应固定 JetPack / TensorRT / CUDA，重建 engine。逐算子比对、回退比例、峰值内存、散热稳定后延迟与整机能耗都要在目标实机上记录。初始推理批次的功耗字段为 `null`，不是 0 W；后续独立采样已使用 macmon 0.12.0 获取 M4 系统报告功耗，见 [功耗证据](evidence/power-m4-20261120/README.md)。没有使用 TDP 代替实测，也不把不同批次拼成单次推理能耗。
 
 ## 安全升级边界
 

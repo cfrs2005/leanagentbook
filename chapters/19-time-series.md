@@ -110,6 +110,27 @@ Isolation Forest 的 `score_samples` 越低越异常，本实验取负号，让�
 
 阈值从开发分数中枚举，使开发 F1 最大；并列先选误报少，再选较高阈值。模型超参数在本次运行前固定，没有按测试表现调整。生产中可改为“每小时误报不超过预算时召回最高”，但也只能用开发集选择。
 
+### 训练、选阈值与测试的时序
+
+```mermaid
+sequenceDiagram
+    participant Data as 按时间排序的数据
+    participant Train as 训练阶段
+    participant Dev as 开发评测
+    participant Test as 最终测试
+    Data->>Data: 先按时间分成三段
+    Data->>Train: 仅训练段，段内填补和构窗
+    Train->>Train: 拟合统计尺度与模型参数
+    Train->>Dev: 固定参数，计算开发段分数
+    Dev->>Dev: 用开发标签选择阈值
+    Dev->>Test: 冻结模型、特征和阈值
+    Data->>Test: 仅测试段，独立填补和构窗
+    Test->>Test: 计算事件与窗口指标
+    Test-->>Train: 发布结果与失败样例，不回写本次参数
+```
+
+最终测试若暴露失败，可以启动下一版训练；下一版应另设未使用的评测证据，不能反复调同一测试集后仍声称独立验证。
+
 ## 7. 不只报告一行 F1
 
 | 指标 | 本章口径 | 不应误读为 |

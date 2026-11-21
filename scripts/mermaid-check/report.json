@@ -1,0 +1,626 @@
+{
+  "mermaid": "11.4.1",
+  "jsdom": "26.0.0",
+  "node": "v22.22.2",
+  "mode": "mermaid.parse only; JSDOM provides an in-memory DOM; no browser, page visit or SVG layout",
+  "parser_controls": {
+    "valid_accepted": true,
+    "invalid_rejected": true
+  },
+  "snapshot": [
+    {
+      "file": "chapters/00-start-here.md",
+      "sha256": "4bdcc4dbd7f6d61f61d61d0716271614d1ab0230ba8692c0e40181e26446602b"
+    },
+    {
+      "file": "chapters/01-model-foundations.md",
+      "sha256": "94f97fe06d61ed920771233cff9e8b8726a065ad789332dfd675fc99da02c146"
+    },
+    {
+      "file": "chapters/02-agent-loop.md",
+      "sha256": "c53e9d3dd93ce27c7a98973c5740ba539bae5e13fd80d0470d0b2da8103f945a"
+    },
+    {
+      "file": "chapters/03-runtime-harness.md",
+      "sha256": "f43a71c1ca151a965ad1d2ee4a4720f37cca074222d78933a3ed1df7669d4b76"
+    },
+    {
+      "file": "chapters/04-workflow-orchestration.md",
+      "sha256": "2142cae6aeb2b20f33b719e0a0ece5b69c188ae961a0fcc454851eaddc341180"
+    },
+    {
+      "file": "chapters/05-transformer-internals.md",
+      "sha256": "9da6599cb2c7b4455d07ecfaaf3d3324a0d60e9747a68aeadc8d8601b43a095a"
+    },
+    {
+      "file": "chapters/06-training-post-training.md",
+      "sha256": "9d01e1a9185acbf63178b436284aa8b09ef9068eef75ba37f15763359a05c295"
+    },
+    {
+      "file": "chapters/07-inference-serving.md",
+      "sha256": "61499ed35b47c5093a65a9979a314dfab000fe3facf2d022acee87a4dbe0066c"
+    },
+    {
+      "file": "chapters/08-model-routing.md",
+      "sha256": "425cd8b00ca568062e312627c593f351e4945d35707976b2ffb3179d2aae813d"
+    },
+    {
+      "file": "chapters/09-vector-retrieval.md",
+      "sha256": "a5ecafc40fadeab068be8a1ea44c07e523d817096d20e7f4b253152f564e706e"
+    },
+    {
+      "file": "chapters/10-rag-pipeline.md",
+      "sha256": "82fa393d8546ac68df85ffbb028ceb1315c778ca0b66923d5ca9785546c6af6c"
+    },
+    {
+      "file": "chapters/11-multimodal-rag.md",
+      "sha256": "7c29c145424ce3c289c2bf983e5719e9751054b8c5e0b46f67dd7f106d7e4586"
+    },
+    {
+      "file": "chapters/12-data-engineering.md",
+      "sha256": "3dee452c1fa8ebc6e13011e91f4ed37abc4c2949fea31a68381473293d6baff4"
+    },
+    {
+      "file": "chapters/13-memory-context.md",
+      "sha256": "0d7117a7d56264348f3ec02e481a01211b2961dfb362f77c73973694779c53be"
+    },
+    {
+      "file": "chapters/14-evaluation.md",
+      "sha256": "b6f1863ee76f7ce3b472be9560baa9c936df744bb7d474334c8f152fa4df935c"
+    },
+    {
+      "file": "chapters/15-observability.md",
+      "sha256": "bef195af5a9bd925cffa796a44a2dffb6d3bcac10505962093482ba0674186f0"
+    },
+    {
+      "file": "chapters/16-durable-execution.md",
+      "sha256": "6dfbd565f232b88249ee519e08b56a7710a22e0a81cf669e818806e3211d55f4"
+    },
+    {
+      "file": "chapters/17-security-governance.md",
+      "sha256": "8b6529d963dea1778fb55148fe858c41f64493686a3b4983672ab55a20a1e28c"
+    },
+    {
+      "file": "chapters/18-distributed-agents.md",
+      "sha256": "7005f4e7f91f9b80eef3d1dfa58cbe25bb6cb3e5ed92123c6d6b019a536622b3"
+    },
+    {
+      "file": "chapters/19-time-series.md",
+      "sha256": "f6ead39cd47ac4a5d37301f4b2a073d14a3c3c242f39c146e1792f8b17c468f4"
+    },
+    {
+      "file": "chapters/20-robotics-ros.md",
+      "sha256": "de197dd3c62815fe30953e515b567c28b88a3f001257dd4fe5616ab9ec80ab42"
+    },
+    {
+      "file": "chapters/21-edge-cloud.md",
+      "sha256": "876c3e7fc09b822657d04580699315a26a758596df62cf82680ead99962ac817"
+    },
+    {
+      "file": "chapters/22-causal-diagnosis.md",
+      "sha256": "a9de3f451920a8fc7a9561dcdae21b771839646e2bd8a13980ec6808298b4469"
+    },
+    {
+      "file": "chapters/23-platform-architecture.md",
+      "sha256": "e9e25fddcf7aaff2fc3af5ecd81a1e2e7f2b20577b2e55302b794d58e4478556"
+    },
+    {
+      "file": "chapters/24-robot-diagnosis.md",
+      "sha256": "2190c81e1b1fcf3c8b3a6effec40d30edf9a596c8fcd9a5244baf19798d5cd5f"
+    }
+  ],
+  "blocks": [
+    {
+      "file": "chapters/00-start-here.md",
+      "fence_line": 15,
+      "source_sha256": "01bf94e1e07b5d2ad14b013d8add55e3876b6a0516474fc775d850761225503c",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/01-model-foundations.md",
+      "fence_line": 29,
+      "source_sha256": "db41c88733315a734d45c2f96428c9e88359c717dbd04ebef14c132de62b1006",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/01-model-foundations.md",
+      "fence_line": 72,
+      "source_sha256": "88a55a339a36840a0ed23f011e20c7eaf25ba70ebc7836ab0927e13e6f0497a0",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/01-model-foundations.md",
+      "fence_line": 123,
+      "source_sha256": "695aced1b33739ee6223021b4b6370049459b93a23359f1d82ad2a15a9b2b96c",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/01-model-foundations.md",
+      "fence_line": 192,
+      "source_sha256": "1c3dd641c11e5a52563ee91ea4a99fd3856fbd7c6a6f5ea426458613f76bce53",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/02-agent-loop.md",
+      "fence_line": 79,
+      "source_sha256": "1df0bf2601e53d4094bd5cf425359549bf8653737857eb37ef31e485434c0401",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/02-agent-loop.md",
+      "fence_line": 89,
+      "source_sha256": "5acdbfa841ee67d1a0c4afdaf142e7b0cb4546bd558aae45fd6770bb4932dfa6",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/02-agent-loop.md",
+      "fence_line": 102,
+      "source_sha256": "618d9cc1c237e8abd86c329777fc8bd2650733154ac0a782f594de5e36cf1a88",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/03-runtime-harness.md",
+      "fence_line": 38,
+      "source_sha256": "396debbf99a77b8f41b3be6fa441c1c779a0e73a405257c1910e4c87a7c72e44",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/03-runtime-harness.md",
+      "fence_line": 82,
+      "source_sha256": "8edf9da7ad338af0385c1ce10bb44f12e5f63501bb25fc4349f480262155f7c8",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/03-runtime-harness.md",
+      "fence_line": 95,
+      "source_sha256": "9d51ff19a648fac0bea23ca6b2e668e45c218f2b3711da2295876e675e5d8032",
+      "status": "pass",
+      "diagram_type": "stateDiagram"
+    },
+    {
+      "file": "chapters/03-runtime-harness.md",
+      "fence_line": 109,
+      "source_sha256": "1ffabf1d32fffa39357b094f677fd5dc9037fe13677f3b33fdaca73dfa9fc792",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/04-workflow-orchestration.md",
+      "fence_line": 46,
+      "source_sha256": "e05ac7905e506f99cbeb2945da4bd22b500568c6b9d821b2416514cebb647f4e",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/04-workflow-orchestration.md",
+      "fence_line": 60,
+      "source_sha256": "6452468312716a6c36ad8c18487d3378299787bae42876ee5eabe9b2735c139a",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/04-workflow-orchestration.md",
+      "fence_line": 194,
+      "source_sha256": "11221068a532575ac7045fd1ca77a14b254ef3c72d145368a83c5e575bfeb312",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/05-transformer-internals.md",
+      "fence_line": 19,
+      "source_sha256": "55ac399c71bcf89a2074d84734779d075e14428312479c8103ef2b4a448d6d44",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/05-transformer-internals.md",
+      "fence_line": 104,
+      "source_sha256": "3968c2357baf5c8d32aa2987aa69303bf6c11850f60e184141872692742eae24",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/06-training-post-training.md",
+      "fence_line": 104,
+      "source_sha256": "3d2c94f0275b6f4ff4375c90624028e8241d965c2ed41de89545907f209dee93",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/06-training-post-training.md",
+      "fence_line": 119,
+      "source_sha256": "13e64241fc6895011856362e0d9e54d067cda85d5ebab8602f69c06cb9af43b9",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/07-inference-serving.md",
+      "fence_line": 85,
+      "source_sha256": "ae92ff75c673204cfd38d5c7a621f85f0b1056e6624d77026169b4c2e52b81bf",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/07-inference-serving.md",
+      "fence_line": 97,
+      "source_sha256": "b3ba95c916c6796f49d09e10bb6af82ac0eb35e7404b2b22e700015c2b58688d",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/07-inference-serving.md",
+      "fence_line": 203,
+      "source_sha256": "e23c7742e57b98f24648ce76a909eabca02155219e75b9ba0f3850ad360b52f9",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/08-model-routing.md",
+      "fence_line": 18,
+      "source_sha256": "f2ad2e049fe925278e6e8df7b6f9426c2eb7fa3002f87f4b2f05357a16f60571",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/08-model-routing.md",
+      "fence_line": 116,
+      "source_sha256": "431f1826f36b55c36d036d7966c7822af5e75d7bc45828149440f4658f4d6f22",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/08-model-routing.md",
+      "fence_line": 152,
+      "source_sha256": "6c77908d8890cf3269e71f2edf2a8a3662f9a3309636c3e47467de0e9dae004c",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/09-vector-retrieval.md",
+      "fence_line": 105,
+      "source_sha256": "337e51cc9477a1e172fd112f8f18aa5cdfeb8df73eb0290f9e6c23d332044d00",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/09-vector-retrieval.md",
+      "fence_line": 136,
+      "source_sha256": "5f8b01e8f4d98c6c8f087d9d67dfd9d41671b750e7fada57910d28facbdd0e52",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/10-rag-pipeline.md",
+      "fence_line": 88,
+      "source_sha256": "d0bc9c2235deaffa3d56c6f0732d3777951a3f5d97201c17349999a8ae1f63a9",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/10-rag-pipeline.md",
+      "fence_line": 106,
+      "source_sha256": "c04fb104c59a44f768808bc0b56a6b0de2b6135136a22e5baf84823afe776380",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/10-rag-pipeline.md",
+      "fence_line": 118,
+      "source_sha256": "d9a85c666f9e844f65b6347b74187e8e05f37b2b0bfbc5eec24ade1baaf6ae7b",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/11-multimodal-rag.md",
+      "fence_line": 65,
+      "source_sha256": "0ea15e51d9501b02e2226e69a8b83fbcac3d6b3edb5537135c558bc9826680cb",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/11-multimodal-rag.md",
+      "fence_line": 128,
+      "source_sha256": "d3098169b36d4e7fa9e19d6338ac8f5b77589856cb1901d732e2b1cf5ca1142f",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/11-multimodal-rag.md",
+      "fence_line": 151,
+      "source_sha256": "2307e4aaa348f4fd7cf62b136f1b44a3eb62dc86f94d99368d59d09e52ba1cd8",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/12-data-engineering.md",
+      "fence_line": 45,
+      "source_sha256": "c785f3e8e7eca30e27aa36a07e761391b3bc1cde65727ab6789a37dc7dd077a9",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/12-data-engineering.md",
+      "fence_line": 88,
+      "source_sha256": "ef565d237fd584afd53887a548a3b749dc06ff94e8bcaa86fa2172da92113f14",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/12-data-engineering.md",
+      "fence_line": 144,
+      "source_sha256": "73942b7e310a399bbd4c46c291cc112446d35ee8d30458fa78ecebe4c31e438b",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/13-memory-context.md",
+      "fence_line": 51,
+      "source_sha256": "e3c21dcdea630d1a879c99a9858e701352a5bec7be623820eed9df30edef35cf",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/13-memory-context.md",
+      "fence_line": 77,
+      "source_sha256": "d6cc93a8ce04db5a9907f9c621cb023663728c5f564be3df03526edc1540b663",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/13-memory-context.md",
+      "fence_line": 122,
+      "source_sha256": "3a9da40b855f023e555886c761846ede024916cd249f46406421b491b6f711a7",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/14-evaluation.md",
+      "fence_line": 71,
+      "source_sha256": "f6a40d508c887fd3ccbd5745890e990c76cf57371512fff76017e129daffe1d3",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/14-evaluation.md",
+      "fence_line": 84,
+      "source_sha256": "e3478587c51285eb548dab1fa6d2d21279738e63b37b733d0037c8df01145734",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/15-observability.md",
+      "fence_line": 58,
+      "source_sha256": "71ce9d9f725c4c8b2d164f1d3395cf487b26af892bfda8fe84436cb3cd8392f1",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/15-observability.md",
+      "fence_line": 69,
+      "source_sha256": "9536739628a7b53dc7e9a331b5368d5ebb7d13c3fe9efaf79873af382fe56de7",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/16-durable-execution.md",
+      "fence_line": 90,
+      "source_sha256": "4a7890615be79ba7bd376a7f487fb821c974fa7fe48e1e5a1f8fd1122dfd22ed",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/16-durable-execution.md",
+      "fence_line": 103,
+      "source_sha256": "df58a0b9159048b8ddbdb7382e7c6a760e0e5a2088dee07ff1dc9ae73d742f05",
+      "status": "pass",
+      "diagram_type": "stateDiagram"
+    },
+    {
+      "file": "chapters/16-durable-execution.md",
+      "fence_line": 118,
+      "source_sha256": "404395a850e16233629dcc4556564bd87e0f74d64921c108c0c90def3ba68093",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/16-durable-execution.md",
+      "fence_line": 185,
+      "source_sha256": "79c58c6eb4831511db70bbd118b50c583e3c0570ddf789f54e694997260129c4",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/17-security-governance.md",
+      "fence_line": 39,
+      "source_sha256": "787057f26651eed1f783e36d40683c27bc0c8673553170acf815eab75c37383e",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/17-security-governance.md",
+      "fence_line": 62,
+      "source_sha256": "8559c4b532e4f56f67f073d4a4cd3606950e05b0e3752bc2d38e5813d814d2fa",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/17-security-governance.md",
+      "fence_line": 142,
+      "source_sha256": "34ec4f6a77c90fd65b05d37822638a6f06c7f244014822fca4c4d5b3c4462785",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/17-security-governance.md",
+      "fence_line": 179,
+      "source_sha256": "2652928ff66760d7dae665140502bce2ffe93120bdc4f02a1ebe785382dea1e4",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/18-distributed-agents.md",
+      "fence_line": 13,
+      "source_sha256": "f152677297952e755b280f4c3e7daaa562bd78d5ff11b6f32b8c7d76b227a474",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/18-distributed-agents.md",
+      "fence_line": 68,
+      "source_sha256": "df7c3b6fd19bfe8f745a70f5ddca85ed815eceb0a15046f910c5b7f4444129e7",
+      "status": "pass",
+      "diagram_type": "stateDiagram"
+    },
+    {
+      "file": "chapters/18-distributed-agents.md",
+      "fence_line": 87,
+      "source_sha256": "3300b15693c98265766fb1ea8b8f7aaa553f8a265a5796fcd85ebdaca15ef20f",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/19-time-series.md",
+      "fence_line": 24,
+      "source_sha256": "193f66de2a0ab13918637a9045ae0c6cc42b3b64d63f45ad186386005f114fe6",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/19-time-series.md",
+      "fence_line": 115,
+      "source_sha256": "f2eef5adae9455def2307df6d93d647b8bdebf12d667f902689a49a4ca98ec77",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/20-robotics-ros.md",
+      "fence_line": 96,
+      "source_sha256": "b672bcffa997ce6ab3a91109a46ba83b2ecee09d97b5d64ec5aa16a216c1487c",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/20-robotics-ros.md",
+      "fence_line": 109,
+      "source_sha256": "c1149bbbc49dd08800c44f95f8a8d48be268039d6610b9a41b35a451bfb8eb3a",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/20-robotics-ros.md",
+      "fence_line": 124,
+      "source_sha256": "8f6ca48aea617ba212df6fd57bcb29a4b84bd414d227937a6865c81e7631cc94",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/21-edge-cloud.md",
+      "fence_line": 71,
+      "source_sha256": "c6682e34025ea319896557473b7be4aada7a7f4d037dbec84eaaa4dcd6d7c10a",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/21-edge-cloud.md",
+      "fence_line": 90,
+      "source_sha256": "d50e86edd44abd0f38579fb1297ab46c2a2b98197b460b9b2716c13fee12903a",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/21-edge-cloud.md",
+      "fence_line": 108,
+      "source_sha256": "efcb2bf3a9241d10c2ed6712e5b1a05f8e8e2b7644cbd47a4bfd3551429575e0",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/22-causal-diagnosis.md",
+      "fence_line": 31,
+      "source_sha256": "19a81df7485c5dc6ff006207e751a23e3116a1f9f17ce881e666df59580a9675",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/22-causal-diagnosis.md",
+      "fence_line": 68,
+      "source_sha256": "5c8acaf93fdc0d290f4af1966b1b924a566ff61f9aefb30102f959bb759953df",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/22-causal-diagnosis.md",
+      "fence_line": 112,
+      "source_sha256": "897739e9e4ecfdaa18be7f753f4d084d79948728bea30df3f49c1768af623d45",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/23-platform-architecture.md",
+      "fence_line": 48,
+      "source_sha256": "e7faee2eb9a2edcf386f4d8f3ed6a6c3effbdb635c03a011b33827211cbf2f89",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/23-platform-architecture.md",
+      "fence_line": 80,
+      "source_sha256": "94b27c7a26b615bb99de7ccba14b8109624b97c15a69644f541383882cfbebe9",
+      "status": "pass",
+      "diagram_type": "sequence"
+    },
+    {
+      "file": "chapters/23-platform-architecture.md",
+      "fence_line": 150,
+      "source_sha256": "a4d5142c3d43cd28f8b5e0fa5f0216e277d0b6331dc55074ec8215c93c507ee9",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/23-platform-architecture.md",
+      "fence_line": 186,
+      "source_sha256": "bbaf9917b548c4bff98a9cb52a91d870b33e305033d62d8b4eb1c5204f381393",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/24-robot-diagnosis.md",
+      "fence_line": 56,
+      "source_sha256": "e3be1f9a17808b3d33d42c01cee46b81645b6b5edc360643efd3ee001523bb18",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/24-robot-diagnosis.md",
+      "fence_line": 102,
+      "source_sha256": "c94fbae35388be540d7ba7bcb1acfadf10bdef16b4893b10ed8e948a5a2350b3",
+      "status": "pass",
+      "diagram_type": "flowchart-v2"
+    },
+    {
+      "file": "chapters/24-robot-diagnosis.md",
+      "fence_line": 133,
+      "source_sha256": "d432022a53bcaf0545909d3b53bca448a0443e7f4e6bfcfff659a9dedcb719eb",
+      "status": "pass",
+      "diagram_type": "sequence"
+    }
+  ],
+  "changed_during_check": [],
+  "summary": {
+    "chapter_files": 25,
+    "blocks": 72,
+    "passed": 72,
+    "failed": 0,
+    "stable_snapshot": true
+  }
+}

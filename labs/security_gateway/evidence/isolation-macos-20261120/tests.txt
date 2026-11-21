@@ -1,0 +1,28 @@
+test_approval_expiry (test_gateway.GatewayTests.test_approval_expiry) ... ok
+test_approval_invalidates_when_invoice_amount_changes (test_gateway.GatewayTests.test_approval_invalidates_when_invoice_amount_changes) ... ok
+test_approval_tampering (test_gateway.GatewayTests.test_approval_tampering) ... ok
+test_cross_tenant_and_owner (test_gateway.GatewayTests.test_cross_tenant_and_owner) ... ok
+test_direct_injection (test_gateway.GatewayTests.test_direct_injection) ... ok
+test_identity_and_client_tenant (test_gateway.GatewayTests.test_identity_and_client_tenant) ... ok
+test_indirect_injection (test_gateway.GatewayTests.test_indirect_injection) ... ok
+test_rbac_and_service (test_gateway.GatewayTests.test_rbac_and_service) ... ok
+test_schema (test_gateway.GatewayTests.test_schema) ... ok
+test_secret_projection_and_audit (test_gateway.GatewayTests.test_secret_projection_and_audit) ... ok
+test_self_and_cross_tenant_approval (test_gateway.GatewayTests.test_self_and_cross_tenant_approval) ... ok
+test_success_and_single_use (test_gateway.GatewayTests.test_success_and_single_use) ... ok
+test_approval_binds_all_parameters (test_isolated_gateway.AuthorizationTests.test_approval_binds_all_parameters) ... ok
+test_denials_never_launch (test_isolated_gateway.AuthorizationTests.test_denials_never_launch) ... ok
+test_independent_approver_and_expiry (test_isolated_gateway.AuthorizationTests.test_independent_approver_and_expiry) ... ok
+test_missing_backend_fails_closed (test_isolated_gateway.AuthorizationTests.test_missing_backend_fails_closed) ... ok
+test_secret_and_invalid_input_not_audited (test_isolated_gateway.AuthorizationTests.test_secret_and_invalid_input_not_audited) ... ok
+test_network_denied_with_unsandboxed_baseline (test_isolated_gateway.RealIsolationTests.test_network_denied_with_unsandboxed_baseline) ... ok
+test_normal_read_write_and_single_use (test_isolated_gateway.RealIsolationTests.test_normal_read_write_and_single_use) ... ok
+test_output_cap_and_audit_projection (test_isolated_gateway.RealIsolationTests.test_output_cap_and_audit_projection) ... ok
+test_outside_read_denied (test_isolated_gateway.RealIsolationTests.test_outside_read_denied) ... ok
+test_outside_write_denied (test_isolated_gateway.RealIsolationTests.test_outside_write_denied) ... ok
+test_timeout (test_isolated_gateway.RealIsolationTests.test_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 2.260s
+
+OK

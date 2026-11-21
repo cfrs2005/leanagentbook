@@ -8,7 +8,7 @@
 
 ## 1. 范围与学习结果
 
-本章交付一个可运行的固定工具网关。数据全部为合成发票，不连接支付系统，不调用真实模型，不发送网络请求。模型即使提出恶意调用，也不能更改服务端角色、租户和审批记录。本章不交付生产认证服务、通用代码沙箱或完整秘密管理系统。
+本章交付一个可运行的固定工具网关，以及经身份、权限、审批检查后进入独立 OS 隔离进程的合成工具链。数据全部为合成发票，不连接支付系统，不调用真实模型，不发送网络请求。模型即使提出恶意调用，也不能更改服务端角色、租户和审批记录。本章不交付生产认证服务、通用代码沙箱或完整秘密管理系统。
 
 学完后，你应能解释认证与授权的差别；将 RBAC 与资源属性组合；让审批绑定具体请求；证明拒绝路径没有执行支付；识别提示注入、跨租户访问和秘密泄露的边界；区分实际 OS 隔离与普通子进程。
 
@@ -101,7 +101,10 @@ sequenceDiagram
 | --- | --- |
 | [gateway.py](../labs/security_gateway/gateway.py) | 身份、结构、策略、审批、固定工具与审计 |
 | [test_gateway.py](../labs/security_gateway/test_gateway.py) | 离线威胁测试与合成输入 |
-| [probe_sandbox.py](../labs/security_gateway/probe_sandbox.py) | 可选 macOS OS 隔离探针 |
+| [probe_sandbox.py](../labs/security_gateway/probe_sandbox.py) | 保留的定点拒绝探针，不是工具执行器 |
+| [isolated_gateway.py](../labs/security_gateway/isolated_gateway.py) | 新增审批绑定与默认拒绝的隔离工具执行器 |
+| [isolated_worker.py](../labs/security_gateway/isolated_worker.py) | 固定合成求和工具及拒绝/限额实验模式 |
+| [test_isolated_gateway.py](../labs/security_gateway/test_isolated_gateway.py) | 可移植授权测试和真实平台隔离测试 |
 | [实验说明与结果](../labs/security_gateway/README.md) | 复现命令、结果和限制 |
 
 在仓库根目录运行：
@@ -131,6 +134,45 @@ python3 labs/security_gateway/probe_sandbox.py
 这只证明当前机器上这两条 OS 拒绝规则生效。探针采用默认允许加定点拒绝，**不是可承载不可信代码的完整沙箱**，没有测完符号链接、其他文件路径、进程间通信、外连协议或所有逃逸路径。本章不开放 shell、Python 执行或任意 URL 工具。其他平台明确跳过该探针，不能把跳过当通过。
 
 若生产系统需要运行代码，应使用独立低权限执行环境，默认禁止文件与网络访问，按任务挂载输入，只允许指定输出目录，限制 CPU、内存、进程数和执行时间。网络出口还须限制目的地、协议、DNS 解析后地址与重定向。文件路径须考虑符号链接和检查后变化；只做字符串前缀判断不够。具体沙箱方案应另有平台测试与更新流程。
+
+### 6.1 新增实践：网关批准后才启动隔离工具
+
+原发票 demo 保持不变。新工具 `synthetic.summarize` 接收固定资源 `job-a`、有限整数列表和教学模式。它只求和并写临时结果，不执行支付、设备动作、任意代码、用户路径或外部 URL。
+
+```mermaid
+flowchart LR
+    Request[固定工具请求] --> Identity[服务端会话与资源授权]
+    Identity --> Approval[独立审批人 / 参数摘要 / 有效期]
+    Approval --> Consume[消费一次性审批]
+    Consume --> OS[独立进程 / 默认拒绝 OS 策略]
+    OS --> Result[结果结构检查 / 最小审计]
+```
+
+网关检查用户、服务身份、角色、租户和资源归属。审批绑定全部参数，包括教学模式与数值列表。改变参数、缺少审批、审批过期或自批都不能启动工具。审批在启动前消费；启动失败也不自动重用，需重新审批。
+
+隔离采用 macOS `sandbox-exec` 的 `(deny default)`，不是旧探针的 `(allow default)`。只放行当前解释器、固定 worker、当前输入文件，以及解释器和系统库的只读目录；写入只放行当前 `result.json`。网络没有允许规则。根目录本身的只读访问用于运行时启动，并不放行根目录下所有文件；文件元数据查询和 sysctl 读取被允许。临时 canary 在任务目录外，实际读和写都被 OS 拒绝。
+
+| 验收路径 | 本次实际结果 |
+|---|---|
+| 未授权或缺审批 | 不调用隔离执行器，启动计数为 0 |
+| 批准后改数值、模式或资源 | 被拒绝，不启动 |
+| 正常输入 `[2,3,5]` | 隔离进程读取输入、写临时文件，返回 sum=10、count=3 |
+| 越界读与写 | 均返回 PermissionError；canary 内容保持不变 |
+| 网络 | 无策略的 loopback bind 可用，隔离后同类操作被拒绝；不连接外部服务 |
+| 超时 | 2 秒墙钟期限后终止并回收子进程 |
+| 输出超限 | stdout 与 stderr 合计超过 4096 字节即终止，不能无限缓冲 |
+| 审计 | 只保存受控状态与原因，不保存凭据、canary、原始输出或异常正文 |
+
+worker 还设置 CPU 2 秒和文件大小 4096 字节限制。它们不等于完整内存限制；本例用最多 16 个、绝对值不超过 1000 的整数约束任务规模。不能将这套固定可信 worker 扩写成可安全执行任意 Python 的服务。系统库和解释器目录可以读取，元数据可查询；这些是明确的隔离例外，不承诺隐藏机器上所有信息。
+
+复现完整链路并生成新证据：
+
+```sh
+python3 -m unittest discover -s labs/security_gateway -v
+python3 labs/security_gateway/verify_isolation.py --output output/security-isolation-run1
+```
+
+[真实运行报告](../labs/security_gateway/evidence/isolation-macos-20261120/report.json)与[测试记录](../labs/security_gateway/evidence/isolation-macos-20261120/tests.txt)保存了 macOS 正常、拒绝、超时和输出限额结果。默认测试仅用标准库。Linux CI 运行授权、参数绑定、审计和后端不可用时的拒绝测试；真实 OS 隔离测试明确显示 skip。独立验证命令在缺少后端时写入“未验证”并退出 2，没有无隔离回退。即使系统有命令但不允许初始化策略，正常运行测试也会失败，不将其伪装成通过。
 
 ## 7. 多租户数据、秘密和供应链
 
@@ -186,7 +228,7 @@ flowchart TB
 | 秘密与令牌输出 | secret_projection_and_audit | 通过：结果与审计不含 canary 或令牌 |
 | 文件与网络 OS 拒绝 | 独立 probe_sandbox.py | 本机通过；其他平台可能跳过 |
 
-本次共运行 12 个单元测试方法，全部通过。注入测试模拟恶意工具请求和不可信字段，不是完整 LLM 红队评测。没有验证真实支付、生产身份、Vault、分布式审批、完整网络出口或容器逃逸。
+原发票网关的 12 个单元测试方法通过；新增隔离链另有 5 项可移植授权测试与 6 项真实 OS 测试，macOS 共 23 项通过。注入测试模拟恶意工具请求和不可信字段，不是完整 LLM 红队评测。没有验证真实支付、生产身份、Vault、分布式审批、完整网络出口或容器逃逸。
 
 验收标准：你能复现成功支付；全部离线测试通过；每次拒绝不产生支付副作用；你能说清会话从哪里来、为何额外 tenant_id 无效；审批更改参数后不能使用；秘密不出现在输出或审计；平台探针结果如实记录为通过、失败或有原因的跳过。
 

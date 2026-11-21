@@ -1,0 +1,75 @@
+{
+  "state": "needs_review",
+  "results": {
+    "readings": {
+      "ok": true,
+      "attempts": 1,
+      "value": {
+        "maximum": 71,
+        "sample_count": 3
+      }
+    },
+    "review": {
+      "ok": true,
+      "attempts": 1,
+      "value": {
+        "recommendation": "observe"
+      }
+    }
+  },
+  "summary": {
+    "readings": {
+      "maximum": 71,
+      "sample_count": 3
+    },
+    "review": {
+      "recommendation": "observe"
+    }
+  },
+  "events": [
+    {
+      "seq": 1,
+      "kind": "run_started",
+      "task_id": "synthetic-001",
+      "mode": "parallel"
+    },
+    {
+      "seq": 2,
+      "kind": "attempt_started",
+      "worker": "readings",
+      "attempt": 1
+    },
+    {
+      "seq": 3,
+      "kind": "attempt_started",
+      "worker": "review",
+      "attempt": 1
+    },
+    {
+      "seq": 4,
+      "kind": "attempt_succeeded",
+      "worker": "readings",
+      "attempt": 1
+    },
+    {
+      "seq": 5,
+      "kind": "attempt_succeeded",
+      "worker": "review",
+      "attempt": 1
+    },
+    {
+      "seq": 6,
+      "kind": "conflict_detected",
+      "expected": "inspect",
+      "observed": "observe",
+      "policy": "synthetic-threshold-70-v1"
+    },
+    {
+      "seq": 7,
+      "kind": "run_finished",
+      "state": "needs_review"
+    }
+  ],
+  "attempts": 2,
+  "elapsed_seconds": 0.031154
+}

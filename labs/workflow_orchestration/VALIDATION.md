@@ -53,3 +53,7 @@ SVG 按仓库检查器验证结构与本地链接；未使用浏览器，最终�
 补充兼容检查：`python3.12 -m unittest discover -s labs/workflow_orchestration -p 'test_*.py'`，12 项通过，耗时 0.441 秒。未在 Python 3.11 解释器上实测。
 
 全书检查：已运行 `python3 scripts/check_book.py`，当前失败项为其他并行章节的 `chapters/01-model-foundations.md` 指向尚未生成的 `labs/model_foundations/README.md`。未修改该章节。第 04 章及实验文档的本地链接和 SVG 结构单独检查通过。协调方合并时需重跑全书检查。
+
+## 原规格审计后补充冲突验证
+
+2026-11-20，Python 3.15.2：13 项测试全部通过（0.742 秒）。新增的冲突测试遍历串行/并行 × pending/approve/reject 六种组合。另执行真实 CLI `--scenario conflict --approval approve`，退出 5，状态 needs_review，保留最大值 71 与 observe 矛盾结果；无审批或发布事件。[完整 JSON](results/conflict.json)。此前 12 项验证记录为历史基线，耗时对照未重新测量。

@@ -1,0 +1,317 @@
+{
+  "mode": "live_local_routing",
+  "models": {
+    "small": {
+      "model": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "license": "apache-2.0"
+    },
+    "base": {
+      "model": "google/flan-t5-base",
+      "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+      "license": "apache-2.0"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "machine": "arm64",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "packages": {
+      "torch": "2.6.0",
+      "transformers": "4.48.3"
+    }
+  },
+  "load_ms": {
+    "small": 333.3608750253916,
+    "base": 479.20029098168015
+  },
+  "max_new_tokens": 32,
+  "policy": "16 whitespace-delimited words; length is a teaching proxy, not measured difficulty",
+  "pricing": "Synthetic credits: small/base 1/4 per 1000 input tokens; output multiplier 2; not money",
+  "timing": "end_to_end_ms measures Router.run including cache/authorization/token estimate; model loads excluded. recorded_backend_ms retains legacy name and sums actual live calls here. cold means answer-cache cold, not process cold.",
+  "failure": "One controlled pre-generation small failure; zero model tokens consumed; actual base generation follows. Not a real network outage.",
+  "limits": "New synthetic prompts, not a blinded quality benchmark. Larger base is not guaranteed better. Static internal permission fixture is not authentication.",
+  "source_sha256": {
+    "router.py": "41e9791483a7c351cb614c4563d3e7e86978b9dc889737514550186b79c19145",
+    "live_provider.py": "8a4038f8234e65ff5c88a03fa90219fa0b91ce97fde7aee2b0545f8a218d364d",
+    "run_live.py": "2d7271b9ce22a8df262ffaec8a292b9cf7f928877a9cdfb0531ee8fe2a7cdfb5",
+    "models.json": "63341b36f4daa75b0a9481a70d154d0478536b0410432a3557f0da7e11eed93b"
+  },
+  "traces": [
+    {
+      "id": "new_simple_cold",
+      "prompt": "Answer with one number: 23 + 19?",
+      "expected": "42",
+      "word_count": 7,
+      "end_to_end_ms": 33.79000001586974,
+      "new_provider_calls": 1,
+      "correct": false,
+      "answer": "0",
+      "status": "accepted",
+      "model": "small",
+      "cache_hit": false,
+      "attempts": [
+        {
+          "model": "small",
+          "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+          "prompt": "Answer with one number: 23 + 19?",
+          "answer": "0",
+          "input_units": 10,
+          "output_units": 3,
+          "status": "ok",
+          "fault_injected": false,
+          "usage_known": true,
+          "latency_ms": 33.31670816987753
+        }
+      ],
+      "cost_credits": 0.016,
+      "recorded_backend_ms": 33.31670816987753
+    },
+    {
+      "id": "new_simple_repeat",
+      "prompt": "Answer with one number: 23 + 19?",
+      "expected": "42",
+      "word_count": 7,
+      "end_to_end_ms": 0.03583403304219246,
+      "new_provider_calls": 0,
+      "correct": false,
+      "answer": "0",
+      "status": "accepted",
+      "model": "small",
+      "cache_hit": true,
+      "attempts": [],
+      "cost_credits": 0,
+      "recorded_backend_ms": 0
+    },
+    {
+      "id": "new_complex_cold",
+      "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+      "expected": "18",
+      "word_count": 38,
+      "end_to_end_ms": 1895.4719160683453,
+      "new_provider_calls": 1,
+      "correct": false,
+      "answer": "",
+      "status": "invalid_output",
+      "model": "base",
+      "cache_hit": false,
+      "attempts": [
+        {
+          "model": "base",
+          "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+          "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+          "answer": "The warehouse had twenty + seven = 21 boxes. The warehouse had 21 + 9 = 26 boxes. The warehouse had 26 - 7 = 26 boxes left.",
+          "input_units": 44,
+          "output_units": 32,
+          "status": "ok",
+          "fault_injected": false,
+          "usage_known": true,
+          "latency_ms": 1894.9278339277953
+        }
+      ],
+      "cost_credits": 0.432,
+      "recorded_backend_ms": 1894.9278339277953
+    },
+    {
+      "id": "new_complex_repeat",
+      "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+      "expected": "18",
+      "word_count": 38,
+      "end_to_end_ms": 448.86512495577335,
+      "new_provider_calls": 1,
+      "correct": false,
+      "answer": "",
+      "status": "invalid_output",
+      "model": "base",
+      "cache_hit": false,
+      "attempts": [
+        {
+          "model": "base",
+          "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+          "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+          "answer": "The warehouse had twenty + seven = 21 boxes. The warehouse had 21 + 9 = 26 boxes. The warehouse had 26 - 7 = 26 boxes left.",
+          "input_units": 44,
+          "output_units": 32,
+          "status": "ok",
+          "fault_injected": false,
+          "usage_known": true,
+          "latency_ms": 448.6290419008583
+        }
+      ],
+      "cost_credits": 0.432,
+      "recorded_backend_ms": 448.6290419008583
+    },
+    {
+      "id": "revoked_scope_cached_prompt",
+      "prompt": "Answer with one number: 23 + 19?",
+      "expected": "42",
+      "word_count": 7,
+      "end_to_end_ms": 0.00458303838968277,
+      "new_provider_calls": 0,
+      "correct": false,
+      "answer": "",
+      "status": "forbidden",
+      "model": null,
+      "cache_hit": false,
+      "attempts": [],
+      "cost_credits": 0,
+      "recorded_backend_ms": 0
+    },
+    {
+      "id": "unknown_scope",
+      "prompt": "Answer with one number: 23 + 19?",
+      "expected": "42",
+      "word_count": 7,
+      "end_to_end_ms": 0.0013748649507761002,
+      "new_provider_calls": 0,
+      "correct": false,
+      "answer": "",
+      "status": "forbidden",
+      "model": null,
+      "cache_hit": false,
+      "attempts": [],
+      "cost_credits": 0,
+      "recorded_backend_ms": 0
+    },
+    {
+      "id": "budget_denied",
+      "prompt": "Answer with one number: 23 + 19?",
+      "expected": "42",
+      "word_count": 7,
+      "end_to_end_ms": 0.13841595500707626,
+      "new_provider_calls": 0,
+      "correct": false,
+      "answer": "",
+      "status": "budget_exhausted",
+      "model": null,
+      "cache_hit": false,
+      "attempts": [],
+      "cost_credits": 0,
+      "recorded_backend_ms": 0
+    },
+    {
+      "id": "selected_model_denied",
+      "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+      "expected": "18",
+      "word_count": 38,
+      "end_to_end_ms": 0.011666910722851753,
+      "new_provider_calls": 0,
+      "correct": false,
+      "answer": "",
+      "status": "forbidden",
+      "model": null,
+      "cache_hit": false,
+      "attempts": [],
+      "cost_credits": 0,
+      "recorded_backend_ms": 0
+    },
+    {
+      "id": "injected_small_failure_then_real_base",
+      "prompt": "Answer yes or no: Is a penguin a bird?",
+      "expected": "yes",
+      "word_count": 9,
+      "end_to_end_ms": 50.569333136081696,
+      "new_provider_calls": 2,
+      "correct": true,
+      "answer": "yes",
+      "status": "accepted",
+      "model": "base",
+      "cache_hit": false,
+      "attempts": [
+        {
+          "model": "small",
+          "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+          "prompt": "Answer yes or no: Is a penguin a bird?",
+          "answer": "",
+          "input_units": 0,
+          "output_units": 0,
+          "status": "error",
+          "fault_injected": true,
+          "usage_known": true,
+          "error": "injected_before_generation",
+          "latency_ms": 0.03108312375843525
+        },
+        {
+          "model": "base",
+          "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+          "prompt": "Answer yes or no: Is a penguin a bird?",
+          "answer": "yes",
+          "input_units": 16,
+          "output_units": 2,
+          "status": "ok",
+          "fault_injected": false,
+          "usage_known": true,
+          "latency_ms": 50.353625090792775
+        }
+      ],
+      "cost_credits": 0.08,
+      "recorded_backend_ms": 50.38470821455121
+    }
+  ],
+  "provider_calls": [
+    {
+      "model": "small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "prompt": "Answer with one number: 23 + 19?",
+      "answer": "0",
+      "input_units": 10,
+      "output_units": 3,
+      "status": "ok",
+      "fault_injected": false,
+      "usage_known": true,
+      "latency_ms": 33.31670816987753
+    },
+    {
+      "model": "base",
+      "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+      "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+      "answer": "The warehouse had twenty + seven = 21 boxes. The warehouse had 21 + 9 = 26 boxes. The warehouse had 26 - 7 = 26 boxes left.",
+      "input_units": 44,
+      "output_units": 32,
+      "status": "ok",
+      "fault_injected": false,
+      "usage_known": true,
+      "latency_ms": 1894.9278339277953
+    },
+    {
+      "model": "base",
+      "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+      "prompt": "A warehouse had twenty boxes in storage at the beginning of the day. Workers delivered seven more boxes and then shipped nine boxes to a customer. How many boxes remain in the warehouse? Answer with one number only.",
+      "answer": "The warehouse had twenty + seven = 21 boxes. The warehouse had 21 + 9 = 26 boxes. The warehouse had 26 - 7 = 26 boxes left.",
+      "input_units": 44,
+      "output_units": 32,
+      "status": "ok",
+      "fault_injected": false,
+      "usage_known": true,
+      "latency_ms": 448.6290419008583
+    },
+    {
+      "model": "small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "prompt": "Answer yes or no: Is a penguin a bird?",
+      "answer": "",
+      "input_units": 0,
+      "output_units": 0,
+      "status": "error",
+      "fault_injected": true,
+      "usage_known": true,
+      "error": "injected_before_generation",
+      "latency_ms": 0.03108312375843525
+    },
+    {
+      "model": "base",
+      "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+      "prompt": "Answer yes or no: Is a penguin a bird?",
+      "answer": "yes",
+      "input_units": 16,
+      "output_units": 2,
+      "status": "ok",
+      "fault_injected": false,
+      "usage_known": true,
+      "latency_ms": 50.353625090792775
+    }
+  ],
+  "checks_passed": true
+}

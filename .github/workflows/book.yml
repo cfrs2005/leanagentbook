@@ -30,3 +30,15 @@ jobs:
         with:
           name: lean-agent-book-source
           path: course-source.zip
+
+  diagrams:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: scripts/mermaid-check/package-lock.json
+      - run: npm ci --prefix scripts/mermaid-check --no-audit --no-fund
+      - run: node scripts/check_mermaid.mjs --env scripts/mermaid-check --out /tmp/mermaid-report.json

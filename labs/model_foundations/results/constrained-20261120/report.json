@@ -1,0 +1,110 @@
+{
+  "model": "google/flan-t5-small",
+  "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "source_access_date": "2026-11-20",
+  "method": "Real model.generate with prefix_allowed_tokens_fn; finite object enum; existing sentinel brace codec; unchanged tokenizer vocabulary and weights",
+  "native_json_limitation": "Original T5 tokenizer encodes ASCII braces as unk; native generation uses extra_id_0/1, explicit reversible codec emits JSON braces",
+  "schema": {
+    "enum": [
+      {
+        "answer": "42",
+        "source_ids": [
+          "record-1"
+        ]
+      },
+      {
+        "answer": "99",
+        "source_ids": [
+          "record-1"
+        ]
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "answer": "42",
+      "source_ids": [
+        "record-1"
+      ]
+    },
+    {
+      "answer": "99",
+      "source_ids": [
+        "record-1"
+      ]
+    }
+  ],
+  "candidate_token_paths": [
+    [
+      0,
+      32099,
+      96,
+      3247,
+      3321,
+      121,
+      10,
+      121,
+      4165,
+      121,
+      976,
+      7928,
+      834,
+      23,
+      26,
+      7,
+      121,
+      10,
+      6306,
+      121,
+      60,
+      7621,
+      2292,
+      121,
+      908,
+      32098,
+      1
+    ],
+    [
+      0,
+      32099,
+      96,
+      3247,
+      3321,
+      121,
+      10,
+      121,
+      3264,
+      121,
+      976,
+      7928,
+      834,
+      23,
+      26,
+      7,
+      121,
+      10,
+      6306,
+      121,
+      60,
+      7621,
+      2292,
+      121,
+      908,
+      32098,
+      1
+    ]
+  ],
+  "requests": 18,
+  "schema_valid": 18,
+  "fact_correct": 14,
+  "all_have_model_scored_branch": true,
+  "source_sha256": {
+    "collect_constrained.py": "ddcee2f56ae03f2b8de495a969b5ef936a30e8f5ff8ad56e9fa24f8821121a2d",
+    "constrained_model.py": "8b4d530772c504cc6fe4229fe4eaf02fe4aef7a6ca348dd990ab57a23eaace27",
+    "http_model.py": "b2bd2c50b93b1421f394345bc7864ade6c3f27ec8e2a1988c2ebdbd1571b87b9",
+    "collect_model.py": "cc438a65f5ee24eebd5d2d6e9cd2ae55939944d98385338a3cd60b6d3ddd3d20",
+    "foundations.py": "6bc44330f5dbe56a1b71a7e1d3b3a4f09d1f843f3938fe8dc4cd5fa6a1ac5648"
+  },
+  "responses_sha256": "0a07c197a242bb369c6b3d18544f47597e6be91913c1a7ec6e57bd248c8f80ff",
+  "environment_and_model_hash_reference": "../local-model-20261120/report.json"
+}

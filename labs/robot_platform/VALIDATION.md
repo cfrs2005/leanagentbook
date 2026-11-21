@@ -16,3 +16,7 @@
 无模型测试包括脚本故障注入；真实模型在单独运行中加载真实权重，两者不能混淆。当前三个固定合成样例只验证状态分支，不足以估计准确率、误报率或稳定延迟。自动 demo 代替人员提交审批，不证明有人实际复核。未做浏览器视觉验收、真实云部署、TLS/SSO、设备连接、实机断电或机器人控制。
 
 复现命令与独立环境见 [README](README.md)。输出必须写新目录；保留结果不会被默认测试重写。
+
+## 设备日志补充 · 2026-11-20
+
+Python 3.15.2 实际执行 device_logs.py，输出 5 条关联：matched、boundary_ambiguous、matched、boundary_ambiguous、outside_observed_windows。新增 5 项测试通过，覆盖时间误差、半开窗口、身份/版本、重复序号/类型/限额及原传感器 hash。输入全部合成，时钟偏移为预设参数，程序只做时间关联，不估计故障概率。结果及源文件摘要在 results/device-log-report.json、device-log-manifest.json。

@@ -1,4 +1,4 @@
-"""Deterministic routing over recorded providers; standard-library policy replay."""
+"""Provider-independent routing with optional authorization; default CLI replays records."""
 from copy import deepcopy
 import hashlib
 import json
@@ -53,7 +53,7 @@ class ReplayProvider:
 
 
 class Router:
-    def __init__(self, provider, policy='rules', threshold=16, ttl=120, clock=time.monotonic):
+    def __init__(self, provider, policy='rules', threshold=16, ttl=120, clock=time.monotonic, allowed_models=None):
         if policy not in {'small', 'base', 'rules', 'cascade'}:
             raise ValueError('Unknown routing policy')
         if (type(threshold) is not int or threshold < 0 or type(ttl) not in (int, float)
@@ -61,6 +61,7 @@ class Router:
             raise ValueError('Invalid policy configuration')
         self.provider, self.policy, self.threshold = provider, policy, threshold
         self.ttl, self.clock, self.cache = ttl, clock, {}
+        self.allowed_models = allowed_models
 
     def run(self, prompt, schema, scope, data_version='v1', policy_version='v1',
             budget=1024, cache=True):
@@ -70,12 +71,19 @@ class Router:
                 or any(not isinstance(value, str) or not value for value in (*scope, data_version, policy_version))
                 or type(budget) is not int or budget < 1):
             raise ValueError('Invalid request envelope')
+        permitted = set(self.provider.models) if self.allowed_models is None else set(self.allowed_models(scope))
+        denied = {'answer': '', 'status': 'forbidden', 'model': None, 'cache_hit': False,
+                  'attempts': [], 'cost_credits': 0, 'recorded_backend_ms': 0}
+        if not permitted:
+            return denied
         key = json.dumps([prompt, schema, scope, data_version, policy_version, self.policy,
                           self.threshold, self.provider.models, self.provider.max_output, budget], sort_keys=True)
         now = self.clock()
         if cache and key in self.cache:
             expires, previous = self.cache[key]
             if now < expires:
+                if previous['model'] not in permitted:
+                    return denied
                 return dict(deepcopy(previous), cache_hit=True, attempts=[], cost_credits=0, recorded_backend_ms=0)
             del self.cache[key]
         if self.policy in {'small', 'base'}:
@@ -89,6 +97,9 @@ class Router:
                   'attempts': [], 'cost_credits': 0, 'recorded_backend_ms': 0}
         used = 0
         for model in choices:
+            if model not in permitted:
+                output['status'] = 'forbidden'
+                break
             if used + self.provider.estimate(model, prompt) > budget:
                 output['status'] = 'budget_exhausted'
                 break

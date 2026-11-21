@@ -59,3 +59,9 @@ python3.12 -m venv /tmp/robot-platform-model-env
 ## 练习与验收
 
 修改输入副本使一个窗口同时含超限和缺失，确认异常证据仍保留缺失提示。然后使相同 ID 的内容变化，确认云端拒绝覆盖。运行测试并检查报告中的 `automatic_control=false`、`root_cause_confirmed=false`。三种演示样例的状态全部符合预期只证明分支覆盖，不能称为现场准确率 100%。
+
+## 设备日志关联
+
+运行 `python3 labs/robot_platform/device_logs.py --output /tmp/robot-device-log-run-1.json`，解析 5 条原创设备日志并关联传感器窗口。100 ms 偏移和 ±20 ms 误差为教学已知参数，跨窗口日志保留歧义，窗外日志不丢弃；程序不推断根因。新增入口是诊断后的本地证据补充，HTTP 仍只接受原来的 CSV 事件。
+
+[样例日志](fixtures/device-events.jsonl) · [实际结果](results/device-log-report.json) · [摘要清单](results/device-log-manifest.json)。日志校验拒绝额外自由文本、其他租户/设备/事件、错误版本、重复序号与不匹配的传感器 hash。5 项新测试通过；原 9 项测试继续保留。

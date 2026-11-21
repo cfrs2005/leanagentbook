@@ -4,11 +4,11 @@
 
 **从一次面试里的追问出发，把“听过概念”变成“能解释、能实现、能验证”。**
 
-一套持续编写的中文开源课程。以企业助手和机器人诊断为主线，覆盖 6 个部分、24 章。先看图，再看表，最后运行实验。
+一套持续更新的中文开源课程。以企业助手和机器人诊断为主线，覆盖 6 个部分、24 章。先看图，再看表，最后运行实验。
 
 [在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **持续更新中的学习切片**：导读与全部 24 章均已有首版或设计稿；各章仍有需补齐的任务，不等于整书已验收。模拟结果不能证明真实模型质量或机器人现场效果。
+> **24 章教学首版已完成核对，持续更新。** 正文、图表、实验与来源均可阅读和复查，详见 [逐章核对记录](ACCEPTANCE.md)。真实模型与脚本模型分开标注；合成数据结果不能证明现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -55,18 +55,18 @@
 
 ## 十分钟运行首批实验
 
-需要 Python 3.11 或更新版本。不需要模型密钥、GPU 或机器人。
+全套默认实验推荐 Python 3.12；CI 覆盖 Python 3.11 / 3.13。仅运行标准库实验时可用 Python 3.11+。不需要模型密钥、GPU 或机器人。
 
 ```bash
 git clone https://github.com/cfrs2005/leanagentbook.git
 cd leanagentbook
 python3 scripts/check_book.py
-python3 -m venv .lab-venv
+python3.12 -m venv .lab-venv
 .lab-venv/bin/python -m pip install -r labs/rag_pipeline/requirements-pdf.txt -r labs/data_engineering/requirements.txt
 .lab-venv/bin/python scripts/test_labs.py
 ```
 
-实验运行入口、输入和预期输出见各章。测试通过只说明离线实验符合断言，不代表全书已经完成。
+实验运行入口、输入和预期输出见各章。测试验证各实验声明的行为；真实模型与硬件的可选检查及已保存证据见各章。
 
 ## 怎样持续构建
 

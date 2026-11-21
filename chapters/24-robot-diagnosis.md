@@ -95,6 +95,39 @@ CSV 列为 `time_s,motor_current_a,vibration_mm_s`，时间必须是 0–3599 �
 
 HTTP JSON 另限 32 KiB，因为封装有额外开销。输入 hash 检查内容一致，不证明数据来自可信设备。固件版本字符串也不是远程证明。
 
+### 设备日志：先关联时间，再解释现象
+
+设备日志与应用审计不是同一类数据。设备日志记录“当时设备报告了什么”；应用审计记录“哪个身份请求了什么”。[日志关联实验](../labs/robot_platform/device_logs.py)读取 5 行原创 JSONL，绑定 tenant/device/event_id、固件和配置版本，关联既有传感器报告；不把设备日志里的 ERROR 当作根因标签。
+
+```mermaid
+flowchart LR
+    L[合成设备 JSONL] --> V[字段 / 身份 / 版本校验]
+    V --> C[采样时钟减已知偏移]
+    C --> U[保留时间误差区间]
+    U --> W{与事件窗口重叠?}
+    W -->|落在一个窗口内部| M[关联来源行与窗口]
+    W -->|跨边界| A[保留候选窗口 / 不确定]
+    W -->|窗外| O[保留未匹配日志]
+```
+
+| 字段 | 本例契约 | 不能据此推断 |
+|---|---|---|
+| sequence | 严格递增，重复拒绝 | 序号连续不能证明日志完整 |
+| device_time_ms | 相同录制起点后的整数毫秒 | 不是 UTC，也不是接收时间 |
+| clock_offset_ms | 人为已知设备快 100 ms，校正时减去 | 不是从现场数据估计出的偏移 |
+| uncertainty_ms | 每条日志保留 ±20 ms 区间 | 不能因校正后数值整齐就忽略误差 |
+| level / code | 固定等级与受限事件码 | 不接受自由消息字段，避免直接收集敏感原文 |
+| source_line / hash | 原日志行号、原文 hash、传感器 hash | 内容一致不证明设备身份真实 |
+
+在合成数据中，`MOTOR_CURRENT_LIMIT` 的设备时间 6300 ms 校正为 6200 ms，误差区间完全落在异常窗口 `[5,10)` 秒内。这支持“同一时段出现相关设备报码”，不能确认电机损坏。`LOAD_CHANGED` 校正为 5000 ms，±20 ms 跨越两个窗口，保留两个候选；校正为 10000 ms 的会话结束日志也标明边界不确定。12000 ms 的上传准备日志在传感器观测范围外，保留为未匹配，不能延长诊断窗口掩盖缺测。
+
+```sh
+python3 labs/robot_platform/device_logs.py --output /tmp/robot-device-log-run-1.json
+python3 -m unittest discover -s labs/robot_platform -p 'test_device_logs.py' -v
+```
+
+[实际关联结果](../labs/robot_platform/results/device-log-report.json)及[源文件摘要](../labs/robot_platform/results/device-log-manifest.json)保留所有五条日志。5 项测试覆盖时间边界、身份/版本不符、重复序号、输入限额与传感器来源不符。该入口是诊断后的本地证据补充，不是新 HTTP 上传接口；实时日志流、重启时钟和未知偏移估计仍需新契约。
+
 ## 5. 弱网与崩溃：结果不能因重试变成两份
 
 ```mermaid

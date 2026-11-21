@@ -134,6 +134,46 @@ class RouterTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.run_request(budget=budget)
 
+    def test_authorization_precedes_cache_and_estimation(self):
+        permissions = {'small', 'base'}
+        router = Router(self.provider, allowed_models=lambda scope: permissions)
+        self.assertEqual(self.run_request(router)['status'], 'accepted')
+        permissions.clear()
+        self.provider.estimate = lambda *args: self.fail('Denied request reached backend')
+        result = self.run_request(router)
+        self.assertEqual(result['status'], 'forbidden')
+        self.assertFalse(result['cache_hit'])
+        self.assertEqual(result['attempts'], [])
+
+    def test_selected_model_permission_and_fallback_permission(self):
+        router = Router(self.provider, policy='base', allowed_models=lambda scope: {'small'})
+        self.assertEqual(self.run_request(router)['status'], 'forbidden')
+        provider = ReplayProvider(observations('bad'))
+        router = Router(provider, policy='cascade', allowed_models=lambda scope: {'small'})
+        result = self.run_request(router)
+        self.assertEqual(result['status'], 'forbidden')
+        self.assertEqual([r['model'] for r in result['attempts']], ['small'])
+        self.assertGreater(result['cost_credits'], 0)
+
+    def test_revoked_cached_model_is_not_returned(self):
+        permissions = {'small', 'base'}
+        router = Router(self.provider, policy='base', allowed_models=lambda scope: permissions)
+        self.run_request(router)
+        permissions.remove('base')
+        result = self.run_request(router)
+        self.assertEqual(result['status'], 'forbidden')
+        self.assertEqual(result['answer'], '')
+        self.assertEqual(result['attempts'], [])
+
+    def test_live_provider_import_does_not_load_torch(self):
+        import subprocess
+        import sys
+        from pathlib import Path
+        completed = subprocess.run([sys.executable, '-B', '-c',
+            "import sys; import live_provider; assert 'torch' not in sys.modules; assert 'transformers' not in sys.modules"],
+            cwd=Path(__file__).resolve().parent, capture_output=True, text=True)
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+
     def test_no_success_cost_is_undefined(self):
         data = [{'id': str(i), 'prompt': 'Calculate 2 plus 3', 'format': 'number', 'expected': '9', 'split': split}
                 for i, split in enumerate(('dev', 'test'))]

@@ -1,0 +1,7 @@
+# Optional real-model environment; never required by default unittest discovery.
+torch==2.6.0
+transformers==4.48.3
+tokenizers==0.21.4
+sentencepiece==0.2.0
+safetensors==0.8.0
+numpy==2.5.5

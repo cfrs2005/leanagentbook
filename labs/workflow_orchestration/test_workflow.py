@@ -86,7 +86,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
             if count == 2:
                 both_started.set()
             await both_started.wait()
-            return {"ok": True}
+            return {"maximum": 71, "sample_count": 3, "recommendation": "inspect"}
         with patch("workflow.readings_worker", barrier), patch("workflow.review_worker", barrier):
             run = await supervise(approval="approve", policy=Policy(attempt_timeout=1))
         self.assertEqual(run.state, "completed")
@@ -97,6 +97,18 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         serial = await supervise(approval="approve", mode="serial")
         self.assertEqual(serial.summary, parallel.summary)
         self.assertEqual(serial.attempts, parallel.attempts)
+
+    async def test_conflict_blocks_all_approval_choices_in_both_modes(self):
+        for mode in ("parallel", "serial"):
+            for approval in ("pending", "approve", "reject"):
+                run = await supervise(scenario="conflict", mode=mode, approval=approval)
+                self.assertEqual(run.state, "needs_review")
+                self.assertEqual(run.summary["readings"]["maximum"], 71)
+                self.assertEqual(run.summary["review"]["recommendation"], "observe")
+                kinds = [event["kind"] for event in run.events]
+                self.assertIn("conflict_detected", kinds)
+                self.assertNotIn("approval_requested", kinds)
+                self.assertNotIn("report_released", kinds)
 
     async def test_invalid_input(self):
         for arguments in ({"approval": "yes"}, {"mode": "unknown"}, {"scenario": "unknown"}):

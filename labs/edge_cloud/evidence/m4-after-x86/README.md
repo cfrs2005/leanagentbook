@@ -26,3 +26,5 @@
 这些结果补齐“先 x86、后目标设备”的实际执行顺序。没有测量功耗；没有验证 RK3588、Jetson、GPU、NPU；故障注入仍是异常模拟，不是物理断电测试。
 
 整合时尝试系统功耗采样：`sudo -n powermetrics -n 1 -i 1000 --samplers cpu_power` 返回 `sudo: a password is required`。未获得采样数据，因此保留功耗未测；没有用估算值代替。
+
+后续已独立补充 [M4 系统报告功耗采样](../power-m4-20261120/README.md)。本文保留原批次未测记录；后续采样不反写本批次延迟数据。

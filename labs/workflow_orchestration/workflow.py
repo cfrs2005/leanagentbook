@@ -59,7 +59,8 @@ async def readings_worker(context, attempt, scenario):
 
 async def review_worker(context, attempt, scenario):
     await asyncio.sleep(1.0 if scenario == "timeout" else 0.03)
-    return {"recommendation": "inspect" if max(context.readings) >= 70 else "observe"}
+    return {"recommendation": "observe" if scenario == "conflict" else
+            "inspect" if max(context.readings) >= 70 else "observe"}
 
 
 async def execute_worker(name, worker, context, scenario, policy, run):
@@ -88,7 +89,7 @@ async def execute_worker(name, worker, context, scenario, policy, run):
 
 
 async def supervise(*, scenario="success", approval="pending", mode="parallel", policy=None):
-    if scenario not in ("success", "retry", "exhausted", "failure", "timeout"):
+    if scenario not in ("success", "retry", "exhausted", "failure", "timeout", "conflict"):
         raise ValueError("unknown scenario")
     if approval not in ("pending", "approve", "reject"):
         raise ValueError("unknown approval")
@@ -119,15 +120,23 @@ async def supervise(*, scenario="success", approval="pending", mode="parallel", 
         else:
             # Namespaced outputs prevent last-writer-wins merging.
             run.summary = {name: run.results[name]["value"] for name, _ in workers}
-            run.state = "awaiting_approval"
-            run.emit("approval_requested")
-            if approval == "reject":
-                run.state = "rejected"
-                run.emit("approval_rejected")
-            elif approval == "approve":
-                run.state = "completed"
-                run.emit("approval_granted")
-                run.emit("report_released", simulated=True)
+            # Compare a shared claim before allowing approval; keep both original outputs.
+            expected = "inspect" if run.summary["readings"]["maximum"] >= 70 else "observe"
+            observed = run.summary["review"].get("recommendation")
+            if observed != expected:
+                run.state = "needs_review"
+                run.emit("conflict_detected", expected=expected, observed=observed,
+                         policy="synthetic-threshold-70-v1")
+            else:
+                run.state = "awaiting_approval"
+                run.emit("approval_requested")
+                if approval == "reject":
+                    run.state = "rejected"
+                    run.emit("approval_rejected")
+                elif approval == "approve":
+                    run.state = "completed"
+                    run.emit("approval_granted")
+                    run.emit("report_released", simulated=True)
     finally:
         run.elapsed_seconds = round(time.perf_counter() - started, 6)
     run.emit("run_finished", state=run.state)
@@ -136,7 +145,7 @@ async def supervise(*, scenario="success", approval="pending", mode="parallel", 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--scenario", choices=("success", "retry", "exhausted", "failure", "timeout"), default="success")
+    parser.add_argument("--scenario", choices=("success", "retry", "exhausted", "failure", "timeout", "conflict"), default="success")
     parser.add_argument("--approval", choices=("pending", "approve", "reject"), default="pending")
     parser.add_argument("--mode", choices=("parallel", "serial"), default="parallel")
     parser.add_argument("--attempt-timeout", type=float, default=0.1)
@@ -149,7 +158,7 @@ def main():
         parser.error(str(exc))
     run = asyncio.run(supervise(scenario=args.scenario, approval=args.approval, mode=args.mode, policy=policy))
     print(json.dumps(asdict(run), ensure_ascii=False, indent=2))
-    return {"completed": 0, "awaiting_approval": 3, "rejected": 4, "failed": 1, "timed_out": 1}[run.state]
+    return {"completed": 0, "awaiting_approval": 3, "rejected": 4, "failed": 1, "timed_out": 1, "needs_review": 5}[run.state]
 
 
 if __name__ == "__main__":

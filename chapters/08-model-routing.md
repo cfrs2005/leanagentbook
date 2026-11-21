@@ -11,7 +11,7 @@
 - 按所有尝试的成本计算“每个成功任务成本”，保留失败样本。
 - 用开发集选择规则，用独立测试集报告结果，不把规则判断当成真实能力评估。
 
-交付范围是双模型真实生成记录与标准库策略回放。没有部署商业 API、语义缓存、学习型路由器或多机服务。本章为首版，生产负载与质量验收仍待补齐。
+交付范围包括双模型真实生成记录、标准库策略回放，以及由 Router 触发本地模型生成的新问题实验。没有部署商业 API、语义缓存、学习型路由器或多机服务。生产负载与质量验收仍待补齐。
 
 ## 先看一次请求怎样走
 
@@ -67,7 +67,7 @@ flowchart LR
 
 KV cache 的对象可见 [Transformers 4.48 文档](https://huggingface.co/docs/transformers/v4.48.0/en/kv_cache)。不能用“答案缓存命中率”替代推理引擎的 KV 内存测量。
 
-本实验缓存键包含租户、用户、权限版本、数据版本、模型 revision、策略版本、输出格式、预算和完整问题。TTL 到期会失效；版本变化也会失效。调用者传入的 scope 是可信内部上下文，代码没有实现登录认证。对外服务必须从已验证身份构造它，不能相信客户端自报的租户。
+本实验缓存键包含租户、用户、权限版本、数据版本、模型 revision、策略版本、输出格式、预算和完整问题。TTL 到期会失效；版本变化也会失效。真实入口通过 `allowed_models(scope)` 在缓存读取和后端调用前检查权限，撤销权限后旧缓存不能绕过检查。调用者传入的 scope 是可信内部上下文，代码没有实现登录认证。对外服务必须从已验证身份构造它，不能相信客户端自报的租户。
 
 ## 成本先计全，再讨论优化
 
@@ -111,6 +111,68 @@ KV cache 的对象可见 [Transformers 4.48 文档](https://huggingface.co/docs/
 
 第二次完全相同的请求，在测试集有 13/16 命中答案缓存。格式失败的三条不会缓存。正确率仍为 6/16：错误但格式合法的答案同样会被缓存。热缓存报告只计算第二次调用，未计第一次填充费用，因此不能据此宣称总费用降低到零。
 
+## 从采样回放到真实路由
+
+```mermaid
+flowchart LR
+  A[旧采样：两模型分别答完全部题目] --> B[保存观测]
+  B --> C[ReplayProvider 回放策略]
+  D[未录制的新问题] --> E[Router 权限 / 缓存 / 规则 / 预算]
+  E --> F[LocalModelProvider 当场生成]
+  F --> G[格式检查 / 最多一次回退]
+  G --> H[返回答案或保留失败]
+```
+
+```text
+采样回放：模型先运行 --> 记录 --> 比较策略
+真实路由：问题先到达 --> 策略选模型 --> 模型运行
+```
+
+新增真实入口使用同一个 Router，后端改为本地固定 revision 的 FLAN-T5 small/base。三个问题均不在旧观测表中。超过 16 个词选择 base，否则选择 small；长度仅是教学代理，不证明 base 更适合复杂任务。
+
+实跑中，短题“23 + 19”由 small 生成错误答案 0，格式通过后被缓存；重复请求没有调用模型，却仍答错。长题“20 箱加 7 再减 9”由 base 生成错误解释，格式不合格，两次请求均实际调用模型。一次 small 生成前可控故障触发了备选 base 的真实生成，回答企鹅是否鸟类得到 yes。完整失败原文没有删除。
+
+撤销权限后的缓存读取、未知身份、所选模型无权限及 1 token 预算均被拒绝，没有调用后端。授权表是内部测试配置，不是身份认证。故障是人为注入的单次错误，不是网络中断；未处理的真实运行时异常会终止实验，不能据此宣称全面故障恢复。
+
+实时报告同时记录 Router 实测耗时、后端耗时、token 和合成积分。冷热指答案缓存，模型加载另列；原字段 `recorded_backend_ms` 在真实路径中保存当次实测值，旧回放仍保存历史耗时之和。二者分开报告，不能把三条新题当独立质量评测。
+
+已保留[完整运行说明与结果](../labs/model_routing/LIVE_RUN.md)。使用现成环境复现，不安装或升级依赖：
+
+```sh
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false \
+  /tmp/leanagentbook-routing-py312/bin/python labs/model_routing/run_live.py \
+  --hub /tmp/leanagentbook-routing-models/hub \
+  --output /tmp/routing-live-new-run
+```
+
+输出目录必须不存在。模型缺失会失败，不会用录制答案冒充真实调用；模型与包版本、来源核验及计时边界见运行说明。
+
+### 一次真实路由请求的时序
+
+```mermaid
+sequenceDiagram
+    participant User as 可信调用方
+    participant Router as 路由器
+    participant Cache as 答案缓存
+    participant Small as small 模型
+    participant Base as base 模型
+    User->>Router: 新问题、输出格式、权限范围与预算
+    Router->>Router: 校验权限与版本
+    Router->>Cache: 查询精确缓存键
+    Cache-->>Router: 未命中
+    Router->>Router: 选路并预留 token 预算
+    Router->>Small: 简单问题真实生成
+    Small-->>Router: 技术失败或不合格输出
+    Router->>Router: 再检查 base 权限与剩余预算
+    Router->>Base: 有权限和预算时生成
+    Base-->>Router: 原始答案及 token 用量
+    Router->>Router: 验证格式，保留失败轨迹
+    Router->>Cache: 仅 accepted 结果可缓存
+    Router-->>User: 状态、答案与调用轨迹
+```
+
+图中是回退分支，拒答不会借其他模型绕过；权限或预算不足时不会执行备选调用。格式通过仍可能答错，缓存不会自动修复内容。
+
 ## 动手练习
 
 实验入口：[模型路由实验](../labs/model_routing/README.md)。先用标准库回放，再按需下载模型重新采样。
@@ -123,7 +185,8 @@ KV cache 的对象可见 [Transformers 4.48 文档](https://huggingface.co/docs/
 
 ## 验收标准
 
-- [ ] 17 个离线测试通过，覆盖缓存隔离、TTL、共享预算、拒绝停止与失败计费。
+- [ ] 21 个离线测试通过，覆盖缓存隔离、TTL、共享预算、拒绝停止与失败计费。
+- [ ] 真实入口处理未录制问题，验证缓存零调用、权限/预算拒绝与一次故障后的真实备选生成。
 - [ ] 用已提交记录复现两份报告；确认两个固定模型测试正确数都是 6。
 - [ ] 实际生成与策略回放分别标明；48 条输出、token 用量、模型 revision 和环境可追溯。
 - [ ] 不以格式校验代替正确性，不以假设积分代替商业价格。

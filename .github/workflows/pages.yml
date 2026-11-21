@@ -22,6 +22,13 @@ jobs:
       - run: pip install -r requirements-book.txt -r labs/rag_pipeline/requirements-pdf.txt -r labs/data_engineering/requirements.txt
       - run: python scripts/check_book.py
       - run: python scripts/test_labs.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: scripts/mermaid-check/package-lock.json
+      - run: npm ci --prefix scripts/mermaid-check --no-audit --no-fund
+      - run: node scripts/check_mermaid.mjs --env scripts/mermaid-check --out /tmp/mermaid-report.json
       - run: python scripts/prepare_site.py
       - run: mkdocs build --strict
       - run: python scripts/check_site.py

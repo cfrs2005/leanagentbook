@@ -1,0 +1,751 @@
+{
+  "access_date": "2026-11-20",
+  "scope": "HTTP reachability of chapter Markdown links; not semantic verification or future availability",
+  "references": [
+    {
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "status": 200,
+      "final_url": "https://a2a-protocol.org/latest/specification/"
+    },
+    {
+      "url": "https://a2a-protocol.org/v0.3.0/specification/",
+      "status": 200,
+      "final_url": "https://a2a-protocol.org/v0.3.0/specification/"
+    },
+    {
+      "url": "https://ai.stanford.edu/~ronnyk/2009controlledExperimentsOnTheWebSurvey.pdf",
+      "status": 200,
+      "final_url": "https://ai.stanford.edu/~ronnyk/2009controlledExperimentsOnTheWebSurvey.pdf"
+    },
+    {
+      "url": "https://arize.com/docs/phoenix",
+      "status": 200,
+      "final_url": "https://arize.com/docs/phoenix"
+    },
+    {
+      "url": "https://arrow.apache.org/docs/20.0/python/parquet.html",
+      "status": 200,
+      "final_url": "https://arrow.apache.org/docs/20.0/python/parquet.html"
+    },
+    {
+      "url": "https://arxiv.org/abs/1503.02531",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1503.02531"
+    },
+    {
+      "url": "https://arxiv.org/abs/1603.02754v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1603.02754v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.04599v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1706.04599v2"
+    },
+    {
+      "url": "https://arxiv.org/abs/1707.06347",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1707.06347"
+    },
+    {
+      "url": "https://arxiv.org/abs/1803.01271v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1803.01271v2"
+    },
+    {
+      "url": "https://arxiv.org/abs/1902.00751",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1902.00751"
+    },
+    {
+      "url": "https://arxiv.org/abs/1908.10084",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1908.10084"
+    },
+    {
+      "url": "https://arxiv.org/abs/1910.10683",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1910.10683"
+    },
+    {
+      "url": "https://arxiv.org/abs/2004.12832",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2004.12832"
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.11401",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+      "url": "https://arxiv.org/abs/2012.07436v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2012.07436v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2103.00020v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2103.00020v1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.09685",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2106.09685"
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.10466v4",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2106.10466v4"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.05720",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2107.05720"
+    },
+    {
+      "url": "https://arxiv.org/abs/2202.03629",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2202.03629"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.02155",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2203.02155"
+    },
+    {
+      "url": "https://arxiv.org/abs/2204.08387v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2204.08387v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.03629",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2210.03629"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.03629v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2210.03629v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.17323",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2210.17323"
+    },
+    {
+      "url": "https://arxiv.org/abs/2211.17192",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2211.17192"
+    },
+    {
+      "url": "https://arxiv.org/abs/2212.10505v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2212.10505v2"
+    },
+    {
+      "url": "https://arxiv.org/abs/2304.08485v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2304.08485v2"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.14314",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2305.14314"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.18290",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2305.18290"
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.00978",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2306.00978"
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.05685",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2306.05685"
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.05685v4",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2306.05685v4"
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.06180",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2309.06180"
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.14525v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2309.14525v1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.11511",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2310.11511"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.15884",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2401.15884"
+    },
+    {
+      "url": "https://arxiv.org/abs/2402.03300",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2402.03300"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.16130",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2404.16130"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.18665v4",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2406.18665v4"
+    },
+    {
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "status": 200,
+      "final_url": "https://arxiv.org/html/1706.03762v7"
+    },
+    {
+      "url": "https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/9/2055/files/2020/05/ContentServer.pdf",
+      "status": 200,
+      "final_url": "https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/9/2055/files/2020/05/ContentServer.pdf"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/engines/table-engines/mergetree-family/mergetree",
+      "status": 200,
+      "final_url": "https://clickhouse.com/docs/reference/engines/table-engines/mergetree-family/mergetree"
+    },
+    {
+      "url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+      "status": 200,
+      "final_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf"
+    },
+    {
+      "url": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/ed25519/",
+      "status": 200,
+      "final_url": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/ed25519/"
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+      "status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final"
+    },
+    {
+      "url": "https://design.ros2.org/articles/changes.html",
+      "status": 200,
+      "final_url": "https://design.ros2.org/articles/changes.html"
+    },
+    {
+      "url": "https://developer.hashicorp.com/vault/docs/about-vault/what-is-vault",
+      "status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/about-vault/what-is-vault"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/security/"
+    },
+    {
+      "url": "https://docs.feast.dev/getting-started/concepts/point-in-time-joins",
+      "status": 200,
+      "final_url": "https://docs.feast.dev/getting-started/concepts/point-in-time-joins"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/context",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/concepts/context"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/memory",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/concepts/memory"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/backward-compatibility",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/backward-compatibility"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/checkpointers"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/fault-tolerance",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/fault-tolerance"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/quick-start-guide.html",
+      "status": 200,
+      "final_url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/quick-start-guide.html"
+    },
+    {
+      "url": "https://docs.python.org/3.11/library/asyncio-task.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3.11/library/asyncio-task.html"
+    },
+    {
+      "url": "https://docs.python.org/3/library/http.server.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/http.server.html"
+    },
+    {
+      "url": "https://docs.python.org/3/library/sqlite3.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/sqlite3.html"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.6/generated/torch.nn.functional.scaled_dot_product_attention.html",
+      "status": 200,
+      "final_url": "https://docs.pytorch.org/docs/2.6/generated/torch.nn.functional.scaled_dot_product_attention.html"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.ShortTimeFFT.html",
+      "status": 200,
+      "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.ShortTimeFFT.html"
+    },
+    {
+      "url": "https://docs.sglang.io/",
+      "status": 200,
+      "final_url": "https://docs.sglang.io/"
+    },
+    {
+      "url": "https://docs.sglang.io/docs/hardware-platforms/overview",
+      "status": 200,
+      "final_url": "https://docs.sglang.io/docs/hardware-platforms/overview"
+    },
+    {
+      "url": "https://docs.temporal.io/activity-definition",
+      "status": 200,
+      "final_url": "https://docs.temporal.io/activity-definition"
+    },
+    {
+      "url": "https://docs.temporal.io/develop/go/workflows/versioning",
+      "status": 200,
+      "final_url": "https://docs.temporal.io/develop/go/workflows/versioning"
+    },
+    {
+      "url": "https://docs.temporal.io/encyclopedia/event-history",
+      "status": 200,
+      "final_url": "https://docs.temporal.io/encyclopedia/event-history"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/",
+      "status": 200,
+      "final_url": "https://docs.vllm.ai/en/latest/"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/examples/features/automatic_prefix_caching/",
+      "status": 200,
+      "final_url": "https://docs.vllm.ai/en/latest/examples/features/automatic_prefix_caching/"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/usage/metrics/",
+      "status": 200,
+      "final_url": "https://docs.vllm.ai/en/latest/usage/metrics/"
+    },
+    {
+      "url": "https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf",
+      "status": 200,
+      "final_url": "https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf"
+    },
+    {
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "status": 200,
+      "final_url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+    },
+    {
+      "url": "https://github.com/airockchip/rknn-toolkit2",
+      "status": 200,
+      "final_url": "https://github.com/airockchip/rknn-toolkit2"
+    },
+    {
+      "url": "https://github.com/cfrs2005/leanagentbook/actions/runs/44878247748",
+      "status": 200,
+      "final_url": "https://github.com/cfrs2005/leanagentbook/actions/runs/44878247748"
+    },
+    {
+      "url": "https://github.com/dmlc/xgboost/blob/v2.1.4/python-package/xgboost/sklearn.py",
+      "status": 200,
+      "final_url": "https://github.com/dmlc/xgboost/blob/v2.1.4/python-package/xgboost/sklearn.py"
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
+      "status": 200,
+      "final_url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes"
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/MetricType-and-distances",
+      "status": 200,
+      "final_url": "https://github.com/facebookresearch/faiss/wiki/MetricType-and-distances"
+    },
+    {
+      "url": "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md",
+      "status": 200,
+      "final_url": "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "status": 200,
+      "final_url": "https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md",
+      "status": 200,
+      "final_url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md"
+    },
+    {
+      "url": "https://github.com/google/sentencepiece",
+      "status": 200,
+      "final_url": "https://github.com/google/sentencepiece"
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/v4.48.3/docs/source/en/kv_cache.md",
+      "status": 200,
+      "final_url": "https://github.com/huggingface/transformers/blob/v4.48.3/docs/source/en/kv_cache.md"
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/blob/v4.48.3/src/transformers/generation/utils.py",
+      "status": 200,
+      "final_url": "https://github.com/huggingface/transformers/blob/v4.48.3/src/transformers/generation/utils.py"
+    },
+    {
+      "url": "https://github.com/openai/CLIP",
+      "status": 200,
+      "final_url": "https://github.com/openai/CLIP"
+    },
+    {
+      "url": "https://github.com/ros2/common_interfaces/blob/humble/geometry_msgs/msg/PointStamped.msg",
+      "status": 200,
+      "final_url": "https://github.com/ros2/common_interfaces/blob/humble/geometry_msgs/msg/PointStamped.msg"
+    },
+    {
+      "url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Actions.rst",
+      "status": 200,
+      "final_url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Actions.rst"
+    },
+    {
+      "url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Interfaces.rst",
+      "status": 200,
+      "final_url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Interfaces.rst"
+    },
+    {
+      "url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Nodes.rst",
+      "status": 200,
+      "final_url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Basic/About-Nodes.rst"
+    },
+    {
+      "url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Intermediate/About-Quality-of-Service-Settings.rst",
+      "status": 200,
+      "final_url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Concepts/Intermediate/About-Quality-of-Service-Settings.rst"
+    },
+    {
+      "url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.rst",
+      "status": 200,
+      "final_url": "https://github.com/ros2/ros2_documentation/blob/humble/source/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.rst"
+    },
+    {
+      "url": "https://github.com/vladkens/macmon/blob/v0.12.0/readme.md",
+      "status": 200,
+      "final_url": "https://github.com/vladkens/macmon/blob/v0.12.0/readme.md"
+    },
+    {
+      "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+      "status": 200,
+      "final_url": "https://grpc.io/docs/what-is-grpc/core-concepts/"
+    },
+    {
+      "url": "https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L2-v2/tree/81d1926f67cb8eee2c2be17ca9f793c7c3bd20cc",
+      "status": 200,
+      "final_url": "https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L2-v2/tree/81d1926f67cb8eee2c2be17ca9f793c7c3bd20cc"
+    },
+    {
+      "url": "https://huggingface.co/docs/peft/v0.13.0/en/package_reference/lora",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/peft/v0.13.0/en/package_reference/lora"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/chat_templating",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/chat_templating"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/main_classes/text_generation"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/v4.48.0/en/kv_cache",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/v4.48.0/en/kv_cache"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/v4.48.0/en/model_doc/clip",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/v4.48.0/en/model_doc/clip"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/main_classes/text_generation",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/v4.48.2/en/main_classes/text_generation"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/t5",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/t5"
+    },
+    {
+      "url": "https://huggingface.co/google/flan-t5-small",
+      "status": 200,
+      "final_url": "https://huggingface.co/google/flan-t5-small"
+    },
+    {
+      "url": "https://huggingface.co/google/flan-t5-small/blob/0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab/README.md",
+      "status": 200,
+      "final_url": "https://huggingface.co/google/flan-t5-small/blob/0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab/README.md"
+    },
+    {
+      "url": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/blob/1a25a446712ba5ee05982a381eed697ef9b435cf/README.md",
+      "status": 200,
+      "final_url": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/blob/1a25a446712ba5ee05982a381eed697ef9b435cf/README.md"
+    },
+    {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "status": 200,
+      "final_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    {
+      "url": "https://iceberg.apache.org/docs/1.10.0/evolution/",
+      "status": 200,
+      "final_url": "https://iceberg.apache.org/docs/1.10.0/evolution/"
+    },
+    {
+      "url": "https://json-schema.org/understanding-json-schema/reference/numeric",
+      "status": 200,
+      "final_url": "https://json-schema.org/understanding-json-schema/reference/numeric"
+    },
+    {
+      "url": "https://json-schema.org/understanding-json-schema/reference/object",
+      "status": 200,
+      "final_url": "https://json-schema.org/understanding-json-schema/reference/object"
+    },
+    {
+      "url": "https://kafka.apache.org/41/design/design/",
+      "status": 200,
+      "final_url": "https://kafka.apache.org/41/design/design/"
+    },
+    {
+      "url": "https://langfuse.com/docs/observability/overview",
+      "status": 200,
+      "final_url": "https://langfuse.com/docs/observability/overview"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/docs/learn/architecture",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports"
+    },
+    {
+      "url": "https://nightlies.apache.org/flink/flink-docs-release-2.1/docs/concepts/time/",
+      "status": 200,
+      "final_url": "https://nightlies.apache.org/flink/flink-docs-release-2.1/docs/concepts/time/"
+    },
+    {
+      "url": "https://numpy.org/doc/2.2/reference/routines.fft.html",
+      "status": 200,
+      "final_url": "https://numpy.org/doc/2.2/reference/routines.fft.html"
+    },
+    {
+      "url": "https://nvidia.github.io/TensorRT-LLM/reference/support-matrix.html",
+      "status": 200,
+      "final_url": "https://nvidia.github.io/TensorRT-LLM/reference/support-matrix.html"
+    },
+    {
+      "url": "https://onnxruntime.ai/docs/execution-providers/",
+      "status": 200,
+      "final_url": "https://onnxruntime.ai/docs/execution-providers/"
+    },
+    {
+      "url": "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html",
+      "status": 200,
+      "final_url": "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html"
+    },
+    {
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "status": 200,
+      "final_url": "https://openid.net/specs/openid-connect-core-1_0.html"
+    },
+    {
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+      "status": 200,
+      "final_url": "https://opentelemetry.io/docs/concepts/signals/traces/"
+    },
+    {
+      "url": "https://parquet.apache.org/docs/file-format/",
+      "status": 200,
+      "final_url": "https://parquet.apache.org/docs/file-format/"
+    },
+    {
+      "url": "https://pypdf.readthedocs.io/en/5.9.0/user/extract-text.html",
+      "status": 200,
+      "final_url": "https://pypdf.readthedocs.io/en/5.9.0/user/extract-text.html"
+    },
+    {
+      "url": "https://pywavelets.readthedocs.io/en/latest/ref/cwt.html",
+      "status": 200,
+      "final_url": "https://pywavelets.readthedocs.io/en/latest/ref/cwt.html"
+    },
+    {
+      "url": "https://redis.io/docs/latest/commands/EXPIRE/",
+      "status": 200,
+      "final_url": "https://redis.io/docs/latest/commands/EXPIRE/"
+    },
+    {
+      "url": "https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/",
+      "status": 200,
+      "final_url": "https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/"
+    },
+    {
+      "url": "https://research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/",
+      "status": 200,
+      "final_url": "https://research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/"
+    },
+    {
+      "url": "https://research.google/pubs/the-dataflow-model-a-practical-approach-to-balancing-correctness-latency-and-cost-in-massive-scale-unbounded-out-of-order-data-processing/",
+      "status": 200,
+      "final_url": "https://research.google/pubs/the-dataflow-model-a-practical-approach-to-balancing-correctness-latency-and-cost-in-massive-scale-unbounded-out-of-order-data-processing/"
+    },
+    {
+      "url": "https://s3vi.ndc.nasa.gov/ssri-kb/topics/16/",
+      "status": 200,
+      "final_url": "https://s3vi.ndc.nasa.gov/ssri-kb/topics/16/"
+    },
+    {
+      "url": "https://scikit-learn.org/1.5/modules/generated/sklearn.metrics.ndcg_score.html",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.5/modules/generated/sklearn.metrics.ndcg_score.html"
+    },
+    {
+      "url": "https://scikit-learn.org/1.5/modules/model_evaluation.html",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.5/modules/model_evaluation.html"
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.IsolationForest.html",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.IsolationForest.html"
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.6/modules/generated/sklearn.model_selection.TimeSeriesSplit.html"
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.svm.OneClassSVM.html",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.6/modules/generated/sklearn.svm.OneClassSVM.html"
+    },
+    {
+      "url": "https://slsa.dev/spec/v1.2/",
+      "status": 200,
+      "final_url": "https://slsa.dev/spec/v1.2/"
+    },
+    {
+      "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+      "status": 200,
+      "final_url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    },
+    {
+      "url": "https://ternaris.gitlab.io/rosbags/topics/rosbag2.html",
+      "status": 200,
+      "final_url": "https://ternaris.gitlab.io/rosbags/topics/rosbag2.html"
+    },
+    {
+      "url": "https://ternaris.gitlab.io/rosbags/topics/typesys.html",
+      "status": 200,
+      "final_url": "https://ternaris.gitlab.io/rosbags/topics/typesys.html"
+    },
+    {
+      "url": "https://theupdateframework.github.io/specification/latest/",
+      "status": 200,
+      "final_url": "https://theupdateframework.github.io/specification/latest/"
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "status": 200,
+      "final_url": "https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "url": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity",
+      "status": 200,
+      "final_url": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "status": 200,
+      "final_url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/confirms",
+      "status": 200,
+      "final_url": "https://www.rabbitmq.com/docs/confirms"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6455",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc6455/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8693",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc8693/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc9110/"
+    },
+    {
+      "url": "https://www.sqlite.org/foreignkeys.html",
+      "status": 200,
+      "final_url": "https://www.sqlite.org/foreignkeys.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "status": 200,
+      "final_url": "https://www.sqlite.org/lang_transaction.html"
+    }
+  ]
+}

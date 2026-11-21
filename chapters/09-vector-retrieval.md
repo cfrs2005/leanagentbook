@@ -131,6 +131,27 @@ Cross Encoder 把查询和候选组成一对输入，允许它们在编码时发
 
 ColBERT 不是“每篇文档只有一个向量”的双塔，也不是完整成对重新编码的 Cross Encoder。它先独立编码 token 向量，再用查询 token 对文档 token 的最大相似度等晚交互操作汇总 [7]。它可用于重排，也可支持检索；本章未运行 ColBERT。将这三类统称为“embedding 重排”会隐藏不同的存储与推理成本。
 
+### 请求与索引的时序
+
+```mermaid
+sequenceDiagram
+    participant Index as 离线索引
+    participant Client as 查询方
+    participant Search as 检索程序
+    participant Rank as 重排模型
+    Index->>Index: 固定语料版本并计算文档表示
+    Client->>Search: 查询文本与允许访问的语料范围
+    Search->>Search: 关键词召回与查询向量计算
+    Search->>Index: 在许可语料中检索候选
+    Index-->>Search: 候选文档、分数与来源 ID
+    Search->>Search: 按固定策略融合并截取候选
+    Search->>Rank: 查询与候选文档对
+    Rank-->>Search: 相关性分数
+    Search-->>Client: 排序结果与文档 ID
+```
+
+本实验的范围过滤是固定语料选择，不是生产身份认证。重排只处理召回候选，不能找回已经漏掉的文档；索引版本与语料 hash 必须一起保留。
+
 ## 7. 可运行工程实践
 
 完整代码存放在 [实验目录](../labs/vector_retrieval/README.md)，没有需要读者补齐的核心省略项。

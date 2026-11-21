@@ -1,0 +1,190 @@
+{
+  "measured_at_utc": "2026-11-21T07:10:19.123803+00:00",
+  "platform": "macOS-26.3-arm64-arm-64bit-Mach-O",
+  "python": "3.15.2",
+  "backend": "macOS sandbox-exec deny-default fixed tool",
+  "source_sha256": {
+    "isolated_gateway.py": "2cce34f02ecaf6864befc423b563f394639c9d8496574205d93a722e8e1afd33",
+    "isolated_worker.py": "21e908e601afa6463ae90e754fb6d2696705e513162525338eab0b286e3d37eb",
+    "test_isolated_gateway.py": "f5432025834ec9c2d348a28e12abc83df6588ede21a597cd93d7fd9dd46f74fa"
+  },
+  "synthetic": true,
+  "cases": [
+    {
+      "case": "missing_approval",
+      "status": "denied",
+      "launch_attempts": 0
+    },
+    {
+      "case": "normal",
+      "outcome": {
+        "status": "ok",
+        "sum": 10,
+        "count": 3
+      }
+    },
+    {
+      "case": "read_escape",
+      "outcome": {
+        "status": "denied",
+        "operation": "read_escape"
+      }
+    },
+    {
+      "case": "write_escape",
+      "outcome": {
+        "status": "denied",
+        "operation": "write_escape"
+      }
+    },
+    {
+      "case": "network",
+      "outcome": {
+        "status": "denied",
+        "operation": "network"
+      }
+    },
+    {
+      "case": "timeout",
+      "outcome": {
+        "status": "stopped",
+        "reason": "timeout"
+      }
+    },
+    {
+      "case": "output_limit",
+      "outcome": {
+        "status": "stopped",
+        "reason": "output_limit"
+      }
+    }
+  ],
+  "status": "passed",
+  "audit": [
+    {
+      "sequence": 1,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "deny",
+      "reason": "approval"
+    },
+    {
+      "sequence": 2,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 3,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "allow",
+      "reason": "isolated_completed"
+    },
+    {
+      "sequence": 4,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 5,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "allow",
+      "reason": "isolated_completed"
+    },
+    {
+      "sequence": 6,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 7,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "allow",
+      "reason": "isolated_completed"
+    },
+    {
+      "sequence": 8,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 9,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "allow",
+      "reason": "isolated_completed"
+    },
+    {
+      "sequence": 10,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 11,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "deny",
+      "reason": "timeout"
+    },
+    {
+      "sequence": 12,
+      "subject": "reviewer",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "isolated_approval",
+      "decision": "allow",
+      "reason": "issued"
+    },
+    {
+      "sequence": 13,
+      "subject": "alice",
+      "tenant": "alpha",
+      "service": "agent-runtime",
+      "operation": "synthetic.summarize",
+      "decision": "deny",
+      "reason": "output_limit"
+    }
+  ],
+  "launch_attempts": 6,
+  "limits": [
+    "fixed trusted worker, not arbitrary code",
+    "read-only interpreter/system trees and global file metadata allowed",
+    "network denied; actual probe is loopback bind, no external connection",
+    "Linux backend absent; portable gate tests only; OS tests explicitly skipped",
+    "no production authentication or payment/device side effect"
+  ]
+}

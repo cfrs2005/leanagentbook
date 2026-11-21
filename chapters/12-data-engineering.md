@@ -225,6 +225,6 @@ Feature Engineering 是把原始记录转成可供模型使用的特征，例如
 | [Iceberg Evolution](https://iceberg.apache.org/docs/1.10.0/evolution/) | 1.10.0 固定文档路径 | 字段 ID、schema 与分区演进 |
 | [ClickHouse MergeTree](https://clickhouse.com/docs/reference/engines/table-engines/mergetree-family/mergetree) | 滚动文档，无固定服务版本 | 数据 part、后台合并、排序与索引 |
 | [Feast Point-in-time joins](https://docs.feast.dev/getting-started/concepts/point-in-time-joins) | 滚动文档，无固定运行版本 | 历史特征连接与时间一致性 |
-| [Akidau 等，The Dataflow Model](https://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf) | PVLDB 8(12)，2015 原始论文 | 无界乱序数据中正确性、延迟和成本的权衡 |
+| [Akidau 等，The Dataflow Model](https://research.google/pubs/the-dataflow-model-a-practical-approach-to-balancing-correctness-latency-and-cost-in-massive-scale-unbounded-out-of-order-data-processing/) | PVLDB 8(12)，2015 原始论文 | 无界乱序数据中正确性、延迟和成本的权衡 |
 
 Dataflow 论文提供设计框架：系统必须明确何时给出结果、如何处理后来的修订，以及愿意承担多少延迟与状态成本。它不证明本章实现具有分布式能力，也不替代本地测试。

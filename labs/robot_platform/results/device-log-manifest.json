@@ -1,0 +1,6 @@
+{
+  "device_logs.py": "a85eaed095eec49cefea9d5041d9ba12859ca6f674eab7d505ecb7d32a1e791f",
+  "test_device_logs.py": "b0f12ec68a86e771b7fd668185dfb12f37da5b467b61c66b2f6a556d897ccde8",
+  "fixtures/device-events.jsonl": "6fd29b57e5b3a3c4be85e757f6573afe4cb51e57eaa5f72c9be1d0af8f6d9ccd",
+  "results/device-log-report.json": "f2372f0bb902b2064e0958ee2aa9eb071fc17804b052a75683850f3b196e8689"
+}
