@@ -1,0 +1,6 @@
+PASS local links: chapters/18-distributed-agents.md
+PASS local links: labs/distributed_agents/README.md
+PASS Python syntax: test_runtime.py
+PASS Python syntax: runtime.py
+PASS SVG structure; rendered 1200 x 680 with resvg and inspected locally
+Scope: assigned chapter, lab and diagram only; not cross-machine production

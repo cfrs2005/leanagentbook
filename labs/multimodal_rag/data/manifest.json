@@ -1,0 +1,230 @@
+[
+  {
+    "id": "red_circle",
+    "title": "red circle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/red_circle.svg",
+    "image": "images/red_circle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "red_square",
+    "title": "red square",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/red_square.svg",
+    "image": "images/red_square.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "red_triangle",
+    "title": "red triangle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/red_triangle.svg",
+    "image": "images/red_triangle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "red_star",
+    "title": "red star",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/red_star.svg",
+    "image": "images/red_star.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "blue_circle",
+    "title": "blue circle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/blue_circle.svg",
+    "image": "images/blue_circle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "blue_square",
+    "title": "blue square",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/blue_square.svg",
+    "image": "images/blue_square.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "blue_triangle",
+    "title": "blue triangle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/blue_triangle.svg",
+    "image": "images/blue_triangle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "blue_star",
+    "title": "blue star",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/blue_star.svg",
+    "image": "images/blue_star.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "green_circle",
+    "title": "green circle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/green_circle.svg",
+    "image": "images/green_circle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "green_square",
+    "title": "green square",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/green_square.svg",
+    "image": "images/green_square.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "green_triangle",
+    "title": "green triangle",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/green_triangle.svg",
+    "image": "images/green_triangle.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  },
+  {
+    "id": "green_star",
+    "title": "green star",
+    "title_origin": "author_annotation_not_ocr",
+    "tenant": "course",
+    "collection": "synthetic_shapes_v1",
+    "source": "images/green_star.svg",
+    "image": "images/green_star.png",
+    "page": 1,
+    "bbox_xyxy": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "width": 320,
+    "height": 320,
+    "synthetic": true
+  }
+]

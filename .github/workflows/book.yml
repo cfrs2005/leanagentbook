@@ -18,8 +18,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Check course links and SVGs
         run: python scripts/check_book.py
-      - name: Install PDF lab dependencies
-        run: pip install -r labs/rag_pipeline/requirements-pdf.txt
+      - name: Install document and data lab dependencies
+        run: pip install -r labs/rag_pipeline/requirements-pdf.txt -r labs/data_engineering/requirements.txt
       - name: Test all course labs
         run: python scripts/test_labs.py
       - name: Package course sources

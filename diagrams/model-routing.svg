@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">模型路由：先守边界，再比较成本</title>
+<desc id="desc">请求经过权限与缓存检查，在共享 token 预算内调用 small 或 base。格式通过不代表正确，失败升级也产生费用。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#31564b"/></marker></defs>
+<rect width="1200" height="640" rx="24" fill="#f8f5ee"/>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#233c34">
+<text x="56" y="65" font-size="18" fill="#a45135">08 / MODEL ROUTING</text>
+<text x="56" y="110" font-size="34" font-weight="700">少调用一次，不等于多答对一次</text>
+<text x="56" y="148" font-size="19">权限 → 版本缓存 → 模型选择 → 预算与验收</text>
+<g stroke="#31564b" stroke-width="2" fill="#fffdf8">
+<rect x="56" y="205" width="240" height="175" rx="16"/>
+<rect x="352" y="205" width="240" height="175" rx="16"/>
+<rect x="648" y="205" width="240" height="175" rx="16"/>
+<rect x="944" y="205" width="200" height="175" rx="16"/>
+</g>
+<g fill="none" stroke="#31564b" stroke-width="3" marker-end="url(#arrow)"><path d="M300 290H342"/><path d="M596 290H638"/><path d="M892 290H934"/></g>
+<circle cx="86" cy="240" r="13" fill="#31564b"/><text x="80" y="247" fill="white" font-size="18">1</text>
+<circle cx="382" cy="240" r="13" fill="#31564b"/><text x="376" y="247" fill="white" font-size="18">2</text>
+<circle cx="678" cy="240" r="13" fill="#31564b"/><text x="672" y="247" fill="white" font-size="18">3</text>
+<circle cx="974" cy="240" r="13" fill="#a45135"/><text x="968" y="247" fill="white" font-size="18">4</text>
+<g font-size="24" font-weight="700"><text x="112" y="248">请求边界</text><text x="408" y="248">答案缓存</text><text x="704" y="248">模型路由</text><text x="1000" y="248">验收</text></g>
+<g font-size="18"><text x="78" y="295">租户 / 用户 / 权限</text><text x="78" y="328">数据与策略版本</text><text x="374" y="295">精确匹配 + TTL</text><text x="374" y="328">错误答案也会复用</text><text x="670" y="295">small / base / 升级</text><text x="670" y="328">所有尝试共享预算</text><text x="966" y="295">格式 ≠ 正确</text><text x="966" y="328">离线标注评分</text></g>
+<rect x="56" y="425" width="1088" height="155" rx="16" fill="#e6eee7"/>
+<text x="82" y="465" font-size="23" font-weight="700">真实双模型实验 · 16 条合成测试题</text>
+<text x="82" y="507" font-size="20">small：6 / 16 正确</text><text x="420" y="507" font-size="20">base：6 / 16 正确</text><text x="765" y="507" font-size="20">更高费用 ≠ 更高质量</text>
+<text x="82" y="549" font-size="17" fill="#58695e">记录实际 token；价格用教学积分。回放耗时不代表线上端到端性能。</text>
+</g></svg>

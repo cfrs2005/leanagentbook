@@ -1,0 +1,292 @@
+{
+  "visual": [
+    {
+      "query_id": "test_red_triangle",
+      "evidence": {
+        "source": "images/red_triangle.svg",
+        "image": "images/red_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "4b8b55ee98429a365184c028d114fde165d41b00587db3f40cf57799803fa69f"
+      }
+    },
+    {
+      "query_id": "test_red_star",
+      "evidence": {
+        "source": "images/red_star.svg",
+        "image": "images/red_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "abab347fab190a28b89accb750186c21c8f1d25379df1025d3470aad67a942e3"
+      }
+    },
+    {
+      "query_id": "test_blue_circle",
+      "evidence": {
+        "source": "images/blue_circle.svg",
+        "image": "images/blue_circle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "a08265ba97b4ebc8ea9166ed6f1e1f0dd65804b0ec71e7e418c99544adafb478"
+      }
+    },
+    {
+      "query_id": "test_blue_square",
+      "evidence": {
+        "source": "images/blue_triangle.svg",
+        "image": "images/blue_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "85111d5679f2f0b0f6b1573293f33cecb89c38ee807586054f35ad40b0afe898"
+      }
+    },
+    {
+      "query_id": "test_blue_triangle",
+      "evidence": {
+        "source": "images/blue_triangle.svg",
+        "image": "images/blue_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "85111d5679f2f0b0f6b1573293f33cecb89c38ee807586054f35ad40b0afe898"
+      }
+    },
+    {
+      "query_id": "test_blue_star",
+      "evidence": {
+        "source": "images/blue_star.svg",
+        "image": "images/blue_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "ab0a3a474702ef453dde218957ff8f16594bb6afebe86d34af72f1e102895e0b"
+      }
+    },
+    {
+      "query_id": "test_green_circle",
+      "evidence": {
+        "source": "images/green_circle.svg",
+        "image": "images/green_circle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "4e4ccfd849f4ce7c8c00873ce6376c5c5c5622faf46d87464f302e476f66dc35"
+      }
+    },
+    {
+      "query_id": "test_green_square",
+      "evidence": {
+        "source": "images/green_triangle.svg",
+        "image": "images/green_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "3594c388cf6a755a62a92d046c820b1b0c2c88f5b2143c174a0bcc8e9f6eacd8"
+      }
+    },
+    {
+      "query_id": "test_green_triangle",
+      "evidence": {
+        "source": "images/green_triangle.svg",
+        "image": "images/green_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "3594c388cf6a755a62a92d046c820b1b0c2c88f5b2143c174a0bcc8e9f6eacd8"
+      }
+    },
+    {
+      "query_id": "test_green_star",
+      "evidence": {
+        "source": "images/green_star.svg",
+        "image": "images/green_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "30b6152f479ed5394658b5f4cc93a47d53496e32bd6649b00e5b3e09f3c4390d"
+      }
+    }
+  ],
+  "text": [],
+  "fusion": [
+    {
+      "query_id": "test_red_square",
+      "evidence": {
+        "source": "images/red_square.svg",
+        "image": "images/red_square.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "8a2a1ae6981c52cbc792ce0d5f22292ef7f01205dc8b8c5ccd1764fefe19ee92"
+      }
+    },
+    {
+      "query_id": "test_red_triangle",
+      "evidence": {
+        "source": "images/red_triangle.svg",
+        "image": "images/red_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "4b8b55ee98429a365184c028d114fde165d41b00587db3f40cf57799803fa69f"
+      }
+    },
+    {
+      "query_id": "test_red_star",
+      "evidence": {
+        "source": "images/red_star.svg",
+        "image": "images/red_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "abab347fab190a28b89accb750186c21c8f1d25379df1025d3470aad67a942e3"
+      }
+    },
+    {
+      "query_id": "test_blue_square",
+      "evidence": {
+        "source": "images/blue_square.svg",
+        "image": "images/blue_square.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "7d6d48f73837cceb22bd236a3294c1ead9755b6e9317733923cf9dcd5e3d9fb6"
+      }
+    },
+    {
+      "query_id": "test_blue_triangle",
+      "evidence": {
+        "source": "images/blue_triangle.svg",
+        "image": "images/blue_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "85111d5679f2f0b0f6b1573293f33cecb89c38ee807586054f35ad40b0afe898"
+      }
+    },
+    {
+      "query_id": "test_blue_star",
+      "evidence": {
+        "source": "images/blue_star.svg",
+        "image": "images/blue_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "ab0a3a474702ef453dde218957ff8f16594bb6afebe86d34af72f1e102895e0b"
+      }
+    },
+    {
+      "query_id": "test_green_square",
+      "evidence": {
+        "source": "images/green_square.svg",
+        "image": "images/green_square.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "7a051752c2986d8ed66589f38b821f51487914a06e654560d4c61cde8230a541"
+      }
+    },
+    {
+      "query_id": "test_green_triangle",
+      "evidence": {
+        "source": "images/green_triangle.svg",
+        "image": "images/green_triangle.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "3594c388cf6a755a62a92d046c820b1b0c2c88f5b2143c174a0bcc8e9f6eacd8"
+      }
+    },
+    {
+      "query_id": "test_green_star",
+      "evidence": {
+        "source": "images/green_star.svg",
+        "image": "images/green_star.png",
+        "page": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "image_sha256": "30b6152f479ed5394658b5f4cc93a47d53496e32bd6649b00e5b3e09f3c4390d"
+      }
+    }
+  ]
+}

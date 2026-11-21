@@ -1,0 +1,9 @@
+Expected failure: missing local model
+Exit code: 1
+Traceback (most recent call last):
+  File "<repository>/labs/multimodal_rag/run_clip.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "<repository>/labs/multimodal_rag/run_clip.py", line 31, in main
+    raise FileNotFoundError('Pinned local model missing; use --download once. No fallback embeddings.')
+FileNotFoundError: Pinned local model missing; use --download once. No fallback embeddings.

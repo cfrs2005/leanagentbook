@@ -1,0 +1,118 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "measurement": "monotonic seconds; synthetic sum-of-squares; loopback HTTP",
+  "state": {
+    "tasks": [
+      {
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.9,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299990.277831916,
+        "result": 332833500
+      }
+    ],
+    "events": [
+      {
+        "t": 0.003735,
+        "kind": "submitted",
+        "id": "alpha:one",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.063425,
+        "kind": "registered",
+        "worker": "worker-0",
+        "pid": 28263
+      },
+      {
+        "t": 0.066595,
+        "kind": "assigned",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.171032,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.276998,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.382735,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.485309,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.587669,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.693489,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.795367,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.900991,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.97217,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.973923,
+        "kind": "completed",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      }
+    ],
+    "registry": {
+      "worker-0": {
+        "pid": 28263,
+        "seen": 1299989.930404333,
+        "capability": "sum_squares"
+      }
+    },
+    "reserved": {
+      "alpha": 10
+    }
+  }
+}

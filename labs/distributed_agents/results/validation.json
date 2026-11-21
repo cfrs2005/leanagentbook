@@ -1,0 +1,92 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "measurement": "monotonic seconds; synthetic sum-of-squares; loopback HTTP",
+  "scope": "validation, idempotency and per-tenant budget",
+  "state": {
+    "tasks": [
+      {
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "running",
+        "generation": 1,
+        "worker": "manual",
+        "deadline": 1300001.507356625
+      },
+      {
+        "id": "alpha:two",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "queued",
+        "generation": 0
+      },
+      {
+        "id": "beta:one",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "queued",
+        "generation": 0
+      }
+    ],
+    "events": [
+      {
+        "t": 0.005222,
+        "kind": "submitted",
+        "id": "alpha:one",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.008747,
+        "kind": "submitted",
+        "id": "alpha:two",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.011472,
+        "kind": "submitted",
+        "id": "beta:one",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.016788,
+        "kind": "registered",
+        "worker": "manual",
+        "pid": 28211
+      },
+      {
+        "t": 0.017559,
+        "kind": "assigned",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "manual",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      }
+    ],
+    "registry": {
+      "manual": {
+        "pid": 28211,
+        "seen": 1300000.908799458,
+        "capability": "sum_squares"
+      }
+    },
+    "reserved": {
+      "alpha": 20,
+      "beta": 10
+    }
+  }
+}

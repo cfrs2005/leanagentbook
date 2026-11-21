@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">多模态检索：两路召回、开发集阈值与原图证据</title>
+<desc id="desc">文字查询经过 CLIP 文本塔，与图片塔向量做余弦匹配；另一通道检索人工文字标签。按权限筛选后做后期融合，用开发集选择阈值，再在独立测试查询上统计拒答。接受的结果必须返回原图、页码、区域和校验值。OCR 与 VLM 抽取属于扩展，本实验未运行。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#316653" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="760" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#22312F">
+<text x="42" y="57" font-size="34" font-weight="700">11　找得到图片，也要知道何时拒答</text>
+<text x="42" y="91" font-size="18" fill="#596963">真实 CLIP × 原创合成图片；相似度不是正确概率</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="42" y="133" width="325" height="160" rx="12"/>
+<rect x="438" y="133" width="325" height="160" rx="12"/>
+<rect x="834" y="133" width="324" height="160" rx="12"/>
+<rect x="42" y="357" width="325" height="153" rx="12"/>
+<rect x="438" y="357" width="325" height="153" rx="12"/>
+<rect x="834" y="357" width="324" height="153" rx="12"/>
+<rect x="42" y="575" width="721" height="136" rx="12"/>
+<rect x="834" y="575" width="324" height="136" rx="12"/>
+</g>
+<g font-size="22" font-weight="600">
+<text x="64" y="170">① 文字查询与原图</text><text x="460" y="170">② 两路独立召回</text><text x="856" y="170">③ 权限与后期融合</text>
+<text x="64" y="395">④ 开发集选阈值</text><text x="460" y="395">⑤ 冻结后测独立查询</text><text x="856" y="395">⑥ 接受或拒答</text>
+<text x="64" y="614">证据包：原图 → 页码 → 区域 → 校验值</text><text x="856" y="614">明确实验边界</text>
+</g>
+<g font-size="18">
+<text x="64" y="209">12 张图，颜色 × 形状</text><text x="64" y="240">文本塔 ↔ 视觉塔</text><text x="64" y="270" fill="#596963">图像原件与人工标签分别保存</text>
+<text x="460" y="209">图片通道：归一化向量余弦</text><text x="460" y="240">文字通道：标签词集合重合</text><text x="460" y="270" fill="#596963">人工标签不冒充 OCR 结果</text>
+<text x="856" y="209">租户 / 集合先过滤候选</text><text x="856" y="240">开发集固定缩放与权重</text><text x="856" y="270" fill="#596963">融合分数不作为概率输出</text>
+<text x="64" y="434">12 已知 + 6 未知</text><text x="64" y="466">平衡正确放行和未知拒答</text><text x="64" y="492" fill="#B94F2D">禁止用测试结果回调阈值</text>
+<text x="460" y="434">另 12 已知 + 6 未知</text><text x="460" y="466">排序 / 覆盖率 / 错误放行</text><text x="460" y="492" fill="#596963">查询不重叠，检索图库固定</text>
+<text x="856" y="434">分数达标 + 原图完整 → 接受</text><text x="856" y="466">低分 / 无候选 / 证据坏 → 拒答</text><text x="856" y="492" fill="#596963">通过结构检查不代表语义正确</text>
+<text x="64" y="650">保留完整图片；不把生成的描述当作原始事实。</text><text x="64" y="682">本实验区域为整张 320 × 320 图；“第 1 页”是单图约定。</text>
+<text x="856" y="650">OCR / Layout / VLM：未测</text><text x="856" y="682">不推断真实设备识别效果</text>
+</g>
+<g fill="none" stroke="#316653" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M367 213 H423"/><path d="M763 213 H819"/>
+<path d="M996 293 V323 H205 V342"/>
+<path d="M367 434 H423"/><path d="M763 434 H819"/>
+<path d="M996 510 V545 H402 V560"/>
+</g></g></svg>

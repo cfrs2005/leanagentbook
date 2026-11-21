@@ -1,0 +1,51 @@
+{
+  "processed_lines": 2030,
+  "seconds": 0.42988141695968807,
+  "lines_per_second": 4722.232503924129,
+  "commit_latency_ms_p50": 0.19987509585916996,
+  "commit_latency_ms_p95": 0.2602911554276943,
+  "unique_events": 2000,
+  "quarantined": 10,
+  "offset": 2030,
+  "late_events": 20,
+  "source_bytes": 196728,
+  "sqlite_bytes": 299008,
+  "resume": {
+    "processed_lines": 0,
+    "seconds": 0.000128250103443861,
+    "lines_per_second": 0.0,
+    "commit_latency_ms_p50": 0,
+    "commit_latency_ms_p95": 0
+  },
+  "replay": {
+    "processed_lines": 2030,
+    "seconds": 0.37510162498801947,
+    "lines_per_second": 5411.866717625756,
+    "commit_latency_ms_p50": 0.17679203301668167,
+    "commit_latency_ms_p95": 0.21654204465448856
+  },
+  "pyarrow": "20.0.0",
+  "parquet_bytes": 16532,
+  "parquet_write_seconds": 0.0012431659270077944,
+  "parquet_read_seconds": 0.0260214579757303,
+  "parquet_rows": 2000,
+  "environment": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "release": "25.3.0",
+    "machine": "arm64",
+    "cpu": "Apple M4",
+    "logical_cpus": 10,
+    "sqlite": "3.53.1"
+  },
+  "lineage": {
+    "source_sha256": "7a3b330df5ac5574342776e9773a059452712aae05de6ca206f087e9b9c3cc3f",
+    "code_sha256": "57994a2be6033f07795ee0b5c1c6e39dc06c2bc9e0c85e227334de24a6af1784",
+    "schema_version": 1,
+    "generator": "deterministic synthetic v1",
+    "count": 2000,
+    "timing": "consume: file iteration + decode + per-line FULL SQLite commit; excludes hash and DB setup",
+    "latency": "per-line decode through commit; excludes queue wait and event age",
+    "parquet_timing": "write includes fsync and replace, excludes Arrow table construction; read includes to_pylist"
+  }
+}

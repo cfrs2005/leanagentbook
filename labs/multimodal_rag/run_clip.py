@@ -1,0 +1,99 @@
+"""Run pinned real CLIP on synthetic images; no fake embedding fallback."""
+import argparse
+import importlib.metadata
+import json
+import platform
+import time
+from datetime import datetime
+from zoneinfo import ZoneInfo
+from pathlib import Path
+
+from retrieval import evaluate, lexical, sha256, validate_queries, verify_evidence
+
+ROOT = Path(__file__).resolve().parent
+MODEL = 'laion/CLIP-ViT-B-32-laion2B-s34B-b79K'
+REVISION = '1a25a446712ba5ee05982a381eed697ef9b435cf'
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model-dir', type=Path, default=Path('/tmp/leanagentbook-multimodal-laion-model'))
+    parser.add_argument('--download', action='store_true', help='Explicitly allow pinned model download')
+    parser.add_argument('--output', type=Path, default=ROOT / 'results')
+    args = parser.parse_args()
+    if args.download:
+        from huggingface_hub import snapshot_download
+        snapshot_download(MODEL, revision=REVISION, local_dir=str(args.model_dir),
+                          allow_patterns=['*.json', '*.txt', 'pytorch_model.bin', 'README.md'])
+    required = ['config.json', 'preprocessor_config.json', 'tokenizer_config.json',
+                'special_tokens_map.json', 'tokenizer.json', 'vocab.json', 'merges.txt', 'pytorch_model.bin']
+    if not all((args.model_dir / file).is_file() for file in required):
+        raise FileNotFoundError('Pinned local model missing; use --download once. No fallback embeddings.')
+    # Compare local files with hashes from the recorded pinned run when available.
+    lock_path = ROOT / 'model-lock.json'
+    hashes = {name: sha256(args.model_dir / name) for name in required}
+    if not lock_path.exists() or hashes != json.loads(lock_path.read_text())['sha256']:
+        raise ValueError('Local model files do not match the pinned model lock')
+    import torch
+    from PIL import Image
+    from transformers import CLIPModel, CLIPProcessor
+
+    torch.set_num_threads(2)
+    started = time.perf_counter()
+    data = ROOT / 'data'
+    items = json.loads((data / 'manifest.json').read_text())
+    queries = json.loads((data / 'queries.json').read_text())
+    validate_queries(queries, items)
+    for item in items:
+        for kind in ('source', 'image'):
+            item[f'{kind}_sha256'] = sha256(data / item[kind])
+        verify_evidence(item, data)
+    processor = CLIPProcessor.from_pretrained(args.model_dir, local_files_only=True)
+    model = CLIPModel.from_pretrained(args.model_dir, local_files_only=True, use_safetensors=False).eval()
+    images = []
+    for item in items:
+        with Image.open(data / item['image']) as image:
+            images.append(image.convert('RGB'))
+    with torch.inference_mode():
+        image_vectors = model.get_image_features(**processor(images=images, return_tensors='pt'))
+        text_vectors = model.get_text_features(**processor(
+            text=[q['text'] for q in queries], return_tensors='pt', padding=True, truncation=False))
+        image_vectors = torch.nn.functional.normalize(image_vectors, dim=-1)
+        text_vectors = torch.nn.functional.normalize(text_vectors, dim=-1)
+        visual = (text_vectors @ image_vectors.T).tolist()
+    if not torch.isfinite(image_vectors).all() or not torch.isfinite(text_vectors).all():
+        raise ValueError('Nonfinite model output')
+    scores = {q['id']: {'visual': visual[i], 'text': [lexical(q['text'], item['title']) for item in items]}
+              for i, q in enumerate(queries)}
+    raw = {'provenance': {'model_id': MODEL, 'revision': REVISION, 'model_sha256': hashes,
+                         'device': 'cpu', 'dtype': 'float32', 'threads': 2,
+                         'python': platform.python_version(), 'platform': platform.platform(),
+                         'packages': {p: importlib.metadata.version(p) for p in
+                                      ('torch', 'transformers', 'huggingface-hub', 'Pillow', 'numpy')},
+                         'elapsed_seconds': time.perf_counter() - started,
+                         'data': 'Original synthetic geometric SVGs rendered to PNG; manual labels, not OCR',
+                         'query_file_sha256': sha256(data / 'queries.json'),
+                         'manifest_file_sha256': sha256(data / 'manifest.json'),
+                         'date': datetime.now(ZoneInfo('America/Los_Angeles')).date().isoformat(),
+                         'runner_sha256': sha256(Path(__file__)),
+                         'retrieval_sha256': sha256(ROOT / 'retrieval.py'),
+                         'unverified': ['OCR', 'layout extraction', 'VLM extraction', 'real-world generalization',
+                                        'Chinese queries', 'answer generation', 'image-query retrieval']},
+           'items': items, 'queries': queries, 'scores': scores}
+    summary = evaluate(raw)
+    args.output.mkdir(parents=True, exist_ok=True)
+    for name, result in [('raw_scores.json', raw), ('evaluation.json', summary)]:
+        (args.output / name).write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
+    by_id = {item['id']: item for item in items}
+    evidence = {mode: [{'query_id': decision['query_id'],
+                        'evidence': verify_evidence(by_id[decision['top_id']], data)}
+                       for decision in result['test_decisions'] if decision['accepted']]
+                for mode, result in summary.items()}
+    (args.output / 'evidence-checks.json').write_text(json.dumps(evidence, indent=2) + '\n')
+    for mode, result in summary.items():
+        print(mode, json.dumps(result['test_metrics'], sort_keys=True))
+    print('Elapsed seconds:', raw['provenance']['elapsed_seconds'])
+
+
+if __name__ == '__main__':
+    main()

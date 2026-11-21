@@ -1,0 +1,136 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "measurement": "monotonic seconds; synthetic sum-of-squares; loopback HTTP",
+  "recovery_s": 0.5954797500744462,
+  "stale_complete_status": 409,
+  "stale_heartbeat_status": 409,
+  "duplicate_complete_status": 200,
+  "state": {
+    "tasks": [
+      {
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 2,
+        "worker": "replacement-1",
+        "deadline": 1299988.872233166,
+        "result": 332833500
+      }
+    ],
+    "events": [
+      {
+        "t": 0.004105,
+        "kind": "submitted",
+        "id": "alpha:one",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.037502,
+        "kind": "registered",
+        "worker": "victim-0",
+        "pid": 28212
+      },
+      {
+        "t": 0.037887,
+        "kind": "assigned",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "victim-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.086958,
+        "kind": "registered",
+        "worker": "replacement-1",
+        "pid": 28214
+      },
+      {
+        "t": 0.0871,
+        "kind": "registered",
+        "worker": "replacement-0",
+        "pid": 28213
+      },
+      {
+        "t": 0.499084,
+        "kind": "expired",
+        "id": "alpha:one",
+        "worker": "victim-0",
+        "generation": 1
+      },
+      {
+        "t": 0.499105,
+        "kind": "assigned",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "replacement-1",
+        "generation": 2,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.604686,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "replacement-1"
+      },
+      {
+        "t": 0.621261,
+        "kind": "heartbeat",
+        "id": "alpha:one",
+        "worker": "replacement-1"
+      },
+      {
+        "t": 0.6231,
+        "kind": "completed",
+        "id": "alpha:one",
+        "tenant": "alpha",
+        "worker": "replacement-1"
+      },
+      {
+        "t": 0.648345,
+        "kind": "stale_rejected",
+        "id": "alpha:one",
+        "worker": "victim-0"
+      },
+      {
+        "t": 0.649303,
+        "kind": "stale_rejected",
+        "id": "alpha:one",
+        "worker": "victim-0"
+      },
+      {
+        "t": 0.650413,
+        "kind": "duplicate_result",
+        "id": "alpha:one"
+      }
+    ],
+    "registry": {
+      "victim-0": {
+        "pid": 28212,
+        "seen": 1299988.450278541,
+        "capability": "sum_squares"
+      },
+      "replacement-1": {
+        "pid": 28214,
+        "seen": 1299988.452477791,
+        "capability": "sum_squares"
+      },
+      "replacement-0": {
+        "pid": 28213,
+        "seen": 1299988.445720625,
+        "capability": "sum_squares"
+      }
+    },
+    "reserved": {
+      "alpha": 10
+    }
+  }
+}

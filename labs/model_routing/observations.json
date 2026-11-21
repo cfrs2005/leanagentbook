@@ -1,0 +1,463 @@
+{
+  "schema": "routing-observations-v1",
+  "models": {
+    "small": {
+      "model": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "license": "apache-2.0"
+    },
+    "base": {
+      "model": "google/flan-t5-base",
+      "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+      "license": "apache-2.0"
+    }
+  },
+  "dataset_sha256": "7f54f8d2b3db62a2e717c0e33f4e761b25a2bb5bd1063694ca52fcce6c6ac2ac",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "torch": "2.6.0",
+    "transformers": "4.48.3"
+  },
+  "measurement": "One real generation per prompt/model after warmup; CPU two threads; no network in timed region",
+  "unit": "model_tokens",
+  "max_new_tokens": 32,
+  "observations": [
+    {
+      "prompt": "What is 2 + 3? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 14,
+      "output_units": 3,
+      "latency_ms": 21.77395881153643,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 9 - 4? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 15,
+      "output_units": 3,
+      "latency_ms": 21.57854218967259,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 6 times 7? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 14,
+      "output_units": 3,
+      "latency_ms": 21.74912509508431,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 20 divided by 4? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 15,
+      "output_units": 3,
+      "latency_ms": 23.64337514154613,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 15 + 18? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 14,
+      "output_units": 3,
+      "latency_ms": 25.12370888143778,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 100 - 37? Answer with only a number.",
+      "model": "small",
+      "answer": "0",
+      "input_units": 15,
+      "output_units": 3,
+      "latency_ms": 20.945666823536158,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: I love this helpful service. Reply only positive or negative.",
+      "model": "small",
+      "answer": "positive",
+      "input_units": 19,
+      "output_units": 2,
+      "latency_ms": 15.296082943677902,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: This broken product is terrible. Reply only positive or negative.",
+      "model": "small",
+      "answer": "negative",
+      "input_units": 19,
+      "output_units": 2,
+      "latency_ms": 13.861415907740593,
+      "status": "ok"
+    },
+    {
+      "prompt": "Is a square a shape with four sides? Reply only yes or no.",
+      "model": "small",
+      "answer": "no",
+      "input_units": 20,
+      "output_units": 2,
+      "latency_ms": 13.984624994918704,
+      "status": "ok"
+    },
+    {
+      "prompt": "Is seven an even number? Reply only yes or no.",
+      "model": "small",
+      "answer": "no",
+      "input_units": 15,
+      "output_units": 2,
+      "latency_ms": 13.925083912909031,
+      "status": "ok"
+    },
+    {
+      "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+      "model": "small",
+      "answer": "Mira has 3 boxes with 4 pencils / box * 4 pencils = 12 pencils. Mira gives away 5 pencils / box *",
+      "input_units": 32,
+      "output_units": 32,
+      "latency_ms": 134.52387508004904,
+      "status": "ok"
+    },
+    {
+      "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+      "model": "small",
+      "answer": "Five get off and nine get on. So, there are 12 + 9 = 24 passengers on the bus.",
+      "input_units": 31,
+      "output_units": 23,
+      "latency_ms": 98.10937498696148,
+      "status": "ok"
+    },
+    {
+      "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+      "model": "small",
+      "answer": "20 / 2 = 20 bottles. It has 20 - 7 = 20 new bottles. It has 20 - 7 = 20 new bottles. It has",
+      "input_units": 34,
+      "output_units": 32,
+      "latency_ms": 137.7304580528289,
+      "status": "ok"
+    },
+    {
+      "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+      "model": "small",
+      "answer": "Three chairs are removed, so there are 6 tables with 4 chairs / table * 4 chairs = 24 chairs. There are only 24 chairs remaining, so there",
+      "input_units": 27,
+      "output_units": 32,
+      "latency_ms": 134.34037496335804,
+      "status": "ok"
+    },
+    {
+      "prompt": "A rectangle is 8 meters long and 3 meters wide. What is its perimeter in meters? Answer with only a number.",
+      "model": "small",
+      "answer": "8",
+      "input_units": 26,
+      "output_units": 2,
+      "latency_ms": 14.02350002899766,
+      "status": "ok"
+    },
+    {
+      "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+      "model": "small",
+      "answer": "2 hours = 30 kilometers per hour. So, a trip takes 2 hours * 30 kilometers per hour = 120 kilometers. So, a trip takes 120",
+      "input_units": 25,
+      "output_units": 32,
+      "latency_ms": 133.75975005328655,
+      "status": "ok"
+    },
+    {
+      "prompt": "All birds in this story can sing. Niko is a bird in this story. Can Niko sing? Reply only yes or no.",
+      "model": "small",
+      "answer": "yes",
+      "input_units": 31,
+      "output_units": 2,
+      "latency_ms": 13.956791022792459,
+      "status": "ok"
+    },
+    {
+      "prompt": "Every robot in room A is blue. A red robot stands in room B. Must the red robot be in room A? Reply only yes or no.",
+      "model": "small",
+      "answer": "yes",
+      "input_units": 33,
+      "output_units": 2,
+      "latency_ms": 14.83408291824162,
+      "status": "ok"
+    },
+    {
+      "prompt": "A device needs both power and a network connection to send a report. It has power but no network. Can it send the report? Reply only yes or no.",
+      "model": "small",
+      "answer": "yes",
+      "input_units": 37,
+      "output_units": 2,
+      "latency_ms": 14.950209064409137,
+      "status": "ok"
+    },
+    {
+      "prompt": "A gate opens when either switch A or switch B is on. A is off and B is on. Does the gate open? Reply only yes or no.",
+      "model": "small",
+      "answer": "yes",
+      "input_units": 34,
+      "output_units": 2,
+      "latency_ms": 14.466083142906427,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: The screen looks nice, but it fails every day and I regret buying it. Reply only positive or negative.",
+      "model": "small",
+      "answer": "negative",
+      "input_units": 29,
+      "output_units": 2,
+      "latency_ms": 13.658541021868587,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: Delivery was slow, but the product works wonderfully and I would buy it again. Reply only positive or negative.",
+      "model": "small",
+      "answer": "positive",
+      "input_units": 29,
+      "output_units": 2,
+      "latency_ms": 13.486916897818446,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: I expected a disaster, but the team solved every issue and made me happy. Reply only positive or negative.",
+      "model": "small",
+      "answer": "positive",
+      "input_units": 30,
+      "output_units": 2,
+      "latency_ms": 13.528125127777457,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: Despite its attractive price, the unreliable service left me disappointed and frustrated. Reply only positive or negative.",
+      "model": "small",
+      "answer": "negative",
+      "input_units": 30,
+      "output_units": 2,
+      "latency_ms": 13.746540993452072,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 2 + 3? Answer with only a number.",
+      "model": "base",
+      "answer": "1",
+      "input_units": 14,
+      "output_units": 2,
+      "latency_ms": 91.84520808048546,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 9 - 4? Answer with only a number.",
+      "model": "base",
+      "answer": "0",
+      "input_units": 15,
+      "output_units": 3,
+      "latency_ms": 115.06195785477757,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 6 times 7? Answer with only a number.",
+      "model": "base",
+      "answer": "0",
+      "input_units": 14,
+      "output_units": 3,
+      "latency_ms": 116.34337506256998,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 20 divided by 4? Answer with only a number.",
+      "model": "base",
+      "answer": "4",
+      "input_units": 15,
+      "output_units": 2,
+      "latency_ms": 73.18029110319912,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 15 + 18? Answer with only a number.",
+      "model": "base",
+      "answer": "0",
+      "input_units": 14,
+      "output_units": 3,
+      "latency_ms": 78.54650006629527,
+      "status": "ok"
+    },
+    {
+      "prompt": "What is 100 - 37? Answer with only a number.",
+      "model": "base",
+      "answer": "0",
+      "input_units": 15,
+      "output_units": 3,
+      "latency_ms": 68.19966598413885,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: I love this helpful service. Reply only positive or negative.",
+      "model": "base",
+      "answer": "positive",
+      "input_units": 19,
+      "output_units": 2,
+      "latency_ms": 54.14254101924598,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: This broken product is terrible. Reply only positive or negative.",
+      "model": "base",
+      "answer": "negative",
+      "input_units": 19,
+      "output_units": 2,
+      "latency_ms": 50.95712491311133,
+      "status": "ok"
+    },
+    {
+      "prompt": "Is a square a shape with four sides? Reply only yes or no.",
+      "model": "base",
+      "answer": "no",
+      "input_units": 20,
+      "output_units": 2,
+      "latency_ms": 63.15583293326199,
+      "status": "ok"
+    },
+    {
+      "prompt": "Is seven an even number? Reply only yes or no.",
+      "model": "base",
+      "answer": "no",
+      "input_units": 15,
+      "output_units": 2,
+      "latency_ms": 50.892291124910116,
+      "status": "ok"
+    },
+    {
+      "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+      "model": "base",
+      "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+      "input_units": 32,
+      "output_units": 32,
+      "latency_ms": 381.1419999692589,
+      "status": "ok"
+    },
+    {
+      "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+      "model": "base",
+      "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+      "input_units": 31,
+      "output_units": 32,
+      "latency_ms": 385.5855418369174,
+      "status": "ok"
+    },
+    {
+      "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+      "model": "base",
+      "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+      "input_units": 34,
+      "output_units": 32,
+      "latency_ms": 389.4990000408143,
+      "status": "ok"
+    },
+    {
+      "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+      "model": "base",
+      "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+      "input_units": 27,
+      "output_units": 32,
+      "latency_ms": 397.297624964267,
+      "status": "ok"
+    },
+    {
+      "prompt": "A rectangle is 8 meters long and 3 meters wide. What is its perimeter in meters? Answer with only a number.",
+      "model": "base",
+      "answer": "8",
+      "input_units": 26,
+      "output_units": 2,
+      "latency_ms": 52.24762507714331,
+      "status": "ok"
+    },
+    {
+      "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+      "model": "base",
+      "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+      "input_units": 25,
+      "output_units": 32,
+      "latency_ms": 437.80537508428097,
+      "status": "ok"
+    },
+    {
+      "prompt": "All birds in this story can sing. Niko is a bird in this story. Can Niko sing? Reply only yes or no.",
+      "model": "base",
+      "answer": "yes",
+      "input_units": 31,
+      "output_units": 2,
+      "latency_ms": 45.52358388900757,
+      "status": "ok"
+    },
+    {
+      "prompt": "Every robot in room A is blue. A red robot stands in room B. Must the red robot be in room A? Reply only yes or no.",
+      "model": "base",
+      "answer": "no",
+      "input_units": 33,
+      "output_units": 2,
+      "latency_ms": 50.62741693109274,
+      "status": "ok"
+    },
+    {
+      "prompt": "A device needs both power and a network connection to send a report. It has power but no network. Can it send the report? Reply only yes or no.",
+      "model": "base",
+      "answer": "no",
+      "input_units": 37,
+      "output_units": 2,
+      "latency_ms": 50.76208314858377,
+      "status": "ok"
+    },
+    {
+      "prompt": "A gate opens when either switch A or switch B is on. A is off and B is on. Does the gate open? Reply only yes or no.",
+      "model": "base",
+      "answer": "no",
+      "input_units": 34,
+      "output_units": 2,
+      "latency_ms": 49.03487488627434,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: The screen looks nice, but it fails every day and I regret buying it. Reply only positive or negative.",
+      "model": "base",
+      "answer": "negative",
+      "input_units": 29,
+      "output_units": 2,
+      "latency_ms": 48.44837496057153,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: Delivery was slow, but the product works wonderfully and I would buy it again. Reply only positive or negative.",
+      "model": "base",
+      "answer": "positive",
+      "input_units": 29,
+      "output_units": 2,
+      "latency_ms": 48.06491686031222,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: I expected a disaster, but the team solved every issue and made me happy. Reply only positive or negative.",
+      "model": "base",
+      "answer": "positive",
+      "input_units": 30,
+      "output_units": 2,
+      "latency_ms": 50.377750070765615,
+      "status": "ok"
+    },
+    {
+      "prompt": "Classify the sentiment: Despite its attractive price, the unreliable service left me disappointed and frustrated. Reply only positive or negative.",
+      "model": "base",
+      "answer": "negative",
+      "input_units": 30,
+      "output_units": 2,
+      "latency_ms": 51.88783397898078,
+      "status": "ok"
+    }
+  ],
+  "load_ms": {
+    "small": 24703.33679090254,
+    "base": 71804.87516592257
+  }
+}

@@ -8,7 +8,7 @@
 
 [在线读书（持续更新）](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
-> 当前为 **持续更新中的学习切片**：导读、01–04/09–10/13–17/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
+> 当前为 **持续更新中的学习切片**：导读、01–04/08–18/24 章首版、23 章架构设计稿及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
 
 ![六部分课程地图](diagrams/learning-map.svg)
 
@@ -21,6 +21,10 @@
 | Agent 为什么会一直调用工具？ | [02 · Agent 工作原理](chapters/02-agent-loop.md) | 能终止、能处理失败的最小循环 |
 | Runtime、Harness、MCP 怎么分工？ | [03 · Runtime 与 Harness](chapters/03-runtime-harness.md) | 职责图和运行约束 |
 | 什么时候应该用多个 Agent？ | [04 · 工作流与多 Agent](chapters/04-workflow-orchestration.md) | 并行执行、有限重试与审批实验 |
+| 怎样减少调用而不掩盖错误？ | [08 · 路由与成本](chapters/08-model-routing.md) | 双模型真实记录、策略回放和缓存边界 |
+| 图片与文字怎样一起提供证据？ | [11 · 多模态检索](chapters/11-multimodal-rag.md) | 真实 CLIP、融合、拒答阈值与原图校验 |
+| 重复、迟到和坏数据怎样处理？ | [12 · 数据流水线](chapters/12-data-engineering.md) | 持久进度、崩溃恢复与真实 Parquet |
+| Worker 退出后谁接着做？ | [18 · 分布式 Agent](chapters/18-distributed-agents.md) | 多进程、心跳、租约与故障转移 |
 | 关键词和向量检索怎样互补？ | [09 · 向量检索](chapters/09-vector-retrieval.md) | 标注集、双路召回、融合和重排比较 |
 | 答案能追溯到哪份文档？ | [10 · RAG 全链路](chapters/10-rag-pipeline.md) | 文档摄取、引用回答、更新与删除 |
 | Agent 记错了，怎样更正和删除？ | [13 · 记忆与上下文](chapters/13-memory-context.md) | 版本化记忆、冲突处理和上下文预算 |

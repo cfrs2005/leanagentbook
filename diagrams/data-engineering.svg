@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">数据工程：从原始事件到可核对快照</title>
+<desc id="desc">合成事件经过校验进入事务，事件、隔离记录、进度一起提交。提交前崩溃重试，提交后恢复跳过，最后生成真实 Parquet 并核对聚合。下方标明生产组件职责。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#316653"/></marker></defs>
+<rect width="1200" height="650" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="40" y="58" font-size="34">12 ｜ 数据先可追溯，结果才可核对</text>
+<text x="40" y="94" font-size="17" fill="#596963">本地实验：合成数据、单消费者、真实 Parquet；未部署 Kafka / Flink</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="40" y="145" width="220" height="150" rx="12"/>
+<rect x="320" y="125" width="490" height="205" rx="12"/>
+<rect x="870" y="145" width="290" height="150" rx="12"/>
+<rect x="320" y="375" width="490" height="85" rx="12"/>
+</g>
+<text x="60" y="183" font-size="22">01 原始事件日志</text>
+<text x="60" y="222" font-size="17">保留原文与 SHA-256</text>
+<text x="60" y="251" font-size="17">重复 / 坏消息 / 迟到</text>
+<text x="340" y="163" font-size="22">02 同一 SQLite 事务</text>
+<text x="340" y="202" font-size="18">校验 → event_id 去重 → 保存事件</text>
+<text x="340" y="238" font-size="18">不合法 → 隔离原文与原因</text>
+<text x="340" y="278" font-size="18" fill="#316653">事件 + 隔离 + offset + 水位一起提交</text>
+<text x="890" y="183" font-size="22">03 可读 Parquet</text>
+<text x="890" y="222" font-size="17">ZSTD 压缩 / 显式类型</text>
+<text x="890" y="251" font-size="17">回读 → 聚合 → 源日志核对</text>
+<g fill="none" stroke="#316653" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M260 215 H315"/><path d="M810 215 H865"/><path d="M565 330 V370"/>
+</g>
+<text x="340" y="407" font-size="18">崩溃在提交前：回滚，重试同一行</text>
+<text x="340" y="438" font-size="18">崩溃在提交后：恢复 offset，跳过已提交行</text>
+<path d="M40 492 H1160" stroke="#D9D2C4"/>
+<text x="40" y="529" font-size="21" fill="#B94F2D">生产分工，不是本实验部署清单</text>
+<text x="40" y="570" font-size="18">Kafka：日志传输与重放　→　Flink：状态、窗口与水位　→　对象存储：数据文件</text>
+<text x="40" y="608" font-size="18">Iceberg：表快照与演进　｜　ClickHouse：分析查询　｜　Feature Store：特征时间一致性</text>
+</g></svg>

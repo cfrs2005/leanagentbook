@@ -1,0 +1,2701 @@
+{
+  "mode": "warm_exact_cache",
+  "unit": "model_tokens",
+  "pricing": "Hypothetical credits: small=1, base=4 per 1000 input units; output multiplier=2; not money",
+  "measurement": "Sum of recorded backend calls, not measured end-to-end latency; warm mode excludes population cost",
+  "rows": [
+    {
+      "policy": "small",
+      "threshold_words": 16,
+      "split": "dev",
+      "requests": 8,
+      "successes": 3,
+      "accuracy": 0.375,
+      "cost_credits": 0.187,
+      "credits_per_success": 0.06233333333333333,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 137.7304580528289,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "small",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "small",
+              "answer": "20 / 2 = 20 bottles. It has 20 - 7 = 20 new bottles. It has 20 - 7 = 20 new bottles. It has",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 137.7304580528289,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.098,
+          "recorded_backend_ms": 137.7304580528289
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "small",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "small",
+              "answer": "2 hours = 30 kilometers per hour. So, a trip takes 2 hours * 30 kilometers per hour = 120 kilometers. So, a trip takes 120",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 133.75975005328655,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.089,
+          "recorded_backend_ms": 133.75975005328655
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "small",
+      "threshold_words": 16,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 0.264,
+      "credits_per_success": 0.044000000000000004,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 134.52387508004904,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "small",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Mira has 3 boxes with 4 pencils / box * 4 pencils = 12 pencils. Mira gives away 5 pencils / box *",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 134.52387508004904,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.096,
+          "recorded_backend_ms": 134.52387508004904
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "small",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "small",
+              "answer": "Five get off and nine get on. So, there are 12 + 9 = 24 passengers on the bus.",
+              "input_units": 31,
+              "output_units": 23,
+              "latency_ms": 98.10937498696148,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.077,
+          "recorded_backend_ms": 98.10937498696148
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "small",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Three chairs are removed, so there are 6 tables with 4 chairs / table * 4 chairs = 24 chairs. There are only 24 chairs remaining, so there",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 134.34037496335804,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.091,
+          "recorded_backend_ms": 134.34037496335804
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "base",
+      "threshold_words": 16,
+      "split": "dev",
+      "requests": 8,
+      "successes": 4,
+      "accuracy": 0.5,
+      "cost_credits": 0.748,
+      "credits_per_success": 0.187,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 437.80537508428097,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "1",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "4",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.392,
+          "recorded_backend_ms": 389.4990000408143
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.356,
+          "recorded_backend_ms": 437.80537508428097
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "base",
+      "threshold_words": 16,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.1280000000000001,
+      "credits_per_success": 0.18800000000000003,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 397.297624964267,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.384,
+          "recorded_backend_ms": 381.1419999692589
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.38,
+          "recorded_backend_ms": 385.5855418369174
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.364,
+          "recorded_backend_ms": 397.297624964267
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "cascade",
+      "threshold_words": 16,
+      "split": "dev",
+      "requests": 8,
+      "successes": 3,
+      "accuracy": 0.375,
+      "cost_credits": 0.9349999999999999,
+      "credits_per_success": 0.31166666666666665,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 571.5651251375675,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "small",
+              "answer": "20 / 2 = 20 bottles. It has 20 - 7 = 20 new bottles. It has 20 - 7 = 20 new bottles. It has",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 137.7304580528289,
+              "status": "ok"
+            },
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.49,
+          "recorded_backend_ms": 527.2294580936432
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "small",
+              "answer": "2 hours = 30 kilometers per hour. So, a trip takes 2 hours * 30 kilometers per hour = 120 kilometers. So, a trip takes 120",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 133.75975005328655,
+              "status": "ok"
+            },
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.44499999999999995,
+          "recorded_backend_ms": 571.5651251375675
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "cascade",
+      "threshold_words": 16,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.392,
+      "credits_per_success": 0.23199999999999998,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 531.6379999276251,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Mira has 3 boxes with 4 pencils / box * 4 pencils = 12 pencils. Mira gives away 5 pencils / box *",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 134.52387508004904,
+              "status": "ok"
+            },
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.48,
+          "recorded_backend_ms": 515.6658750493079
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "small",
+              "answer": "Five get off and nine get on. So, there are 12 + 9 = 24 passengers on the bus.",
+              "input_units": 31,
+              "output_units": 23,
+              "latency_ms": 98.10937498696148,
+              "status": "ok"
+            },
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.457,
+          "recorded_backend_ms": 483.6949168238789
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Three chairs are removed, so there are 6 tables with 4 chairs / table * 4 chairs = 24 chairs. There are only 24 chairs remaining, so there",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 134.34037496335804,
+              "status": "ok"
+            },
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.45499999999999996,
+          "recorded_backend_ms": 531.6379999276251
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 8,
+      "split": "dev",
+      "requests": 8,
+      "successes": 4,
+      "accuracy": 0.5,
+      "cost_credits": 0.748,
+      "credits_per_success": 0.187,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 437.80537508428097,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "1",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "4",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.392,
+          "recorded_backend_ms": 389.4990000408143
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.356,
+          "recorded_backend_ms": 437.80537508428097
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 8,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.1280000000000001,
+      "credits_per_success": 0.18800000000000003,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 397.297624964267,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.384,
+          "recorded_backend_ms": 381.1419999692589
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.38,
+          "recorded_backend_ms": 385.5855418369174
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.364,
+          "recorded_backend_ms": 397.297624964267
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 16,
+      "split": "dev",
+      "requests": 8,
+      "successes": 4,
+      "accuracy": 0.5,
+      "cost_credits": 0.748,
+      "credits_per_success": 0.187,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 437.80537508428097,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.392,
+          "recorded_backend_ms": 389.4990000408143
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.356,
+          "recorded_backend_ms": 437.80537508428097
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 16,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.1280000000000001,
+      "credits_per_success": 0.18800000000000003,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 397.297624964267,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.384,
+          "recorded_backend_ms": 381.1419999692589
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.38,
+          "recorded_backend_ms": 385.5855418369174
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.364,
+          "recorded_backend_ms": 397.297624964267
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 24,
+      "split": "dev",
+      "requests": 8,
+      "successes": 4,
+      "accuracy": 0.5,
+      "cost_credits": 0.837,
+      "credits_per_success": 0.20925,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 571.5651251375675,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.392,
+          "recorded_backend_ms": 389.4990000408143
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "small",
+              "answer": "2 hours = 30 kilometers per hour. So, a trip takes 2 hours * 30 kilometers per hour = 120 kilometers. So, a trip takes 120",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 133.75975005328655,
+              "status": "ok"
+            },
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.44499999999999995,
+          "recorded_backend_ms": 571.5651251375675
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 24,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.315,
+      "credits_per_success": 0.21916666666666665,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 531.6379999276251,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Mira has 3 boxes with 4 pencils / box * 4 pencils = 12 pencils. Mira gives away 5 pencils / box *",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 134.52387508004904,
+              "status": "ok"
+            },
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.48,
+          "recorded_backend_ms": 515.6658750493079
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.38,
+          "recorded_backend_ms": 385.5855418369174
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Three chairs are removed, so there are 6 tables with 4 chairs / table * 4 chairs = 24 chairs. There are only 24 chairs remaining, so there",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 134.34037496335804,
+              "status": "ok"
+            },
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.45499999999999996,
+          "recorded_backend_ms": 531.6379999276251
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "base",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 32,
+      "split": "dev",
+      "requests": 8,
+      "successes": 3,
+      "accuracy": 0.375,
+      "cost_credits": 0.9349999999999999,
+      "credits_per_success": 0.31166666666666665,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 571.5651251375675,
+      "cache_hits": 6,
+      "results": [
+        {
+          "id": "q01",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q04",
+          "split": "dev",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q07",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q10",
+          "split": "dev",
+          "correct": true,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q13",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "small",
+              "answer": "20 / 2 = 20 bottles. It has 20 - 7 = 20 new bottles. It has 20 - 7 = 20 new bottles. It has",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 137.7304580528289,
+              "status": "ok"
+            },
+            {
+              "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+              "model": "base",
+              "answer": "The store sells half of the 20 bottles so it has 20 / 2 = 10 bottles. The store receives 7 new bottles so it has 10 +",
+              "input_units": 34,
+              "output_units": 32,
+              "latency_ms": 389.4990000408143,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.49,
+          "recorded_backend_ms": 527.2294580936432
+        },
+        {
+          "id": "q16",
+          "split": "dev",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "small",
+              "answer": "2 hours = 30 kilometers per hour. So, a trip takes 2 hours * 30 kilometers per hour = 120 kilometers. So, a trip takes 120",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 133.75975005328655,
+              "status": "ok"
+            },
+            {
+              "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+              "model": "base",
+              "answer": "The trip takes 2 hours * 30 kilometers / hour = 120 kilometers. So the total distance traveled is 120 kilometers + 30 kilometers = 240 kilometers. The",
+              "input_units": 25,
+              "output_units": 32,
+              "latency_ms": 437.80537508428097,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.44499999999999995,
+          "recorded_backend_ms": 571.5651251375675
+        },
+        {
+          "id": "q19",
+          "split": "dev",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q22",
+          "split": "dev",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    },
+    {
+      "policy": "rules",
+      "threshold_words": 32,
+      "split": "test",
+      "requests": 16,
+      "successes": 6,
+      "accuracy": 0.375,
+      "cost_credits": 1.392,
+      "credits_per_success": 0.23199999999999998,
+      "recorded_backend_p50_ms": 0,
+      "recorded_backend_p95_ms": 531.6379999276251,
+      "cache_hits": 13,
+      "results": [
+        {
+          "id": "q02",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q03",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q05",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q06",
+          "split": "test",
+          "correct": false,
+          "answer": "0",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q08",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q09",
+          "split": "test",
+          "correct": false,
+          "answer": "no",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q11",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Mira has 3 boxes with 4 pencils / box * 4 pencils = 12 pencils. Mira gives away 5 pencils / box *",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 134.52387508004904,
+              "status": "ok"
+            },
+            {
+              "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Three boxes have 4 * 3 = 12 pencils. So, Mira has 12 - 5 = 9 pencils left. Therefore, Mira has 9",
+              "input_units": 32,
+              "output_units": 32,
+              "latency_ms": 381.1419999692589,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.48,
+          "recorded_backend_ms": 515.6658750493079
+        },
+        {
+          "id": "q12",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "small",
+              "answer": "Five get off and nine get on. So, there are 12 + 9 = 24 passengers on the bus.",
+              "input_units": 31,
+              "output_units": 23,
+              "latency_ms": 98.10937498696148,
+              "status": "ok"
+            },
+            {
+              "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+              "model": "base",
+              "answer": "Five get off, so there are 12 - 5 = 6 passengers on the bus. Nine get on, so there are 6 - 9 = 3 passengers",
+              "input_units": 31,
+              "output_units": 32,
+              "latency_ms": 385.5855418369174,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.457,
+          "recorded_backend_ms": 483.6949168238789
+        },
+        {
+          "id": "q14",
+          "split": "test",
+          "correct": false,
+          "answer": "",
+          "status": "invalid_output",
+          "model": "base",
+          "cache_hit": false,
+          "attempts": [
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "small",
+              "answer": "Three chairs are removed, so there are 6 tables with 4 chairs / table * 4 chairs = 24 chairs. There are only 24 chairs remaining, so there",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 134.34037496335804,
+              "status": "ok"
+            },
+            {
+              "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+              "model": "base",
+              "answer": "Six tables have 4 chairs x 4 chairs / table = 16 chairs. Three chairs removed from the table means there are 16 chairs - 3 chairs =",
+              "input_units": 27,
+              "output_units": 32,
+              "latency_ms": 397.297624964267,
+              "status": "ok"
+            }
+          ],
+          "cost_credits": 0.45499999999999996,
+          "recorded_backend_ms": 531.6379999276251
+        },
+        {
+          "id": "q15",
+          "split": "test",
+          "correct": false,
+          "answer": "8",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q17",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q18",
+          "split": "test",
+          "correct": false,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q20",
+          "split": "test",
+          "correct": true,
+          "answer": "yes",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q21",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q23",
+          "split": "test",
+          "correct": true,
+          "answer": "positive",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        },
+        {
+          "id": "q24",
+          "split": "test",
+          "correct": true,
+          "answer": "negative",
+          "status": "accepted",
+          "model": "small",
+          "cache_hit": true,
+          "attempts": [],
+          "cost_credits": 0,
+          "recorded_backend_ms": 0
+        }
+      ]
+    }
+  ]
+}

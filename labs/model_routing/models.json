@@ -1,0 +1,12 @@
+{
+  "small": {
+    "model": "google/flan-t5-small",
+    "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "license": "apache-2.0"
+  },
+  "base": {
+    "model": "google/flan-t5-base",
+    "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "license": "apache-2.0"
+  }
+}

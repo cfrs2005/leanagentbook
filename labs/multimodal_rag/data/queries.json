@@ -1,0 +1,302 @@
+[
+  {
+    "id": "dev_red_circle",
+    "split": "dev",
+    "text": "a red circle on a white background",
+    "relevant": [
+      "red_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_red_circle",
+    "split": "test",
+    "text": "an illustration of a red round disk",
+    "relevant": [
+      "red_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_red_square",
+    "split": "dev",
+    "text": "a red square on a white background",
+    "relevant": [
+      "red_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_red_square",
+    "split": "test",
+    "text": "an illustration of a red four sided square",
+    "relevant": [
+      "red_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_red_triangle",
+    "split": "dev",
+    "text": "a red triangle on a white background",
+    "relevant": [
+      "red_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_red_triangle",
+    "split": "test",
+    "text": "an illustration of a red three sided triangle",
+    "relevant": [
+      "red_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_red_star",
+    "split": "dev",
+    "text": "a red star on a white background",
+    "relevant": [
+      "red_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_red_star",
+    "split": "test",
+    "text": "an illustration of a red five pointed star",
+    "relevant": [
+      "red_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_blue_circle",
+    "split": "dev",
+    "text": "a blue circle on a white background",
+    "relevant": [
+      "blue_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_blue_circle",
+    "split": "test",
+    "text": "an illustration of a blue round disk",
+    "relevant": [
+      "blue_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_blue_square",
+    "split": "dev",
+    "text": "a blue square on a white background",
+    "relevant": [
+      "blue_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_blue_square",
+    "split": "test",
+    "text": "an illustration of a blue four sided square",
+    "relevant": [
+      "blue_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_blue_triangle",
+    "split": "dev",
+    "text": "a blue triangle on a white background",
+    "relevant": [
+      "blue_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_blue_triangle",
+    "split": "test",
+    "text": "an illustration of a blue three sided triangle",
+    "relevant": [
+      "blue_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_blue_star",
+    "split": "dev",
+    "text": "a blue star on a white background",
+    "relevant": [
+      "blue_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_blue_star",
+    "split": "test",
+    "text": "an illustration of a blue five pointed star",
+    "relevant": [
+      "blue_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_green_circle",
+    "split": "dev",
+    "text": "a green circle on a white background",
+    "relevant": [
+      "green_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_green_circle",
+    "split": "test",
+    "text": "an illustration of a green round disk",
+    "relevant": [
+      "green_circle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_green_square",
+    "split": "dev",
+    "text": "a green square on a white background",
+    "relevant": [
+      "green_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_green_square",
+    "split": "test",
+    "text": "an illustration of a green four sided square",
+    "relevant": [
+      "green_square"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_green_triangle",
+    "split": "dev",
+    "text": "a green triangle on a white background",
+    "relevant": [
+      "green_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_green_triangle",
+    "split": "test",
+    "text": "an illustration of a green three sided triangle",
+    "relevant": [
+      "green_triangle"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_green_star",
+    "split": "dev",
+    "text": "a green star on a white background",
+    "relevant": [
+      "green_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "test_green_star",
+    "split": "test",
+    "text": "an illustration of a green five pointed star",
+    "relevant": [
+      "green_star"
+    ],
+    "kind": "known"
+  },
+  {
+    "id": "dev_unknown_0",
+    "split": "dev",
+    "text": "a yellow circle on a white background",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "dev_unknown_1",
+    "split": "dev",
+    "text": "a purple square on a white background",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "dev_unknown_2",
+    "split": "dev",
+    "text": "a red hexagon on a white background",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "dev_unknown_3",
+    "split": "dev",
+    "text": "a photograph of a dog",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "dev_unknown_4",
+    "split": "dev",
+    "text": "a bicycle parked on a street",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "dev_unknown_5",
+    "split": "dev",
+    "text": "a bowl of fresh fruit",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_0",
+    "split": "test",
+    "text": "an illustration of an orange round disk",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_1",
+    "split": "test",
+    "text": "an illustration of a pink triangle",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_2",
+    "split": "test",
+    "text": "an illustration of a blue pentagon",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_3",
+    "split": "test",
+    "text": "a photograph of a cat",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_4",
+    "split": "test",
+    "text": "a damaged industrial motor",
+    "relevant": [],
+    "kind": "unknown"
+  },
+  {
+    "id": "test_unknown_5",
+    "split": "test",
+    "text": "a bowl of hot soup",
+    "relevant": [],
+    "kind": "unknown"
+  }
+]

@@ -1,0 +1,2402 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "measurement": "monotonic seconds; synthetic sum-of-squares; loopback HTTP",
+  "worker_pids": [
+    28283
+  ],
+  "initial_backlog": 48,
+  "elapsed_s": 6.129652708070353,
+  "throughput_tasks_s": 7.830786226567582,
+  "first24_assignments": {
+    "alpha": 12,
+    "beta": 12
+  },
+  "per_tenant": {
+    "alpha": {
+      "completed": 36,
+      "aggregate": 11982006000,
+      "last_completion_s": 6.127915
+    },
+    "beta": {
+      "completed": 12,
+      "aggregate": 3994002000,
+      "last_completion_s": 3.085115
+    }
+  },
+  "state": {
+    "tasks": [
+      {
+        "id": "alpha:0",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299991.9098825832,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:1",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.1623775002,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:2",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.415244916,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:3",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.667679291,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:4",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.9170427502,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:5",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.1718345832,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:6",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.4272839162,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:7",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.680248541,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:8",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.9297817082,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:9",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.179171375,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:10",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.4319677502,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:11",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.6838845832,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:12",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.9370875831,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:13",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.063589791,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:14",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.1905440001,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:15",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.315522375,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:16",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.4437610412,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:17",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.57090125,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:18",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.697087375,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:19",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.819743375,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:20",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299995.943930916,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:21",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.0734196252,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:22",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.2048962081,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:23",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.331772458,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:24",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.459818583,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:25",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.5886805002,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:26",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.71410125,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:27",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.8383335,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:28",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299996.965504833,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:29",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.091895916,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:30",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.222714666,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:31",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.350619333,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:32",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.476993458,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:33",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.6021713752,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:34",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.729160041,
+        "result": 332833500
+      },
+      {
+        "id": "alpha:35",
+        "tenant": "alpha",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299997.853029041,
+        "result": 332833500
+      },
+      {
+        "id": "beta:0",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.0353041252,
+        "result": 332833500
+      },
+      {
+        "id": "beta:1",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.289102208,
+        "result": 332833500
+      },
+      {
+        "id": "beta:2",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.5416110412,
+        "result": 332833500
+      },
+      {
+        "id": "beta:3",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299992.7918926661,
+        "result": 332833500
+      },
+      {
+        "id": "beta:4",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.0430691661,
+        "result": 332833500
+      },
+      {
+        "id": "beta:5",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.2979855412,
+        "result": 332833500
+      },
+      {
+        "id": "beta:6",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.554996208,
+        "result": 332833500
+      },
+      {
+        "id": "beta:7",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299993.804916,
+        "result": 332833500
+      },
+      {
+        "id": "beta:8",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.054964541,
+        "result": 332833500
+      },
+      {
+        "id": "beta:9",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.305755625,
+        "result": 332833500
+      },
+      {
+        "id": "beta:10",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.556578916,
+        "result": 332833500
+      },
+      {
+        "id": "beta:11",
+        "tenant": "beta",
+        "spec": {
+          "n": 1000,
+          "delay": 0.12,
+          "cost": 10
+        },
+        "status": "done",
+        "generation": 1,
+        "worker": "worker-0",
+        "deadline": 1299994.8100804582,
+        "result": 332833500
+      }
+    ],
+    "events": [
+      {
+        "t": 0.003062,
+        "kind": "submitted",
+        "id": "alpha:0",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.003645,
+        "kind": "submitted",
+        "id": "alpha:1",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.004191,
+        "kind": "submitted",
+        "id": "alpha:2",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.004594,
+        "kind": "submitted",
+        "id": "alpha:3",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.00524,
+        "kind": "submitted",
+        "id": "alpha:4",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.005755,
+        "kind": "submitted",
+        "id": "alpha:5",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.006213,
+        "kind": "submitted",
+        "id": "alpha:6",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.006662,
+        "kind": "submitted",
+        "id": "alpha:7",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.00702,
+        "kind": "submitted",
+        "id": "alpha:8",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.007473,
+        "kind": "submitted",
+        "id": "alpha:9",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.007867,
+        "kind": "submitted",
+        "id": "alpha:10",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.008217,
+        "kind": "submitted",
+        "id": "alpha:11",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.008559,
+        "kind": "submitted",
+        "id": "alpha:12",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.008843,
+        "kind": "submitted",
+        "id": "alpha:13",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.009192,
+        "kind": "submitted",
+        "id": "alpha:14",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.009505,
+        "kind": "submitted",
+        "id": "alpha:15",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.009806,
+        "kind": "submitted",
+        "id": "alpha:16",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.010105,
+        "kind": "submitted",
+        "id": "alpha:17",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.010404,
+        "kind": "submitted",
+        "id": "alpha:18",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.010694,
+        "kind": "submitted",
+        "id": "alpha:19",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.010976,
+        "kind": "submitted",
+        "id": "alpha:20",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.011284,
+        "kind": "submitted",
+        "id": "alpha:21",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.01167,
+        "kind": "submitted",
+        "id": "alpha:22",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.012277,
+        "kind": "submitted",
+        "id": "alpha:23",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.012746,
+        "kind": "submitted",
+        "id": "alpha:24",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.013142,
+        "kind": "submitted",
+        "id": "alpha:25",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.013534,
+        "kind": "submitted",
+        "id": "alpha:26",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.013878,
+        "kind": "submitted",
+        "id": "alpha:27",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.014201,
+        "kind": "submitted",
+        "id": "alpha:28",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.014552,
+        "kind": "submitted",
+        "id": "alpha:29",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.014903,
+        "kind": "submitted",
+        "id": "alpha:30",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.015197,
+        "kind": "submitted",
+        "id": "alpha:31",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.015529,
+        "kind": "submitted",
+        "id": "alpha:32",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.01587,
+        "kind": "submitted",
+        "id": "alpha:33",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.016193,
+        "kind": "submitted",
+        "id": "alpha:34",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.016486,
+        "kind": "submitted",
+        "id": "alpha:35",
+        "tenant": "alpha"
+      },
+      {
+        "t": 0.016868,
+        "kind": "submitted",
+        "id": "beta:0",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.017259,
+        "kind": "submitted",
+        "id": "beta:1",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.017715,
+        "kind": "submitted",
+        "id": "beta:2",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.018187,
+        "kind": "submitted",
+        "id": "beta:3",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.018542,
+        "kind": "submitted",
+        "id": "beta:4",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.018834,
+        "kind": "submitted",
+        "id": "beta:5",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.019143,
+        "kind": "submitted",
+        "id": "beta:6",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.019434,
+        "kind": "submitted",
+        "id": "beta:7",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.019748,
+        "kind": "submitted",
+        "id": "beta:8",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.020038,
+        "kind": "submitted",
+        "id": "beta:9",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.020326,
+        "kind": "submitted",
+        "id": "beta:10",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.02061,
+        "kind": "submitted",
+        "id": "beta:11",
+        "tenant": "beta"
+      },
+      {
+        "t": 0.05997,
+        "kind": "registered",
+        "worker": "worker-0",
+        "pid": 28283
+      },
+      {
+        "t": 0.060381,
+        "kind": "assigned",
+        "id": "alpha:0",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.162986,
+        "kind": "heartbeat",
+        "id": "alpha:0",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.183775,
+        "kind": "heartbeat",
+        "id": "alpha:0",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.184295,
+        "kind": "completed",
+        "id": "alpha:0",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.184752,
+        "kind": "assigned",
+        "id": "beta:0",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.29071,
+        "kind": "heartbeat",
+        "id": "beta:0",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.309213,
+        "kind": "heartbeat",
+        "id": "beta:0",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.310224,
+        "kind": "completed",
+        "id": "beta:0",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.310952,
+        "kind": "assigned",
+        "id": "alpha:1",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.415289,
+        "kind": "heartbeat",
+        "id": "alpha:1",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.436296,
+        "kind": "heartbeat",
+        "id": "alpha:1",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.437976,
+        "kind": "completed",
+        "id": "alpha:1",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.439024,
+        "kind": "assigned",
+        "id": "beta:1",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.541061,
+        "kind": "heartbeat",
+        "id": "beta:1",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.563008,
+        "kind": "heartbeat",
+        "id": "beta:1",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.563994,
+        "kind": "completed",
+        "id": "beta:1",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.564625,
+        "kind": "assigned",
+        "id": "alpha:2",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.670907,
+        "kind": "heartbeat",
+        "id": "alpha:2",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.689154,
+        "kind": "heartbeat",
+        "id": "alpha:2",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.690092,
+        "kind": "completed",
+        "id": "alpha:2",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.690856,
+        "kind": "assigned",
+        "id": "beta:2",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.793313,
+        "kind": "heartbeat",
+        "id": "beta:2",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.815522,
+        "kind": "heartbeat",
+        "id": "beta:2",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.817479,
+        "kind": "completed",
+        "id": "beta:2",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.81944,
+        "kind": "assigned",
+        "id": "alpha:3",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 0.923375,
+        "kind": "heartbeat",
+        "id": "alpha:3",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.941586,
+        "kind": "heartbeat",
+        "id": "alpha:3",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.942455,
+        "kind": "completed",
+        "id": "alpha:3",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 0.943213,
+        "kind": "assigned",
+        "id": "beta:3",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.049169,
+        "kind": "heartbeat",
+        "id": "beta:3",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.065785,
+        "kind": "heartbeat",
+        "id": "beta:3",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.066468,
+        "kind": "completed",
+        "id": "beta:3",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.067104,
+        "kind": "assigned",
+        "id": "alpha:4",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.172983,
+        "kind": "heartbeat",
+        "id": "alpha:4",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.190937,
+        "kind": "heartbeat",
+        "id": "alpha:4",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.191622,
+        "kind": "completed",
+        "id": "alpha:4",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.192206,
+        "kind": "assigned",
+        "id": "beta:4",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.298288,
+        "kind": "heartbeat",
+        "id": "beta:4",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.316991,
+        "kind": "heartbeat",
+        "id": "beta:4",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.318598,
+        "kind": "completed",
+        "id": "beta:4",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.319955,
+        "kind": "assigned",
+        "id": "alpha:5",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.42134,
+        "kind": "heartbeat",
+        "id": "alpha:5",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.445734,
+        "kind": "heartbeat",
+        "id": "alpha:5",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.446449,
+        "kind": "completed",
+        "id": "alpha:5",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.447061,
+        "kind": "assigned",
+        "id": "beta:5",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.553167,
+        "kind": "heartbeat",
+        "id": "beta:5",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.571905,
+        "kind": "heartbeat",
+        "id": "beta:5",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.573322,
+        "kind": "completed",
+        "id": "beta:5",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.574821,
+        "kind": "assigned",
+        "id": "alpha:6",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.677869,
+        "kind": "heartbeat",
+        "id": "alpha:6",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.701196,
+        "kind": "heartbeat",
+        "id": "alpha:6",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.702967,
+        "kind": "completed",
+        "id": "alpha:6",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.704042,
+        "kind": "assigned",
+        "id": "beta:6",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.810219,
+        "kind": "heartbeat",
+        "id": "beta:6",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.828912,
+        "kind": "heartbeat",
+        "id": "beta:6",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.829947,
+        "kind": "completed",
+        "id": "beta:6",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.830906,
+        "kind": "assigned",
+        "id": "alpha:7",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 1.935257,
+        "kind": "heartbeat",
+        "id": "alpha:7",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.954155,
+        "kind": "heartbeat",
+        "id": "alpha:7",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.955337,
+        "kind": "completed",
+        "id": "alpha:7",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 1.956228,
+        "kind": "assigned",
+        "id": "beta:7",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.058051,
+        "kind": "heartbeat",
+        "id": "beta:7",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.078831,
+        "kind": "heartbeat",
+        "id": "beta:7",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.079826,
+        "kind": "completed",
+        "id": "beta:7",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.080437,
+        "kind": "assigned",
+        "id": "alpha:8",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.184878,
+        "kind": "heartbeat",
+        "id": "alpha:8",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.203708,
+        "kind": "heartbeat",
+        "id": "alpha:8",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.205317,
+        "kind": "completed",
+        "id": "alpha:8",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.206431,
+        "kind": "assigned",
+        "id": "beta:8",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.310025,
+        "kind": "heartbeat",
+        "id": "beta:8",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.328878,
+        "kind": "heartbeat",
+        "id": "beta:8",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.330519,
+        "kind": "completed",
+        "id": "beta:8",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.331617,
+        "kind": "assigned",
+        "id": "alpha:9",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.437864,
+        "kind": "heartbeat",
+        "id": "alpha:9",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.453081,
+        "kind": "heartbeat",
+        "id": "alpha:9",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.453967,
+        "kind": "completed",
+        "id": "alpha:9",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.454649,
+        "kind": "assigned",
+        "id": "beta:9",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.558367,
+        "kind": "heartbeat",
+        "id": "beta:9",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.579663,
+        "kind": "heartbeat",
+        "id": "beta:9",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.580527,
+        "kind": "completed",
+        "id": "beta:9",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.581241,
+        "kind": "assigned",
+        "id": "alpha:10",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.687152,
+        "kind": "heartbeat",
+        "id": "alpha:10",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.705875,
+        "kind": "heartbeat",
+        "id": "alpha:10",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.706962,
+        "kind": "completed",
+        "id": "alpha:10",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.707599,
+        "kind": "assigned",
+        "id": "beta:10",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.812879,
+        "kind": "heartbeat",
+        "id": "beta:10",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.830486,
+        "kind": "heartbeat",
+        "id": "beta:10",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.831893,
+        "kind": "completed",
+        "id": "beta:10",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.832838,
+        "kind": "assigned",
+        "id": "alpha:11",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 2.93758,
+        "kind": "heartbeat",
+        "id": "alpha:11",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.957792,
+        "kind": "heartbeat",
+        "id": "alpha:11",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.958711,
+        "kind": "completed",
+        "id": "alpha:11",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 2.959419,
+        "kind": "assigned",
+        "id": "beta:11",
+        "tenant": "beta",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.065523,
+        "kind": "heartbeat",
+        "id": "beta:11",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.083988,
+        "kind": "heartbeat",
+        "id": "beta:11",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.085115,
+        "kind": "completed",
+        "id": "beta:11",
+        "tenant": "beta",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.086,
+        "kind": "assigned",
+        "id": "alpha:12",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.190819,
+        "kind": "heartbeat",
+        "id": "alpha:12",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.210996,
+        "kind": "heartbeat",
+        "id": "alpha:12",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.211735,
+        "kind": "completed",
+        "id": "alpha:12",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.212299,
+        "kind": "assigned",
+        "id": "alpha:13",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.317822,
+        "kind": "heartbeat",
+        "id": "alpha:13",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.337505,
+        "kind": "heartbeat",
+        "id": "alpha:13",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.33874,
+        "kind": "completed",
+        "id": "alpha:13",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.339576,
+        "kind": "assigned",
+        "id": "alpha:14",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.442992,
+        "kind": "heartbeat",
+        "id": "alpha:14",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.464449,
+        "kind": "heartbeat",
+        "id": "alpha:14",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.465587,
+        "kind": "completed",
+        "id": "alpha:14",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.466507,
+        "kind": "assigned",
+        "id": "alpha:15",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.572897,
+        "kind": "heartbeat",
+        "id": "alpha:15",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.58946,
+        "kind": "heartbeat",
+        "id": "alpha:15",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.591785,
+        "kind": "completed",
+        "id": "alpha:15",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.592595,
+        "kind": "assigned",
+        "id": "alpha:16",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.698778,
+        "kind": "heartbeat",
+        "id": "alpha:16",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.717719,
+        "kind": "heartbeat",
+        "id": "alpha:16",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.719456,
+        "kind": "completed",
+        "id": "alpha:16",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.722294,
+        "kind": "assigned",
+        "id": "alpha:17",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.824399,
+        "kind": "heartbeat",
+        "id": "alpha:17",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.844812,
+        "kind": "heartbeat",
+        "id": "alpha:17",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.845727,
+        "kind": "completed",
+        "id": "alpha:17",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.846463,
+        "kind": "assigned",
+        "id": "alpha:18",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 3.952421,
+        "kind": "heartbeat",
+        "id": "alpha:18",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.970984,
+        "kind": "heartbeat",
+        "id": "alpha:18",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.971702,
+        "kind": "completed",
+        "id": "alpha:18",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 3.972257,
+        "kind": "assigned",
+        "id": "alpha:19",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.078248,
+        "kind": "heartbeat",
+        "id": "alpha:19",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.093655,
+        "kind": "heartbeat",
+        "id": "alpha:19",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.094644,
+        "kind": "completed",
+        "id": "alpha:19",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.095274,
+        "kind": "assigned",
+        "id": "alpha:20",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.201666,
+        "kind": "heartbeat",
+        "id": "alpha:20",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.217853,
+        "kind": "heartbeat",
+        "id": "alpha:20",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.219974,
+        "kind": "completed",
+        "id": "alpha:20",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.221446,
+        "kind": "assigned",
+        "id": "alpha:21",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.323509,
+        "kind": "heartbeat",
+        "id": "alpha:21",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.347329,
+        "kind": "heartbeat",
+        "id": "alpha:21",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.349862,
+        "kind": "completed",
+        "id": "alpha:21",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.353055,
+        "kind": "assigned",
+        "id": "alpha:22",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.456201,
+        "kind": "heartbeat",
+        "id": "alpha:22",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.478813,
+        "kind": "heartbeat",
+        "id": "alpha:22",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.481547,
+        "kind": "completed",
+        "id": "alpha:22",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.483292,
+        "kind": "assigned",
+        "id": "alpha:23",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.589691,
+        "kind": "heartbeat",
+        "id": "alpha:23",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.605687,
+        "kind": "heartbeat",
+        "id": "alpha:23",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.606925,
+        "kind": "completed",
+        "id": "alpha:23",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.60844,
+        "kind": "assigned",
+        "id": "alpha:24",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.714745,
+        "kind": "heartbeat",
+        "id": "alpha:24",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.733734,
+        "kind": "heartbeat",
+        "id": "alpha:24",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.739781,
+        "kind": "completed",
+        "id": "alpha:24",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.741223,
+        "kind": "assigned",
+        "id": "alpha:25",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.843108,
+        "kind": "heartbeat",
+        "id": "alpha:25",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.862577,
+        "kind": "heartbeat",
+        "id": "alpha:25",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.863175,
+        "kind": "completed",
+        "id": "alpha:25",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.863779,
+        "kind": "assigned",
+        "id": "alpha:26",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 4.97005,
+        "kind": "heartbeat",
+        "id": "alpha:26",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.987998,
+        "kind": "heartbeat",
+        "id": "alpha:26",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.988814,
+        "kind": "completed",
+        "id": "alpha:26",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 4.989505,
+        "kind": "assigned",
+        "id": "alpha:27",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.091698,
+        "kind": "heartbeat",
+        "id": "alpha:27",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.112244,
+        "kind": "heartbeat",
+        "id": "alpha:27",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.113351,
+        "kind": "completed",
+        "id": "alpha:27",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.114416,
+        "kind": "assigned",
+        "id": "alpha:28",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.219036,
+        "kind": "heartbeat",
+        "id": "alpha:28",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.239416,
+        "kind": "heartbeat",
+        "id": "alpha:28",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.240213,
+        "kind": "completed",
+        "id": "alpha:28",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.240878,
+        "kind": "assigned",
+        "id": "alpha:29",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.346987,
+        "kind": "heartbeat",
+        "id": "alpha:29",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.365813,
+        "kind": "heartbeat",
+        "id": "alpha:29",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.370765,
+        "kind": "completed",
+        "id": "alpha:29",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.371963,
+        "kind": "assigned",
+        "id": "alpha:30",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.478384,
+        "kind": "heartbeat",
+        "id": "alpha:30",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.49663,
+        "kind": "heartbeat",
+        "id": "alpha:30",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.49818,
+        "kind": "completed",
+        "id": "alpha:30",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.499498,
+        "kind": "assigned",
+        "id": "alpha:31",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.601793,
+        "kind": "heartbeat",
+        "id": "alpha:31",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.624524,
+        "kind": "heartbeat",
+        "id": "alpha:31",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.625225,
+        "kind": "completed",
+        "id": "alpha:31",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.625992,
+        "kind": "assigned",
+        "id": "alpha:32",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.731976,
+        "kind": "heartbeat",
+        "id": "alpha:32",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.750909,
+        "kind": "heartbeat",
+        "id": "alpha:32",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.752757,
+        "kind": "completed",
+        "id": "alpha:32",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.753945,
+        "kind": "assigned",
+        "id": "alpha:33",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.858224,
+        "kind": "heartbeat",
+        "id": "alpha:33",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.876079,
+        "kind": "heartbeat",
+        "id": "alpha:33",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.877034,
+        "kind": "completed",
+        "id": "alpha:33",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 5.877761,
+        "kind": "assigned",
+        "id": "alpha:34",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 5.981506,
+        "kind": "heartbeat",
+        "id": "alpha:34",
+        "worker": "worker-0"
+      },
+      {
+        "t": 6.003066,
+        "kind": "heartbeat",
+        "id": "alpha:34",
+        "worker": "worker-0"
+      },
+      {
+        "t": 6.004182,
+        "kind": "completed",
+        "id": "alpha:34",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      },
+      {
+        "t": 6.005306,
+        "kind": "assigned",
+        "id": "alpha:35",
+        "tenant": "alpha",
+        "worker": "worker-0",
+        "generation": 1,
+        "global_running": 1,
+        "tenant_running": 1
+      },
+      {
+        "t": 6.110738,
+        "kind": "heartbeat",
+        "id": "alpha:35",
+        "worker": "worker-0"
+      },
+      {
+        "t": 6.126944,
+        "kind": "heartbeat",
+        "id": "alpha:35",
+        "worker": "worker-0"
+      },
+      {
+        "t": 6.127915,
+        "kind": "completed",
+        "id": "alpha:35",
+        "tenant": "alpha",
+        "worker": "worker-0"
+      }
+    ],
+    "registry": {
+      "worker-0": {
+        "pid": 28283,
+        "seen": 1299997.254649166,
+        "capability": "sum_squares"
+      }
+    },
+    "reserved": {
+      "alpha": 360,
+      "beta": 120
+    }
+  }
+}

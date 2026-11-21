@@ -1,0 +1,1271 @@
+{
+  "visual": {
+    "fit": {
+      "alpha": null,
+      "visual_range": [
+        0.15292753279209137,
+        0.3670209050178528
+      ],
+      "threshold": 0.3048609495162964,
+      "dev_objective": 0.9583333333333333,
+      "dev_metrics": {
+        "known": 12,
+        "unknown": 6,
+        "known_top1_correct": 12,
+        "known_hit3": 12,
+        "known_accepted": 11,
+        "known_accepted_correct": 11,
+        "known_accepted_wrong": 0,
+        "unknown_rejected": 6,
+        "unknown_accepted": 0,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "known_correct_accept_rate": 0.9166666666666666,
+        "unknown_reject_rate": 1.0,
+        "accepted_precision": 1.0
+      }
+    },
+    "test_metrics": {
+      "known": 12,
+      "unknown": 6,
+      "known_top1_correct": 9,
+      "known_hit3": 11,
+      "known_accepted": 10,
+      "known_accepted_correct": 8,
+      "known_accepted_wrong": 2,
+      "unknown_rejected": 6,
+      "unknown_accepted": 0,
+      "recall_at_1": 0.75,
+      "recall_at_3": 0.9166666666666666,
+      "known_correct_accept_rate": 0.6666666666666666,
+      "unknown_reject_rate": 1.0,
+      "accepted_precision": 0.8
+    },
+    "test_decisions": [
+      {
+        "query_id": "test_red_circle",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.27050459384918213,
+        "correct": false,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.27050459384918213
+          },
+          {
+            "id": "blue_circle",
+            "score": 0.26483362913131714
+          },
+          {
+            "id": "green_circle",
+            "score": 0.2511023283004761
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_square",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.30369091033935547,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.30369091033935547
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.30331501364707947
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.27020737528800964
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_triangle",
+        "accepted": true,
+        "top_id": "red_triangle",
+        "top_score": 0.3442186713218689,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_triangle",
+            "score": 0.3442186713218689
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.31288155913352966
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.301685631275177
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_star",
+        "accepted": true,
+        "top_id": "red_star",
+        "top_score": 0.32464778423309326,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_star",
+            "score": 0.32464778423309326
+          },
+          {
+            "id": "green_star",
+            "score": 0.30980804562568665
+          },
+          {
+            "id": "blue_star",
+            "score": 0.3093422055244446
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_circle",
+        "accepted": true,
+        "top_id": "blue_circle",
+        "top_score": 0.30995360016822815,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.30995360016822815
+          },
+          {
+            "id": "blue_square",
+            "score": 0.2742892801761627
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.2653982937335968
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_square",
+        "accepted": true,
+        "top_id": "blue_triangle",
+        "top_score": 0.31622666120529175,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.31622666120529175
+          },
+          {
+            "id": "blue_square",
+            "score": 0.30299124121665955
+          },
+          {
+            "id": "blue_star",
+            "score": 0.2828753888607025
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_triangle",
+        "accepted": true,
+        "top_id": "blue_triangle",
+        "top_score": 0.3598746061325073,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.3598746061325073
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.29834315180778503
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.29516109824180603
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_star",
+        "accepted": true,
+        "top_id": "blue_star",
+        "top_score": 0.3390401303768158,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_star",
+            "score": 0.3390401303768158
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.30965787172317505
+          },
+          {
+            "id": "green_star",
+            "score": 0.29092684388160706
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_circle",
+        "accepted": true,
+        "top_id": "green_circle",
+        "top_score": 0.31450971961021423,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_circle",
+            "score": 0.31450971961021423
+          },
+          {
+            "id": "green_square",
+            "score": 0.27787598967552185
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.2723439335823059
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_square",
+        "accepted": true,
+        "top_id": "green_triangle",
+        "top_score": 0.32044631242752075,
+        "correct": false,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.32044631242752075
+          },
+          {
+            "id": "green_square",
+            "score": 0.3112173080444336
+          },
+          {
+            "id": "green_star",
+            "score": 0.2955930829048157
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_triangle",
+        "accepted": true,
+        "top_id": "green_triangle",
+        "top_score": 0.35239773988723755,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.35239773988723755
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.31301137804985046
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.2995901107788086
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_star",
+        "accepted": true,
+        "top_id": "green_star",
+        "top_score": 0.36291298270225525,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_star",
+            "score": 0.36291298270225525
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.3179003894329071
+          },
+          {
+            "id": "blue_star",
+            "score": 0.3025096654891968
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_0",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.264037162065506,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.264037162065506
+          },
+          {
+            "id": "green_circle",
+            "score": 0.2552173137664795
+          },
+          {
+            "id": "red_square",
+            "score": 0.23731094598770142
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_1",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.3047756254673004,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.3047756254673004
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.29861196875572205
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.2955073118209839
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_2",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.2875399887561798,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.2875399887561798
+          },
+          {
+            "id": "blue_star",
+            "score": 0.26806655526161194
+          },
+          {
+            "id": "blue_square",
+            "score": 0.2616167366504669
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_3",
+        "accepted": false,
+        "top_id": "green_triangle",
+        "top_score": 0.22476789355278015,
+        "correct": false,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.22476789355278015
+          },
+          {
+            "id": "blue_square",
+            "score": 0.21306169033050537
+          },
+          {
+            "id": "green_square",
+            "score": 0.2121073454618454
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_4",
+        "accepted": false,
+        "top_id": "green_square",
+        "top_score": 0.2085619866847992,
+        "correct": false,
+        "top3": [
+          {
+            "id": "green_square",
+            "score": 0.2085619866847992
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.20614463090896606
+          },
+          {
+            "id": "blue_star",
+            "score": 0.20592722296714783
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_5",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.21749819815158844,
+        "correct": false,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.21749819815158844
+          },
+          {
+            "id": "green_square",
+            "score": 0.21063412725925446
+          },
+          {
+            "id": "blue_square",
+            "score": 0.2087002694606781
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "fit": {
+      "alpha": null,
+      "visual_range": [
+        0.15292753279209137,
+        0.3670209050178528
+      ],
+      "threshold": 0.3333333333333333,
+      "dev_objective": 1.0,
+      "dev_metrics": {
+        "known": 12,
+        "unknown": 6,
+        "known_top1_correct": 12,
+        "known_hit3": 12,
+        "known_accepted": 12,
+        "known_accepted_correct": 12,
+        "known_accepted_wrong": 0,
+        "unknown_rejected": 6,
+        "unknown_accepted": 0,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "known_correct_accept_rate": 1.0,
+        "unknown_reject_rate": 1.0,
+        "accepted_precision": 1.0
+      }
+    },
+    "test_metrics": {
+      "known": 12,
+      "unknown": 6,
+      "known_top1_correct": 12,
+      "known_hit3": 12,
+      "known_accepted": 0,
+      "known_accepted_correct": 0,
+      "known_accepted_wrong": 0,
+      "unknown_rejected": 6,
+      "unknown_accepted": 0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "known_correct_accept_rate": 0.0,
+      "unknown_reject_rate": 1.0,
+      "accepted_precision": null
+    },
+    "test_decisions": [
+      {
+        "query_id": "test_red_circle",
+        "accepted": false,
+        "top_id": "red_circle",
+        "top_score": 0.125,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_circle",
+            "score": 0.125
+          },
+          {
+            "id": "red_square",
+            "score": 0.125
+          },
+          {
+            "id": "red_star",
+            "score": 0.125
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_square",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.25
+          },
+          {
+            "id": "blue_square",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_square",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_triangle",
+        "accepted": false,
+        "top_id": "red_triangle",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_triangle",
+            "score": 0.25
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_star",
+        "accepted": false,
+        "top_id": "red_star",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_star",
+            "score": 0.25
+          },
+          {
+            "id": "blue_star",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_star",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_circle",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.125,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.125
+          },
+          {
+            "id": "blue_square",
+            "score": 0.125
+          },
+          {
+            "id": "blue_star",
+            "score": 0.125
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_square",
+        "accepted": false,
+        "top_id": "blue_square",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_square",
+            "score": 0.25
+          },
+          {
+            "id": "blue_circle",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "blue_star",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_triangle",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.25
+          },
+          {
+            "id": "blue_circle",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "blue_square",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_star",
+        "accepted": false,
+        "top_id": "blue_star",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_star",
+            "score": 0.25
+          },
+          {
+            "id": "blue_circle",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "blue_square",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_circle",
+        "accepted": false,
+        "top_id": "green_circle",
+        "top_score": 0.125,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_circle",
+            "score": 0.125
+          },
+          {
+            "id": "green_square",
+            "score": 0.125
+          },
+          {
+            "id": "green_star",
+            "score": 0.125
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_square",
+        "accepted": false,
+        "top_id": "green_square",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_square",
+            "score": 0.25
+          },
+          {
+            "id": "blue_square",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_circle",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_triangle",
+        "accepted": false,
+        "top_id": "green_triangle",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.25
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_circle",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_star",
+        "accepted": false,
+        "top_id": "green_star",
+        "top_score": 0.25,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_star",
+            "score": 0.25
+          },
+          {
+            "id": "blue_star",
+            "score": 0.1111111111111111
+          },
+          {
+            "id": "green_circle",
+            "score": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_0",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.0,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.0
+          },
+          {
+            "id": "blue_square",
+            "score": 0.0
+          },
+          {
+            "id": "blue_star",
+            "score": 0.0
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_1",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.14285714285714285,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.14285714285714285
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.14285714285714285
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.14285714285714285
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_2",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.14285714285714285,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.14285714285714285
+          },
+          {
+            "id": "blue_square",
+            "score": 0.14285714285714285
+          },
+          {
+            "id": "blue_star",
+            "score": 0.14285714285714285
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_3",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.0,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.0
+          },
+          {
+            "id": "blue_square",
+            "score": 0.0
+          },
+          {
+            "id": "blue_star",
+            "score": 0.0
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_4",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.0,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.0
+          },
+          {
+            "id": "blue_square",
+            "score": 0.0
+          },
+          {
+            "id": "blue_star",
+            "score": 0.0
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_5",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.0,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.0
+          },
+          {
+            "id": "blue_square",
+            "score": 0.0
+          },
+          {
+            "id": "blue_star",
+            "score": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "fusion": {
+    "fit": {
+      "alpha": 0.5,
+      "visual_range": [
+        0.15292753279209137,
+        0.3670209050178528
+      ],
+      "threshold": 0.4718138582954766,
+      "dev_objective": 1.0,
+      "dev_metrics": {
+        "known": 12,
+        "unknown": 6,
+        "known_top1_correct": 12,
+        "known_hit3": 12,
+        "known_accepted": 12,
+        "known_accepted_correct": 12,
+        "known_accepted_wrong": 0,
+        "unknown_rejected": 6,
+        "unknown_accepted": 0,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "known_correct_accept_rate": 1.0,
+        "unknown_reject_rate": 1.0,
+        "accepted_precision": 1.0
+      }
+    },
+    "test_metrics": {
+      "known": 12,
+      "unknown": 6,
+      "known_top1_correct": 11,
+      "known_hit3": 12,
+      "known_accepted": 9,
+      "known_accepted_correct": 9,
+      "known_accepted_wrong": 0,
+      "unknown_rejected": 6,
+      "unknown_accepted": 0,
+      "recall_at_1": 0.9166666666666666,
+      "recall_at_3": 1.0,
+      "known_correct_accept_rate": 0.75,
+      "unknown_reject_rate": 1.0,
+      "accepted_precision": 1.0
+    },
+    "test_decisions": [
+      {
+        "query_id": "test_red_circle",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.33709294940972245,
+        "correct": false,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.33709294940972245
+          },
+          {
+            "id": "red_circle",
+            "score": 0.28884708474916726
+          },
+          {
+            "id": "red_star",
+            "score": 0.28575571149400913
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_square",
+        "accepted": true,
+        "top_id": "red_square",
+        "top_score": 0.47709725546357445,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.47709725546357445
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.4067749307550935
+          },
+          {
+            "id": "red_star",
+            "score": 0.32438065136338323
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_triangle",
+        "accepted": true,
+        "top_id": "red_triangle",
+        "top_score": 0.571746988337549,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_triangle",
+            "score": 0.571746988337549
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.42911692431377846
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.4029696229238351
+          }
+        ]
+      },
+      {
+        "query_id": "test_red_star",
+        "accepted": true,
+        "top_id": "red_star",
+        "top_score": 0.5260405592096586,
+        "correct": true,
+        "top3": [
+          {
+            "id": "red_star",
+            "score": 0.5260405592096586
+          },
+          {
+            "id": "green_star",
+            "score": 0.42193894987232317
+          },
+          {
+            "id": "blue_star",
+            "score": 0.42085101310809947
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_circle",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.42922332670474456,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.42922332670474456
+          },
+          {
+            "id": "blue_square",
+            "score": 0.3459318179081588
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.32516754494133765
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_square",
+        "accepted": true,
+        "top_id": "blue_square",
+        "top_score": 0.4754632274798447,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_square",
+            "score": 0.4754632274798447
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.436929174728132
+          },
+          {
+            "id": "blue_star",
+            "score": 0.3590396258881513
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_triangle",
+        "accepted": true,
+        "top_id": "blue_triangle",
+        "top_score": 0.6083103220079842,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.6083103220079842
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.395163497417373
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.3877320353106818
+          }
+        ]
+      },
+      {
+        "query_id": "test_blue_star",
+        "accepted": true,
+        "top_id": "blue_star",
+        "top_score": 0.5596528704972443,
+        "correct": true,
+        "top3": [
+          {
+            "id": "blue_star",
+            "score": 0.5596528704972443
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.42158822929430995
+          },
+          {
+            "id": "green_star",
+            "score": 0.3778432323174392
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_circle",
+        "accepted": false,
+        "top_id": "green_circle",
+        "top_score": 0.43986382293921383,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_circle",
+            "score": 0.43986382293921383
+          },
+          {
+            "id": "green_square",
+            "score": 0.3543083254620147
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.34138859787842935
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_square",
+        "accepted": true,
+        "top_id": "green_square",
+        "top_score": 0.4946746274924982,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_square",
+            "score": 0.4946746274924982
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.44678387312061507
+          },
+          {
+            "id": "green_star",
+            "score": 0.38874090508212455
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_triangle",
+        "accepted": true,
+        "top_id": "green_triangle",
+        "top_score": 0.5908486272167381,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.5908486272167381
+          },
+          {
+            "id": "blue_triangle",
+            "score": 0.4294201072544066
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.39807568231609247
+          }
+        ]
+      },
+      {
+        "query_id": "test_green_star",
+        "accepted": true,
+        "top_id": "green_star",
+        "top_score": 0.615406236603939,
+        "correct": true,
+        "top3": [
+          {
+            "id": "green_star",
+            "score": 0.615406236603939
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.44083804918373726
+          },
+          {
+            "id": "blue_star",
+            "score": 0.4048940968238277
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_0",
+        "accepted": false,
+        "top_id": "blue_circle",
+        "top_score": 0.25948871774566085,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_circle",
+            "score": 0.25948871774566085
+          },
+          {
+            "id": "green_circle",
+            "score": 0.238890582905396
+          },
+          {
+            "id": "red_square",
+            "score": 0.1970715214542647
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_1",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.4260591027163062,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.4260591027163062
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.41166431634926537
+          },
+          {
+            "id": "green_triangle",
+            "score": 0.4044136086265987
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_2",
+        "accepted": false,
+        "top_id": "blue_triangle",
+        "top_score": 0.3858064864584203,
+        "correct": false,
+        "top3": [
+          {
+            "id": "blue_triangle",
+            "score": 0.3858064864584203
+          },
+          {
+            "id": "blue_star",
+            "score": 0.34032765333967907
+          },
+          {
+            "id": "blue_square",
+            "score": 0.3252645560002069
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_3",
+        "accepted": false,
+        "top_id": "green_triangle",
+        "top_score": 0.16777810544488303,
+        "correct": false,
+        "top3": [
+          {
+            "id": "green_triangle",
+            "score": 0.16777810544488303
+          },
+          {
+            "id": "blue_square",
+            "score": 0.140439091862691
+          },
+          {
+            "id": "green_square",
+            "score": 0.13821028660184054
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_4",
+        "accepted": false,
+        "top_id": "green_square",
+        "top_score": 0.12993035074911452,
+        "correct": false,
+        "top3": [
+          {
+            "id": "green_square",
+            "score": 0.12993035074911452
+          },
+          {
+            "id": "red_triangle",
+            "score": 0.12428478650137118
+          },
+          {
+            "id": "blue_star",
+            "score": 0.12377704555741291
+          }
+        ]
+      },
+      {
+        "query_id": "test_unknown_5",
+        "accepted": false,
+        "top_id": "red_square",
+        "top_score": 0.15080024357645064,
+        "correct": false,
+        "top3": [
+          {
+            "id": "red_square",
+            "score": 0.15080024357645064
+          },
+          {
+            "id": "green_square",
+            "score": 0.1347696891950291
+          },
+          {
+            "id": "blue_square",
+            "score": 0.13025330043793787
+          }
+        ]
+      }
+    ]
+  }
+}

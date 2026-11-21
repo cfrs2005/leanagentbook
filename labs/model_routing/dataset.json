@@ -1,0 +1,170 @@
+[
+  {
+    "id": "q01",
+    "prompt": "What is 2 + 3? Answer with only a number.",
+    "expected": "5",
+    "format": "number",
+    "split": "dev"
+  },
+  {
+    "id": "q02",
+    "prompt": "What is 9 - 4? Answer with only a number.",
+    "expected": "5",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q03",
+    "prompt": "What is 6 times 7? Answer with only a number.",
+    "expected": "42",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q04",
+    "prompt": "What is 20 divided by 4? Answer with only a number.",
+    "expected": "5",
+    "format": "number",
+    "split": "dev"
+  },
+  {
+    "id": "q05",
+    "prompt": "What is 15 + 18? Answer with only a number.",
+    "expected": "33",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q06",
+    "prompt": "What is 100 - 37? Answer with only a number.",
+    "expected": "63",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q07",
+    "prompt": "Classify the sentiment: I love this helpful service. Reply only positive or negative.",
+    "expected": "positive",
+    "format": "sentiment",
+    "split": "dev"
+  },
+  {
+    "id": "q08",
+    "prompt": "Classify the sentiment: This broken product is terrible. Reply only positive or negative.",
+    "expected": "negative",
+    "format": "sentiment",
+    "split": "test"
+  },
+  {
+    "id": "q09",
+    "prompt": "Is a square a shape with four sides? Reply only yes or no.",
+    "expected": "yes",
+    "format": "yes_no",
+    "split": "test"
+  },
+  {
+    "id": "q10",
+    "prompt": "Is seven an even number? Reply only yes or no.",
+    "expected": "no",
+    "format": "yes_no",
+    "split": "dev"
+  },
+  {
+    "id": "q11",
+    "prompt": "Mira has three boxes with four pencils each. She gives away five pencils. How many pencils remain? Answer with only a number.",
+    "expected": "7",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q12",
+    "prompt": "A bus has twelve passengers. Five get off and nine get on. How many passengers are now on the bus? Answer with only a number.",
+    "expected": "16",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q13",
+    "prompt": "A store has 20 bottles. It sells half of them and receives 7 new bottles. How many bottles does it have? Answer with only a number.",
+    "expected": "17",
+    "format": "number",
+    "split": "dev"
+  },
+  {
+    "id": "q14",
+    "prompt": "There are six tables with four chairs each. Three chairs are removed. How many chairs remain? Answer with only a number.",
+    "expected": "21",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q15",
+    "prompt": "A rectangle is 8 meters long and 3 meters wide. What is its perimeter in meters? Answer with only a number.",
+    "expected": "22",
+    "format": "number",
+    "split": "test"
+  },
+  {
+    "id": "q16",
+    "prompt": "A trip takes 2 hours at 30 kilometers per hour. How many kilometers are traveled? Answer with only a number.",
+    "expected": "60",
+    "format": "number",
+    "split": "dev"
+  },
+  {
+    "id": "q17",
+    "prompt": "All birds in this story can sing. Niko is a bird in this story. Can Niko sing? Reply only yes or no.",
+    "expected": "yes",
+    "format": "yes_no",
+    "split": "test"
+  },
+  {
+    "id": "q18",
+    "prompt": "Every robot in room A is blue. A red robot stands in room B. Must the red robot be in room A? Reply only yes or no.",
+    "expected": "no",
+    "format": "yes_no",
+    "split": "test"
+  },
+  {
+    "id": "q19",
+    "prompt": "A device needs both power and a network connection to send a report. It has power but no network. Can it send the report? Reply only yes or no.",
+    "expected": "no",
+    "format": "yes_no",
+    "split": "dev"
+  },
+  {
+    "id": "q20",
+    "prompt": "A gate opens when either switch A or switch B is on. A is off and B is on. Does the gate open? Reply only yes or no.",
+    "expected": "yes",
+    "format": "yes_no",
+    "split": "test"
+  },
+  {
+    "id": "q21",
+    "prompt": "Classify the sentiment: The screen looks nice, but it fails every day and I regret buying it. Reply only positive or negative.",
+    "expected": "negative",
+    "format": "sentiment",
+    "split": "test"
+  },
+  {
+    "id": "q22",
+    "prompt": "Classify the sentiment: Delivery was slow, but the product works wonderfully and I would buy it again. Reply only positive or negative.",
+    "expected": "positive",
+    "format": "sentiment",
+    "split": "dev"
+  },
+  {
+    "id": "q23",
+    "prompt": "Classify the sentiment: I expected a disaster, but the team solved every issue and made me happy. Reply only positive or negative.",
+    "expected": "positive",
+    "format": "sentiment",
+    "split": "test"
+  },
+  {
+    "id": "q24",
+    "prompt": "Classify the sentiment: Despite its attractive price, the unreliable service left me disappointed and frustrated. Reply only positive or negative.",
+    "expected": "negative",
+    "format": "sentiment",
+    "split": "test"
+  }
+]

@@ -1,0 +1,9 @@
+test_invalid_and_conflicting_payloads (test_pipeline.PipelineTests.test_invalid_and_conflicting_payloads) ... ok
+test_process_crash_windows (test_pipeline.PipelineTests.test_process_crash_windows) ... ok
+test_real_parquet (test_pipeline.PipelineTests.test_real_parquet) ... ok
+test_source_mutation_rejected (test_pipeline.PipelineTests.test_source_mutation_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.643s
+
+OK
