@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+<title id="title">边端、网关与云的职责及模型升级</title><desc id="desc">边端保留安全与离线推理，网关缓存和汇聚，云负责训练和注册。签名校验后灰度激活，健康失败回滚。</desc>
+<rect width="1200" height="580" fill="#F6F1E7"/>
+<g font-family="PingFang SC,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#22312F">
+<text x="40" y="55" font-size="34">21 · 模型靠近现场，证据回到云端</text>
+<text x="40" y="89" font-size="18">断网不等于停机；模型更新不应绕过本地安全规则</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2"><rect x="40" y="125" width="340" height="210" rx="12"/><rect x="430" y="125" width="340" height="210" rx="12"/><rect x="820" y="125" width="340" height="210" rx="12"/></g>
+<g font-size="24" fill="#316653"><text x="65" y="165">边端 · 设备</text><text x="455" y="165">网关 · 现场</text><text x="845" y="165">云 · 管理</text></g>
+<g font-size="19"><text x="65" y="205">传感输入 → 本地小模型</text><text x="65" y="240">本地规则、安全停止、限速</text><text x="65" y="275">断网：旧模型继续，事件排队</text><text x="65" y="310">不能依赖远端确认安全动作</text>
+<text x="455" y="205">多设备汇聚、缓存、协议适配</text><text x="455" y="240">按事件 ID 去重，限制积压量</text><text x="455" y="275">恢复联网：分批补传摘要</text><text x="455" y="310">不能替代设备安全控制器</text>
+<text x="845" y="205">训练、评估、模型注册</text><text x="845" y="240">签名、分组灰度、证据留存</text><text x="845" y="275">复杂诊断与跨设备分析</text><text x="845" y="310">不进入硬实时控制闭环</text></g>
+<g stroke="#316653" stroke-width="3" fill="none"><path d="M385 220 H420 M410 210 L420 220 L410 230"/><path d="M775 220 H810 M800 210 L810 220 L800 230"/></g>
+<text x="40" y="380" font-size="23">模型升级：本地检查每一道门</text>
+<g fill="#FFFCF6" stroke="#D9D2C4"><rect x="40" y="410" width="215" height="65" rx="8"/><rect x="285" y="410" width="255" height="65" rx="8"/><rect x="570" y="410" width="250" height="65" rx="8"/><rect x="850" y="410" width="310" height="65" rx="8"/></g>
+<g font-size="20"><text x="60" y="450">注册版本与模型 SHA</text><text x="305" y="450">验签 → hash → 契约</text><text x="590" y="450">暂存 → 原子切换指针</text><text x="870" y="450">真实推理健康检查 → 提交</text></g>
+<g stroke="#B94F2D" stroke-width="3" fill="none"><path d="M255 443 H280 M540 443 H565 M820 443 H845"/><path d="M1000 480 V515 H690 V480"/></g>
+<text x="720" y="550" font-size="18" fill="#B94F2D">失败或中断：恢复上一个已确认模型</text>
+</g></svg>

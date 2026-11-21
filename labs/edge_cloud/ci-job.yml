@@ -1,0 +1,20 @@
+# Merge this job into a workflow with workflow_dispatch/push triggers.
+# This example is not an active GitHub Actions workflow by itself.
+jobs:
+  edge-cloud-x86:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r labs/edge_cloud/requirements.txt
+      - run: python -m unittest labs.edge_cloud.test_edge_cloud -v
+      - run: python labs/edge_cloud/benchmark.py --expect-arch x86_64 --output output/edge-cloud-x86
+      - run: python labs/edge_cloud/verify_ota.py --models output/edge-cloud-x86 --report output/edge-cloud-x86/ota-tests.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: edge-cloud-x86-evidence
+          path: output/edge-cloud-x86/
