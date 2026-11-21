@@ -6,7 +6,7 @@
 
 一套持续编写的中文开源课程。以企业助手和机器人诊断为主线，覆盖 6 个部分、24 章。先看图，再看表，最后运行实验。
 
-[开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
+[在线阅读全书](https://cfrs2005.github.io/leanagentbook/) · [开始学习](chapters/00-start-here.md) · [课程进度](ROADMAP.md) · [参与编写](CONTRIBUTING.md) · [原始课程方案](ai-agent-engineering-book-kit/README.md) · [MIT 许可](LICENSE)
 
 > 当前为 **v0.1 首批学习切片**：导读、02/03/24 章首版及离线实验。不是已完成的 24 章教材。模拟结果不能证明真实模型质量或机器人现场效果。
 

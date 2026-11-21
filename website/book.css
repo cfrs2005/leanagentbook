@@ -1,0 +1,19 @@
+:root {
+  --md-primary-fg-color: #316653;
+  --md-accent-fg-color: #b94f2d;
+  --md-default-bg-color: #f6f1e7;
+  --md-default-fg-color: #22312f;
+  --md-text-font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+.md-header { box-shadow: none; }
+.md-main__inner { margin-top: 1.4rem; }
+.md-typeset { font-size: .82rem; line-height: 1.85; }
+.md-typeset h1, .md-typeset h2 { color: #22312f; font-weight: 650; }
+.md-typeset h1 { letter-spacing: -.025em; }
+.md-typeset table:not([class]) { background: #fffcf6; font-size: .72rem; }
+.md-typeset img { height: auto; border-radius: 10px; }
+.md-typeset td img { min-width: 36px; max-width: 48px; }
+.md-typeset blockquote { border-color: #b94f2d; background: #fffcf6; padding: .65rem 1rem; }
+.md-nav__link--active { font-weight: 700; }
+.md-footer { background: #22312f; }
+@media (min-width: 1220px) { .md-grid { max-width: 1440px; } }

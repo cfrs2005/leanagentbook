@@ -8,7 +8,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 errors = []
 checked_links = 0
-files = sorted(p for p in ROOT.rglob('*.md') if '.git' not in p.parts)
+files = sorted(p for p in ROOT.rglob('*.md') if not {'.git', '.venv', 'build'}.intersection(p.relative_to(ROOT).parts))
 for path in files:
     content = path.read_text(encoding='utf-8')
     # Fenced examples are illustrative, not document navigation.

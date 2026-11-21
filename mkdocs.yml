@@ -1,0 +1,58 @@
+site_name: AI Agent 工程图解
+site_description: 从面试追问到可运行实验的中文 AI Agent 工程课程
+site_url: https://cfrs2005.github.io/leanagentbook/
+repo_url: https://github.com/cfrs2005/leanagentbook
+repo_name: GitHub · 课程源码
+docs_dir: build/docs
+site_dir: build/site
+strict: true
+theme:
+  name: material
+  language: zh
+  font: false
+  logo: diagrams/icons/foundation.svg
+  favicon: diagrams/icons/foundation.svg
+  features:
+    - navigation.footer
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+extra_css:
+  - stylesheets/book.css
+nav:
+  - 阅读首页: index.md
+  - 开始学习:
+      - 00 · 从面试追问开始: chapters/00-start-here.md
+      - 02 · Agent 工作原理: chapters/02-agent-loop.md
+      - 03 · Runtime 与 Harness: chapters/03-runtime-harness.md
+      - 24 · 机器人诊断实战: chapters/24-robot-diagnosis.md
+  - 完整课程:
+      - 24 章进度: ROADMAP.md
+      - 全书目录: ai-agent-engineering-book-kit/01-book-outline.md
+      - 学习路线: ai-agent-engineering-book-kit/07-learning-roadmap.md
+      - 术语速查: ai-agent-engineering-book-kit/08-glossary-seed.md
+  - 动手实验:
+      - Agent 离线实验: labs/agent_loop/README.md
+      - 机器人诊断实验: labs/robot_diagnosis/GUIDE.md
+  - 关于本书:
+      - 参与编写: CONTRIBUTING.md
+      - 来源记录: references/README.md
+      - 验证记录: VALIDATION.md
+      - 更新记录: CHANGELOG.md

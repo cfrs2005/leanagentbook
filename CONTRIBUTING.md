@@ -42,3 +42,19 @@ python3 -m unittest discover -s labs/robot_diagnosis -p 'test_*.py'
 ## 公开资料规则
 
 不提交原始面试、个人身份、密钥、公司内部数据或未授权的材料。案例使用自造数据。不能核实的结论写明“待验证”，不能补造来源。贡献本项目自有内容即同意使用仓库 MIT 许可；引用第三方项目时保持其原许可边界。
+
+## 在线书籍构建与发布
+
+在线阅读入口：[AI Agent 工程图解](https://cfrs2005.github.io/leanagentbook/)。正文仍只在仓库原路径维护；构建脚本把公开资料复制到临时目录，不需要维护第二份正文。
+
+```bash
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements-book.txt
+python3 scripts/prepare_site.py
+.venv/bin/mkdocs build --strict
+.venv/bin/mkdocs serve
+```
+
+本地启动后访问终端显示的地址。`build/` 是可重新生成的输出，不提交。`main` 分支每次推送会运行 Publish book：检查课程、测试实验、构建网页，再部署 GitHub Pages。PR 只构建，不部署。发布成功以 GitHub Actions 的实际结果和在线地址为准。
+
+配置依据：[Material 发布文档](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)、[图表支持](https://squidfunk.github.io/mkdocs-material/reference/diagrams/)、[GitHub Pages 工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)，查阅日期 2026-11-20。
