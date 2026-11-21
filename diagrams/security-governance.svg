@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">工具网关的信任边界</title><desc id="desc">模型仅提议调用。网关使用服务端身份进行格式、权限和审批校验，再运行固定工具。拒绝与执行均记录审计，秘密不进入模型。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#22312F"/></marker></defs>
+<rect width="1200" height="640" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="42" y="58" font-size="34">17　模型提议，网关决定是否执行</text>
+<text x="42" y="96" font-size="18" fill="#596963">合成账本实验 · 无任意代码执行 · 不把客户端 tenant_id 当身份</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2"><rect x="42" y="160" width="245" height="170" rx="12"/><rect x="350" y="145" width="480" height="220" rx="12"/><rect x="900" y="160" width="250" height="170" rx="12"/><rect x="350" y="430" width="220" height="130" rx="12"/><rect x="610" y="430" width="220" height="130" rx="12"/></g>
+<text x="62" y="198" font-size="23">不受信任的内容</text><text x="62" y="239" font-size="18">用户输入 / 检索文档</text><text x="62" y="273" font-size="18">模型输出 / 工具参数</text><text x="62" y="307" font-size="16" fill="#B94F2D">不能授予角色或审批</text>
+<text x="374" y="186" font-size="23">Tool Gateway · 强制执行点</text><text x="374" y="229" font-size="18">① 服务端身份　② 严格参数结构</text><text x="374" y="266" font-size="18">③ 角色 + 租户 + 资源所有者</text><text x="374" y="303" font-size="18">④ 审批摘要 / 到期 / 不可自批</text><text x="374" y="340" font-size="16" fill="#316653">默认拒绝 · 审批一次性 · 固定结果字段</text>
+<text x="923" y="198" font-size="23">固定工具</text><text x="923" y="242" font-size="18">读取发票 / 合成支付</text><text x="923" y="277" font-size="18">仅访问当前租户资源</text><text x="923" y="309" font-size="16" fill="#B94F2D">不提供 shell / 任意 URL</text>
+<text x="370" y="468" font-size="21">受信任身份与审批</text><text x="370" y="507" font-size="17">用户 + 服务 + 租户</text><text x="370" y="539" font-size="17">由服务端解析和保存</text>
+<text x="630" y="468" font-size="21">审计与秘密边界</text><text x="630" y="507" font-size="17">拒绝 / 执行 / 审批</text><text x="630" y="539" font-size="17">不记录令牌和原文</text>
+<text x="42" y="606" font-size="17" fill="#596963">OS 隔离需另外验证文件与网络策略；Python 白名单和超时不能替代沙箱。</text>
+</g><g fill="none" stroke="#22312F" stroke-width="2" marker-end="url(#arrow)"><path d="M287 245 H350"/><path d="M830 245 H900"/><path d="M460 430 V365"/><path d="M720 365 V430"/></g></svg>

@@ -1,0 +1,278 @@
+[
+  {
+    "id": "q01",
+    "text": "I forgot my signin secret. How can I get into my account?",
+    "relevance": {
+      "d01": 2,
+      "d16": 1
+    },
+    "category": "paraphrase",
+    "split": "dev"
+  },
+  {
+    "id": "q02",
+    "text": "Someone stole my password. How do I kick them out?",
+    "relevance": {
+      "d02": 2,
+      "d01": 1
+    },
+    "category": "security",
+    "split": "test"
+  },
+  {
+    "id": "q03",
+    "text": "The robot reaches the dock but gets no power.",
+    "relevance": {
+      "d03": 2,
+      "d25": 1
+    },
+    "category": "paraphrase",
+    "split": "test"
+  },
+  {
+    "id": "q04",
+    "text": "The machine loses energy too fast after charging.",
+    "relevance": {
+      "d04": 2
+    },
+    "category": "paraphrase",
+    "split": "dev"
+  },
+  {
+    "id": "q05",
+    "text": "wifi signal drops near the router",
+    "relevance": {
+      "d05": 2
+    },
+    "category": "lexical",
+    "split": "test"
+  },
+  {
+    "id": "q06",
+    "text": "Device is offline but wireless works and certificate expired.",
+    "relevance": {
+      "d06": 2,
+      "d13": 1
+    },
+    "category": "multi_constraint",
+    "split": "test"
+  },
+  {
+    "id": "q07",
+    "text": "I was charged twice and want my money back.",
+    "relevance": {
+      "d07": 2,
+      "d17": 1
+    },
+    "category": "paraphrase",
+    "split": "dev"
+  },
+  {
+    "id": "q08",
+    "text": "Get last month invoice without asking for a refund.",
+    "relevance": {
+      "d08": 2
+    },
+    "category": "negation",
+    "split": "test"
+  },
+  {
+    "id": "q09",
+    "text": "Erase customer data including search and retained copies.",
+    "relevance": {
+      "d09": 2,
+      "d29": 1
+    },
+    "category": "multi_constraint",
+    "split": "test"
+  },
+  {
+    "id": "q10",
+    "text": "Can I recover documents I accidentally removed?",
+    "relevance": {
+      "d10": 2,
+      "d19": 1
+    },
+    "category": "paraphrase",
+    "split": "dev"
+  },
+  {
+    "id": "q11",
+    "text": "Robot wheel is jammed and it cannot move.",
+    "relevance": {
+      "d11": 2
+    },
+    "category": "paraphrase",
+    "split": "test"
+  },
+  {
+    "id": "q12",
+    "text": "What should I do when a motor is too hot?",
+    "relevance": {
+      "d12": 2,
+      "d22": 1
+    },
+    "category": "paraphrase",
+    "split": "test"
+  },
+  {
+    "id": "q13",
+    "text": "TLS handshake fails because certificate expired.",
+    "relevance": {
+      "d13": 2,
+      "d06": 1
+    },
+    "category": "lexical",
+    "split": "dev"
+  },
+  {
+    "id": "q14",
+    "text": "Logs filled the disk. Is deleting the database safe?",
+    "relevance": {
+      "d14": 2
+    },
+    "category": "negation",
+    "split": "test"
+  },
+  {
+    "id": "q15",
+    "text": "I can sign in but tenant resource returns forbidden.",
+    "relevance": {
+      "d15": 2,
+      "d20": 1
+    },
+    "category": "hard_negative",
+    "split": "test"
+  },
+  {
+    "id": "q16",
+    "text": "Payment timed out. How to retry without charging twice?",
+    "relevance": {
+      "d17": 2,
+      "d07": 1,
+      "d32": 1
+    },
+    "category": "multi_constraint",
+    "split": "dev"
+  },
+  {
+    "id": "q17",
+    "text": "How do we know our backup can actually restore data?",
+    "relevance": {
+      "d19": 2,
+      "d10": 1
+    },
+    "category": "multi_constraint",
+    "split": "test"
+  },
+  {
+    "id": "q18",
+    "text": "Prevent private search text from reaching another tenant.",
+    "relevance": {
+      "d20": 2,
+      "d31": 2,
+      "d15": 1
+    },
+    "category": "security",
+    "split": "test"
+  },
+  {
+    "id": "q19",
+    "text": "E104 charging contact failure",
+    "relevance": {
+      "d21": 2,
+      "d03": 1
+    },
+    "category": "identifier",
+    "split": "dev"
+  },
+  {
+    "id": "q20",
+    "text": "E140 motor temperature above limit",
+    "relevance": {
+      "d22": 2,
+      "d21": 1,
+      "d12": 1
+    },
+    "category": "identifier",
+    "split": "test"
+  },
+  {
+    "id": "q21",
+    "text": "Stop future bills without refunding past payments.",
+    "relevance": {
+      "d23": 2
+    },
+    "category": "negation",
+    "split": "test"
+  },
+  {
+    "id": "q22",
+    "text": "Password changed on router and robot went offline.",
+    "relevance": {
+      "d24": 2,
+      "d05": 1
+    },
+    "category": "multi_constraint",
+    "split": "dev"
+  },
+  {
+    "id": "q23",
+    "text": "Data export should not erase original records.",
+    "relevance": {
+      "d26": 2
+    },
+    "category": "negation",
+    "split": "test"
+  },
+  {
+    "id": "q24",
+    "text": "Leaked service API credential needs revocation.",
+    "relevance": {
+      "d28": 2,
+      "d02": 1
+    },
+    "category": "hard_negative",
+    "split": "test"
+  },
+  {
+    "id": "q25",
+    "text": "Deleted document still appears in vector search.",
+    "relevance": {
+      "d29": 2,
+      "d09": 1
+    },
+    "category": "multi_constraint",
+    "split": "dev"
+  },
+  {
+    "id": "q26",
+    "text": "Robot cannot reach dock because route is blocked.",
+    "relevance": {
+      "d30": 2,
+      "d11": 1
+    },
+    "category": "hard_negative",
+    "split": "test"
+  },
+  {
+    "id": "q27",
+    "text": "Refund submission timed out after acceptance.",
+    "relevance": {
+      "d32": 2,
+      "d17": 1,
+      "d18": 1
+    },
+    "category": "hard_negative",
+    "split": "test"
+  },
+  {
+    "id": "q28",
+    "text": "Account storage quota reached but physical disk has space.",
+    "relevance": {
+      "d27": 2
+    },
+    "category": "hard_negative",
+    "split": "dev"
+  }
+]

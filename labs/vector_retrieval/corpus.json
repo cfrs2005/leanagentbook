@@ -1,0 +1,130 @@
+[
+  {
+    "id": "d01",
+    "text": "Reset a forgotten password using the recovery email. Existing sessions remain valid until explicitly revoked."
+  },
+  {
+    "id": "d02",
+    "text": "Revoke all active login sessions after a stolen password, then change the credential and enable two factor authentication."
+  },
+  {
+    "id": "d03",
+    "text": "A robot that will not recharge may have dirty charging contacts. Clean the dock contacts with power disconnected."
+  },
+  {
+    "id": "d04",
+    "text": "A robot battery that drains quickly may need replacement. Check battery health and reduce unnecessary idle motion."
+  },
+  {
+    "id": "d05",
+    "text": "Wireless disconnects can be caused by weak signal or router channel interference. Move the access point and inspect signal strength."
+  },
+  {
+    "id": "d06",
+    "text": "A device can show offline even with working wifi when its TLS certificate has expired. Renew the device certificate."
+  },
+  {
+    "id": "d07",
+    "text": "To request a refund for a duplicate payment, provide the two transaction references. Billing support reviews the charge."
+  },
+  {
+    "id": "d08",
+    "text": "Download the monthly invoice from the billing page. An invoice download does not refund a payment."
+  },
+  {
+    "id": "d09",
+    "text": "Delete customer personal data from primary storage and search indexes. Backup copies expire according to the retention schedule."
+  },
+  {
+    "id": "d10",
+    "text": "Restore accidentally deleted documents from a verified backup snapshot. Check that the requested recovery point predates deletion."
+  },
+  {
+    "id": "d11",
+    "text": "A stuck robot wheel can stop motion. Power off the robot and remove the obstruction before a supervised test."
+  },
+  {
+    "id": "d12",
+    "text": "A motor overheating alarm requires stopping the machine and letting it cool. Inspect blocked ventilation before restarting."
+  },
+  {
+    "id": "d13",
+    "text": "An expired TLS certificate causes handshake failures. Renew the certificate and reload the service; do not disable verification."
+  },
+  {
+    "id": "d14",
+    "text": "When disk space is full, rotate old logs according to retention policy. Do not erase the active database."
+  },
+  {
+    "id": "d15",
+    "text": "A forbidden response means the account may lack the required role. Check tenant membership and least privilege permissions."
+  },
+  {
+    "id": "d16",
+    "text": "A login authentication failure can mean an incorrect password. Reset the credential before changing authorization roles."
+  },
+  {
+    "id": "d17",
+    "text": "Use an idempotency key when retrying a payment request after a timeout. A repeated key should return the original result."
+  },
+  {
+    "id": "d18",
+    "text": "A read request timeout can be retried with bounded exponential backoff and jitter. Stop after the retry budget is exhausted."
+  },
+  {
+    "id": "d19",
+    "text": "Back up database snapshots to independent storage and test restore regularly. A successful backup job alone does not prove recovery."
+  },
+  {
+    "id": "d20",
+    "text": "Search results must be filtered by tenant and access permissions before text reaches a reranker or language model."
+  },
+  {
+    "id": "d21",
+    "text": "Error E104 on the sample robot means charging contact failure. Error E140 means motor temperature above the limit."
+  },
+  {
+    "id": "d22",
+    "text": "Error E140 on the sample robot means motor temperature above the limit. Error E104 is unrelated to motor temperature."
+  },
+  {
+    "id": "d23",
+    "text": "Cancel a recurring subscription to stop future invoices. Cancellation does not automatically refund previous payments."
+  },
+  {
+    "id": "d24",
+    "text": "Changing a wireless password disconnects devices that still use the old credential. Update the robot network settings."
+  },
+  {
+    "id": "d25",
+    "text": "Robot charging should pause when the battery is too hot. Let the battery cool and inspect the charger before resuming."
+  },
+  {
+    "id": "d26",
+    "text": "For data export, download a customer archive. Export creates a copy and does not delete the original records."
+  },
+  {
+    "id": "d27",
+    "text": "A storage quota is an account limit, not physical disk failure. Request a quota increase or remove unused files."
+  },
+  {
+    "id": "d28",
+    "text": "Rotate a leaked service API key and revoke the old key. Resetting a user password does not revoke independent service keys."
+  },
+  {
+    "id": "d29",
+    "text": "Search indexes can retain deleted records until a tombstone is applied. Verify deletion in both keyword and vector indexes."
+  },
+  {
+    "id": "d30",
+    "text": "A robot cannot reach its dock when obstacles block the path. Clear the route before inspecting charging electronics."
+  },
+  {
+    "id": "d31",
+    "text": "Use tenant scoped cache keys to prevent one customer receiving another customer search results."
+  },
+  {
+    "id": "d32",
+    "text": "A refund request can time out after being accepted. Reuse the same idempotency key rather than submitting a new refund."
+  }
+]

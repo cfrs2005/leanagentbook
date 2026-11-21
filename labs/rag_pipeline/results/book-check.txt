@@ -1,0 +1,2 @@
+PASS: 59 Markdown files, 191 local links, 22 SVGs
+Scope: local paths and SVG structure; not external links, rendering, or technical accuracy.

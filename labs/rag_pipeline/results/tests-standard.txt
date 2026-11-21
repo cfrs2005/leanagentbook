@@ -1,0 +1,22 @@
+test_acl_change_invalidates_old_handle (test_pipeline.PipelineTests.test_acl_change_invalidates_old_handle) ... ok
+test_acl_filter_before_ranking_and_handle_recheck (test_pipeline.PipelineTests.test_acl_filter_before_ranking_and_handle_recheck) ... ok
+test_chinese_table (test_pipeline.PipelineTests.test_chinese_table) ... ok
+test_delete_cascades_and_invalidates_other_connection (test_pipeline.PipelineTests.test_delete_cascades_and_invalidates_other_connection) ... ok
+test_empty_evidence_and_bad_handle (test_pipeline.PipelineTests.test_empty_evidence_and_bad_handle) ... ok
+test_failed_update_keeps_last_good_version (test_pipeline.PipelineTests.test_failed_update_keeps_last_good_version) ... ok
+test_hostile_text_cannot_change_policy (test_pipeline.PipelineTests.test_hostile_text_cannot_change_policy) ... ok
+test_html_visible_text_and_source_line (test_pipeline.PipelineTests.test_html_visible_text_and_source_line) ... ok
+test_identical_input_is_noop (test_pipeline.PipelineTests.test_identical_input_is_noop) ... ok
+test_markdown_citation_and_parent_expansion (test_pipeline.PipelineTests.test_markdown_citation_and_parent_expansion) ... ok
+test_metadata_and_budget (test_pipeline.PipelineTests.test_metadata_and_budget) ... ok
+test_parser_uses_the_fingerprinted_snapshot (test_pipeline.PipelineTests.test_parser_uses_the_fingerprinted_snapshot) ... ok
+test_pdf_no_text_and_malformed (test_pipeline.PipelineTests.test_pdf_no_text_and_malformed) ... skipped 'optional PDF dependencies not installed'
+test_pdf_page_trace (test_pipeline.PipelineTests.test_pdf_page_trace) ... skipped 'optional PDF dependencies not installed'
+test_reopen_persistence (test_pipeline.PipelineTests.test_reopen_persistence) ... ok
+test_update_replaces_index_and_cache (test_pipeline.PipelineTests.test_update_replaces_index_and_cache) ... ok
+test_windows_boundaries (test_pipeline.PipelineTests.test_windows_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.064s
+
+OK (skipped=2)

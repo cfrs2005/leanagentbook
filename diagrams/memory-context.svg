@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">记忆生命周期与上下文装配</title>
+  <desc id="desc">用户明确表达先经字段和来源检查；冲突等待更正，当前记忆按范围与有效期召回。上下文优先保留必需信息，再放记忆和最近轮次；删除覆盖所有版本并阻止旧来源重放。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10" fill="#316653"/></marker></defs>
+  <rect width="1200" height="650" rx="18" fill="#F6F1E7"/>
+  <g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+    <text x="40" y="58" font-size="32">13 · 记住什么，也要能更正和忘记</text>
+    <text x="40" y="92" font-size="18" fill="#596963">原创规则实验 · 合成偏好 · 单机 SQLite · 无模型调用</text>
+    <g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+      <rect x="40" y="135" width="250" height="145" rx="12"/>
+      <rect x="340" y="135" width="300" height="145" rx="12"/>
+      <rect x="690" y="135" width="470" height="145" rx="12"/>
+      <rect x="40" y="350" width="540" height="180" rx="12"/>
+      <rect x="630" y="350" width="530" height="180" rx="12"/>
+    </g>
+    <g fill="none" stroke="#316653" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M290 205H337"/><path d="M640 205H687"/>
+      <path d="M925 280V320H310V347"/><path d="M580 435H627"/>
+    </g>
+    <g font-size="22" fill="#B94F2D">
+      <text x="60" y="173">① 明确的用户表达</text><text x="360" y="173">② 候选与版本</text>
+      <text x="710" y="173">③ 持久化与生命周期</text>
+    </g>
+    <g font-size="18">
+      <text x="60" y="210">只接收有限字段和取值</text><text x="60" y="244">文档与工具不授权写记忆</text>
+      <text x="360" y="210">普通冲突 → pending</text><text x="360" y="244">明确更正 + 当前版本 → 更新</text>
+      <text x="710" y="210">租户 / 用户 / 项目 / 来源 / 有效期</text><text x="710" y="244">active / pending / superseded / expired</text>
+    </g>
+    <text x="60" y="388" font-size="22" fill="#316653">④ 先过滤，再召回</text>
+    <text x="60" y="425" font-size="18">同一范围 + 当前有效版本 → 词项匹配</text>
+    <text x="60" y="460" font-size="18">时间衰减改变排序，不证明旧事实错误</text>
+    <text x="60" y="495" font-size="18">删除全部版本；旧来源重放不能复活</text>
+    <text x="650" y="388" font-size="22" fill="#316653">⑤ 按预算装配</text>
+    <text x="650" y="425" font-size="18">必需指令和当前问题 → 相关记忆 → 最近轮次</text>
+    <text x="650" y="460" font-size="18">记忆是数据，不授予工具权限</text>
+    <text x="650" y="495" font-size="18">UTF-8 字节精确计量 ≠ 模型 token 计量</text>
+    <text x="40" y="585" font-size="19" fill="#B94F2D">24 个生命周期查询 / 20 项行为测试；规则满分不代表自然语言理解或生产泛化。</text>
+    <text x="40" y="620" font-size="16" fill="#596963">Scope 由受信任应用提供；本实验没有身份服务、向量数据库、自然语言摘要和备份擦除证明。</text>
+  </g>
+</svg>

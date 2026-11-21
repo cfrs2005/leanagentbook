@@ -1,0 +1,391 @@
+{
+  "version": "1.0.0",
+  "description": "Original synthetic lifecycle fixtures; explicit rule syntax, no real user data.",
+  "events": [
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "语言",
+      "expected": []
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：language=中文",
+      "source": "msg-2"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "用哪种语言",
+      "expected": [
+        "language=中文"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "language",
+      "expected": [
+        "language=中文"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-b",
+        "user-a",
+        "project-a"
+      ],
+      "query": "语言",
+      "expected": []
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-b",
+        "project-a"
+      ],
+      "query": "语言",
+      "expected": []
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-b"
+      ],
+      "query": "语言",
+      "expected": []
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：format=表格",
+      "source": "msg-8"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "报告格式",
+      "expected": [
+        "format=表格"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "报告语言",
+      "expected": [
+        "format=表格",
+        "language=中文"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "天气",
+      "expected": []
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：language=English",
+      "source": "msg-12"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "语言",
+      "expected": [
+        "language=中文"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "更正：language=English",
+      "source": "msg-14",
+      "expected_version": 1
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "语言",
+      "expected": [
+        "language=English"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "english",
+      "expected": [
+        "language=English"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：units=metric",
+      "source": "msg-17",
+      "ttl": 5
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "单位",
+      "expected": [
+        "units=metric"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "单位",
+      "expected": [],
+      "advance": 5
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：site=alpha",
+      "source": "msg-20"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "工作地点",
+      "expected": [
+        "site=alpha"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-b",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：site=beta",
+      "source": "msg-22"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "站点",
+      "expected": [
+        "site=alpha"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-b",
+        "user-a",
+        "project-a"
+      ],
+      "query": "站点",
+      "expected": [
+        "site=beta"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-b",
+        "project-a"
+      ],
+      "text": "记住：format=段落",
+      "source": "msg-25"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-b",
+        "project-a"
+      ],
+      "query": "format",
+      "expected": [
+        "format=段落"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "format",
+      "expected": [
+        "format=表格"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：format=图解",
+      "source": "msg-28",
+      "role": "tool"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "报告",
+      "expected": [
+        "format=表格"
+      ]
+    },
+    {
+      "action": "remember",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "text": "记住：api_key=never-store-this",
+      "source": "msg-30"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "api_key",
+      "expected": []
+    },
+    {
+      "action": "forget",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "key": "format"
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "报告",
+      "expected": []
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "报告语言",
+      "expected": [
+        "language=English"
+      ]
+    },
+    {
+      "action": "query",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "query": "站点",
+      "expected": [],
+      "advance": 3600
+    }
+  ]
+}

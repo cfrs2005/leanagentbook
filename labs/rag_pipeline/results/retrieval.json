@@ -1,0 +1,126 @@
+{
+  "dataset": "12 hand-labeled synthetic queries; no held-out production set",
+  "ranking_unit": "top 3 distinct parents, then document deduplication",
+  "python": "3.15.2",
+  "sqlite": "3.54.1",
+  "answer_mode": "extractive/scripted",
+  "positive_queries": 9,
+  "negative_queries": 3,
+  "recall_at_3": 1.0,
+  "mrr_at_3": 1.0,
+  "ndcg_at_3": 1.0,
+  "empty_result_accuracy": 1,
+  "latency_ms_median": 0.0322,
+  "latency_ms_p95_nearest_rank": 0.12,
+  "queries": [
+    {
+      "query": "电池存储温度",
+      "relevant": [
+        "battery"
+      ],
+      "retrieved_documents": [
+        "battery"
+      ],
+      "latency_ms": 0.12
+    },
+    {
+      "query": "接头松动",
+      "relevant": [
+        "battery"
+      ],
+      "retrieved_documents": [
+        "battery"
+      ],
+      "latency_ms": 0.0448
+    },
+    {
+      "query": "电池外观",
+      "relevant": [
+        "battery"
+      ],
+      "retrieved_documents": [
+        "battery"
+      ],
+      "latency_ms": 0.0388
+    },
+    {
+      "query": "network timeout recovery",
+      "relevant": [
+        "network"
+      ],
+      "retrieved_documents": [
+        "network"
+      ],
+      "latency_ms": 0.0385
+    },
+    {
+      "query": "escalation contact",
+      "relevant": [
+        "network"
+      ],
+      "retrieved_documents": [
+        "network"
+      ],
+      "latency_ms": 0.0287
+    },
+    {
+      "query": "filter replacement interval",
+      "relevant": [
+        "maintenance"
+      ],
+      "retrieved_documents": [
+        "maintenance"
+      ],
+      "latency_ms": 0.0326
+    },
+    {
+      "query": "wheel axle cover",
+      "relevant": [
+        "maintenance"
+      ],
+      "retrieved_documents": [
+        "maintenance"
+      ],
+      "latency_ms": 0.0318
+    },
+    {
+      "query": "inspection",
+      "relevant": [
+        "maintenance"
+      ],
+      "retrieved_documents": [
+        "maintenance"
+      ],
+      "latency_ms": 0.0237
+    },
+    {
+      "query": "restricted override token",
+      "principal": "technician",
+      "relevant": [
+        "private"
+      ],
+      "retrieved_documents": [
+        "private"
+      ],
+      "latency_ms": 0.0368
+    },
+    {
+      "query": "Privatecanary482",
+      "relevant": [],
+      "retrieved_documents": [],
+      "latency_ms": 0.0224
+    },
+    {
+      "query": "quantum aardvark",
+      "relevant": [],
+      "retrieved_documents": [],
+      "latency_ms": 0.0248
+    },
+    {
+      "query": "NeverIndexScriptSecret",
+      "relevant": [],
+      "retrieved_documents": [],
+      "latency_ms": 0.0208
+    }
+  ]
+}

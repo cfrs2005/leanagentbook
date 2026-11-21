@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="rag-title rag-desc">
+<title id="rag-title">RAG 的摄取、查询与失效路径</title>
+<desc id="rag-desc">文档经解析、父子切片进入带版本和权限的索引。查询先过滤权限，再检索和组装父片段。回答前重新检查有效性。更新或删除会替换索引并清空缓存。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#316653"/></marker></defs>
+<rect width="1200" height="620" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="40" y="53" font-size="32">10 / RAG 全链路：证据必须可追溯、可失效</text>
+<text x="40" y="89" font-size="16" fill="#596963">实线为本章实验 · 摘录式回答 · 不含真实模型、OCR 或向量检索</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="40" y="130" width="240" height="130" rx="12"/>
+<rect x="330" y="130" width="240" height="130" rx="12"/>
+<rect x="620" y="130" width="240" height="130" rx="12"/>
+<rect x="910" y="130" width="250" height="130" rx="12"/>
+<rect x="40" y="350" width="240" height="145" rx="12"/>
+<rect x="330" y="350" width="240" height="145" rx="12"/>
+<rect x="620" y="350" width="240" height="145" rx="12"/>
+<rect x="910" y="350" width="250" height="145" rx="12"/>
+</g>
+<g font-size="20">
+<text x="60" y="166">01 原始文档</text><text x="350" y="166">02 解析与定位</text>
+<text x="640" y="166">03 父子切片</text><text x="930" y="166">04 SQLite 索引</text>
+<text x="60" y="388">05 问题与身份</text><text x="350" y="388">06 权限内检索</text>
+<text x="640" y="388">07 父片段上下文</text><text x="930" y="388">08 摘录与引用</text>
+</g>
+<g font-size="16" fill="#596963">
+<text x="60" y="202">Markdown / HTML / PDF</text><text x="60" y="233">文档 ID + 内容指纹</text>
+<text x="350" y="202">原文件行号或 PDF 页码</text><text x="350" y="233">空页拒绝，保留旧版本</text>
+<text x="640" y="202">小片段匹配，大段给背景</text><text x="640" y="233">偏移量 + 重叠区</text>
+<text x="930" y="202">词项、片段、权限、版本</text><text x="930" y="233">事务内替换或删除</text>
+<text x="60" y="427">身份由可信服务端提供</text><text x="60" y="459">可选业务标签过滤</text>
+<text x="350" y="427">BM25 → 父段去重</text><text x="350" y="459">未命中则拒答</text>
+<text x="640" y="427">缓存只存 ID 和有效代数</text><text x="640" y="459">按字符预算选择完整父段</text>
+<text x="930" y="427">再查权限、版本与正文</text><text x="930" y="459">输出原文、位置和版本</text>
+</g>
+<g stroke="#316653" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+<path d="M280 195H320"/><path d="M570 195H610"/><path d="M860 195H900"/>
+<path d="M280 421H320"/><path d="M570 421H610"/><path d="M860 421H900"/>
+<path d="M1035 260V300H450V340"/>
+</g>
+<rect x="40" y="536" width="1120" height="50" rx="8" fill="#316653"/>
+<text x="60" y="568" font-size="18" fill="#FFFCF6">更新 / 删除 / 权限变化 → 原子替换索引 + 清空已有上下文缓存 → 旧句柄拒答</text>
+</g></svg>

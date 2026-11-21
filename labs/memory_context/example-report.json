@@ -1,0 +1,340 @@
+{
+  "dataset_version": "1.0.0",
+  "queries": 24,
+  "exact_matches": 24,
+  "true_positive": 16,
+  "false_positive": 0,
+  "false_negative": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "wrong_memory_rate": 0.0,
+  "measurement": "synthetic, rule extraction and lexical aliases; no LLM",
+  "results": [
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "用哪种语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=中文"
+      ],
+      "expected": [
+        "language=中文"
+      ],
+      "passed": true
+    },
+    {
+      "query": "language",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=中文"
+      ],
+      "expected": [
+        "language=中文"
+      ],
+      "passed": true
+    },
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-b",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-a",
+        "user-b",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-b"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "报告格式",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "format=表格"
+      ],
+      "expected": [
+        "format=表格"
+      ],
+      "passed": true
+    },
+    {
+      "query": "报告语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "format=表格",
+        "language=中文"
+      ],
+      "expected": [
+        "format=表格",
+        "language=中文"
+      ],
+      "passed": true
+    },
+    {
+      "query": "天气",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=中文"
+      ],
+      "expected": [
+        "language=中文"
+      ],
+      "passed": true
+    },
+    {
+      "query": "语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=English"
+      ],
+      "expected": [
+        "language=English"
+      ],
+      "passed": true
+    },
+    {
+      "query": "english",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=English"
+      ],
+      "expected": [
+        "language=English"
+      ],
+      "passed": true
+    },
+    {
+      "query": "单位",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "units=metric"
+      ],
+      "expected": [
+        "units=metric"
+      ],
+      "passed": true
+    },
+    {
+      "query": "单位",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "工作地点",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "site=alpha"
+      ],
+      "expected": [
+        "site=alpha"
+      ],
+      "passed": true
+    },
+    {
+      "query": "站点",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "site=alpha"
+      ],
+      "expected": [
+        "site=alpha"
+      ],
+      "passed": true
+    },
+    {
+      "query": "站点",
+      "scope": [
+        "tenant-b",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "site=beta"
+      ],
+      "expected": [
+        "site=beta"
+      ],
+      "passed": true
+    },
+    {
+      "query": "format",
+      "scope": [
+        "tenant-a",
+        "user-b",
+        "project-a"
+      ],
+      "actual": [
+        "format=段落"
+      ],
+      "expected": [
+        "format=段落"
+      ],
+      "passed": true
+    },
+    {
+      "query": "format",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "format=表格"
+      ],
+      "expected": [
+        "format=表格"
+      ],
+      "passed": true
+    },
+    {
+      "query": "报告",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "format=表格"
+      ],
+      "expected": [
+        "format=表格"
+      ],
+      "passed": true
+    },
+    {
+      "query": "api_key",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "报告",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "query": "报告语言",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [
+        "language=English"
+      ],
+      "expected": [
+        "language=English"
+      ],
+      "passed": true
+    },
+    {
+      "query": "站点",
+      "scope": [
+        "tenant-a",
+        "user-a",
+        "project-a"
+      ],
+      "actual": [],
+      "expected": [],
+      "passed": true
+    }
+  ]
+}

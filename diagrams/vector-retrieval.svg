@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">双路检索、融合与重排</title>
+<desc id="desc">文档分别建立词项索引与向量索引。查询经过权限范围确定后进入两条召回路径，候选通过 RRF 融合，再由交叉编码器重排。标注只进入评测，不进入排序。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#316653"/></marker></defs>
+<rect width="1200" height="620" fill="#F6F1E7"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#22312F">
+<text x="40" y="54" font-size="34">09  双路召回：先找全，再排准</text>
+<text x="40" y="88" font-size="17" fill="#596963">本实验采用精确向量扫描；ANN、分片与在线更新在正文说明，未做性能实测。</text>
+<g fill="#FFFCF6" stroke="#D9D2C4" stroke-width="2">
+<rect x="40" y="130" width="220" height="90" rx="12"/><rect x="340" y="130" width="250" height="90" rx="12"/>
+<rect x="680" y="130" width="250" height="90" rx="12"/><rect x="40" y="320" width="220" height="100" rx="12"/>
+<rect x="340" y="285" width="250" height="75" rx="12"/><rect x="340" y="395" width="250" height="75" rx="12"/>
+<rect x="680" y="320" width="190" height="100" rx="12"/><rect x="960" y="320" width="200" height="100" rx="12"/>
+</g>
+<g font-size="22">
+<text x="64" y="168">文档与版本</text><text x="364" y="168">词项 / BM25</text><text x="704" y="168">文档 Encoder</text>
+<text x="64" y="359">查询 + 权限范围</text><text x="364" y="317">关键词前 10</text><text x="364" y="427">向量前 10</text>
+<text x="703" y="359">RRF 融合</text><text x="982" y="359">Cross Encoder</text>
+</g>
+<g font-size="16" fill="#596963">
+<text x="64" y="198">离线建立两种索引</text><text x="364" y="198">分词、词频、文档频率</text><text x="704" y="198">归一化后的文档向量</text>
+<text x="64" y="389">先确定允许读取的文档</text><text x="364" y="343">词面证据与错误码</text><text x="364" y="453">查询编码 + 相似度扫描</text>
+<text x="703" y="389">按排名合并取 10</text><text x="982" y="389">成对评分 → 前 5</text>
+</g>
+<g stroke="#316653" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M260 175 H340"/><path d="M150 220 V240 H805 V220"/>
+<path d="M465 220 V285"/><path d="M805 220 V255 H630 V432 H590"/>
+<path d="M260 355 H300 V323 H340"/><path d="M260 385 H300 V432 H340"/>
+<path d="M590 323 H635 V350 H680"/><path d="M590 432 H635 V390 H680"/><path d="M870 370 H960"/>
+</g>
+
+<rect x="40" y="515" width="1120" height="65" fill="#E5EBDD" rx="10"/>
+<text x="60" y="543" font-size="19" fill="#316653">评测：冻结的相关性标注 → Recall@5 / MRR@5 / NDCG@5 / 实际查询延迟</text>
+<text x="60" y="567" font-size="16" fill="#596963">标注不参与排序。重排不能补回已丢失的候选。离线规则模式不代表预训练模型质量。</text>
+</g></svg>

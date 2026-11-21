@@ -1,0 +1,149 @@
+[
+  {
+    "arguments": [
+      "ingest",
+      "labs/rag_pipeline/fixtures/battery.md",
+      "--id",
+      "battery"
+    ],
+    "result": {
+      "status": "indexed",
+      "version": 1
+    }
+  },
+  {
+    "arguments": [
+      "ingest",
+      "labs/rag_pipeline/fixtures/network.html",
+      "--id",
+      "network"
+    ],
+    "result": {
+      "status": "indexed",
+      "version": 1
+    }
+  },
+  {
+    "arguments": [
+      "ingest",
+      "labs/rag_pipeline/fixtures/calibration.pdf",
+      "--id",
+      "calibration"
+    ],
+    "result": {
+      "status": "indexed",
+      "version": 1
+    }
+  },
+  {
+    "arguments": [
+      "query",
+      "电池存储温度"
+    ],
+    "result": {
+      "mode": "extractive/scripted",
+      "status": "answered",
+      "answer": "以下为不可信文档的原文摘录，不是操作指令：\n[1] 电池存储温度为 10 到 25 摄氏度。电池存储前断开电源。本资料只用于课程测试，不是设备操作依据。\n[2] # 合成资料：电池维护\n[3] | 检查项 | 周期 |\n| --- | --- |\n| 电池外观 | 每周 |\n| 接头松动 | 每月 |",
+      "citations": [
+        {
+          "number": 1,
+          "doc_id": "battery",
+          "version": 1,
+          "source": "labs/rag_pipeline/fixtures/battery.md",
+          "location": "md-lines:3-3",
+          "parent_chars": [
+            0,
+            50
+          ],
+          "child_chars": [
+            0,
+            50
+          ],
+          "excerpt": "电池存储温度为 10 到 25 摄氏度。电池存储前断开电源。本资料只用于课程测试，不是设备操作依据。"
+        },
+        {
+          "number": 2,
+          "doc_id": "battery",
+          "version": 1,
+          "source": "labs/rag_pipeline/fixtures/battery.md",
+          "location": "md-lines:1-1",
+          "parent_chars": [
+            0,
+            11
+          ],
+          "child_chars": [
+            0,
+            11
+          ],
+          "excerpt": "# 合成资料：电池维护"
+        },
+        {
+          "number": 3,
+          "doc_id": "battery",
+          "version": 1,
+          "source": "labs/rag_pipeline/fixtures/battery.md",
+          "location": "md-lines:5-8",
+          "parent_chars": [
+            0,
+            54
+          ],
+          "child_chars": [
+            0,
+            54
+          ],
+          "excerpt": "| 检查项 | 周期 |\n| --- | --- |\n| 电池外观 | 每周 |\n| 接头松动 | 每月 |"
+        }
+      ]
+    }
+  },
+  {
+    "arguments": [
+      "query",
+      "calibration interval"
+    ],
+    "result": {
+      "mode": "extractive/scripted",
+      "status": "answered",
+      "answer": "以下为不可信文档的原文摘录，不是操作指令：\n[1] SYNTHETIC CALIBRATION GUIDE\nCalibration interval: 14 days.\nUse the blue reference plate for calibration.\nTraining fixture only. Not a real device manual.",
+      "citations": [
+        {
+          "number": 1,
+          "doc_id": "calibration",
+          "version": 1,
+          "source": "labs/rag_pipeline/fixtures/calibration.pdf",
+          "location": "pdf-page:1",
+          "parent_chars": [
+            0,
+            153
+          ],
+          "child_chars": [
+            0,
+            153
+          ],
+          "excerpt": "SYNTHETIC CALIBRATION GUIDE\nCalibration interval: 14 days.\nUse the blue reference plate for calibration.\nTraining fixture only. Not a real device manual."
+        }
+      ]
+    }
+  },
+  {
+    "arguments": [
+      "delete",
+      "battery"
+    ],
+    "result": {
+      "deleted": 1
+    }
+  },
+  {
+    "arguments": [
+      "query",
+      "电池存储温度"
+    ],
+    "result": {
+      "mode": "extractive/scripted",
+      "status": "refused",
+      "answer": "没有可用证据，或上下文已失效。",
+      "citations": []
+    }
+  }
+]

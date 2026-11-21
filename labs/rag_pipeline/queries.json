@@ -1,0 +1,14 @@
+[
+  {"query":"电池存储温度", "relevant":["battery"]},
+  {"query":"接头松动", "relevant":["battery"]},
+  {"query":"电池外观", "relevant":["battery"]},
+  {"query":"network timeout recovery", "relevant":["network"]},
+  {"query":"escalation contact", "relevant":["network"]},
+  {"query":"filter replacement interval", "relevant":["maintenance"]},
+  {"query":"wheel axle cover", "relevant":["maintenance"]},
+  {"query":"inspection", "relevant":["maintenance"]},
+  {"query":"restricted override token", "principal":"technician", "relevant":["private"]},
+  {"query":"Privatecanary482", "relevant":[]},
+  {"query":"quantum aardvark", "relevant":[]},
+  {"query":"NeverIndexScriptSecret", "relevant":[]}
+]
